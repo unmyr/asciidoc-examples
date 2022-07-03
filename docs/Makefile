@@ -10,6 +10,7 @@ $(DEST_DIR)/asciidoc_images.html \
 $(DEST_DIR)/diagram-graphviz.html \
 $(DEST_DIR)/diagram-plantuml.html \
 $(DEST_DIR)/math.html \
+$(DST_IMAGES_DIR)/hydrangea-512x382.jpg \
 $(DEST_DIR)/index.html
 
 .PHONY: adoc
@@ -20,9 +21,12 @@ $(DEST_DIR)/math.html: math.adoc header.adoc
 	mkdir -p $(DEST_DIR)
 	asciidoctor --trace $(AD_OPTS_HTML5_STEM) -o "$@" "$<"
 
-$(DEST_DIR)/asciidoc_images.html: asciidoc_images.adoc header.adoc
+$(DST_IMAGES_DIR)/hydrangea-512x382.jpg: $(IMAGES_DIR)/hydrangea-512x382.jpg
+	cp $(CP_OPTS) "$<" "$@"
+
+$(DEST_DIR)/asciidoc_images.html: asciidoc_images.adoc header.adoc $(DEST_DIR)/images/hydrangea-512x382.jpg
 	mkdir -p $(DEST_DIR)
-	-@test -d $(SRC_IMAGES_DIR) && cp $(CP_OPTS) $(SRC_IMAGES_DIR)/* $(DST_IMAGES_DIR)
+	test -d $(SRC_IMAGES_DIR) && cp $(CP_OPTS) $(SRC_IMAGES_DIR)/* $(DST_IMAGES_DIR)
 	asciidoctor --trace $(AD_OPTS_HTML5_ROUGE) -o "$@" "$<"
 
 $(DEST_DIR)/%.html: %.adoc header.adoc
