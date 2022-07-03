@@ -877,7 +877,20 @@ align vertically +
 </div>
 <div class="sect2">
 <h3 id="_csv">csv</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[format="csv" cols="^.&gt;,&gt;m,&lt;" options="header,autowidth"]
+,===
+"ID　　　　","金額　　　　　","　　　　　　備考"
+1,"$100",Foo
+2,"$20",Bar
+"　　　　__ID__","　　　　　〇**〇**","　　　　　　　たpass:p[ +]　　　　　　　て"
+
+,===</code></pre>
+</div>
+</div>
 <table class="tableblock frame-all grid-all fit-content">
+<caption class="title">Table 1. Rendered</caption>
 <colgroup>
 <col>
 <col>
@@ -912,7 +925,7 @@ align vertically +
 <div class="sect2">
 <h3 id="_separator">separator</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. セパレーターが「:」のテーブル</caption>
+<caption class="title">Table 2. セパレーターが「:」のテーブル</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -935,7 +948,7 @@ align vertically +
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. csv形式でセパレーターが「;」のテーブル</caption>
+<caption class="title">Table 3. csv形式でセパレーターが「;」のテーブル</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -960,7 +973,7 @@ align vertically +
 <div class="sect3">
 <h4 id="_custom_separator">custom separator</h4>
 <table class="tableblock frame-all grid-all fit-content">
-<caption class="title">Table 3. 「|」を含むテーブル</caption>
+<caption class="title">Table 4. 「|」を含むテーブル</caption>
 <colgroup>
 <col>
 <col>
@@ -999,7 +1012,7 @@ align vertically +
 <div class="sect2">
 <h3 id="_span">span</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 4. Cells aligned horizontally, vertically, and across a span of three columns</caption>
+<caption class="title">Table 5. Cells aligned horizontally, vertically, and across a span of three columns</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -1039,7 +1052,23 @@ align vertically +
 </div>
 <div class="sect2">
 <h3 id="_nested_table">nested table</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">|===
+| Foo | Bar | Baz
+
+| aaa a|
+!===
+! xxxxx ! xxxxx
+
+! apple ! banana
+!===
+|
+|===</code></pre>
+</div>
+</div>
 <table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 6. Rendered</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -1167,7 +1196,7 @@ text is shown in monospace font and line breaks are kept.</p></td>
 </div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 5. Result: Rendered table where cell spans three columns</caption>
+<caption class="title">Table 7. Result: Rendered table where cell spans three columns</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -1207,7 +1236,7 @@ text is shown in monospace font and line breaks are kept.</p></td>
 </div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 6. Result: Rendered table where a cell spans two rows</caption>
+<caption class="title">Table 8. Result: Rendered table where a cell spans two rows</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -1243,7 +1272,7 @@ text is shown in monospace font and line breaks are kept.</p></td>
 </div>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 7. Result: Rendered table where a multi-row table headings(not working)</caption>
+<caption class="title">Table 9. Result: Rendered table where a multi-row table headings(not working)</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -1281,7 +1310,7 @@ text is shown in monospace font and line breaks are kept.</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-07-03 14:45:35 UTC
+Last updated 2022-07-03 15:10:36 UTC
 </div>
 </div>
 </body>
