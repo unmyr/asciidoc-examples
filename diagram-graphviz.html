@@ -680,17 +680,46 @@ pre.rouge {
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_simple_graph">Simple graph</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Simple graph</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="dot"><span class="k">digraph</span> <span class="nv">G</span> <span class="p">{</span> <span class="n">rankdir</span><span class="p">=</span><span class="nv">LR</span><span class="p">;</span> <span class="nv">Foo</span><span class="o">-&gt;</span><span class="nv">Bar</span><span class="o">-&gt;</span><span class="nv">Baz</span><span class="p">}</span></code></pre>
+</div>
+</div>
 <div class="imageblock">
 <div class="content">
-<img src="images/sample1.svg" alt="sample1" width="325" height="58">
+<img src="images/digraph-simple-ascii.svg" alt="digraph simple ascii" width="325" height="58">
 </div>
-<div class="title">Figure 1. Simple graph</div>
+<div class="title">Figure 1. Rendered(svg)</div>
+</div>
+</li>
+<li>
+<p>Simple graph (CJK)</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="dot"><span class="k">digraph</span> <span class="nv">G</span> <span class="p">{</span>
+   <span class="n">fontname</span><span class="p">=</span><span class="s2">"Noto Sans CJK JP"</span><span class="p">;</span>
+   <span class="n">rankdir</span><span class="p">=</span><span class="nv">LR</span><span class="p">;</span> <span class="err">松</span><span class="o">-&gt;</span><span class="err">竹</span><span class="o">-&gt;</span><span class="err">梅</span>
+<span class="p">}</span></code></pre>
+</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/sample2_cjK.svg" alt="sample2 cjK" width="321" height="58">
+<img src="images/digraph-simple-cjk.svg" alt="digraph simple cjk" width="321" height="58">
 </div>
-<div class="title">Figure 2. simple graph (ja, format:svg)</div>
+<div class="title">Figure 2. Rendered(svg)</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/digraph-simple-cjk.png" alt="digraph simple cjk" width="323" height="59">
+</div>
+<div class="title">Figure 3. Rendered(png)</div>
+</div>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
@@ -708,13 +737,13 @@ pre.rouge {
 <div class="content">
 <img src="images/sample_subscript.svg" alt="sample subscript" width="97" height="174">
 </div>
-<div class="title">Figure 3. sample subscript (svg)</div>
+<div class="title">Figure 4. sample subscript (svg)</div>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="images/sample_subscript.png" alt="sample subscript" width="97" height="175">
 </div>
-<div class="title">Figure 4. sample subscript (png)</div>
+<div class="title">Figure 5. sample subscript (png)</div>
 </div>
 </div>
 <div class="sect2">
@@ -786,7 +815,7 @@ pre.rouge {
 <div class="content">
 <img src="images/permutation-1.svg" alt="permutation 1" width="148" height="299">
 </div>
-<div class="title">Figure 5. permutation (svg)</div>
+<div class="title">Figure 6. permutation (svg)</div>
 </div>
 </div>
 <div class="sect2">
@@ -842,7 +871,7 @@ pre.rouge {
 <div class="content">
 <img src="images/hasse-s4.svg" alt="hasse s4" width="385" height="227">
 </div>
-<div class="title">Figure 6. 𝕾<sub>4</sub> - Hasse diagram</div>
+<div class="title">Figure 7. 𝕾<sub>4</sub> - Hasse diagram</div>
 </div>
 </div>
 </div>
@@ -850,7 +879,7 @@ pre.rouge {
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-07-03 13:30:25 UTC
+Last updated 2022-07-03 13:46:16 UTC
 </div>
 </div>
 </body>
