@@ -1,24 +1,30 @@
 BASE_DIR=..
-DIST_DIR=$(BASE_DIR)
-OUTPUT_DIR_HTML=$(DIST_DIR)/dist
+DEST_DIR=$(BASE_DIR)/dist
+SRC_IMAGES_DIR=$(IMAGES_DIR)
+DST_IMAGES_DIR=$(DEST_DIR)/$(IMAGES_DIR)/
 
 include $(BASE_DIR)/asciidoc.mk
 
 HTML_LIST=\
-$(OUTPUT_DIR_HTML)/asciidoc_images.html \
-$(OUTPUT_DIR_HTML)/diagram-graphviz.html \
-$(OUTPUT_DIR_HTML)/diagram-plantuml.html \
-$(OUTPUT_DIR_HTML)/math.html \
-$(OUTPUT_DIR_HTML)/index.html
+$(DEST_DIR)/asciidoc_images.html \
+$(DEST_DIR)/diagram-graphviz.html \
+$(DEST_DIR)/diagram-plantuml.html \
+$(DEST_DIR)/math.html \
+$(DEST_DIR)/index.html
 
 .PHONY: adoc
 
 adoc: $(HTML_LIST)
 
-$(OUTPUT_DIR_HTML)/math.html: math.adoc
-	mkdir -p $(OUTPUT_DIR_HTML)
+$(DEST_DIR)/math.html: math.adoc header.adoc
+	mkdir -p $(DEST_DIR)
 	asciidoctor --trace $(AD_OPTS_HTML5_STEM) -o "$@" "$<"
 
-$(OUTPUT_DIR_HTML)/%.html: %.adoc
-	mkdir -p $(OUTPUT_DIR_HTML)
+$(DEST_DIR)/asciidoc_images.html: asciidoc_images.adoc header.adoc
+	mkdir -p $(DEST_DIR)
+	-@test -d $(SRC_IMAGES_DIR) && cp $(CP_OPTS) $(SRC_IMAGES_DIR)/* $(DST_IMAGES_DIR)
+	asciidoctor --trace $(AD_OPTS_HTML5_ROUGE) -o "$@" "$<"
+
+$(DEST_DIR)/%.html: %.adoc header.adoc
+	mkdir -p $(DEST_DIR)
 	asciidoctor --trace $(AD_OPTS_HTML5_ROUGE) -o "$@" "$<"
