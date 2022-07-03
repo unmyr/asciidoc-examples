@@ -1,0 +1,4 @@
+digraph G {
+   fontname="Noto Sans CJK JP";
+   rankdir=LR; 松->竹->梅
+}

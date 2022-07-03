@@ -11,21 +11,36 @@ include::header.adoc[]
 
 === Simple graph
 
-.Simple graph
-["graphviz", "sample1",format="svg"]
+* Simple graph
++
+[source,dot]
 ----
-digraph G { rankdir=LR; Foo->Bar->Baz}
+include::graphviz/digraph-simple-ascii.dot[]
+----
++
+.Rendered(svg)
+["graphviz", "digraph-simple-ascii",format="svg"]
+----
+include::graphviz/digraph-simple-ascii.dot[]
 ----
 
-:graphviz_format: svg
-
-.simple graph (ja, format:{graphviz_format})
-["graphviz", "sample2_cjK", format="{graphviz_format}"]
+* Simple graph (CJK)
++
+[source,dot]
 ----
-digraph G {
-   fontname="Noto Sans CJK JP";
-   rankdir=LR; 松->竹->梅
-}
+include::graphviz/digraph-simple-cjk.dot[]
+----
++
+.Rendered(svg)
+["graphviz", "digraph-simple-cjk", format="svg"]
+----
+include::graphviz/digraph-simple-cjk.dot[]
+----
++
+.Rendered(png)
+["graphviz", "digraph-simple-cjk", format="png"]
+----
+include::graphviz/digraph-simple-cjk.dot[]
 ----
 
 === Subscript and superscript
