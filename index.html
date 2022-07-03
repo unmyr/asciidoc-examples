@@ -435,6 +435,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 pre.rouge table td { padding: 5px; }
 pre.rouge table pre { margin: 0; }
@@ -743,7 +744,7 @@ not working</p>
 </div>
 </div>
 <div class="paragraph">
-<p><span class="icon"><a class="image" href="https://rubygems.org/downloads/asciidoctor-1.5.2.gem">[download&#93;</a></span></p>
+<p><span class="icon"><a class="image" href="https://rubygems.org/downloads/asciidoctor-1.5.2.gem"><i class="fa fa-download"></i></a></span></p>
 </div>
 </div>
 </div>
@@ -811,7 +812,7 @@ This paragraph gets a lot of attention.</code></pre>
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 <div class="paragraph">
@@ -881,7 +882,7 @@ I'm asciidoctor.
 :thumbnail: width='60'
 <strong>endif::[]</strong>
 
-<strong>ifdef::basebackend-html[]</strong> <b class="conum">(1)</b>
+<strong>ifdef::basebackend-html[]</strong> <i class="conum" data-value="1"></i><b>(1)</b>
 true if html5, asciidoctor-pdf
 <strong>endif::[]</strong>
 
@@ -903,11 +904,12 @@ true if html5, asciidoctor-pdf
 </div>
 </div>
 <div class="colist arabic">
-<ol>
-<li>
-<p>That&#8217;s not going to work in Asciidoctor PDF.</p>
-</li>
-</ol>
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>That&#8217;s not going to work in Asciidoctor PDF.</td>
+</tr>
+</table>
 </div>
 <div class="ulist">
 <div class="title">Reference</div>
@@ -1088,7 +1090,7 @@ include::chapter03.adoc[leveloffset=+1]</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-07-03 14:35:07 UTC
+Last updated 2022-07-03 14:45:35 UTC
 </div>
 </div>
 </body>
