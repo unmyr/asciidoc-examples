@@ -5,6 +5,7 @@ OUTPUT_DIR_HTML=$(DIST_DIR)/dist
 include $(BASE_DIR)/asciidoc.mk
 
 HTML_LIST=\
+$(OUTPUT_DIR_HTML)/asciidoc_images.html \
 $(OUTPUT_DIR_HTML)/diagram-graphviz.html \
 $(OUTPUT_DIR_HTML)/diagram-plantuml.html \
 $(OUTPUT_DIR_HTML)/math.html \

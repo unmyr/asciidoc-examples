@@ -1,6 +1,7 @@
 ifndef::leveloffset[]
 ifeval::["{backend}" == "html5"]
 <<index.adoc#,Index>> {vbar}
+<<asciidoc_images.adoc#,Images>> {vbar}
 <<math.adoc#,Math>> {vbar}
 <<diagram-graphviz.adoc#,Graphviz>> {vbar}
 <<diagram-plantuml.adoc#,PlantUML>> +

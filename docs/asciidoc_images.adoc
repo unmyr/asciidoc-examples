@@ -1,0 +1,166 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+:icons: font
+
+include::header.adoc[]
+
+endif::[]
+
+// For preview in VS-Code
+ifndef::imagesdir[]
+:imagesdir: images
+endif::[]
+
+== Images
+
+[source,asciidoc]
+----
+[#img-hydrangea] // <1>
+.A hydrangea // <2>
+[link=https://unmyr.github.io/asciidoc-examples/images/hydrangea-512x382.jpg,window=_blank] // <3>
+image::hydrangea-512x382.jpg[Hydrangea,300,224] // <4>
+----
+<1> Assigns an ID to the block
+<2> Defines the title of the block image, which gets displayed underneath the image when rendered.
+<3> link makes the image a link (this can also be defined inside the attribute list of the block macro)
+<4> The second and third positional attributes define the width and height, respectively.
+
+[example]
+====
+[#img-hydrangea]
+.A hydrangea
+[link=https://unmyr.github.io/asciidoc-examples/images/hydrangea-512x382.jpg,window=_blank]
+image::hydrangea-512x382.jpg[Hydrangea,300,224]
+====
+
+Positional attributes are un-named values at the start of the attribute list. The attribute that they are assigned to depends on the type of the element:
+
+* `icon:` (1) size
+* `image:` and `image::` (1) alt text, (2) width, (3) height
+* Delimited blocks: (1) block name (aka style)
+* Other inline quoted text: (1) role
+
+[source,asciidoc]
+.For example, the following two image macros are equivalent.
+----
+image::hydrangea-512x382.jpg[Hydrangea,300,224]
+
+image::hydrangea-512x382.jpg[alt=Hydrangea,width=300,height=224]
+----
+
+.References
+* https://asciidoctor.org/docs/user-manual/#positional-attribute[10. Attributes » 10.5. Setting Attributes on an Element » 10.15.1. Positional Attribute | Asciidoctor User Manual^]
+* https://asciidoctor.org/docs/user-manual/#images[29. Images | Asciidoctor User Manual^]
+
+=== lists with images
+
+[source,asciidoc]
+----
+* block
++
+image::icon-75x75.png[Some icon,75,75]
++
+image::icon-75x75.png[Some icon,75,75,align=center]
++
+image::icon-75x75.png[Some icon,75,75,align=right]
+* inline +
+image:icon-75x75.png[Some icon,75,75]
+image:icon-75x75.png[Some icon,75,75]
+----
+
+* block
++
+image::icon-75x75.png[Some icon,75,75]
++
+image::icon-75x75.png[Some icon,75,75,align=center]
++
+image::icon-75x75.png[Some icon,75,75,align=right]
+* inline +
+image:icon-75x75.png[Some icon,75,75]
+image:icon-75x75.png[Some icon,75,75]
+
+=== alt and title
+
+[source,asciidoc]
+.inline images
+----
+image:hydrangea-512x382.jpg[Hydrangea(alt),300,224,title="Hydrangea(title)"]
+----
+
+image:hydrangea-512x382.jpg[Hydrangea(alt),300,224,title="Hydrangea(title)"]
+
+[source,html]
+----
+<div class="paragraph">
+<p><span class="image"><img src="images/hydrangea-512x382.jpg" alt="Hydrangea(alt)" width="300" height="224" title="Hydrangea(title)"></span></p>
+</div>
+----
+
+==== NOTE 1(inline): Title attribute is not used for alt text
+The title attribute is used for paragraph names, not alt text.
+
+* Pattern 1
++
+[source,asciidoc]
+.inline images
+----
+.Hydrangea(title)
+image:hydrangea-512x382.jpg[Hydrangea(alt),300,224]
+----
++
+.Hydrangea(title)
+image:hydrangea-512x382.jpg[Hydrangea(alt),300,224]
++
+[source,html]
+----
+<div class="paragraph">
+<div class="title">Hydrangea(title)</div>
+<p><span class="image"><img src="images/hydrangea-512x382.jpg" alt="Hydrangea(alt)" width="300" height="224"></span></p>
+</div>
+----
+
+* Pattern 2
++
+[source,asciidoc]
+.inline images
+----
+[title="Hydrangea(title)"]
+image:hydrangea-512x382.jpg[Hydrangea(alt),300,224]
+----
++
+[title="Hydrangea(title)"]
+image:hydrangea-512x382.jpg[Hydrangea(alt),300,224]
++
+[source,html]
+----
+<div class="paragraph">
+<div class="title">Hydrangea(title)</div>
+<p><span class="image"><img src="images/hydrangea-512x382.jpg" alt="Hydrangea(alt)" width="300" height="224"></span></p>
+</div>
+----
+
+==== NOTE 2(block): Title attribute is not used for alt text
+
+[source,asciidoc]
+.block images
+----
+image::hydrangea-512x382.jpg[Hydrangea(alt),300,224,title="Hydrangea(title)"]
+----
+
+image::hydrangea-512x382.jpg[Hydrangea(alt),300,224,title="Hydrangea(title)"]
+
+[source,html]
+----
+<div class="imageblock">
+<div class="content">
+<img src="images/hydrangea-512x382.jpg" alt="Hydrangea(alt)" width="300" height="224">
+</div>
+<div class="title">Figure 2. Hydrangea(title)</div>
+</div>
+----
+
+
+== References
+
+* https://asciidoctor.org/docs/user-manual/#images[Images | Asciidoctor User Manual^]
