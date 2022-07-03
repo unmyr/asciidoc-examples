@@ -1,0 +1,556 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+endif::[]
+
+include::header.adoc[]
+
+:stem: latexmath
+
+== latexmath Examples
+
+* https://www.intmath.com/cg5/katex-mathjax-comparison.php[KaTeX and MathJax Comparison Demo - Interactive Mathematics^]
+
+=== Repeating fractions
+.The LaTeX code
+[source,latex]
+----
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+----
+
+[stem,latexmath]
+++++
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+++++
+
+=== Summation notation
+.*The LaTeX code*
+[source,latex]
+----
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+----
+
+[stem,latexmath]
+++++
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+++++
+
+=== Sum of a Series
+I broke up the next two examples into separate lines so it behaves better on a mobile phone. That's why they include \displaystyle.
+
+.*The LaTeX code*
+[source,latex]
+----
+\displaystyle\sum_{i=1}^{k+1}i
+----
+Rendered::
+latexmath:[\displaystyle\sum_{i=1}^{k+1}i]
+
+.*The LaTeX code*
+[source,latex]
+----
+\displaystyle= \left(\sum_{i=1}^{k}i\right) +(k+1)
+----
+Rendered::
+latexmath:[\displaystyle= \left(\sum_{i=1}^{k}i\right) +(k+1)]
+
+.*The LaTeX code*
+[source,latex]
+----
+\displaystyle= \frac{k(k+1)}{2}+k+1
+----
+Rendered::
+latexmath:[\displaystyle= \frac{k(k+1)}{2}+k+1]
+
+.*The LaTeX code*
+[source,latex]
+----
+\displaystyle= \frac{k(k+1)+2(k+1)}{2}
+----
+Rendered::
+latexmath:[\displaystyle= \frac{k(k+1)+2(k+1)}{2}]
+
+.*The LaTeX code*
+[source,latex]
+----
+\displaystyle= \frac{(k+1)(k+2)}{2}
+----
+Rendered::
+latexmath:[\displaystyle= \frac{(k+1)(k+2)}{2}]
+
+.*The LaTeX code*
+[source,latex]
+----
+\displaystyle= \frac{(k+1)((k+1)+1)}{2}
+----
+Rendered::
+latexmath:[\displaystyle= \frac{(k+1)((k+1)+1)}{2}]
+
+=== Product notation
+.*The LaTeX code*
+[source,latex]
+----
+1 +  \frac{q^2} {(1-q)}+\frac{q^6} {(1-q)(1-q^2)}+\cdots
+= \displaystyle \prod_{j=0}^{\infty} \frac{1}{(1-q^{5j+2} )(1-q^{5j+3})},
+  \displaystyle \text{ for }\lvert q\rvert < 1.
+----
+
+[stem,latexmath]
+++++
+1 +  \frac{q^2} {(1-q)}+\frac{q^6} {(1-q)(1-q^2)}+\cdots
+= \displaystyle \prod_{j=0}^{\infty} \frac{1}{(1-q^{5j+2} )(1-q^{5j+3})},
+  \displaystyle \text{ for }\lvert q\rvert < 1.
+++++
+
+=== Inline math
+And here is some in-line math: latexmath:[k_{n+1} = n^2 + k_n^2 - k_{n-1}], followed by some more text.
+
+The LaTeX code::
+`k_{n+1} = n^2 + k_n^2 - k_{n-1}`
+
+Inline math uses
+[source,html]
+----
+<span class="math">...</span>
+----
+rather than a div.
+
+==== Greek Letters
+.*The LaTeX code*
+[source,latex]
+----
+\Gamma\ \Delta\ \Theta\ \Lambda\ \Xi\ \Pi\ \Sigma\ \Upsilon\ \Phi\ \Psi\ \Omega
+----
+Rendered::
+[stem,latexmath]
+++++
+\Gamma\ \Delta\ \Theta\ \Lambda\ \Xi\ \Pi\ \Sigma\ \Upsilon\ \Phi\ \Psi\ \Omega
+++++
+
+.*The LaTeX code*
+[source,latex]
+----
+\alpha\ \beta\ \gamma\ \delta\ \epsilon\ \zeta\ \eta\ \theta\ \iota\ \kappa\ \lambda\ \mu\ \nu\ \xi
+\ \omicron\ \pi\ \rho\ \sigma\ \tau\ \upsilon\ \phi\ \chi\ \psi\ \omega\ \varepsilon\ \vartheta\ \varpi\ \varrho\ \varsigma\ \varphi
+----
+Rendered::
+[stem,latexmath]
+++++
+\alpha\ \beta\ \gamma\ \delta\ \epsilon\ \zeta\ \eta\ \theta\ \iota\ \kappa\ \lambda\ \mu\ \nu\ \xi
+\ \omicron\ \pi\ \rho\ \sigma\ \tau\ \upsilon\ \phi\ \chi\ \psi\ \omega\ \varepsilon\ \vartheta\ \varpi\ \varrho\ \varsigma\ \varphi
+++++
+
+=== Arrows
+.*The LaTeX code*
+[source,latex]
+----
+\gets\ \to\ \leftarrow\ \rightarrow\ \uparrow\ \Uparrow\ \downarrow\ \Downarrow\ \updownarrow\ \Updownarrow
+----
+Rendered::
+[stem,latexmath]
+++++
+\gets\ \to\ \leftarrow\ \rightarrow\ \uparrow\ \Uparrow\ \downarrow\ \Downarrow\ \updownarrow\ \Updownarrow
+++++
+
+.*The LaTeX code*
+[source,latex]
+----
+\Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow
+\mapsto\ \hookleftarrow
+----
+Rendered::
+[stem,latexmath]
+++++
+\Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow
+\mapsto\ \hookleftarrow
+++++
+
+.*The LaTeX code*
+[source,latex]
+----
+\leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow \Longleftarrow\ \longrightarrow
+----
+Rendered::
+[stem,latexmath]
+++++
+\leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow \Longleftarrow\ \longrightarrow
+++++
+
+.*The LaTeX code*
+[source,latex]
+----
+\Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto
+\hookrightarrow\ \rightharpoonup
+----
+Rendered::
+[stem,latexmath]
+++++
+\Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto
+\hookrightarrow\ \rightharpoonup
+++++
+
+.*The LaTeX code*
+[source,latex]
+----
+\rightharpoondown\ \leadsto\ \nearrow
+\searrow\ \swarrow\ \nwarrow
+----
+Rendered::
+[stem,latexmath]
+++++
+\rightharpoondown\ \leadsto\ \nearrow
+\searrow\ \swarrow\ \nwarrow
+++++
+
+=== Symbols
+
+.*The LaTeX code*
+[source,latex]
+----
+\surd\ \barwedge\ \veebar\ \odot\ \oplus\ \otimes\ \oslash\ \circledcirc\ \boxdot\bigtriangleup
+----
+Rendered::
+[stem,latexmath]
+++++
+\surd\ \barwedge\ \veebar\ \odot\ \oplus\ \otimes\ \oslash\ \circledcirc\ \boxdot\bigtriangleup
+++++
+
+.*The LaTeX code*
+[source,latex]
+----
+\bigtriangledown\ \dagger\ \diamond\ \star\ \triangleleft\triangleright\ \angle\ \infty\ \prime\ \triangle
+----
+Rendered::
+[stem,latexmath]
+++++
+\bigtriangledown\ \dagger\ \diamond\ \star\ \triangleleft\triangleright\ \angle\ \infty\ \prime\ \triangle
+++++
+
+=== Calculus
+
+.*The LaTeX code*
+[source,latex]
+----
+\displaystyle \int u \frac{dv}{dx}\,dx=uv-\int \frac{du}{dx}v\,dx
+----
+Rendered::
+[stem,latexmath]
+++++
+\displaystyle \int u \frac{dv}{dx}\,dx=uv-\int \frac{du}{dx}v\,dx
+++++
+
+.*The LaTeX code*
+[source,latex]
+----
+\displaystyle f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x}
+----
+Rendered::
+[stem,latexmath]
+++++
+\displaystyle f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x}
+++++
+
+.*The LaTeX code*
+[source,latex]
+----
+\displaystyle \oint \vec{F} \cdot d\vec{s}=0
+----
+Rendered::
+[stem,latexmath]
+++++
+\displaystyle \oint \vec{F} \cdot d\vec{s}=0
+++++
+
+=== Lorenz Equations
+.*The LaTeX code*
+[source,latex]
+----
+\begin{aligned}
+\dot{x} & = \sigma(y-x) \\
+\dot{y} & = \rho x - y - xz \\
+\dot{z} & = -\beta z + xy
+\end{aligned}
+----
+
+[stem,latexmath]
+++++
+\begin{aligned}
+\dot{x} & = \sigma(y-x) \\
+\dot{y} & = \rho x - y - xz \\
+\dot{z} & = -\beta z + xy
+\end{aligned}
+++++
+
+=== Cross Product
+This works in KaTeX, but the separation of fractions in this environment is not so good.
+
+.*The LaTeX code*
+[source,latex]
+----
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
+\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0
+\end{vmatrix}
+----
+
+[stem,latexmath]
+++++
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
+\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0
+\end{vmatrix}
+++++
+
+Here's a workaround: make the fractions smaller with an extra class that targets the spans with "mfrac" class (makes no difference in the MathJax case):
+
+.*The LaTeX code*
+[source,latex]
+----
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
+\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0
+\end{vmatrix}
+----
+
+[stem,latexmath]
+++++
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
+\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0
+\end{vmatrix}
+++++
+
+=== Accents
+.*The LaTeX code*
+[source,latex]
+----
+\hat{x}\ \vec{x}\ \ddot{x}
+----
+Rendered::
+[stem,latexmath]
+++++
+\hat{x}\ \vec{x}\ \ddot{x}
+++++
+
+=== Stretchy brackets
+.*The LaTeX code*
+[source,latex]
+----
+\left(\frac{x^2}{y^3}\right)
+----
+Rendered::
+[stem,latexmath]
+++++
+\left(\frac{x^2}{y^3}\right)
+++++
+
+=== Evaluation at limits
+.*The LaTeX code*
+[source,latex]
+----
+\left.\frac{x^3}{3}\right|_0^1
+----
+Rendered::
+[stem,latexmath]
+++++
+\left.\frac{x^3}{3}\right|_0^1
+++++
+
+=== Case definitions
+.*The LaTeX code*
+[source,latex]
+----
+f(n) =
+\begin{cases}
+  \frac{n}{2}, & \text{if } n\text{ is even} \\
+  3n+1, & \text{if } n\text{ is odd}
+\end{cases}
+----
+Rendered::
+[stem,latexmath]
+++++
+f(n) = \begin{cases} \frac{n}{2}, & \text{if } n\text{ is even} \\ 3n+1, & \text{if } n\text{ is odd} \end{cases}
+++++
+
+=== Maxwell's Equations
+.The LaTeX code
+[source,latex]
+----
+\begin{aligned}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\
+\nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
+\nabla \cdot \vec{\mathbf{B}} & = 0 \end{aligned}
+----
+[example]
+====
+[stem,latexmath]
+++++
+\begin{aligned}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\
+\nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
+\nabla \cdot \vec{\mathbf{B}} & = 0 \end{aligned}
+++++
+====
+
+These equations are quite cramped. We can add vertical spacing using (for example) [1em] after each line break (\\\\). as you can see here:
+
+.The LaTeX code
+[source,latex]
+----
+\begin{aligned}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\[1em]
+\nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\[0.5em]
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\[1em]
+\nabla \cdot \vec{\mathbf{B}} & = 0 \end{aligned}
+----
+
+[example]
+====
+[stem,latexmath]
+++++
+\begin{aligned}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\[1em]
+\nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\[0.5em]
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\[1em]
+\nabla \cdot \vec{\mathbf{B}} & = 0 \end{aligned}
+++++
+====
+
+=== Statistics
+Definition of combination:
+
+.*The LaTeX code*
+[source,latex]
+----
+\frac{n!}{k!(n-k)!} = {^n}C_k
+----
+Rendered::
+[stem,latexmath]
+++++
+\frac{n!}{k!(n-k)!} = {^n}C_k
+++++
+
+.*The LaTeX code*
+[source,latex]
+----
+{n \choose k}
+----
+Rendered::
+[stem,latexmath]
+++++
+{n \choose k}
+++++
+
+=== Fractions on fractions
+.*The LaTeX code*
+[source,latex]
+----
+\frac{\frac{1}{x}+\frac{1}{y}}{y-z}
+----
+Rendered::
+[stem,latexmath]
+++++
+\frac{\frac{1}{x}+\frac{1}{y}}{y-z}
+++++
+
+=== n-th root
+.*The LaTeX code*
+[source,latex]
+----
+\sqrt[n]{1+x+x^2+x^3+\ldots}
+----
+Rendered::
+[stem,latexmath]
+++++
+\sqrt[n]{1+x+x^2 + x^3 +\ldots}
+++++
+
+=== Matrices
+.pmatrix sample
+[example]
+====
+[source,latex]
+----
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{pmatrix}
+----
+
+.Rendered
+[stem,latexmath]
+++++
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{pmatrix}
+++++
+====
+
+.bmatrix sample
+[example]
+====
+[source,latex]
+----
+\begin{bmatrix} 0 & \cdots & 0 \\ \vdots & \ddots & \vdots \\ 0 & \cdots & 0 \end{bmatrix}
+----
+
+.Rendered
+[stem,latexmath]
+++++
+\begin{bmatrix} 0 & \cdots & 0 \\ \vdots & \ddots & \vdots \\ 0 & \cdots & 0 \end{bmatrix}
+++++
+====
+
+=== Punctuation
+.*The LaTeX code*
+[source,latex]
+----
+f(x) = \sqrt{1+x} \quad (x \ge  -1)
+----
+Rendered::
+[stem,latexmath]
+++++
+f(x) = \sqrt{1+x} \quad (x \ge  -1)
+++++
+
+.*The LaTeX code*
+[source,latex]
+----
+f(x) \sim x^2 \quad (x\to\infty)
+----
+Rendered::
+[stem,latexmath]
+++++
+f(x) \sim x^2 \quad (x\to\infty)
+++++
+
+.*The LaTeX code*
+[source,latex]
+----
+f(x) = \sqrt{1+x}, \quad x \ge -1
+----
+Rendered::
+[stem,latexmath]
+++++
+f(x) = \sqrt{1+x}, \quad x \ge -1
+++++
+
+.*The LaTeX code*
+[source,latex]
+----
+f(x) \sim x^2, \quad x\to\infty
+----
+Rendered::
+[stem,latexmath]
+++++
+f(x) \sim x^2, \quad x\to\infty
+++++

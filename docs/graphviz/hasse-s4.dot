@@ -1,0 +1,38 @@
+graph {
+  layout = dot
+  rankdir = TB
+  graph [ pad="0.1", ranksep="0.4", nodesep="0.2", splines="line" ];
+  node [ shape="none", fixedsize=true, width=1.1, height=0.25 ]
+
+  G [ label=<<I>G</I>>, fixedsize=true, width=0.2, height=0.22 ]
+
+  e_i_j_g [
+    label=<{<I>e</I>, <I>g</I>, <I>i</I>, <I>j</I>}>,
+    fixedsize=true, width=1.1, height=0.25
+  ]
+  e_f_g_h [
+    label=<{<I>e</I>, <I>g</I>, <I>f</I>, <I>h</I>}>,
+    fixedsize=true, width=1.15, height=0.25
+  ]
+  e_k_g_l [label=<{<I>e</I>, <I>g</I>, <I>k</I>, <I>l</I>}>,
+    fixedsize=true, width=1.18, height=0.25
+  ]
+  { rank=same; e_i_j_g; e_f_g_h; e_k_g_l; }
+
+  e_i [label=<{<I>e</I>, <I>i</I>}>, fixedsize=true, width=0.59, height=0.25]
+  e_j [label=<{<I>e</I>, <I>j</I>}>, fixedsize=true, width=0.59, height=0.25]
+  e_g [label=<{<I>e</I>, <I>g</I>}>, fixedsize=true, width=0.63, height=0.25]
+  e_k [label=<{<I>e</I>, <I>k</I>}>, fixedsize=true, width=0.63, height=0.25]
+  e_l [label=<{<I>e</I>, <I>l</I>}>, fixedsize=true, width=0.59, height=0.25]
+  { rank=same; e_i; e_j; e_g; e_k; e_l; }
+
+  e [ label=<{<I>e</I>}>, fixedsize=true, width=0.4, height=0.25 ]
+
+  G -- {e_i_j_g, e_f_g_h, e_k_g_l}
+
+  e_i_j_g -- {e_i, e_j, e_g}
+  e_f_g_h -- {e_g}
+  e_k_g_l -- {e_g, e_k, e_l}
+
+  {e_i, e_j, e_g, e_k, e_l} -- e [tailport=s]
+}

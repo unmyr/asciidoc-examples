@@ -1,0 +1,5 @@
+digraph g {
+  s1 [label=<<I>x</I><SUP>2</SUP>>]
+  s2 [label=<<I>a</I><SUB>n</SUB><I>x</I><SUP>2</SUP>>]
+  s1 -> s2 [label=<a<SUB>n</SUB>>];
+}

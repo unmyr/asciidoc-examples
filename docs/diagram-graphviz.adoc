@@ -1,0 +1,82 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+endif::[]
+
+include::header.adoc[]
+
+:Sym: 𝕾
+
+== Asciidoctor Diagram: Graphviz
+
+=== Simple graph
+
+.Simple graph
+["graphviz", "sample1",format="svg"]
+----
+digraph G { rankdir=LR; Foo->Bar->Baz}
+----
+
+:graphviz_format: svg
+
+.simple graph (ja, format:{graphviz_format})
+["graphviz", "sample2_cjK", format="{graphviz_format}"]
+----
+digraph G {
+   fontname="Noto Sans CJK JP";
+   rankdir=LR; 松->竹->梅
+}
+----
+
+=== Subscript and superscript
+
+[source,dot]
+----
+include::graphviz/subscript-and-superscript.dot[]
+----
+
+.sample subscript (svg)
+["graphviz", "sample_subscript", format="svg"]
+----
+include::graphviz/subscript-and-superscript.dot[]
+----
+
+.sample subscript (png)
+["graphviz", "sample_subscript", format="png"]
+----
+include::graphviz/subscript-and-superscript.dot[]
+----
+
+=== permutation
+
+[%collapsible]
+.Code
+====
+[source,dot]
+----
+include::graphviz/permutation-1.dot[]
+----
+====
+
+.permutation (svg)
+["graphviz", "permutation-1", format="svg"]
+----
+include::graphviz/permutation-1.dot[]
+----
+
+=== Hasse diagram
+
+[%collapsible]
+.Code
+====
+[source,dot]
+----
+include::graphviz/hasse-s4.dot[]
+----
+====
+
+.{Sym}~4~ - Hasse diagram
+["graphviz", "hasse-s4", format="svg"]
+----
+include::graphviz/hasse-s4.dot[]
+----

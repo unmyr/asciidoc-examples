@@ -1,0 +1,54 @@
+digraph {
+  layout = dot
+  rankdir = LR
+  splines=true;
+  compound=true
+  graph [ newrank=true; ]
+  node [
+    shape=circle,
+    fixedsize=true,
+    fontsize=12,
+    width=0.25,
+    fontcolor="black",
+    color="#0d0ee0d",  # node border color (X11 or HTML colors)
+    fillcolor="#dd6060",
+    style="filled,solid"
+  ]
+  edge [
+    arrowhead=vee, color="#8b0000"
+  ]
+  subgraph cluster_0 {
+    graph [
+      label=<<I>X</I>>,
+      style="filled,solid,rounded",shape="oval",
+      fontcolor="black",fillcolor="#f5f5dc",color="#d5d5ac"
+    ]
+    s1 [label="1"]
+    s2 [label="2"]
+    s3 [label="3"]
+    s4 [label="4"]
+    s5 [label="5"]
+    { rank=same; s1; s2; s3; s4; s5; }
+  }
+  subgraph cluster_1 {
+    graph [
+      label=<<I>X</I>>,
+      style="filled,solid,rounded",shape="oval",
+      fillcolor="#f5f5dc",color="#d5d5ac"
+    ]
+    d1 [label="1"]
+    d2 [label="2"]
+    d3 [label="3"]
+    d4 [label="4"]
+    d5 [label="5"]
+    { rank=same; d1; d2; d3; d4; d5; }
+  }
+  s1 -> d1 [style=invis]
+  s1 -> d5 [constraint=false]
+  s2 -> d4 [constraint=false]
+  s3 -> d1 [constraint=false]
+  s4 -> d2 [constraint=false]
+  s5 -> d3 [constraint=false]
+  {rank = same; s1; s2; s3; s4; s5;}
+  {rank = same; d1; d2; d3; d4; d5;}
+}
