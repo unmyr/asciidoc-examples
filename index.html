@@ -658,7 +658,20 @@ pre.rouge {
 <ul class="sectlevel1">
 <li><a href="#_asciidoc_examples">AsciiDoc examples</a>
 <ul class="sectlevel2">
-<li><a href="#_lists">Lists</a></li>
+<li><a href="#_urls">URLs</a>
+<ul class="sectlevel3">
+<li><a href="#_anchors">Anchors</a></li>
+<li><a href="#_cross_reference">Cross Reference</a></li>
+</ul>
+</li>
+<li><a href="#_html_depended_markup">HTML depended markup</a>
+<ul class="sectlevel3">
+<li><a href="#_ruby">ruby</a></li>
+</ul>
+</li>
+<li><a href="#_ifdef">ifdef</a></li>
+<li><a href="#_include_directive">Include Directive</a></li>
+<li><a href="#_predefined_attributes">Predefined attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -667,7 +680,12 @@ pre.rouge {
 <div id="content">
 <div class="paragraph">
 <p><a href="#">Index</a> |
+<a href="asciidoc_block_admonition.html">Block admonition</a> |
+<a href="asciidoc_blocks.html">Blocks</a> |
+<a href="asciidoc_icons.html">Icons</a> |
 <a href="asciidoc_images.html">Images</a> |
+<a href="asciidoc_listing.html">Listing</a> |
+<a href="asciidoc_tables.html">Tables</a> |
 <a href="math.html">Math</a> |
 <a href="diagram-graphviz.html">Graphviz</a> |
 <a href="diagram-plantuml.html">PlantUML</a><br></p>
@@ -676,47 +694,393 @@ pre.rouge {
 <h2 id="_asciidoc_examples">AsciiDoc examples</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_lists">Lists</h3>
+<h3 id="_urls">URLs</h3>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">open blank window</div>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="asciidoc">.Bullet list
-* Apple
-* Oranges
-* Banana
-
-.Numbered list
-. one
-. two
-. three</code></pre>
+<pre class="rouge highlight"><code data-lang="asciidoc">* link:https://en.wikipedia.org/wiki/Gaussian_integral[Gaussian integral - Wikipedia,window=_blank]
+* https://en.wikipedia.org/wiki/Gaussian_integral[Gaussian integral - Wikipedia^]
+* link:http://hooktail.sub.jp/mathInPhys/gaussIntegral/[ガウス積分の公式 [物理のかぎしっぽ{endsb}^] +
+  not working
+* link:http://hooktail.sub.jp/mathInPhys/gaussIntegral/[ガウス積分の公式 [物理のかぎしっぽ\]^]
+* link:http://hooktail.sub.jp/mathInPhys/gaussIntegral/[ガウス積分の公式 [物理のかぎしっぽ&amp;#93;^]
+* https://www.reddit.com/r/anime/comments/fvyl14/have_you_forgotten_me_hitoribocchi/[Have you forgotten me? [Hitoribocchi&amp;#93; : anime^]</code></pre>
 </div>
 </div>
 <div class="ulist">
-<div class="title">Bullet list</div>
 <ul>
 <li>
-<p>Apple</p>
+<p><a href="https://en.wikipedia.org/wiki/Gaussian_integral" target="_blank" rel="noopener">Gaussian integral - Wikipedia</a></p>
 </li>
 <li>
-<p>Oranges</p>
+<p><a href="https://en.wikipedia.org/wiki/Gaussian_integral" target="_blank" rel="noopener">Gaussian integral - Wikipedia</a></p>
 </li>
 <li>
-<p>Banana</p>
+<p><a href="http://hooktail.sub.jp/mathInPhys/gaussIntegral/">ガウス積分の公式 [物理のかぎしっぽ</a>^]<br>
+not working</p>
+</li>
+<li>
+<p><a href="http://hooktail.sub.jp/mathInPhys/gaussIntegral/" target="_blank" rel="noopener">ガウス積分の公式 [物理のかぎしっぽ]</a><br></p>
+</li>
+<li>
+<p><a href="http://hooktail.sub.jp/mathInPhys/gaussIntegral/" target="_blank" rel="noopener">ガウス積分の公式 [物理のかぎしっぽ&#93;</a></p>
+</li>
+<li>
+<p><a href="https://www.reddit.com/r/anime/comments/fvyl14/have_you_forgotten_me_hitoribocchi/" target="_blank" rel="noopener">Have you forgotten me? [Hitoribocchi&#93; : anime</a></p>
 </li>
 </ul>
 </div>
-<div class="olist arabic">
-<div class="title">Numbered list</div>
-<ol class="arabic">
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">download icon</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">icon:download[link="https://rubygems.org/downloads/asciidoctor-1.5.2.gem"]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="icon"><a class="image" href="https://rubygems.org/downloads/asciidoctor-1.5.2.gem">[download&#93;</a></span></p>
+</div>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">URLs containing underscores</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">his URL has repeating underscores link:++https://asciidoctor.org/now_this__link_works.html++[].</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_anchors">Anchors</h4>
+<div class="ulist">
+<div class="title">Reference</div>
+<ul>
 <li>
-<p>one</p>
+<p><a href="https://asciidoctor.org/docs/user-manual/#url" target="_blank" rel="noopener">URL | Asciidoctor User Manual</a></p>
 </li>
 <li>
-<p>two</p>
+<p><a href="https://asciidoctor.cn/docs/asciidoc-writers-guide/#links-to-relative-files" target="_blank" rel="noopener">Links to relative files - AsciiDoc Writer’s Guide | Asciidoctor</a></p>
 </li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_cross_reference">Cross Reference</h4>
+<div class="ulist">
+<ul>
 <li>
-<p>three</p>
+<p><a href="https://asciidoctor.org/docs/user-manual/#xref" target="_blank" rel="noopener">Cross References | Asciidoctor User Manual</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Asciidoctor automatically assigns the ID <code>_section_title</code> to this section.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">= Section Title
+...</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">See &lt;&lt;Internal Cross References&gt;&gt;.
+
+== Internal Cross References
+...</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Assigning an ID to a paragraph</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[[notice]]
+This paragraph gets a lot of attention.</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Assigning an ID to a paragraph using shorthand syntax</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[#notice]
+This paragraph gets a lot of attention.</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The following expressions are not recognized on GitHub. Use <code>[[keyword]]</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[#keyword]
+=== Section name</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Defining the ID of a section using an inline anchor</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">=== Version 4.9 [[version-4_9]]
+...</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Adding additional anchors to a section</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">=== [[current]]Version 4.9 [[version-4_9]]
+...</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Defining an inline anchor on a list item</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">* Fist item
+* [[step2]]Second item
+* Third item</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_html_depended_markup">HTML depended markup</h3>
+<div class="sect3">
+<h4 id="_ruby">ruby</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">pass:[&lt;ruby&gt;&lt;rb&gt;hello world&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;こんにちは世界&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><ruby><rb>hello world</rb><rp>（</rp><rt>こんにちは世界</rt><rp>）</rp></ruby></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ifdef">ifdef</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc"><strong>ifdef::asciidoctor[]</strong>
+I'm asciidoctor.
+<strong>endif::asciidoctor[]</strong>
+
+<strong>ifdef::backend-html5[]</strong>
+:twoinches: width='144'
+:full-width: width='100%'
+:half-width: width='50%'
+:half-size:
+:thumbnail: width='60'
+<strong>endif::[]</strong>
+
+<strong>ifdef::basebackend-html[]</strong> <b class="conum">(1)</b>
+true if html5, asciidoctor-pdf
+<strong>endif::[]</strong>
+
+<strong>ifdef::backend-pdf[]</strong>
+:twoinches: pdfwidth='2in'
+:full-width: pdfwidth='100vw'
+:half-width: pdfwidth='50vw'
+:half-size: pdfwidth='50%'
+:thumbnail: pdfwidth='20mm'
+<strong>endif::[]</strong>
+
+<strong>ifdef::backend-docbook5[]</strong>
+:twoinches: width='50mm'
+:full-width: scaledwidth='100%'
+:half-width: scaledwidth='50%'
+:half-size: width='50%'
+:thumbnail: width='20mm'
+<strong>endif::[]</strong></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<ol>
+<li>
+<p>That&#8217;s not going to work in Asciidoctor PDF.</p>
 </li>
 </ol>
+</div>
+<div class="ulist">
+<div class="title">Reference</div>
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#checking-multiple-attributes-ifdef-and-ifndef-only">48.4. Checking multiple attributes (ifdef and ifndef only) | Asciidoctor User Manual</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_include_directive">Include Directive</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">include::path[leveloffset=offset,lines=ranges,tag(s)=name(s),indent=depth]</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">leveloffset</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">= My Book
+
+include::chapter01.adoc[leveloffset=+1]
+
+include::chapter02.adoc[leveloffset=+1]
+
+include::chapter03.adoc[leveloffset=+1]</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="ruby"><span class="n">doc</span> <span class="o">=</span> <span class="p">(</span><span class="n">options</span><span class="p">[</span><span class="ss">:parse</span><span class="p">]</span> <span class="o">==</span> <span class="kp">false</span> <span class="p">?</span> <span class="p">(</span><span class="no">Document</span><span class="p">.</span><span class="nf">new</span> <span class="n">lines</span><span class="p">,</span> <span class="n">options</span><span class="p">)</span> <span class="p">:</span>
+    <span class="p">(</span><span class="no">Document</span><span class="p">.</span><span class="nf">new</span> <span class="n">lines</span><span class="p">,</span><span class="n">options</span><span class="p">).</span><span class="nf">parse</span><span class="p">)</span>
+<span class="n">timings</span><span class="p">.</span><span class="nf">record</span> <span class="ss">:parse</span> <span class="k">if</span> <span class="n">timings</span>
+<span class="n">doc</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Reference</div>
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#include-directive">28. Include Directive | Asciidoctor User Manual</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_predefined_attributes">Predefined attributes</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 35.7142%;">
+<col style="width: 35.7142%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2859%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Attribute name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default value</th>
+<th class="tableblock halign-left valign-top">Allowed values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>outfilesuffix</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>leveloffset</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>chapter-number</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Stores the number for the current chapter.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>2</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>integer</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>imagesdir</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Where image files are resolved.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>source-highlighter</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Source code highlighter to use.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>not set</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>coderay</code> <br> <code>highlightjs</code> <br> <code>prettify</code> <br> <code>pygments</code></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>source-linenums-option</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>not set</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>empty</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><code>outfilesuffix</code></p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>.html</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><code>leveloffset</code></p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>{leveloffset}</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><code>chapter-number</code></p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>{chapter-number}</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><code>imagesdir</code></p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>images</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><code>source-highlighter</code></p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rouge</code></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><code>source-linenums-option</code></p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>{source-linenums-option}</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#image-sizing-recap">Image Sizing Recap | Asciidoctor User Manual</a></p>
+</li>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#attribute-catalog">Appendix A: Catalog of Document Attributes | Asciidoctor User Manual</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -724,7 +1088,7 @@ pre.rouge {
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-07-03 13:46:16 UTC
+Last updated 2022-07-03 14:35:07 UTC
 </div>
 </div>
 </body>

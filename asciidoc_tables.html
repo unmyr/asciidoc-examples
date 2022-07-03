@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>Asciidoctor Diagram: PlantUML</title>
+<title>Tables</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -435,21 +435,247 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.rouge table td { padding: 5px; }
+pre.rouge table pre { margin: 0; }
+pre.rouge .cm {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .cp {
+  color: #999999;
+  font-weight: bold;
+}
+pre.rouge .c1 {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cpf {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+pre.rouge .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+pre.rouge .ge {
+  color: #000000;
+  font-style: italic;
+}
+pre.rouge .gr {
+  color: #aa0000;
+}
+pre.rouge .gh {
+  color: #999999;
+}
+pre.rouge .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+pre.rouge .go {
+  color: #888888;
+}
+pre.rouge .gp {
+  color: #555555;
+}
+pre.rouge .gs {
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #aaaaaa;
+}
+pre.rouge .gt {
+  color: #aa0000;
+}
+pre.rouge .kc {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kd {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kn {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kp {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kr {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kt {
+  color: #445588;
+  font-weight: bold;
+}
+pre.rouge .k, pre.rouge .kv {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .mf {
+  color: #009999;
+}
+pre.rouge .mh {
+  color: #009999;
+}
+pre.rouge .il {
+  color: #009999;
+}
+pre.rouge .mi {
+  color: #009999;
+}
+pre.rouge .mo {
+  color: #009999;
+}
+pre.rouge .m, pre.rouge .mb, pre.rouge .mx {
+  color: #009999;
+}
+pre.rouge .sa {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .sb {
+  color: #d14;
+}
+pre.rouge .sc {
+  color: #d14;
+}
+pre.rouge .sd {
+  color: #d14;
+}
+pre.rouge .s2 {
+  color: #d14;
+}
+pre.rouge .se {
+  color: #d14;
+}
+pre.rouge .sh {
+  color: #d14;
+}
+pre.rouge .si {
+  color: #d14;
+}
+pre.rouge .sx {
+  color: #d14;
+}
+pre.rouge .sr {
+  color: #009926;
+}
+pre.rouge .s1 {
+  color: #d14;
+}
+pre.rouge .ss {
+  color: #990073;
+}
+pre.rouge .s, pre.rouge .dl {
+  color: #d14;
+}
+pre.rouge .na {
+  color: #008080;
+}
+pre.rouge .bp {
+  color: #999999;
+}
+pre.rouge .nb {
+  color: #0086B3;
+}
+pre.rouge .nc {
+  color: #445588;
+  font-weight: bold;
+}
+pre.rouge .no {
+  color: #008080;
+}
+pre.rouge .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+pre.rouge .ni {
+  color: #800080;
+}
+pre.rouge .ne {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nf, pre.rouge .fm {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nl {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nn {
+  color: #555555;
+}
+pre.rouge .nt {
+  color: #000080;
+}
+pre.rouge .vc {
+  color: #008080;
+}
+pre.rouge .vg {
+  color: #008080;
+}
+pre.rouge .vi {
+  color: #008080;
+}
+pre.rouge .nv, pre.rouge .vm {
+  color: #008080;
+}
+pre.rouge .ow {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .o {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .w {
+  color: #bbbbbb;
+}
+pre.rouge {
+  background-color: #f8f8f8;
+}
+</style>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_asciidoctor_diagram_plantuml">Asciidoctor Diagram: PlantUML</a>
+<li><a href="#_tables">Tables</a>
 <ul class="sectlevel2">
-<li><a href="#_use_case_diagram">Use Case Diagram</a></li>
-<li><a href="#_commutative_diagram">Commutative diagram</a></li>
-<li><a href="#_class_diagram">Class Diagram</a>
+<li><a href="#_arranging_cells_alignment">Arranging cells alignment</a>
 <ul class="sectlevel3">
-<li><a href="#_proxy_design_pattern">Proxy Design Pattern</a></li>
+<li><a href="#_cells_aligned_horizontally_vertically">Cells aligned horizontally, vertically</a></li>
+<li><a href="#_arranging_cells_alignment_vertically">Arranging cells alignment vertically</a></li>
+<li><a href="#_arranging_cells_alignment_horizontally">Arranging cells alignment horizontally</a></li>
 </ul>
 </li>
+<li><a href="#_csv">csv</a></li>
+<li><a href="#_separator">separator</a>
+<ul class="sectlevel3">
+<li><a href="#_custom_separator">custom separator</a></li>
+</ul>
+</li>
+<li><a href="#_span">span</a></li>
+<li><a href="#_nested_table">nested table</a></li>
+<li><a href="#_column_styles">column styles</a></li>
+<li><a href="#_cell_spanning">Cell spanning</a></li>
 </ul>
 </li>
 </ul>
@@ -463,41 +689,562 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <a href="asciidoc_icons.html">Icons</a> |
 <a href="asciidoc_images.html">Images</a> |
 <a href="asciidoc_listing.html">Listing</a> |
-<a href="asciidoc_tables.html">Tables</a> |
+<a href="#">Tables</a> |
 <a href="math.html">Math</a> |
 <a href="diagram-graphviz.html">Graphviz</a> |
-<a href="#">PlantUML</a><br></p>
+<a href="diagram-plantuml.html">PlantUML</a><br></p>
 </div>
 <div class="sect1">
-<h2 id="_asciidoctor_diagram_plantuml">Asciidoctor Diagram: PlantUML</h2>
+<h2 id="_tables">Tables</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_use_case_diagram">Use Case Diagram</h3>
-<div class="imageblock">
-<div class="content">
-<img src="images/plantuml_sample_sd_01_defaultFontName_omit.svg" alt="plantuml sample sd 01 defaultFontName omit" width="387" height="86">
-</div>
-<div class="title">Figure 1. defaultFontName is omitted</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_commutative_diagram">Commutative diagram</h3>
-<div class="imageblock">
-<div class="content">
-<img src="images/plantuml_sample_commutative_diagram_01.svg" alt="plantuml sample commutative diagram 01" width="326" height="129">
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_class_diagram">Class Diagram</h3>
+<h3 id="_arranging_cells_alignment">Arranging cells alignment</h3>
 <div class="sect3">
-<h4 id="_proxy_design_pattern">Proxy Design Pattern</h4>
-<div class="imageblock">
+<h4 id="_cells_aligned_horizontally_vertically">Cells aligned horizontally, vertically</h4>
+<div class="listingblock">
+<div class="title">Arranging cells alignment</div>
 <div class="content">
-<img src="images/asciidoc_diagram_plantuml_class_proxy_pattern.svg" alt="asciidoc diagram plantuml class proxy pattern" width="239" height="203">
+<pre class="rouge highlight"><code data-lang="asciidoc">[cols="1,2,2,2"]
+|===
+h|
+h| column header 1
+h| column header 2
+h| column header 3
+
+h| Top +
+{blank} +
+{blank}
+&lt;| Top left
+^| Top center
+&gt;| Top right
+
+h| {blank} +
+Middle +
+{blank}
+&lt;.^| Middle left
+^.^| Middle center
+&gt;.^| Middle right
+
+h| {blank} +
+{blank} +
+Bottom
+&lt;.^| Middle left
+^.^| Middle center
+&gt;.^| Middle right
+|===</code></pre>
 </div>
-<div class="title">Figure 2. PlantUMLの例</div>
 </div>
+<details>
+<summary class="title">Rendered</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 28.5714%;">
+<col style="width: 28.5715%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">column header 1</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">column header 2</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">column header 3</p></th>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Top<br>
+<br>
+</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Top left</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Top center</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Top right</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><br>
+Middle<br>
+</p></th>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Middle left</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">Middle center</p></td>
+<td class="tableblock halign-right valign-middle"><p class="tableblock">Middle right</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock"><br>
+<br>
+Bottom</p></th>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Middle left</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">Middle center</p></td>
+<td class="tableblock halign-right valign-middle"><p class="tableblock">Middle right</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+<div class="sect3">
+<h4 id="_arranging_cells_alignment_vertically">Arranging cells alignment vertically</h4>
+<div class="listingblock">
+<div class="title">Arranging cells alignment vertically</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[cols="1,2,2,2"]
+|===
+h|
+h| column header 1
+h| column header 2
+h| column header 3
+
+h|
+align vertically +
+{blank} +
+{blank}
+.&lt;| top left
+.^| center left
+.&gt;| bottom left
+|===</code></pre>
+</div>
+</div>
+<details>
+<summary class="title">Rendered</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 28.5714%;">
+<col style="width: 28.5714%;">
+<col style="width: 28.5715%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">column header 1</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">column header 2</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">column header 3</p></th>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">align vertically<br>
+<br>
+</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">top left</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">center left</p></td>
+<td class="tableblock halign-left valign-bottom"><p class="tableblock">bottom left</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+<div class="sect3">
+<h4 id="_arranging_cells_alignment_horizontally">Arranging cells alignment horizontally</h4>
+<div class="listingblock">
+<div class="title">Arranging cells alignment horizontally</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[cols="2,&gt;1" options="header, autowidth"]
+|===
+| Item  &lt;| Price
+
+| Apple  | 150
+| Banana | 100
+|===</code></pre>
+</div>
+</div>
+<details>
+<summary class="title">Rendered</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Item</th>
+<th class="tableblock halign-left valign-top">Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apple</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">150</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Banana</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">100</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_csv">csv</h3>
+<table class="tableblock frame-all grid-all fit-content">
+</table>
+</div>
+<div class="sect2">
+<h3 id="_separator">separator</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. セパレーターが「:」のテーブル</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Writing tools</th>
+<th class="tableblock halign-left valign-top">Awesomeness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Asciidoctor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oh yeah!</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MS Word</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No!</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. csv形式でセパレーターが「;」のテーブル</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Writing tools</th>
+<th class="tableblock halign-left valign-top">Awesomeness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Asciidoctor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hello, world</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MS Word</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No!</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="_custom_separator">custom separator</h4>
+<table class="tableblock frame-all grid-all fit-content">
+<caption class="title">Table 3. 「|」を含むテーブル</caption>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">equations</th>
+<th class="tableblock halign-left valign-top">english</th>
+<th class="tableblock halign-left valign-top">mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">|A × B|</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">magnitude A cross B</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">外積の大きさ</p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[cols="3" separator="¦" options="header, autowidth"]
+.「{vbar}」を含むテーブル
+|===
+¦ equations ¦ english ¦ mean
+
+¦ |A × B|
+¦ magnitude A cross B
+¦ 外積の大きさ
+|===</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_span">span</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. Cells aligned horizontally, vertically, and across a span of three columns</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Prefix the <code>|</code> with <code>^</code> to center content horizontally</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prefix the <code>|</code> with <code>&lt;</code> to align the content to the left horizontally</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Prefix the <code>|</code> with <code>&gt;</code> to align the content to the right horizontally</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Prefix the <code>|</code> with a <code>.</code> and <code>^</code> to center the content in the cell vertically</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prefix the <code>|</code> with a <code>.</code> and <code>&lt;</code> to align the content to the top of the cell</p></td>
+<td class="tableblock halign-left valign-bottom"><p class="tableblock">Prefix the <code>|</code> with a <code>.</code> and <code>&gt;</code> to align the content to the bottom of the cell</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" colspan="3"><p class="tableblock">This content spans three columns (<code>3&#43;</code>) and is centered horizontally (<code>^</code>) and vertically (<code>.^</code>) within the cell.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">|===
+^|Prefix the `{vbar}` with `{caret}` to center content horizontally
+&lt;|Prefix the `{vbar}` with `&lt;` to align the content to the left horizontally
+&gt;|Prefix the `{vbar}` with `&gt;` to align the content to the right horizontally
+
+.^|Prefix the `{vbar}` with a `.` and `{caret}` to center the content in the cell vertically
+.&lt;|Prefix the `{vbar}` with a `.` and `&lt;` to align the content to the top of the cell
+.&gt;|Prefix the `{vbar}` with a `.` and `&gt;` to align the content to the bottom of the cell
+
+3+^.^|This content spans three columns (`3{plus}`) and is centered horizontally (`{caret}`) and vertically (`.{caret}`) within the cell.
+|===</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nested_table">nested table</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Foo</th>
+<th class="tableblock halign-left valign-top">Bar</th>
+<th class="tableblock halign-left valign-top">Baz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">aaa</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">xxxxx</th>
+<th class="tableblock halign-left valign-top">xxxxx</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">apple</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">banana</p></td>
+</tr>
+</tbody>
+</table></div></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_column_styles">column styles</h3>
+<div class="paragraph">
+<p><a href="https://asciidoctor.org/docs/user-manual/#cols-format">23.2. Column Formatting</a></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 28.5714%;">
+<col style="width: 14.2857%;">
+<col style="width: 57.1429%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Style Name</th>
+<th class="tableblock halign-center valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AsciiDoc</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>a</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supports block-level elements (paragraphs, delimited blocks, and block macros).
+  This style effectively creates a nested, standalone AsciiDoc document.
+  Implicit attributes such as doctitle from the parent document will be shadowed.
+  Custom attributes are inherited.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Emphasis</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>e</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text is italicized</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Header</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>h</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Header styles are applied to the column<br>
+header style, all column values are styled as header</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Literal</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>l</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Column content is treated as if it were inside a literal block.<br>
+text is shown in monospace font and line breaks are kept.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Monospaced</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>m</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text is rendered in monospaced font</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">None<br>
+(default style)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>d</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text is handled like a normal paragraph.
+ Supports all markup (i.e., inline formatting, inline macros) that is permitted in a paragraph.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Strong</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>s</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text is bolded</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verse</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><code>v</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Column content is treated as if it were inside a verse block.
+<strong>keeps line breaks</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_cell_spanning">Cell spanning</h3>
+<div class="listingblock">
+<div class="title">Cell spanning three columns</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">|===
+
+|Cell in column 1, row 1 |Cell in column 2, row 1 |Cell in column 3, row 1
+
+3+|Content in a single cell that spans columns 1, 2, and 3
+
+|Cell in column 1, row 3
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+
+|===</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 5. Result: Rendered table where cell spans three columns</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 1, row 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 2, row 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 3, row 1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Content in a single cell that spans columns 1, 2, and 3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 1, row 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 2, row 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 3, row 3</p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="title">Cell spanning two rows</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">|===
+
+|Cell in column 1, row 1 |Cell in column 2, row 1 |Cell in column 3, row 1
+
+.2+|Content in a single cell that spans rows 2 and 3
+|Cell in column 2, row 2
+|Cell in column 3, row 2
+
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+
+|===</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 6. Result: Rendered table where a cell spans two rows</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 1, row 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 2, row 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 3, row 1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Content in a single cell that spans rows 2 and 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 2, row 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 3, row 2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 2, row 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 3, row 3</p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="title">Multi-row table headings(not working)</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[cols=3,width="100%",options="header"]
+|===
+| A1 2+| B-C1
+|      | *B2* | *C2*
+
+| A3   | B3   | C3
+|===</code></pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 7. Result: Rendered table where a multi-row table headings(not working)</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">A1</th>
+<th class="tableblock halign-left valign-top" colspan="2">B-C1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>B2</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>C2</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">B3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C3</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/asciidoctor/asciidoctor/issues/1687">Multi-row table headings · Issue #1687 · asciidoctor/asciidoctor · GitHub</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>

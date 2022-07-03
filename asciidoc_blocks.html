@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>Asciidoctor Diagram: PlantUML</title>
+<title>Blocks</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -435,21 +435,237 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.rouge table td { padding: 5px; }
+pre.rouge table pre { margin: 0; }
+pre.rouge .cm {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .cp {
+  color: #999999;
+  font-weight: bold;
+}
+pre.rouge .c1 {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cpf {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+pre.rouge .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+pre.rouge .ge {
+  color: #000000;
+  font-style: italic;
+}
+pre.rouge .gr {
+  color: #aa0000;
+}
+pre.rouge .gh {
+  color: #999999;
+}
+pre.rouge .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+pre.rouge .go {
+  color: #888888;
+}
+pre.rouge .gp {
+  color: #555555;
+}
+pre.rouge .gs {
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #aaaaaa;
+}
+pre.rouge .gt {
+  color: #aa0000;
+}
+pre.rouge .kc {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kd {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kn {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kp {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kr {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kt {
+  color: #445588;
+  font-weight: bold;
+}
+pre.rouge .k, pre.rouge .kv {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .mf {
+  color: #009999;
+}
+pre.rouge .mh {
+  color: #009999;
+}
+pre.rouge .il {
+  color: #009999;
+}
+pre.rouge .mi {
+  color: #009999;
+}
+pre.rouge .mo {
+  color: #009999;
+}
+pre.rouge .m, pre.rouge .mb, pre.rouge .mx {
+  color: #009999;
+}
+pre.rouge .sa {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .sb {
+  color: #d14;
+}
+pre.rouge .sc {
+  color: #d14;
+}
+pre.rouge .sd {
+  color: #d14;
+}
+pre.rouge .s2 {
+  color: #d14;
+}
+pre.rouge .se {
+  color: #d14;
+}
+pre.rouge .sh {
+  color: #d14;
+}
+pre.rouge .si {
+  color: #d14;
+}
+pre.rouge .sx {
+  color: #d14;
+}
+pre.rouge .sr {
+  color: #009926;
+}
+pre.rouge .s1 {
+  color: #d14;
+}
+pre.rouge .ss {
+  color: #990073;
+}
+pre.rouge .s, pre.rouge .dl {
+  color: #d14;
+}
+pre.rouge .na {
+  color: #008080;
+}
+pre.rouge .bp {
+  color: #999999;
+}
+pre.rouge .nb {
+  color: #0086B3;
+}
+pre.rouge .nc {
+  color: #445588;
+  font-weight: bold;
+}
+pre.rouge .no {
+  color: #008080;
+}
+pre.rouge .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+pre.rouge .ni {
+  color: #800080;
+}
+pre.rouge .ne {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nf, pre.rouge .fm {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nl {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nn {
+  color: #555555;
+}
+pre.rouge .nt {
+  color: #000080;
+}
+pre.rouge .vc {
+  color: #008080;
+}
+pre.rouge .vg {
+  color: #008080;
+}
+pre.rouge .vi {
+  color: #008080;
+}
+pre.rouge .nv, pre.rouge .vm {
+  color: #008080;
+}
+pre.rouge .ow {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .o {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .w {
+  color: #bbbbbb;
+}
+pre.rouge {
+  background-color: #f8f8f8;
+}
+</style>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_asciidoctor_diagram_plantuml">Asciidoctor Diagram: PlantUML</a>
+<li><a href="#_blocks">Blocks</a>
 <ul class="sectlevel2">
-<li><a href="#_use_case_diagram">Use Case Diagram</a></li>
-<li><a href="#_commutative_diagram">Commutative diagram</a></li>
-<li><a href="#_class_diagram">Class Diagram</a>
-<ul class="sectlevel3">
-<li><a href="#_proxy_design_pattern">Proxy Design Pattern</a></li>
-</ul>
-</li>
+<li><a href="#_block_title_before_v1_5_7">Block title (before v1.5.7)</a></li>
+<li><a href="#_collapse">Collapse</a></li>
+<li><a href="#_admonition">Admonition</a></li>
+<li><a href="#_example">Example</a></li>
+<li><a href="#_sidebar">Sidebar</a></li>
+<li><a href="#_quote">Quote</a></li>
+<li><a href="#_verse">Verse</a></li>
 </ul>
 </li>
 </ul>
@@ -458,46 +674,509 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="content">
 <div class="paragraph">
 <p><a href="index.html">Index</a> |
-<a href="asciidoc_block_admonition.html">Block admonition</a> |
-<a href="asciidoc_blocks.html">Blocks</a> |
+<a href="#">Block admonition</a> |
+<a href="#">Blocks</a> |
 <a href="asciidoc_icons.html">Icons</a> |
 <a href="asciidoc_images.html">Images</a> |
 <a href="asciidoc_listing.html">Listing</a> |
 <a href="asciidoc_tables.html">Tables</a> |
 <a href="math.html">Math</a> |
 <a href="diagram-graphviz.html">Graphviz</a> |
-<a href="#">PlantUML</a><br></p>
+<a href="diagram-plantuml.html">PlantUML</a><br></p>
 </div>
 <div class="sect1">
-<h2 id="_asciidoctor_diagram_plantuml">Asciidoctor Diagram: PlantUML</h2>
+<h2 id="_blocks">Blocks</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_use_case_diagram">Use Case Diagram</h3>
-<div class="imageblock">
-<div class="content">
-<img src="images/plantuml_sample_sd_01_defaultFontName_omit.svg" alt="plantuml sample sd 01 defaultFontName omit" width="387" height="86">
-</div>
-<div class="title">Figure 1. defaultFontName is omitted</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_commutative_diagram">Commutative diagram</h3>
-<div class="imageblock">
-<div class="content">
-<img src="images/plantuml_sample_commutative_diagram_01.svg" alt="plantuml sample commutative diagram 01" width="326" height="129">
-</div>
-</div>
+<div class="ulist">
+<div class="title">Reference</div>
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#blocks">Blocks | Asciidoctor User Manual</a></p>
+</li>
+</ul>
 </div>
 <div class="sect2">
-<h3 id="_class_diagram">Class Diagram</h3>
-<div class="sect3">
-<h4 id="_proxy_design_pattern">Proxy Design Pattern</h4>
-<div class="imageblock">
+<h3 id="_block_title_before_v1_5_7">Block title (before v1.5.7)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://blog.mrhaki.com/2017/01/awesome-asciidoctor-using-filename.html" target="_blank" rel="noopener">Awesome Asciidoctor: Using Filename Starting With Dot As Block Title - Messages from mrhaki</a><br>
+Written with Asciidoctor 1.5.4<br>
+asciidoc starting with dot - Google Search</p>
+</li>
+<li>
+<p><a href="https://github.com/asciidoctor/asciidoctor/issues/2358" target="_blank" rel="noopener">Allow block title to begin with a period (i.e., dot) · Issue #2358 · asciidoctor/asciidoctor</a><br>
+asciidoc starting with dot - Google Search</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
 <div class="content">
-<img src="images/asciidoc_diagram_plantuml_class_proxy_pattern.svg" alt="asciidoc diagram plantuml class proxy pattern" width="239" height="203">
+<pre class="rouge highlight"><code data-lang="asciidoc">[source,json]
+..eslintrc
+----
+{
+    "key": "value"
+}
+----
+
+[source,json]
+.{blank}.eslintrc
+----
+{
+    "key": "value"
+}
+----
+
+[source,json,title='.eslintrc']
+----
+{
+    "key": "value"
+}
+----</code></pre>
 </div>
-<div class="title">Figure 2. PlantUMLの例</div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_collapse">Collapse</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[%collapsible]
+====
+Example block turns into collapsible summary/details.
+====</code></pre>
+</div>
+</div>
+<details>
+<summary class="title">Details</summary>
+<div class="content">
+<div class="paragraph">
+<p>Example block turns into collapsible summary/details.</p>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="_admonition">Admonition</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>NOTE</p>
+</li>
+<li>
+<p>TIP</p>
+</li>
+<li>
+<p>IMPORTANT</p>
+</li>
+<li>
+<p>CAUTION</p>
+</li>
+<li>
+<p>WARNING</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><code>:icons: font</code> は、セクションが開始される前に指定すること。<br>
+そうしない場合、次のようにスタイルシートを取り込むコードを手動で入れる必要が出てきたり、
+Checklist のスタイルが無効になったりする。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">ifeval::["{backend}" == "html5"]
+[pass]
+++++
+&lt;link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css"&gt;
+++++
+endif::[]
+
+:icons: font</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Admonition block syntax</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[IMPORTANT] <i class="conum" data-value="1"></i><b>(1)</b>
+.Feeding the Werewolves
+==== <i class="conum" data-value="2"></i><b>(2)</b>
+While werewolves are hardy community members, keep in mind the following dietary concerns:
+
+. They are allergic to cinnamon.
+. More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.
+. Celery makes them sad.
+====</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Set the label in an attribute list on a delimited block. The label must be uppercase.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Admonition styles are commonly set on example blocks. Example blocks are delimited by four equal signs (<code>====</code>).</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Feeding the Werewolves</div>
+<div class="paragraph">
+<p>While werewolves are hardy community members, keep in mind the following dietary concerns:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>They are allergic to cinnamon.</p>
+</li>
+<li>
+<p>More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.</p>
+</li>
+<li>
+<p>Celery makes them sad.</p>
+</li>
+</ol>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">:icons: font
+
+= section 1
+
+NOTE: notes
+
+TIP: 補足
+
+IMPORTANT: 重要.
+
+WARNING: 警告.
+
+CAUTION: 注意.</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+notes
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+補足
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+重要.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+警告.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+注意.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When using <code>callout</code>, the number icons are not replaced unless <code>:icons: font</code> is specified.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="xml"><span class="nt">&lt;section&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Section Title<span class="nt">&lt;/title&gt;</span> <i class="conum" data-value="1"></i><b>(1)</b>
+<span class="nt">&lt;/section&gt;</span></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>The section title is required.</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<div class="title">Reference</div>
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#admonition">Admonition | Asciidoctor User Manual</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_example">Example</h3>
+<div class="listingblock">
+<div class="title">Example syntax</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">.Sample document
+====
+Here's a sample AsciiDoc document:
+
+[listing]
+....
+= Title of Document
+Doc Writer
+:toc:
+
+This guide provides...
+....
+
+The document header is useful, but not required.
+====
+Result: Example bl</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="title">Example 1. Sample document</div>
+<div class="content">
+<div class="paragraph">
+<p>Here&#8217;s a sample AsciiDoc document:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>= Title of Document
+Doc Writer
+:toc:
+
+This guide provides...</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The document header is useful, but not required.</p>
+</div>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Reference</div>
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#example">Example | Asciidoctor User Manual</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sidebar">Sidebar</h3>
+<div class="listingblock">
+<div class="title">Sidebar syntax</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">.AsciiDoc history <i class="conum" data-value="1"></i><b>(1)</b>
+**** <i class="conum" data-value="2"></i><b>(2)</b>
+AsciiDoc was first released in Nov 2002 by Stuart Rackham.
+It was designed from the start to be a shorthand syntax
+for producing professional documents like DocBook and LaTeX.
+****</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>A title is optional.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>A sidebar is delimited by four asterisks (<strong>*</strong>*).</td>
+</tr>
+</table>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">AsciiDoc history</div>
+<div class="paragraph">
+<p>AsciiDoc was first released in Nov 2002 by Stuart Rackham.
+It was designed from the start to be a shorthand syntax
+for producing professional documents like DocBook and LaTeX.</p>
+</div>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Reference</div>
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#sidebar">Sidebar | Asciidoctor User Manual</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_quote">Quote</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">.After landing the cloaked Klingon bird of prey in Golden Gate park:
+[quote, Captain James T. Kirk, Star Trek IV: The Voyage Home]
+Everybody remember where we parked.</code></pre>
+</div>
+</div>
+<div class="quoteblock">
+<div class="title">After landing the cloaked Klingon bird of prey in Golden Gate park:</div>
+<blockquote>
+Everybody remember where we parked.
+</blockquote>
+<div class="attribution">
+&#8212; Captain James T. Kirk<br>
+<cite>Star Trek IV: The Voyage Home</cite>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[quote, Monty Python and the Holy Grail]
+____
+Dennis: Come and see the violence inherent in the system. Help! Help! I'm being repressed!
+
+King Arthur: Bloody peasant!
+
+Dennis: Oh, what a giveaway! Did you hear that? Did you hear that, eh? That's what I'm on about! Did you see him repressing me? You saw him, Didn't you?
+____</code></pre>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Dennis: Come and see the violence inherent in the system. Help! Help! I&#8217;m being repressed!</p>
+</div>
+<div class="paragraph">
+<p>King Arthur: Bloody peasant!</p>
+</div>
+<div class="paragraph">
+<p>Dennis: Oh, what a giveaway! Did you hear that? Did you hear that, eh? That&#8217;s what I&#8217;m on about! Did you see him repressing me? You saw him, Didn&#8217;t you?</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Monty Python and the Holy Grail
+</div>
+</div>
+<div class="ulist">
+<div class="title">Reference</div>
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#quote">Quote | Asciidoctor User Manual</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_verse">Verse</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[verse, Carl Sandburg, two lines from the poem Fog]
+The fog comes
+on little cat feet.</code></pre>
+</div>
+</div>
+<div class="verseblock">
+<pre class="content">The fog comes
+on little cat feet.</pre>
+<div class="attribution">
+&#8212; Carl Sandburg<br>
+<cite>two lines from the poem Fog</cite>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[verse, Carl Sandburg, Fog]
+____
+The fog comes
+on little cat feet.
+
+It sits looking
+over harbor and city
+on silent haunches
+and then moves on.
+____</code></pre>
+</div>
+</div>
+<div class="verseblock">
+<pre class="content">The fog comes
+on little cat feet.
+
+It sits looking
+over harbor and city
+on silent haunches
+and then moves on.</pre>
+<div class="attribution">
+&#8212; Carl Sandburg<br>
+<cite>Fog</cite>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Reference</div>
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#verse">Verse | Asciidoctor User Manual</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>

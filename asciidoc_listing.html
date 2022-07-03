@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>Asciidoctor Diagram: PlantUML</title>
+<title>Lists</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -435,21 +435,237 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.rouge table td { padding: 5px; }
+pre.rouge table pre { margin: 0; }
+pre.rouge .cm {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .cp {
+  color: #999999;
+  font-weight: bold;
+}
+pre.rouge .c1 {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cpf {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+pre.rouge .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+pre.rouge .ge {
+  color: #000000;
+  font-style: italic;
+}
+pre.rouge .gr {
+  color: #aa0000;
+}
+pre.rouge .gh {
+  color: #999999;
+}
+pre.rouge .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+pre.rouge .go {
+  color: #888888;
+}
+pre.rouge .gp {
+  color: #555555;
+}
+pre.rouge .gs {
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #aaaaaa;
+}
+pre.rouge .gt {
+  color: #aa0000;
+}
+pre.rouge .kc {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kd {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kn {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kp {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kr {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kt {
+  color: #445588;
+  font-weight: bold;
+}
+pre.rouge .k, pre.rouge .kv {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .mf {
+  color: #009999;
+}
+pre.rouge .mh {
+  color: #009999;
+}
+pre.rouge .il {
+  color: #009999;
+}
+pre.rouge .mi {
+  color: #009999;
+}
+pre.rouge .mo {
+  color: #009999;
+}
+pre.rouge .m, pre.rouge .mb, pre.rouge .mx {
+  color: #009999;
+}
+pre.rouge .sa {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .sb {
+  color: #d14;
+}
+pre.rouge .sc {
+  color: #d14;
+}
+pre.rouge .sd {
+  color: #d14;
+}
+pre.rouge .s2 {
+  color: #d14;
+}
+pre.rouge .se {
+  color: #d14;
+}
+pre.rouge .sh {
+  color: #d14;
+}
+pre.rouge .si {
+  color: #d14;
+}
+pre.rouge .sx {
+  color: #d14;
+}
+pre.rouge .sr {
+  color: #009926;
+}
+pre.rouge .s1 {
+  color: #d14;
+}
+pre.rouge .ss {
+  color: #990073;
+}
+pre.rouge .s, pre.rouge .dl {
+  color: #d14;
+}
+pre.rouge .na {
+  color: #008080;
+}
+pre.rouge .bp {
+  color: #999999;
+}
+pre.rouge .nb {
+  color: #0086B3;
+}
+pre.rouge .nc {
+  color: #445588;
+  font-weight: bold;
+}
+pre.rouge .no {
+  color: #008080;
+}
+pre.rouge .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+pre.rouge .ni {
+  color: #800080;
+}
+pre.rouge .ne {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nf, pre.rouge .fm {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nl {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nn {
+  color: #555555;
+}
+pre.rouge .nt {
+  color: #000080;
+}
+pre.rouge .vc {
+  color: #008080;
+}
+pre.rouge .vg {
+  color: #008080;
+}
+pre.rouge .vi {
+  color: #008080;
+}
+pre.rouge .nv, pre.rouge .vm {
+  color: #008080;
+}
+pre.rouge .ow {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .o {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .w {
+  color: #bbbbbb;
+}
+pre.rouge {
+  background-color: #f8f8f8;
+}
+</style>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_asciidoctor_diagram_plantuml">Asciidoctor Diagram: PlantUML</a>
+<li><a href="#_lists">Lists</a>
 <ul class="sectlevel2">
-<li><a href="#_use_case_diagram">Use Case Diagram</a></li>
-<li><a href="#_commutative_diagram">Commutative diagram</a></li>
-<li><a href="#_class_diagram">Class Diagram</a>
-<ul class="sectlevel3">
-<li><a href="#_proxy_design_pattern">Proxy Design Pattern</a></li>
-</ul>
-</li>
+<li><a href="#_separating_lists">Separating Lists</a></li>
+<li><a href="#_unordered_lists">Unordered Lists</a></li>
+<li><a href="#_ordered_lists">Ordered Lists</a></li>
+<li><a href="#_description_list">Description List</a></li>
+<li><a href="#_question_and_answer_style_list">Question and Answer Style List</a></li>
+<li><a href="#_checklist">Checklist</a></li>
+<li><a href="#_complex_list_content">Complex list content</a></li>
 </ul>
 </li>
 </ul>
@@ -462,43 +678,1213 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <a href="asciidoc_blocks.html">Blocks</a> |
 <a href="asciidoc_icons.html">Icons</a> |
 <a href="asciidoc_images.html">Images</a> |
-<a href="asciidoc_listing.html">Listing</a> |
+<a href="#">Listing</a> |
 <a href="asciidoc_tables.html">Tables</a> |
 <a href="math.html">Math</a> |
 <a href="diagram-graphviz.html">Graphviz</a> |
-<a href="#">PlantUML</a><br></p>
+<a href="diagram-plantuml.html">PlantUML</a><br></p>
 </div>
 <div class="sect1">
-<h2 id="_asciidoctor_diagram_plantuml">Asciidoctor Diagram: PlantUML</h2>
+<h2 id="_lists">Lists</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_use_case_diagram">Use Case Diagram</h3>
-<div class="imageblock">
-<div class="content">
-<img src="images/plantuml_sample_sd_01_defaultFontName_omit.svg" alt="plantuml sample sd 01 defaultFontName omit" width="387" height="86">
+<h3 id="_separating_lists">Separating Lists</h3>
+<div class="paragraph">
+<p>If you have adjacent lists, they have the tendency to want to fuse together.
+To force the lists apart, place a line comment between them (<code>//</code>),
+offset on either side by a blank line (i.e., an end of list marker).
+Here’s an example, where the <code>^</code> is dummy text that indicates
+ this line serves as an "end of list" marker:</p>
 </div>
-<div class="title">Figure 1. defaultFontName is omitted</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">* Apples
+* Oranges
+
+//^
+
+* Walnuts
+* Almonds</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Apples</p>
+</li>
+<li>
+<p>Oranges</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Walnuts</p>
+</li>
+<li>
+<p>Almonds</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">. Apples
+. Oranges
+
+//^
+
+. Walnuts
+. Almonds</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Apples</p>
+</li>
+<li>
+<p>Oranges</p>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Walnuts</p>
+</li>
+<li>
+<p>Almonds</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Asciidoctor 1.5.8</dt>
+<dd>
+<p>テーブルでは正しく動作しない。</p>
+</dd>
+</dl>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Rendered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">* Apples
+* Oranges
+
+
+* Walnuts
+* Almonds</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="exampleblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Apples</p>
+</li>
+<li>
+<p>Oranges</p>
+</li>
+<li>
+<p>Walnuts</p>
+</li>
+<li>
+<p>Almonds</p>
+</li>
+</ul>
+</div>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">. Apples
+. Oranges
+
+
+. Walnuts
+. Almonds</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="exampleblock">
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Apples</p>
+</li>
+<li>
+<p>Oranges</p>
+</li>
+<li>
+<p>Walnuts</p>
+</li>
+<li>
+<p>Almonds</p>
+</li>
+</ol>
+</div>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_commutative_diagram">Commutative diagram</h3>
-<div class="imageblock">
+<h3 id="_unordered_lists">Unordered Lists</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Nested unordered list (default)</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">See</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<img src="images/plantuml_sample_commutative_diagram_01.svg" alt="plantuml sample commutative diagram 01" width="326" height="129">
+<pre class="rouge highlight"><code data-lang="asciidoc">* West wood maze
+** Maze heart
+*** Reflection pool
+** Secret exit
+* Untracked file in git repository</code></pre>
 </div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>West wood maze</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Maze heart</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Reflection pool</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Secret exit</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Untracked file in git repository</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Unordered list (bullet styles: square)</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">See</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[square]
+* one
+* two
+* three</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist square">
+<ul class="square">
+<li>
+<p>one</p>
+</li>
+<li>
+<p>two</p>
+</li>
+<li>
+<p>three</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<div class="title">Reference</div>
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#unordered-lists">20. Unordered Lists | Asciidoctor User Manual</a></p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_class_diagram">Class Diagram</h3>
-<div class="sect3">
-<h4 id="_proxy_design_pattern">Proxy Design Pattern</h4>
+<h3 id="_ordered_lists">Ordered Lists</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Asciidoctor ordered list numeration styles</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Block style</th>
+<th class="tableblock halign-left valign-top">CSS list-style-type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">arabic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">decimal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">decimal*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">decimal-leading-zero</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">loweralpha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lower-alpha</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">upperalpha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">upper-alpha</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lowerroman</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lower-roman</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">upperroman</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">upper-roman</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lowergreek*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lower-greek</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>These styles are only supported by the HTML converters.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. Numbered list (default)</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">See</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">. Protons
+. Electrons
+. Neutrons</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Protons</p>
+</li>
+<li>
+<p>Electrons</p>
+</li>
+<li>
+<p>Neutrons</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 5. Numbered list (default, start)</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">See</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[start=4]
+. Step four
+. Step five
+. Step six</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>Step four</p>
+</li>
+<li>
+<p>Step five</p>
+</li>
+<li>
+<p>Step six</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 6. Numbered list (arabic)</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">See</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[arabic]
+. one
+. two
+. three</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>one</p>
+</li>
+<li>
+<p>two</p>
+</li>
+<li>
+<p>three</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 7. Numbered list (decimal)</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">See</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[decimal]
+. one
+. two
+. three</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist decimal">
+<ol class="decimal">
+<li>
+<p>one</p>
+</li>
+<li>
+<p>two</p>
+</li>
+<li>
+<p>three</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 8. Numbered list (loweralpha)</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">See</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[loweralpha]
+. one
+. two
+. three</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>one</p>
+</li>
+<li>
+<p>two</p>
+</li>
+<li>
+<p>three</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 9. Numbered list (lowergreek)</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">See</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[lowergreek]
+. one
+. two
+. three
+. four
+. five
+. six
+. seven
+. eight
+. nine
+. ten
+. eleven
+. twelve
+. thirteen
+. fourteen
+. fifteen
+. sixteen
+. seventeen
+. eighteen
+. nineteen
+. twenty
+. twenty one
+. twenty two
+. twenty three
+. twenty four
+. twenty five
+. twenty six</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="olist lowergreek">
+<ol class="lowergreek">
+<li>
+<p>one</p>
+</li>
+<li>
+<p>two</p>
+</li>
+<li>
+<p>three</p>
+</li>
+<li>
+<p>four</p>
+</li>
+<li>
+<p>five</p>
+</li>
+<li>
+<p>six</p>
+</li>
+<li>
+<p>seven</p>
+</li>
+<li>
+<p>eight</p>
+</li>
+<li>
+<p>nine</p>
+</li>
+<li>
+<p>ten</p>
+</li>
+<li>
+<p>eleven</p>
+</li>
+<li>
+<p>twelve</p>
+</li>
+<li>
+<p>thirteen</p>
+</li>
+<li>
+<p>fourteen</p>
+</li>
+<li>
+<p>fifteen</p>
+</li>
+<li>
+<p>sixteen</p>
+</li>
+<li>
+<p>seventeen</p>
+</li>
+<li>
+<p>eighteen</p>
+</li>
+<li>
+<p>nineteen</p>
+</li>
+<li>
+<p>twenty</p>
+</li>
+<li>
+<p>twenty one</p>
+</li>
+<li>
+<p>twenty two</p>
+</li>
+<li>
+<p>twenty three</p>
+</li>
+<li>
+<p>twenty four</p>
+</li>
+<li>
+<p>twenty five</p>
+</li>
+<li>
+<p>twenty six</p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<div class="title">Reference</div>
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#ordered-lists">21. Ordered Lists | Asciidoctor User Manual</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_description_list">Description List</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[horizontal]
+CPU:: The brain of the computer.
+Hard drive:: Permanent storage for operating system and/or user files.
+RAM:: Temporarily stores information the CPU uses during operation.</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="hdlist">
+<table>
+<tr>
+<td class="hdlist1">
+CPU
+</td>
+<td class="hdlist2">
+<p>The brain of the computer.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+Hard drive
+</td>
+<td class="hdlist2">
+<p>Permanent storage for operating system and/or user files.</p>
+</td>
+</tr>
+<tr>
+<td class="hdlist1">
+RAM
+</td>
+<td class="hdlist2">
+<p>Temporarily stores information the CPU uses during operation.</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Rendered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">Dairy::
+* Milk
+* Eggs
+Bakery::
+* Bread
+Produce::
+* Bananas</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Dairy</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Milk</p>
+</li>
+<li>
+<p>Eggs</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Bakery</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Bread</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Produce</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Bananas</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Rendered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">Dairy::
+
+  * Milk
+  * Eggs
+
+Bakery::
+
+  * Bread
+
+Produce::
+
+  * Bananas</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Dairy</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Milk</p>
+</li>
+<li>
+<p>Eggs</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Bakery</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Bread</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Produce</dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p>Bananas</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 10. Hybrid lists</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Rendered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">Operating Systems::
+  Linux:::
+    . Fedora
+      * Desktop
+    . Ubuntu
+      * Desktop
+      * Server
+  BSD:::
+    . FreeBSD
+    . NetBSD
+
+Cloud Providers::
+  PaaS:::
+    . OpenShift
+    . CloudBees
+  IaaS:::
+    . Amazon EC2
+    . Rackspace</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Operating Systems</dt>
+<dd>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Linux</dt>
+<dd>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Fedora</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Desktop</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Ubuntu</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Desktop</p>
+</li>
+<li>
+<p>Server</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</dd>
+<dt class="hdlist1">BSD</dt>
+<dd>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>FreeBSD</p>
+</li>
+<li>
+<p>NetBSD</p>
+</li>
+</ol>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">Cloud Providers</dt>
+<dd>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">PaaS</dt>
+<dd>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>OpenShift</p>
+</li>
+<li>
+<p>CloudBees</p>
+</li>
+</ol>
+</div>
+</dd>
+<dt class="hdlist1">IaaS</dt>
+<dd>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Amazon EC2</p>
+</li>
+<li>
+<p>Rackspace</p>
+</li>
+</ol>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_question_and_answer_style_list">Question and Answer Style List</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[qanda]
+What is Asciidoctor?::
+  An implementation of the AsciiDoc processor in Ruby.
+What is the answer to the Ultimate Question?:: 42</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="qlist qanda">
+<ol>
+<li>
+<p><em>What is Asciidoctor?</em></p>
+<p>An implementation of the AsciiDoc processor in Ruby.</p>
+</li>
+<li>
+<p><em>What is the answer to the Ultimate Question?</em></p>
+<p>42</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Reference</div>
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#description-list" target="_blank" rel="noopener">22. Description List | Asciidoctor User Manual</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_checklist">Checklist</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Rendered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">* [*] checked
+* [x] also checked
+* [ ] not checked
+*     normal list item</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><i class="fa fa-check-square-o"></i> checked</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> also checked</p>
+</li>
+<li>
+<p><i class="fa fa-square-o"></i> not checked</p>
+</li>
+<li>
+<p>normal list item</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#checklist">20.4. Checklist | Asciidoctor User Manual</a></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>ヘッダ以降のセクションで <code>:icons: font</code> の指定を行うと、チェックリストのスタイルが無効になる。
+(asciidoctor 2.0.10; ruby 2.6.4p104; Ubuntu 18.04 LTS)</p>
+</div>
 <div class="imageblock">
 <div class="content">
-<img src="images/asciidoc_diagram_plantuml_class_proxy_pattern.svg" alt="asciidoc diagram plantuml class proxy pattern" width="239" height="203">
-</div>
-<div class="title">Figure 2. PlantUMLの例</div>
+<img src="images/asciidoc_listing_checklist_warning_01.png" alt="asciidoc listing checklist warning 01">
 </div>
 </div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_complex_list_content">Complex list content</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">* The header in AsciiDoc is optional, but if
+it is used it must start with a document title.
+
+* Optional Author and Revision information
+immediately follows the header title.
+
+* The document header must be separated from
+  the remainder of the document by one or more
+  blank lines and cannot contain blank lines.</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>The header in AsciiDoc is optional, but if
+it is used it must start with a document title.</p>
+</li>
+<li>
+<p>Optional Author and Revision information
+immediately follows the header title.</p>
+</li>
+<li>
+<p>The document header must be separated from
+the remainder of the document by one or more
+blank lines and cannot contain blank lines.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">* The header in AsciiDoc must start with a
+  document title.
++
+The header is optional.
+
+* Optional Author and Revision information
+  immediately follows the header title.</code></pre>
+</div>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>The header in AsciiDoc must start with a
+document title.</p>
+<div class="paragraph">
+<p>The header is optional.</p>
+</div>
+</li>
+<li>
+<p>Optional Author and Revision information
+immediately follows the header title.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Rendered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">. {blank}
++
+----
+print("one")
+----
+. {blank}
++
+----
+print("one")
+----</code></pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="exampleblock">
+<div class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p></p>
+<div class="listingblock">
+<div class="content">
+<pre>print("one")</pre>
+</div>
+</div>
+</li>
+<li>
+<p></p>
+<div class="listingblock">
+<div class="content">
+<pre>print("one")</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
