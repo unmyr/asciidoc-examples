@@ -7,27 +7,247 @@ include::header.adoc[]
 
 == AsciiDoc examples
 
-=== Lists
+
+=== URLs
+
+.open blank window
+****
+[source,asciidoc]
+----
+* link:https://en.wikipedia.org/wiki/Gaussian_integral[Gaussian integral - Wikipedia,window=_blank]
+* https://en.wikipedia.org/wiki/Gaussian_integral[Gaussian integral - Wikipedia^]
+* link:http://hooktail.sub.jp/mathInPhys/gaussIntegral/[ガウス積分の公式 [物理のかぎしっぽ{endsb}^] +
+  not working
+* link:http://hooktail.sub.jp/mathInPhys/gaussIntegral/[ガウス積分の公式 [物理のかぎしっぽ\]^]
+* link:http://hooktail.sub.jp/mathInPhys/gaussIntegral/[ガウス積分の公式 [物理のかぎしっぽ&#93;^]
+* https://www.reddit.com/r/anime/comments/fvyl14/have_you_forgotten_me_hitoribocchi/[Have you forgotten me? [Hitoribocchi&#93; : anime^]
+----
+
+* link:https://en.wikipedia.org/wiki/Gaussian_integral[Gaussian integral - Wikipedia,window=_blank]
+* https://en.wikipedia.org/wiki/Gaussian_integral[Gaussian integral - Wikipedia^]
+* link:http://hooktail.sub.jp/mathInPhys/gaussIntegral/[ガウス積分の公式 {startsb}物理のかぎしっぽ{endsb}^] +
+  not working
+* link:http://hooktail.sub.jp/mathInPhys/gaussIntegral/[ガウス積分の公式 [物理のかぎしっぽ\]^] +
+* link:http://hooktail.sub.jp/mathInPhys/gaussIntegral/[ガウス積分の公式 [物理のかぎしっぽ&#93;^]
+* https://www.reddit.com/r/anime/comments/fvyl14/have_you_forgotten_me_hitoribocchi/[Have you forgotten me? [Hitoribocchi&#93; : anime^]
+****
+
+.download icon
+****
+[source,asciidoc]
+----
+icon:download[link="https://rubygems.org/downloads/asciidoctor-1.5.2.gem"]
+----
+icon:download[link="https://rubygems.org/downloads/asciidoctor-1.5.2.gem"]
+****
+
+[source,asciidoc]
+.URLs containing underscores
+----
+his URL has repeating underscores link:++https://asciidoctor.org/now_this__link_works.html++[].
+----
+
+
+==== Anchors
+
+.Reference
+* https://asciidoctor.org/docs/user-manual/#url[URL | Asciidoctor User Manual^]
+* https://asciidoctor.cn/docs/asciidoc-writers-guide/#links-to-relative-files[Links to relative files - AsciiDoc Writer’s Guide | Asciidoctor^]
+
+==== Cross Reference
+* https://asciidoctor.org/docs/user-manual/#xref[Cross References | Asciidoctor User Manual^]
+
+Asciidoctor automatically assigns the ID `_section_title` to this section.
 
 [source,asciidoc]
 ----
-.Bullet list
-* Apple
-* Oranges
-* Banana
-
-.Numbered list
-. one
-. two
-. three
+= Section Title
+...
 ----
 
-.Bullet list
-* Apple
-* Oranges
-* Banana
+[source,asciidoc]
+----
+See <<Internal Cross References>>.
 
-.Numbered list
-. one
-. two
-. three
+== Internal Cross References
+...
+----
+
+[source,asciidoc]
+.Assigning an ID to a paragraph
+----
+[[notice]]
+This paragraph gets a lot of attention.
+----
+
+[source,asciidoc]
+.Assigning an ID to a paragraph using shorthand syntax
+----
+[#notice]
+This paragraph gets a lot of attention.
+----
+
+[NOTE]
+====
+The following expressions are not recognized on GitHub. Use `\[[keyword]]`.
+
+[source,asciidoc]
+----
+[#keyword]
+=== Section name
+----
+====
+
+[source,asciidoc]
+.Defining the ID of a section using an inline anchor
+----
+=== Version 4.9 [[version-4_9]]
+...
+----
+
+[source,asciidoc]
+.Adding additional anchors to a section
+----
+=== [[current]]Version 4.9 [[version-4_9]]
+...
+----
+
+[source,asciidoc]
+.Defining an inline anchor on a list item
+----
+* Fist item
+* [[step2]]Second item
+* Third item
+----
+
+=== HTML depended markup
+
+==== ruby
+
+[source,asciidoc]
+----
+pass:[<ruby><rb>hello world</rb><rp>（</rp><rt>こんにちは世界</rt><rp>）</rp></ruby>]
+----
+ifeval::["{backend}" == "html5"]
+pass:[<ruby><rb>hello world</rb><rp>（</rp><rt>こんにちは世界</rt><rp>）</rp></ruby>]
+endif::[]
+
+=== ifdef
+
+[source,asciidoc,subs="verbatim,quotes"]
+----
+**ifdef::asciidoctor[]**
+I'm asciidoctor.
+**endif::asciidoctor[]**
+
+**ifdef::backend-html5[]**
+:twoinches: width='144'
+:full-width: width='100%'
+:half-width: width='50%'
+:half-size:
+:thumbnail: width='60'
+**endif::[]**
+
+**ifdef::basebackend-html[]** <1>
+true if html5, asciidoctor-pdf
+**endif::[]**
+
+**ifdef::backend-pdf[]**
+:twoinches: pdfwidth='2in'
+:full-width: pdfwidth='100vw'
+:half-width: pdfwidth='50vw'
+:half-size: pdfwidth='50%'
+:thumbnail: pdfwidth='20mm'
+**endif::[]**
+
+**ifdef::backend-docbook5[]**
+:twoinches: width='50mm'
+:full-width: scaledwidth='100%'
+:half-width: scaledwidth='50%'
+:half-size: width='50%'
+:thumbnail: width='20mm'
+**endif::[]**
+----
+<1> That's not going to work in Asciidoctor PDF.
+
+.Reference
+* https://asciidoctor.org/docs/user-manual/#checking-multiple-attributes-ifdef-and-ifndef-only[48.4. Checking multiple attributes (ifdef and ifndef only) | Asciidoctor User Manual]
+
+=== Include Directive
+
+[source,asciidoc]
+----
+\include::path[leveloffset=offset,lines=ranges,tag(s)=name(s),indent=depth]
+----
+
+.leveloffset
+[source,asciidoc]
+----
+= My Book
+
+\include::chapter01.adoc[leveloffset=+1]
+
+\include::chapter02.adoc[leveloffset=+1]
+
+\include::chapter03.adoc[leveloffset=+1]
+----
+
+[source,ruby]
+----
+include::resources/core.rb[tag=parse]
+----
+
+.Reference
+* https://asciidoctor.org/docs/user-manual/#include-directive[28. Include Directive | Asciidoctor User Manual]
+
+
+=== Predefined attributes
+
+[cols="5a,5a,2a,2a"]
+|===
+| Attribute name | Description | Default value | Allowed values
+
+| `outfilesuffix`
+|
+|
+|
+
+| `leveloffset`
+|
+|
+|
+
+| `chapter-number`
+| Stores the number for the current chapter.
+| 2
+| integer
+
+| `imagesdir`
+| Where image files are resolved.
+|
+|
+
+| `source-highlighter`
+| Source code highlighter to use.
+| not set
+| `coderay` pass:p[ +] `highlightjs` pass:p[ +] `prettify` pass:p[ +] `pygments`
+
+| `source-linenums-option`
+| not set
+| empty
+|
+
+|===
+
+[cols="1a,1a" {table_options}]
+|===
+h| `outfilesuffix`          m| {outfilesuffix}
+h| `leveloffset`            m| {leveloffset}
+h| `chapter-number`         m| {chapter-number}
+h| `imagesdir`              m| {imagesdir}
+h| `source-highlighter`     m| {source-highlighter}
+h| `source-linenums-option` m| {source-linenums-option}
+|===
+
+* https://asciidoctor.org/docs/user-manual/#image-sizing-recap[Image Sizing Recap | Asciidoctor User Manual]
+* https://asciidoctor.org/docs/user-manual/#attribute-catalog[Appendix A: Catalog of Document Attributes | Asciidoctor User Manual]

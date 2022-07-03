@@ -1,0 +1,642 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+:icons: font
+
+include::header.adoc[]
+
+endif::[]
+
+// For preview in VS-Code
+ifndef::imagesdir[]
+:imagesdir: images
+endif::[]
+
+== Lists
+
+=== Separating Lists
+If you have adjacent lists, they have the tendency to want to fuse together.
+To force the lists apart, place a line comment between them (`//`),
+offset on either side by a blank line (i.e., an end of list marker).
+Here’s an example, where the `^` is dummy text that indicates
+ this line serves as an "end of list" marker:
+
+[source,asciidoc]
+----
+* Apples
+* Oranges
+
+//^
+
+* Walnuts
+* Almonds
+----
+
+
+[example]
+====
+* Apples
+* Oranges
+
+//^
+
+* Walnuts
+* Almonds
+====
+
+[source,asciidoc]
+----
+. Apples
+. Oranges
+
+//^
+
+. Walnuts
+. Almonds
+----
+
+[example]
+====
+. Apples
+. Oranges
+
+//^
+
+. Walnuts
+. Almonds
+====
+
+[WARNING]
+========
+Asciidoctor 1.5.8:: テーブルでは正しく動作しない。
+
+[cols="1a,1a"]
+|===
+| Type | Rendered
+
+|
+[source,asciidoc]
+----
+* Apples
+* Oranges
+
+//^
+
+* Walnuts
+* Almonds
+
+//^
+----
+
+|
+[example]
+====
+* Apples
+* Oranges
+
+//^
+
+* Walnuts
+* Almonds
+
+//^
+====
+
+|
+[source,asciidoc]
+----
+. Apples
+. Oranges
+
+//^
+
+. Walnuts
+. Almonds
+
+//^
+----
+
+|
+[example]
+====
+. Apples
+. Oranges
+
+//^
+
+. Walnuts
+. Almonds
+
+//^
+====
+|===
+========
+
+
+
+=== Unordered Lists
+.Nested unordered list (default)
+[cols="1a,1a"]
+|===
+| Type | See
+
+|
+[source,asciidoc]
+----
+* West wood maze
+** Maze heart
+*** Reflection pool
+** Secret exit
+* Untracked file in git repository
+----
+|
+* West wood maze
+** Maze heart
+*** Reflection pool
+** Secret exit
+* Untracked file in git repository
+
+//^
+|===
+
+.Unordered list (bullet styles: square)
+[cols="1a,1a"]
+|===
+| Type | See
+
+|
+[source,asciidoc]
+----
+[square]
+* one
+* two
+* three
+----
+|
+[square]
+* one
+* two
+* three
+|===
+
+.Reference
+* https://asciidoctor.org/docs/user-manual/#unordered-lists[20. Unordered Lists | Asciidoctor User Manual]
+
+=== Ordered Lists
+
+.Asciidoctor ordered list numeration styles
+|===
+| Block style	 | CSS list-style-type
+
+| arabic       | decimal
+| decimal*     | decimal-leading-zero
+| loweralpha   | lower-alpha
+| upperalpha   | upper-alpha
+| lowerroman   | lower-roman
+| upperroman   | upper-roman
+| lowergreek*  | lower-greek
+|===
+* These styles are only supported by the HTML converters.
+
+.Numbered list (default)
+[cols="1a,1a"]
+|===
+| Type | See
+
+|
+[source,asciidoc]
+----
+. Protons
+. Electrons
+. Neutrons
+----
+|
+. Protons
+. Electrons
+. Neutrons
+|===
+
+.Numbered list (default, start)
+[cols="1a,1a"]
+|===
+| Type | See
+
+|
+[source,asciidoc]
+----
+[start=4]
+. Step four
+. Step five
+. Step six
+----
+|
+[start=4]
+. Step four
+. Step five
+. Step six
+|===
+
+
+.Numbered list (arabic)
+[cols="1a,1a"]
+|===
+| Type | See
+
+|
+[source,asciidoc]
+----
+[arabic]
+. one
+. two
+. three
+----
+|
+[arabic]
+. one
+. two
+. three
+|===
+
+.Numbered list (decimal)
+[cols="1a,1a"]
+|===
+| Type | See
+
+|
+[source,asciidoc]
+----
+[decimal]
+. one
+. two
+. three
+----
+|
+[decimal]
+. one
+. two
+. three
+|===
+
+.Numbered list (loweralpha)
+[cols="1a,1a"]
+|===
+| Type | See
+
+|
+[source,asciidoc]
+----
+[loweralpha]
+. one
+. two
+. three
+----
+|
+[loweralpha]
+. one
+. two
+. three
+|===
+
+.Numbered list (lowergreek)
+[cols="1a,1a"]
+|===
+| Type | See
+
+|
+[source,asciidoc]
+----
+[lowergreek]
+. one
+. two
+. three
+. four
+. five
+. six
+. seven
+. eight
+. nine
+. ten
+. eleven
+. twelve
+. thirteen
+. fourteen
+. fifteen
+. sixteen
+. seventeen
+. eighteen
+. nineteen
+. twenty
+. twenty one
+. twenty two
+. twenty three
+. twenty four
+. twenty five
+. twenty six
+----
+|
+[lowergreek]
+. one
+. two
+. three
+. four
+. five
+. six
+. seven
+. eight
+. nine
+. ten
+. eleven
+. twelve
+. thirteen
+. fourteen
+. fifteen
+. sixteen
+. seventeen
+. eighteen
+. nineteen
+. twenty
+. twenty one
+. twenty two
+. twenty three
+. twenty four
+. twenty five
+. twenty six
+|===
+
+.Reference
+* https://asciidoctor.org/docs/user-manual/#ordered-lists[21. Ordered Lists | Asciidoctor User Manual]
+
+=== Description List
+[source,asciidoc]
+----
+[horizontal]
+CPU:: The brain of the computer.
+Hard drive:: Permanent storage for operating system and/or user files.
+RAM:: Temporarily stores information the CPU uses during operation.
+----
+
+[example]
+====
+[horizontal]
+CPU:: The brain of the computer.
+Hard drive:: Permanent storage for operating system and/or user files.
+RAM:: Temporarily stores information the CPU uses during operation.
+====
+
+
+[cols="1a,1a"]
+|===
+| Type | Rendered
+
+|
+[source,asciidoc]
+----
+Dairy::
+* Milk
+* Eggs
+Bakery::
+* Bread
+Produce::
+* Bananas
+----
+|
+[example]
+====
+Dairy::
+* Milk
+* Eggs
+Bakery::
+* Bread
+Produce::
+* Bananas
+====
+|===
+
+
+[cols="1a,1a"]
+|===
+| Type | Rendered
+
+|
+[source,asciidoc]
+----
+Dairy::
+
+  * Milk
+  * Eggs
+
+Bakery::
+
+  * Bread
+
+Produce::
+
+  * Bananas
+----
+|
+[example]
+====
+Dairy::
+
+  * Milk
+  * Eggs
+
+Bakery::
+
+  * Bread
+
+Produce::
+
+  * Bananas
+====
+|===
+
+.Hybrid lists
+[cols="1a,1a"]
+|===
+| Type | Rendered
+
+|
+[source,asciidoc]
+----
+Operating Systems::
+  Linux:::
+    . Fedora
+      * Desktop
+    . Ubuntu
+      * Desktop
+      * Server
+  BSD:::
+    . FreeBSD
+    . NetBSD
+
+Cloud Providers::
+  PaaS:::
+    . OpenShift
+    . CloudBees
+  IaaS:::
+    . Amazon EC2
+    . Rackspace
+----
+|
+[example]
+====
+Operating Systems::
+  Linux:::
+    . Fedora
+      * Desktop
+    . Ubuntu
+      * Desktop
+      * Server
+  BSD:::
+    . FreeBSD
+    . NetBSD
+
+Cloud Providers::
+  PaaS:::
+    . OpenShift
+    . CloudBees
+  IaaS:::
+    . Amazon EC2
+    . Rackspace
+====
+|===
+
+=== Question and Answer Style List
+
+[source,asciidoc]
+----
+[qanda]
+What is Asciidoctor?::
+  An implementation of the AsciiDoc processor in Ruby.
+What is the answer to the Ultimate Question?:: 42
+----
+
+[example]
+====
+[qanda]
+What is Asciidoctor?::
+  An implementation of the AsciiDoc processor in Ruby.
+What is the answer to the Ultimate Question?:: 42
+====
+
+.Reference
+* https://asciidoctor.org/docs/user-manual/#description-list[22. Description List | Asciidoctor User Manual^]
+
+=== Checklist
+
+[cols="1a,1a"]
+|===
+| Type | Rendered
+
+|
+[source,asciidoc]
+----
+* [*] checked
+* [x] also checked
+* [ ] not checked
+*     normal list item
+----
+|
+* [*] checked
+* [x] also checked
+* [ ] not checked
+*     normal list item
+|===
+
+
+
+* https://asciidoctor.org/docs/user-manual/#checklist[20.4. Checklist | Asciidoctor User Manual]
+
+[WARNING]
+====
+ヘッダ以降のセクションで `:icons: font` の指定を行うと、チェックリストのスタイルが無効になる。
+(asciidoctor 2.0.10; ruby 2.6.4p104; Ubuntu 18.04 LTS)
+
+image::asciidoc_listing_checklist_warning_01.png[]
+====
+
+=== Complex list content
+
+[source,asciidoc]
+----
+* The header in AsciiDoc is optional, but if
+it is used it must start with a document title.
+
+* Optional Author and Revision information
+immediately follows the header title.
+
+* The document header must be separated from
+  the remainder of the document by one or more
+  blank lines and cannot contain blank lines.
+----
+
+[example]
+====
+* The header in AsciiDoc is optional, but if
+it is used it must start with a document title.
+
+* Optional Author and Revision information
+immediately follows the header title.
+
+* The document header must be separated from
+  the remainder of the document by one or more
+  blank lines and cannot contain blank lines.
+====
+
+[source,asciidoc]
+----
+* The header in AsciiDoc must start with a
+  document title.
++
+The header is optional.
+
+* Optional Author and Revision information
+  immediately follows the header title.
+----
+
+[example]
+====
+* The header in AsciiDoc must start with a
+  document title.
++
+The header is optional.
+
+* Optional Author and Revision information
+  immediately follows the header title.
+====
+
+[cols="1a,1a"]
+|===
+| Type | Rendered
+
+|
+[source,asciidoc]
+--------
+. {blank}
++
+----
+print("one")
+----
+. {blank}
++
+----
+print("one")
+----
+--------
+
+|
+[example]
+====
+. {blank}
++
+----
+print("one")
+----
+. {blank}
++
+----
+print("one")
+----
+====
+|===

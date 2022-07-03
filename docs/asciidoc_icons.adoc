@@ -1,0 +1,227 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+:icons: font
+
+include::header.adoc[]
+
+endif::[]
+
+// For preview in VS-Code
+ifndef::imagesdir[]
+:imagesdir: images
+endif::[]
+
+== Icons
+
+[NOTE]
+====
+* asciidoctor 2.0.10 時点で Font Awesome 4.7 をサポートしている。
+ただ、 Font Awesome 5 で大きな非互換があり、対応時に icon の名称等が変わる可能性がある。
+asciidoctor としての Font Awesome 5 対応に決着がつくまでは積極的に使う機能ではない。
+* Font Awesome 4.7 では、 fas, far など solid 指定はできない。
+====
+
+* https://fontawesome.com/icons?d=gallery&m=free[Free Icons | Font Awesome]
+
+[cols="6a,1a" options="autowidth"]
+|===
+| AsciiDoc | Rendered
+
+|
+[source,asciidoc]
+----
+icon:check[role="green"]
+----
+^.^| icon:check[role="green"]
+
+|
+[source,asciidoc]
+----
+icon:times[role="red"]
+----
+^.^| icon:times[role="red"]
+
+|
+[source,asciidoc]
+----
+icon:file-text-o[role="blue"]
+----
+^.^| icon:file-text-o[role="blue"]
+
+|
+[source,asciidoc]
+----
+icon:bolt[fw]
+----
+^.^| icon:bolt[fw]
+
+|
+[source,asciidoc]
+----
+icon:heart[fw]
+----
+^.^| icon:heart[fw]
+
+|
+[source,asciidoc]
+----
+icon:fire[role="lime"]
+----
+^.^| icon:fire[role="lime"]
+
+|
+[source,asciidoc]
+----
+icon:burn[]
+----
+^.^| icon:burn[]
+
+|
+[source,asciidoc]
+----
+icon:check-circle[]
+----
+^.^| icon:check-circle[]
+
+|
+[source,asciidoc]
+----
+icon:check-square[]
+----
+^.^| icon:check-square[]
+
+|
+[source,asciidoc]
+----
+icon:circle[]
+----
+^.^| icon:circle[]
+
+|
+[source,asciidoc]
+----
+icon:circle-thin[]
+----
+https://fontawesome.com/icons/circle?style=regular[Circle Icon - Regular {vbar} Font Awesome]
+^.^| icon:circle-thin[]
+
+|
+[source,asciidoc]
+----
+icon:comment[]
+----
+^.^| icon:comment[]
+
+|
+[source,asciidoc]
+----
+icon:address-book[]
+----
+^.^| icon:address-book[]
+
+|
+[source,asciidoc]
+----
+icon:gitlab[]
+----
+^.^| icon:gitlab[]
+|===
+
+=== Icons size
+
+[source,asciidoc]
+----
+icon:heart[fw]
+icon:heart[]
+icon:heart[1x]
+icon:heart[lg]
+icon:heart[2x]
+icon:heart[3x]
+icon:heart[4x]
+icon:heart[5x]
+----
+icon:heart[fw]
+icon:heart[]
+icon:heart[1x]
+icon:heart[lg]
+icon:heart[2x]
+icon:heart[3x]
+icon:heart[4x]
+icon:heart[5x]
+
+[NOTE]
+====
+`asciidoctor-pdf` の場合は白黒で、かつ白抜きになっているなどデザインは異なる。 +
+(asciidoctor 2.0.0; ruby 2.6.4p104; Ubuntu 18.04)
+
+image::asciidoc_icons_resize_heart_pdf.png[alt="asciidoctor-pdfでの出力結果"]
+====
+
+=== rotate and flip the icon
+
+[cols="6a,1a" options="autowidth"]
+|===
+| AsciiDoc | Rendered
+
+|
+[source,asciidoc]
+----
+icon:shield[rotate=90, flip=vertical]
+----
+^.^|
+[example]
+====
+icon:shield[rotate=90, flip=vertical]
+====
+|===
+
+[NOTE]
+====
+`asciidoctor-pdf` では回転の指定は無視されている。
+
+image::asciidoc_icons_rotate_and_flip_ignored_with_outputting_pdf.png[]
+====
+
+
+=== links
+
+[source,asciidoc]
+----
+icon:download[link="https://rubygems.org/downloads/asciidoctor-1.5.2.gem"]
+----
+
+[example]
+====
+icon:download[link="https://rubygems.org/downloads/asciidoctor-1.5.2.gem"]
+====
+
+[NOTE]
+====
+* `asciidoctor-pdf` で出力した結果ではアイコンは描画されていても、リンク切れとなっている。
+====
+
+=== misc
+
+[cols="6a,1a" options="autowidth"]
+|===
+| | Rendered
+
+|
+[source,asciidoc]
+----
+[%hardbreaks]
+icon:bolt[fw] bolt
+icon:heart[fw] heart
+----
+|
+[%hardbreaks]
+icon:bolt[fw] bolt
+icon:heart[fw] heart
+|===
+
+=== References
+
+* https://github.com/asciidoctor/asciidoctor/issues/2535[Upgrade to FontAwesome 5 · Issue #2535 · asciidoctor/asciidoctor · GitHub^]
+* https://qiita.com/tamaina/items/4a0747bf20296e0aab15[Font Awesome 5がリリースされたぞ！ - Qiita^]
+* https://vanillaice000.blog.fc2.com/blog-entry-673.html[Font Awesomeのバージョンが5になりました【重要】 - webのあれこれ^]

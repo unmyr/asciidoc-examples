@@ -1,0 +1,209 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+:icons: font
+
+include::header.adoc[]
+
+endif::[]
+
+== Blocks
+
+.Reference
+* https://asciidoctor.org/docs/user-manual/#blocks[Blocks | Asciidoctor User Manual]
+
+=== Block title (before v1.5.7)
+
+* https://blog.mrhaki.com/2017/01/awesome-asciidoctor-using-filename.html[Awesome Asciidoctor: Using Filename Starting With Dot As Block Title - Messages from mrhaki^] +
+  Written with Asciidoctor 1.5.4 +
+  asciidoc starting with dot - Google Search
+* https://github.com/asciidoctor/asciidoctor/issues/2358[Allow block title to begin with a period (i.e., dot) · Issue #2358 · asciidoctor/asciidoctor^] +
+  asciidoc starting with dot - Google Search
+
+[source,asciidoc]
+--------
+[source,json]
+..eslintrc
+----
+{
+    "key": "value"
+}
+----
+
+[source,json]
+.{blank}.eslintrc
+----
+{
+    "key": "value"
+}
+----
+
+[source,json,title='.eslintrc']
+----
+{
+    "key": "value"
+}
+----
+--------
+
+=== Collapse
+
+[source,asciidoc]
+----
+[%collapsible]
+====
+Example block turns into collapsible summary/details.
+====
+----
+
+[%collapsible]
+====
+Example block turns into collapsible summary/details.
+====
+
+include::asciidoc_block_admonition.adoc[leveloffset=+1]
+
+=== Example
+
+.Example syntax
+[source,asciidoc]
+----
+.Sample document
+====
+Here's a sample AsciiDoc document:
+
+[listing]
+....
+= Title of Document
+Doc Writer
+:toc:
+
+This guide provides...
+....
+
+The document header is useful, but not required.
+====
+Result: Example bl
+----
+
+.Sample document
+====
+Here's a sample AsciiDoc document:
+
+[listing,subs=attributes]
+....
+= Title of Document
+Doc Writer
+:toc:
+{empty}
+This guide provides...
+....
+
+The document header is useful, but not required.
+====
+
+.Reference
+* https://asciidoctor.org/docs/user-manual/#example[Example | Asciidoctor User Manual]
+
+=== Sidebar
+
+.Sidebar syntax
+[source,asciidoc]
+----
+.AsciiDoc history <1>
+**** <2>
+AsciiDoc was first released in Nov 2002 by Stuart Rackham.
+It was designed from the start to be a shorthand syntax
+for producing professional documents like DocBook and LaTeX.
+****
+----
+<1> A title is optional.
+<2> A sidebar is delimited by four asterisks (****).
+
+.AsciiDoc history
+****
+AsciiDoc was first released in Nov 2002 by Stuart Rackham.
+It was designed from the start to be a shorthand syntax
+for producing professional documents like DocBook and LaTeX.
+****
+
+.Reference
+* https://asciidoctor.org/docs/user-manual/#sidebar[Sidebar | Asciidoctor User Manual]
+
+=== Quote
+
+[source,asciidoc]
+----
+.After landing the cloaked Klingon bird of prey in Golden Gate park:
+[quote, Captain James T. Kirk, Star Trek IV: The Voyage Home]
+Everybody remember where we parked.
+----
+
+.After landing the cloaked Klingon bird of prey in Golden Gate park:
+[quote, Captain James T. Kirk, Star Trek IV: The Voyage Home]
+Everybody remember where we parked.
+
+[source,asciidoc]
+----
+[quote, Monty Python and the Holy Grail]
+____
+Dennis: Come and see the violence inherent in the system. Help! Help! I'm being repressed!
+
+King Arthur: Bloody peasant!
+
+Dennis: Oh, what a giveaway! Did you hear that? Did you hear that, eh? That's what I'm on about! Did you see him repressing me? You saw him, Didn't you?
+____
+----
+
+[quote, Monty Python and the Holy Grail]
+____
+Dennis: Come and see the violence inherent in the system. Help! Help! I'm being repressed!
+
+King Arthur: Bloody peasant!
+
+Dennis: Oh, what a giveaway! Did you hear that? Did you hear that, eh? That's what I'm on about! Did you see him repressing me? You saw him, Didn't you?
+____
+
+.Reference
+* https://asciidoctor.org/docs/user-manual/#quote[Quote | Asciidoctor User Manual]
+
+=== Verse
+
+[source,asciidoc]
+----
+[verse, Carl Sandburg, two lines from the poem Fog]
+The fog comes
+on little cat feet.
+----
+
+[verse, Carl Sandburg, two lines from the poem Fog]
+The fog comes
+on little cat feet.
+
+[source,asciidoc]
+----
+[verse, Carl Sandburg, Fog]
+____
+The fog comes
+on little cat feet.
+
+It sits looking
+over harbor and city
+on silent haunches
+and then moves on.
+____
+----
+
+[verse, Carl Sandburg, Fog]
+____
+The fog comes
+on little cat feet.
+
+It sits looking
+over harbor and city
+on silent haunches
+and then moves on.
+____
+
+.Reference
+* https://asciidoctor.org/docs/user-manual/#verse[Verse | Asciidoctor User Manual]

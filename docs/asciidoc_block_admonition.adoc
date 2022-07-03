@@ -1,0 +1,104 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+:icons: font
+
+include::header.adoc[]
+
+endif::[]
+
+== Admonition
+
+* NOTE
+* TIP
+* IMPORTANT
+* CAUTION
+* WARNING
+
+[CAUTION]
+====
+`:icons: font` は、セクションが開始される前に指定すること。 +
+そうしない場合、次のようにスタイルシートを取り込むコードを手動で入れる必要が出てきたり、
+Checklist のスタイルが無効になったりする。
+
+[source,asciidoc]
+----
+\ifeval::["{backend}" == "html5"]
+[pass]
+++++
+<link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css">
+++++
+\endif::[]
+
+:icons: font
+----
+====
+
+.Admonition block syntax
+[source,asciidoc]
+----
+[IMPORTANT] <1>
+.Feeding the Werewolves
+==== <2>
+While werewolves are hardy community members, keep in mind the following dietary concerns:
+
+. They are allergic to cinnamon.
+. More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.
+. Celery makes them sad.
+====
+----
+<1> Set the label in an attribute list on a delimited block. The label must be uppercase.
+<2> Admonition styles are commonly set on example blocks. Example blocks are delimited by four equal signs (`====`).
+
+[IMPORTANT]
+.Feeding the Werewolves
+====
+While werewolves are hardy community members, keep in mind the following dietary concerns:
+
+. They are allergic to cinnamon.
+. More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.
+. Celery makes them sad.
+====
+
+[source,asciidoc]
+----
+:icons: font
+
+= section 1
+
+NOTE: notes
+
+TIP: 補足
+
+IMPORTANT: 重要.
+
+WARNING: 警告.
+
+CAUTION: 注意.
+----
+
+NOTE: notes
+
+TIP: 補足
+
+IMPORTANT: 重要.
+
+WARNING: 警告.
+
+CAUTION: 注意.
+
+[NOTE]
+====
+When using `callout`, the number icons are not replaced unless `:icons: font` is specified.
+
+[source,xml]
+----
+<section>
+  <title>Section Title</title> <!--1-->
+</section>
+----
+<1> The section title is required.
+====
+
+.Reference
+* https://asciidoctor.org/docs/user-manual/#admonition[Admonition | Asciidoctor User Manual]

@@ -1,0 +1,361 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+:icons: font
+
+include::header.adoc[]
+
+endif::[]
+
+== Tables
+
+=== Arranging cells alignment
+
+==== Cells aligned horizontally, vertically
+[source,asciidoc]
+.Arranging cells alignment
+----
+[cols="1,2,2,2"]
+|===
+h|
+h| column header 1
+h| column header 2
+h| column header 3
+
+h| Top +
+{blank} +
+{blank}
+<| Top left
+^| Top center
+>| Top right
+
+h| {blank} +
+Middle +
+{blank}
+<.^| Middle left
+^.^| Middle center
+>.^| Middle right
+
+h| {blank} +
+{blank} +
+Bottom
+<.^| Middle left
+^.^| Middle center
+>.^| Middle right
+|===
+----
+
+.Rendered
+[%collapsible]
+====
+[cols="1,2,2,2"]
+|===
+h|
+h| column header 1
+h| column header 2
+h| column header 3
+
+h| Top +
+{blank} +
+{blank}
+<| Top left
+^| Top center
+>| Top right
+
+h| {blank} +
+Middle +
+{blank}
+<.^| Middle left
+^.^| Middle center
+>.^| Middle right
+
+h| {blank} +
+{blank} +
+Bottom
+<.^| Middle left
+^.^| Middle center
+>.^| Middle right
+|===
+====
+
+==== Arranging cells alignment vertically
+
+[source,asciidoc]
+.Arranging cells alignment vertically
+----
+[cols="1,2,2,2"]
+|===
+h|
+h| column header 1
+h| column header 2
+h| column header 3
+
+h|
+align vertically +
+{blank} +
+{blank}
+.<| top left
+.^| center left
+.>| bottom left
+|===
+----
+
+.Rendered
+[%collapsible]
+====
+[cols="1,2,2,2"]
+|===
+h|
+h| column header 1
+h| column header 2
+h| column header 3
+
+h|
+align vertically +
+{blank} +
+{blank}
+.<| top left
+.^| center left
+.>| bottom left
+|===
+====
+
+==== Arranging cells alignment horizontally
+
+[source,asciidoc]
+.Arranging cells alignment horizontally
+----
+[cols="2,>1" options="header, autowidth"]
+|===
+| Item  <| Price
+
+| Apple  | 150
+| Banana | 100
+|===
+----
+
+.Rendered
+[%collapsible]
+====
+[cols="2,>1" options="header, autowidth"]
+|===
+| Item  <| Price
+
+| Apple  | 150
+| Banana | 100
+|===
+====
+
+=== csv
+
+[format="csv" cols="^.>,>m,<" options="header,autowidth"]
+,===
+ifndef::env-github[]
+include::resources/asciidoc_tables_sample.csv[]
+endif::[]
+ifdef::env-github[]
+"ID　　　　","金額　　　　　","　　　　　　備考"
+1,"$100",Foo
+2,"$20",Bar
+"　　　　__ID__","　　　　　〇**〇**","　　　　　　　たpass:p[ +]　　　　　　　て"
+endif::[]
+,===
+
+=== separator
+
+.セパレーターが「:」のテーブル
+:===
+Writing tools: Awesomeness
+
+Asciidoctor: Oh yeah!
+MS Word: No!
+:===
+
+.csv形式でセパレーターが「;」のテーブル
+[format="csv", separator=";", options="header"]
+,===
+Writing tools; Awesomeness
+
+Asciidoctor; hello, world
+MS Word; No!
+,===
+
+==== custom separator
+[cols="3" separator="¦" options="header, autowidth"]
+.「{vbar}」を含むテーブル
+|===
+¦ equations ¦ english ¦ mean
+
+¦ |A × B|
+¦ magnitude A cross B
+¦ 外積の大きさ
+|===
+
+[source,asciidoc]
+----
+[cols="3" separator="¦" options="header, autowidth"]
+.「{vbar}」を含むテーブル
+|===
+¦ equations ¦ english ¦ mean
+
+¦ |A × B|
+¦ magnitude A cross B
+¦ 外積の大きさ
+|===
+----
+
+=== span
+[cols="3"]
+.Cells aligned horizontally, vertically, and across a span of three columns
+|===
+^|Prefix the `{vbar}` with `{caret}` to center content horizontally
+<|Prefix the `{vbar}` with `<` to align the content to the left horizontally
+>|Prefix the `{vbar}` with `>` to align the content to the right horizontally
+
+.^|Prefix the `{vbar}` with a `.` and `{caret}` to center the content in the cell vertically
+.<|Prefix the `{vbar}` with a `.` and `<` to align the content to the top of the cell
+.>|Prefix the `{vbar}` with a `.` and `>` to align the content to the bottom of the cell
+
+3+^.^|This content spans three columns (`3{plus}`) and is centered horizontally (`{caret}`) and vertically (`.{caret}`) within the cell.
+|===
+
+[source,asciidoc]
+----
+|===
+^|Prefix the `{vbar}` with `{caret}` to center content horizontally
+<|Prefix the `{vbar}` with `<` to align the content to the left horizontally
+>|Prefix the `{vbar}` with `>` to align the content to the right horizontally
+
+.^|Prefix the `{vbar}` with a `.` and `{caret}` to center the content in the cell vertically
+.<|Prefix the `{vbar}` with a `.` and `<` to align the content to the top of the cell
+.>|Prefix the `{vbar}` with a `.` and `>` to align the content to the bottom of the cell
+
+3+^.^|This content spans three columns (`3{plus}`) and is centered horizontally (`{caret}`) and vertically (`.{caret}`) within the cell.
+|===
+----
+
+=== nested table
+
+|===
+| Foo | Bar | Baz
+
+| aaa a|
+!===
+! xxxxx ! xxxxx
+
+! apple ! banana
+!===
+|
+|===
+
+=== column styles
+link:++https://asciidoctor.org/docs/user-manual/#cols-format++[23.2. Column Formatting]
+
+[cols="2d,^1m,4d"]
+|===
+| Style Name | Value | Description
+
+| AsciiDoc   | a
+| Supports block-level elements (paragraphs, delimited blocks, and block macros).
+  This style effectively creates a nested, standalone AsciiDoc document.
+  Implicit attributes such as doctitle from the parent document will be shadowed.
+  Custom attributes are inherited.
+
+| Emphasis   | e     | Text is italicized
+| Header     | h     | Header styles are applied to the column +
+header style, all column values are styled as header
+| Literal    | l     | Column content is treated as if it were inside a literal block. +
+text is shown in monospace font and line breaks are kept.
+| Monospaced | m     | Text is rendered in monospaced font
+| None +
+(default style) | d  | Text is handled like a normal paragraph.
+ Supports all markup (i.e., inline formatting, inline macros) that is permitted in a paragraph.
+| Strong     | s     | Text is bolded
+| Verse      | v     | Column content is treated as if it were inside a verse block.
+*keeps line breaks*
+|===
+
+=== Cell spanning
+
+.Cell spanning three columns
+[source,asciidoc]
+----
+|===
+
+|Cell in column 1, row 1 |Cell in column 2, row 1 |Cell in column 3, row 1
+
+3+|Content in a single cell that spans columns 1, 2, and 3
+
+|Cell in column 1, row 3
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+
+|===
+----
+
+.Result: Rendered table where cell spans three columns
+|===
+
+|Cell in column 1, row 1 |Cell in column 2, row 1 |Cell in column 3, row 1
+
+3+|Content in a single cell that spans columns 1, 2, and 3
+
+|Cell in column 1, row 3
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+
+|===
+
+.Cell spanning two rows
+[source,asciidoc]
+----
+|===
+
+|Cell in column 1, row 1 |Cell in column 2, row 1 |Cell in column 3, row 1
+
+.2+|Content in a single cell that spans rows 2 and 3
+|Cell in column 2, row 2
+|Cell in column 3, row 2
+
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+
+|===
+----
+
+.Result: Rendered table where a cell spans two rows
+|===
+
+|Cell in column 1, row 1 |Cell in column 2, row 1 |Cell in column 3, row 1
+
+.2+|Content in a single cell that spans rows 2 and 3
+|Cell in column 2, row 2
+|Cell in column 3, row 2
+
+|Cell in column 2, row 3
+|Cell in column 3, row 3
+
+|===
+
+.Multi-row table headings(not working)
+[source,asciidoc]
+----
+[cols=3,width="100%",options="header"]
+|===
+| A1 2+| B-C1
+|      | *B2* | *C2*
+
+| A3   | B3   | C3
+|===
+----
+
+.Result: Rendered table where a multi-row table headings(not working)
+[cols=3,width="100%",options="header"]
+|===
+| A1 2+| B-C1
+|      | *B2* | *C2*
+
+| A3   | B3   | C3
+|===
+
+* https://github.com/asciidoctor/asciidoctor/issues/1687[Multi-row table headings · Issue #1687 · asciidoctor/asciidoctor · GitHub]
