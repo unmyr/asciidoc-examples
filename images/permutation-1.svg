@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg height='225pt' preserveAspectRatio='xMidYMid meet' viewBox='0.00 0.00 112.00 225.00' width='112pt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'>
+<g class='graph' id='graph0' transform='scale(1 1) rotate(0) translate(4 221)'>
+<polygon fill='white' points='-4,4 -4,-221 108,-221 108,4 -4,4' stroke='transparent'/>
+<g class='cluster' id='clust3'>
+<title>cluster_1</title>
+<path d='M73.33,-8C73.33,-8 84.67,-8 84.67,-8 90.33,-8 96,-13.67 96,-19.33 96,-19.33 96,-197.67 96,-197.67 96,-203.33 90.33,-209 84.67,-209 84.67,-209 73.33,-209 73.33,-209 67.67,-209 62,-203.33 62,-197.67 62,-197.67 62,-19.33 62,-19.33 62,-13.67 67.67,-8 73.33,-8' fill='#f5f5dc' stroke='#d5d5ac'/>
+<text font-family='Times,serif' font-size='14.00' font-style='italic' text-anchor='start' x='74' y='-194.8'>X</text>
+</g>
+<g class='cluster' id='clust1'>
+<title>cluster_0</title>
+<path d='M19.33,-8C19.33,-8 30.67,-8 30.67,-8 36.33,-8 42,-13.67 42,-19.33 42,-19.33 42,-197.67 42,-197.67 42,-203.33 36.33,-209 30.67,-209 30.67,-209 19.33,-209 19.33,-209 13.67,-209 8,-203.33 8,-197.67 8,-197.67 8,-19.33 8,-19.33 8,-13.67 13.67,-8 19.33,-8' fill='#f5f5dc' stroke='#d5d5ac'/>
+<text font-family='Times,serif' font-size='14.00' font-style='italic' text-anchor='start' x='20' y='-194.8'>X</text>
+</g>
+
+<g class='node' id='node1'>
+<title>s1</title>
+<ellipse cx='25' cy='-169' fill='#dd6060' rx='9' ry='9' stroke='#0d0ee0' stroke-opacity='0.050980'/>
+<text font-family='Times,serif' font-size='12.00' text-anchor='middle' x='25' y='-165.9'>1</text>
+</g>
+
+<g class='node' id='node6'>
+<title>d1</title>
+<ellipse cx='79' cy='-169' fill='#dd6060' rx='9' ry='9' stroke='#0d0ee0' stroke-opacity='0.050980'/>
+<text font-family='Times,serif' font-size='12.00' text-anchor='middle' x='79' y='-165.9'>1</text>
+</g>
+
+
+<g class='node' id='node10'>
+<title>d5</title>
+<ellipse cx='79' cy='-25' fill='#dd6060' rx='9' ry='9' stroke='#0d0ee0' stroke-opacity='0.050980'/>
+<text font-family='Times,serif' font-size='12.00' text-anchor='middle' x='79' y='-21.9'>5</text>
+</g>
+
+<g class='edge' id='edge2'>
+<title>s1&#45;&gt;d5</title>
+<path d='M32.24,-163.61C35.65,-160.31 39.65,-155.81 42,-151 63.45,-107.15 40.55,-86.85 62,-43 62.81,-41.35 63.81,-39.73 64.92,-38.19' fill='none' stroke='#8b0000'/>
+<polygon fill='#8b0000' points='71.76,-30.39 68.55,-40.88 68.46,-34.15 65.16,-37.91 65.16,-37.91 65.16,-37.91 68.46,-34.15 61.78,-34.94 71.76,-30.39 71.76,-30.39' stroke='#8b0000'/>
+</g>
+
+<g class='node' id='node2'>
+<title>s2</title>
+<ellipse cx='25' cy='-133' fill='#dd6060' rx='9' ry='9' stroke='#0d0ee0' stroke-opacity='0.050980'/>
+<text font-family='Times,serif' font-size='12.00' text-anchor='middle' x='25' y='-129.9'>2</text>
+</g>
+
+<g class='node' id='node9'>
+<title>d4</title>
+<ellipse cx='79' cy='-61' fill='#dd6060' rx='9' ry='9' stroke='#0d0ee0' stroke-opacity='0.050980'/>
+<text font-family='Times,serif' font-size='12.00' text-anchor='middle' x='79' y='-57.9'>4</text>
+</g>
+
+<g class='edge' id='edge3'>
+<title>s2&#45;&gt;d4</title>
+<path d='M31.98,-126.95C35.15,-123.58 39,-119.23 42,-115 52.59,-100.07 51.41,-93.93 62,-79 63.03,-77.55 64.16,-76.08 65.33,-74.64' fill='none' stroke='#8b0000'/>
+<polygon fill='#8b0000' points='72.02,-67.05 68.78,-77.53 68.71,-70.8 65.41,-74.55 65.41,-74.55 65.41,-74.55 68.71,-70.8 62.03,-71.58 72.02,-67.05 72.02,-67.05' stroke='#8b0000'/>
+</g>
+
+<g class='node' id='node3'>
+<title>s3</title>
+<ellipse cx='25' cy='-97' fill='#dd6060' rx='9' ry='9' stroke='#0d0ee0' stroke-opacity='0.050980'/>
+<text font-family='Times,serif' font-size='12.00' text-anchor='middle' x='25' y='-93.9'>3</text>
+</g>
+
+<g class='edge' id='edge4'>
+<title>s3&#45;&gt;d1</title>
+<path d='M31.98,-103.05C35.15,-106.42 39,-110.77 42,-115 52.59,-129.93 51.41,-136.07 62,-151 63.03,-152.45 64.16,-153.92 65.33,-155.36' fill='none' stroke='#8b0000'/>
+<polygon fill='#8b0000' points='72.02,-162.95 62.03,-158.42 68.71,-159.2 65.41,-155.45 65.41,-155.45 65.41,-155.45 68.71,-159.2 68.78,-152.47 72.02,-162.95 72.02,-162.95' stroke='#8b0000'/>
+</g>
+
+<g class='node' id='node4'>
+<title>s4</title>
+<ellipse cx='25' cy='-61' fill='#dd6060' rx='9' ry='9' stroke='#0d0ee0' stroke-opacity='0.050980'/>
+<text font-family='Times,serif' font-size='12.00' text-anchor='middle' x='25' y='-57.9'>4</text>
+</g>
+
+<g class='node' id='node7'>
+<title>d2</title>
+<ellipse cx='79' cy='-133' fill='#dd6060' rx='9' ry='9' stroke='#0d0ee0' stroke-opacity='0.050980'/>
+<text font-family='Times,serif' font-size='12.00' text-anchor='middle' x='79' y='-129.9'>2</text>
+</g>
+
+<g class='edge' id='edge5'>
+<title>s4&#45;&gt;d2</title>
+<path d='M31.98,-67.05C35.15,-70.42 39,-74.77 42,-79 52.59,-93.93 51.41,-100.07 62,-115 63.03,-116.45 64.16,-117.92 65.33,-119.36' fill='none' stroke='#8b0000'/>
+<polygon fill='#8b0000' points='72.02,-126.95 62.03,-122.42 68.71,-123.2 65.41,-119.45 65.41,-119.45 65.41,-119.45 68.71,-123.2 68.78,-116.47 72.02,-126.95 72.02,-126.95' stroke='#8b0000'/>
+</g>
+
+<g class='node' id='node5'>
+<title>s5</title>
+<ellipse cx='25' cy='-25' fill='#dd6060' rx='9' ry='9' stroke='#0d0ee0' stroke-opacity='0.050980'/>
+<text font-family='Times,serif' font-size='12.00' text-anchor='middle' x='25' y='-21.9'>5</text>
+</g>
+
+<g class='node' id='node8'>
+<title>d3</title>
+<ellipse cx='79' cy='-97' fill='#dd6060' rx='9' ry='9' stroke='#0d0ee0' stroke-opacity='0.050980'/>
+<text font-family='Times,serif' font-size='12.00' text-anchor='middle' x='79' y='-93.9'>3</text>
+</g>
+
+<g class='edge' id='edge6'>
+<title>s5&#45;&gt;d3</title>
+<path d='M31.98,-31.05C35.15,-34.42 39,-38.77 42,-43 52.59,-57.93 51.41,-64.07 62,-79 63.03,-80.45 64.16,-81.92 65.33,-83.36' fill='none' stroke='#8b0000'/>
+<polygon fill='#8b0000' points='72.02,-90.95 62.03,-86.42 68.71,-87.2 65.41,-83.45 65.41,-83.45 65.41,-83.45 68.71,-87.2 68.78,-80.47 72.02,-90.95 72.02,-90.95' stroke='#8b0000'/>
+</g>
+</g>
+</svg>

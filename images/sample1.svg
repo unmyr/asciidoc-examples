@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg height='44pt' preserveAspectRatio='xMidYMid meet' viewBox='0.00 0.00 245.09 44.00' width='245pt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'>
+<g class='graph' id='graph0' transform='scale(1 1) rotate(0) translate(4 40)'>
+<title>G</title>
+<polygon fill='white' points='-4,4 -4,-40 241.09,-40 241.09,4 -4,4' stroke='transparent'/>
+
+<g class='node' id='node1'>
+<title>Foo</title>
+<ellipse cx='27.3' cy='-18' fill='none' rx='27.1' ry='18' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='27.3' y='-14.3'>Foo</text>
+</g>
+
+<g class='node' id='node2'>
+<title>Bar</title>
+<ellipse cx='117.89' cy='-18' fill='none' rx='27.1' ry='18' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='117.89' y='-14.3'>Bar</text>
+</g>
+
+<g class='edge' id='edge1'>
+<title>Foo&#45;&gt;Bar</title>
+<path d='M54.88,-18C62.85,-18 71.74,-18 80.24,-18' fill='none' stroke='black'/>
+<polygon fill='black' points='80.33,-21.5 90.33,-18 80.33,-14.5 80.33,-21.5' stroke='black'/>
+</g>
+
+<g class='node' id='node3'>
+<title>Baz</title>
+<ellipse cx='209.14' cy='-18' fill='none' rx='27.9' ry='18' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='209.14' y='-14.3'>Baz</text>
+</g>
+
+<g class='edge' id='edge2'>
+<title>Bar&#45;&gt;Baz</title>
+<path d='M145.67,-18C153.63,-18 162.49,-18 170.98,-18' fill='none' stroke='black'/>
+<polygon fill='black' points='171.07,-21.5 181.07,-18 171.07,-14.5 171.07,-21.5' stroke='black'/>
+</g>
+</g>
+</svg>

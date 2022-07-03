@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg height='44pt' preserveAspectRatio='xMidYMid meet' viewBox='0.00 0.00 242.00 44.00' width='242pt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'>
+<g class='graph' id='graph0' transform='scale(1 1) rotate(0) translate(4 40)'>
+<title>G</title>
+<polygon fill='white' points='-4,4 -4,-40 238,-40 238,4 -4,4' stroke='transparent'/>
+
+<g class='node' id='node1'>
+<title>松</title>
+<ellipse cx='27' cy='-18' fill='none' rx='27' ry='18' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='27' y='-14.3'>松</text>
+</g>
+
+<g class='node' id='node2'>
+<title>竹</title>
+<ellipse cx='117' cy='-18' fill='none' rx='27' ry='18' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='117' y='-14.3'>竹</text>
+</g>
+
+<g class='edge' id='edge1'>
+<title>松&#45;&gt;竹</title>
+<path d='M54.4,-18C62.39,-18 71.31,-18 79.82,-18' fill='none' stroke='black'/>
+<polygon fill='black' points='79.92,-21.5 89.92,-18 79.92,-14.5 79.92,-21.5' stroke='black'/>
+</g>
+
+<g class='node' id='node3'>
+<title>梅</title>
+<ellipse cx='207' cy='-18' fill='none' rx='27' ry='18' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='middle' x='207' y='-14.3'>梅</text>
+</g>
+
+<g class='edge' id='edge2'>
+<title>竹&#45;&gt;梅</title>
+<path d='M144.4,-18C152.39,-18 161.31,-18 169.82,-18' fill='none' stroke='black'/>
+<polygon fill='black' points='169.92,-21.5 179.92,-18 169.92,-14.5 169.92,-21.5' stroke='black'/>
+</g>
+</g>
+</svg>

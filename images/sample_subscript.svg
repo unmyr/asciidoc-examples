@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg height='131pt' preserveAspectRatio='xMidYMid meet' viewBox='0.00 0.00 72.99 131.00' width='73pt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'>
+<g class='graph' id='graph0' transform='scale(1 1) rotate(0) translate(4 127)'>
+<title>g</title>
+<polygon fill='white' points='-4,4 -4,-127 68.99,-127 68.99,4 -4,4' stroke='transparent'/>
+
+<g class='node' id='node1'>
+<title>s1</title>
+<ellipse cx='32.5' cy='-105' fill='none' rx='27' ry='18' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' font-style='italic' text-anchor='start' x='24' y='-102.3'>x</text>
+<text baseline-shift='super' font-family='Times,serif' font-size='14.00' text-anchor='start' x='33' y='-102.3'>2</text>
+</g>
+
+<g class='node' id='node2'>
+<title>s2</title>
+<ellipse cx='32.5' cy='-18' fill='none' rx='32.49' ry='18' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' font-style='italic' text-anchor='start' x='15.5' y='-15.3'>a</text>
+<text baseline-shift='sub' font-family='Times,serif' font-size='14.00' text-anchor='start' x='24.5' y='-15.3'>n</text>
+<text font-family='Times,serif' font-size='14.00' font-style='italic' text-anchor='start' x='32.5' y='-15.3'>x</text>
+<text baseline-shift='super' font-family='Times,serif' font-size='14.00' text-anchor='start' x='41.5' y='-15.3'>2</text>
+</g>
+
+<g class='edge' id='edge1'>
+<title>s1&#45;&gt;s2</title>
+<path d='M32.5,-86.8C32.5,-75.16 32.5,-59.55 32.5,-46.24' fill='none' stroke='black'/>
+<polygon fill='black' points='36,-46.18 32.5,-36.18 29,-46.18 36,-46.18' stroke='black'/>
+<text font-family='Times,serif' font-size='14.00' text-anchor='start' x='32.5' y='-58.8'>a</text>
+<text baseline-shift='sub' font-family='Times,serif' font-size='14.00' text-anchor='start' x='41.5' y='-58.8'>n</text>
+</g>
+</g>
+</svg>
