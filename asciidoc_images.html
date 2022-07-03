@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>AsciiDoc examples</title>
+<title>Images</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -435,6 +435,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 pre.rouge table td { padding: 5px; }
 pre.rouge table pre { margin: 0; }
@@ -656,68 +657,261 @@ pre.rouge {
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_asciidoc_examples">AsciiDoc examples</a>
+<li><a href="#_images">Images</a>
 <ul class="sectlevel2">
-<li><a href="#_lists">Lists</a></li>
+<li><a href="#_lists_with_images">lists with images</a></li>
+<li><a href="#_alt_and_title">alt and title</a>
+<ul class="sectlevel3">
+<li><a href="#_note_1inline_title_attribute_is_not_used_for_alt_text">NOTE 1(inline): Title attribute is not used for alt text</a></li>
+<li><a href="#_note_2block_title_attribute_is_not_used_for_alt_text">NOTE 2(block): Title attribute is not used for alt text</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a href="#_references">References</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="paragraph">
-<p><a href="#">Index</a> |
-<a href="asciidoc_images.html">Images</a> |
+<p><a href="index.html">Index</a> |
+<a href="#">Images</a> |
 <a href="math.html">Math</a> |
 <a href="diagram-graphviz.html">Graphviz</a> |
 <a href="diagram-plantuml.html">PlantUML</a><br></p>
 </div>
 <div class="sect1">
-<h2 id="_asciidoc_examples">AsciiDoc examples</h2>
+<h2 id="_images">Images</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_lists">Lists</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="asciidoc">.Bullet list
-* Apple
-* Oranges
-* Banana
-
-.Numbered list
-. one
-. two
-. three</code></pre>
+<pre class="rouge highlight"><code data-lang="asciidoc">[#img-hydrangea] <i class="conum" data-value="1"></i><b>(1)</b>
+.A hydrangea <i class="conum" data-value="2"></i><b>(2)</b>
+[link=https://unmyr.github.io/asciidoc-examples/images/hydrangea-512x382.jpg,window=_blank] <i class="conum" data-value="3"></i><b>(3)</b>
+image::hydrangea-512x382.jpg[Hydrangea,300,224] <i class="conum" data-value="4"></i><b>(4)</b></code></pre>
 </div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Assigns an ID to the block</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Defines the title of the block image, which gets displayed underneath the image when rendered.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td>link makes the image a link (this can also be defined inside the attribute list of the block macro)</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td>The second and third positional attributes define the width and height, respectively.</td>
+</tr>
+</table>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div id="img-hydrangea" class="imageblock">
+<div class="content">
+<a class="image" href="https://unmyr.github.io/asciidoc-examples/images/hydrangea-512x382.jpg" target="_blank" rel="noopener"><img src="images/hydrangea-512x382.jpg" alt="Hydrangea" width="300" height="224"></a>
+</div>
+<div class="title">Figure 1. A hydrangea</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Positional attributes are un-named values at the start of the attribute list. The attribute that they are assigned to depends on the type of the element:</p>
 </div>
 <div class="ulist">
-<div class="title">Bullet list</div>
 <ul>
 <li>
-<p>Apple</p>
+<p><code>icon:</code> (1) size</p>
 </li>
 <li>
-<p>Oranges</p>
+<p><code>image:</code> and <code>image::</code> (1) alt text, (2) width, (3) height</p>
 </li>
 <li>
-<p>Banana</p>
+<p>Delimited blocks: (1) block name (aka style)</p>
+</li>
+<li>
+<p>Other inline quoted text: (1) role</p>
 </li>
 </ul>
 </div>
-<div class="olist arabic">
-<div class="title">Numbered list</div>
-<ol class="arabic">
-<li>
-<p>one</p>
-</li>
-<li>
-<p>two</p>
-</li>
-<li>
-<p>three</p>
-</li>
-</ol>
+<div class="listingblock">
+<div class="title">For example, the following two image macros are equivalent.</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">image::hydrangea-512x382.jpg[Hydrangea,300,224]
+
+image::hydrangea-512x382.jpg[alt=Hydrangea,width=300,height=224]</code></pre>
 </div>
+</div>
+<div class="ulist">
+<div class="title">References</div>
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#positional-attribute" target="_blank" rel="noopener">10. Attributes » 10.5. Setting Attributes on an Element » 10.15.1. Positional Attribute | Asciidoctor User Manual</a></p>
+</li>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#images" target="_blank" rel="noopener">29. Images | Asciidoctor User Manual</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_lists_with_images">lists with images</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">* block
++
+image::icon-75x75.png[Some icon,75,75]
++
+image::icon-75x75.png[Some icon,75,75,align=center]
++
+image::icon-75x75.png[Some icon,75,75,align=right]
+* inline +
+image:icon-75x75.png[Some icon,75,75]
+image:icon-75x75.png[Some icon,75,75]</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>block</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/icon-75x75.png" alt="Some icon" width="75" height="75">
+</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/icon-75x75.png" alt="Some icon" width="75" height="75">
+</div>
+</div>
+<div class="imageblock text-right">
+<div class="content">
+<img src="images/icon-75x75.png" alt="Some icon" width="75" height="75">
+</div>
+</div>
+</li>
+<li>
+<p>inline<br>
+<span class="image"><img src="images/icon-75x75.png" alt="Some icon" width="75" height="75"></span>
+<span class="image"><img src="images/icon-75x75.png" alt="Some icon" width="75" height="75"></span></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_alt_and_title">alt and title</h3>
+<div class="listingblock">
+<div class="title">inline images</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">image:hydrangea-512x382.jpg[Hydrangea(alt),300,224,title="Hydrangea(title)"]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/hydrangea-512x382.jpg" alt="Hydrangea(alt)" width="300" height="224" title="Hydrangea(title)"></span></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"paragraph"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">"image"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"images/hydrangea-512x382.jpg"</span> <span class="na">alt=</span><span class="s">"Hydrangea(alt)"</span> <span class="na">width=</span><span class="s">"300"</span> <span class="na">height=</span><span class="s">"224"</span> <span class="na">title=</span><span class="s">"Hydrangea(title)"</span><span class="nt">&gt;&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_note_1inline_title_attribute_is_not_used_for_alt_text">NOTE 1(inline): Title attribute is not used for alt text</h4>
+<div class="paragraph">
+<p>The title attribute is used for paragraph names, not alt text.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pattern 1</p>
+<div class="listingblock">
+<div class="title">inline images</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">.Hydrangea(title)
+image:hydrangea-512x382.jpg[Hydrangea(alt),300,224]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Hydrangea(title)</div>
+<p><span class="image"><img src="images/hydrangea-512x382.jpg" alt="Hydrangea(alt)" width="300" height="224"></span></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"paragraph"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>Hydrangea(title)<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">"image"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"images/hydrangea-512x382.jpg"</span> <span class="na">alt=</span><span class="s">"Hydrangea(alt)"</span> <span class="na">width=</span><span class="s">"300"</span> <span class="na">height=</span><span class="s">"224"</span><span class="nt">&gt;&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Pattern 2</p>
+<div class="listingblock">
+<div class="title">inline images</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">[title="Hydrangea(title)"]
+image:hydrangea-512x382.jpg[Hydrangea(alt),300,224]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Hydrangea(title)</div>
+<p><span class="image"><img src="images/hydrangea-512x382.jpg" alt="Hydrangea(alt)" width="300" height="224"></span></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"paragraph"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>Hydrangea(title)<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">"image"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"images/hydrangea-512x382.jpg"</span> <span class="na">alt=</span><span class="s">"Hydrangea(alt)"</span> <span class="na">width=</span><span class="s">"300"</span> <span class="na">height=</span><span class="s">"224"</span><span class="nt">&gt;&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_note_2block_title_attribute_is_not_used_for_alt_text">NOTE 2(block): Title attribute is not used for alt text</h4>
+<div class="listingblock">
+<div class="title">block images</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">image::hydrangea-512x382.jpg[Hydrangea(alt),300,224,title="Hydrangea(title)"]</code></pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/hydrangea-512x382.jpg" alt="Hydrangea(alt)" width="300" height="224">
+</div>
+<div class="title">Figure 2. Hydrangea(title)</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"imageblock"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/hydrangea-512x382.jpg"</span> <span class="na">alt=</span><span class="s">"Hydrangea(alt)"</span> <span class="na">width=</span><span class="s">"300"</span> <span class="na">height=</span><span class="s">"224"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span>Figure 2. Hydrangea(title)<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#images" target="_blank" rel="noopener">Images | Asciidoctor User Manual</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
