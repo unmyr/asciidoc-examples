@@ -1,6 +1,6 @@
 BASE_DIR=..
 DIST_DIR=$(BASE_DIR)
-OUTPUT_DIR_HTML=$(DIST_DIR)/html
+OUTPUT_DIR_HTML=$(DIST_DIR)/dist
 
 include $(BASE_DIR)/asciidoc.mk
 
