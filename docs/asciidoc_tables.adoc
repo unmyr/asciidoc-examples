@@ -148,6 +148,19 @@ align vertically +
 
 === csv
 
+[source,asciidoc]
+----
+[format="csv" cols="^.>,>m,<" options="header,autowidth"]
+,===
+"ID　　　　","金額　　　　　","　　　　　　備考"
+1,"$100",Foo
+2,"$20",Bar
+"　　　　__ID__","　　　　　〇**〇**","　　　　　　　たpass:p[ +]　　　　　　　て"
+
+,===
+----
+
+.Rendered
 [format="csv" cols="^.>,>m,<" options="header,autowidth"]
 ,===
 ifndef::env-github[]
@@ -236,6 +249,22 @@ MS Word; No!
 
 === nested table
 
+[source,asciidoc]
+----
+|===
+| Foo | Bar | Baz
+
+| aaa a|
+!===
+! xxxxx ! xxxxx
+
+! apple ! banana
+!===
+|
+|===
+----
+
+.Rendered
 |===
 | Foo | Bar | Baz
 

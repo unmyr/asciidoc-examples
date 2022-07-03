@@ -9,6 +9,14 @@ include::header.adoc[]
 
 === Use Case Diagram
 
+[source,plantuml]
+----
+@startuml
+:Alice: -> (Hello)
+:アリス: -> (こんにちは)
+@enduml
+----
+
 .defaultFontName is omitted
 [plantuml,plantuml_sample_sd_01_defaultFontName_omit,format="svg"]
 ....
@@ -20,39 +28,39 @@ include::header.adoc[]
 
 
 === Commutative diagram
-[plantuml,plantuml_sample_commutative_diagram_01,format="svg"]
+[%collapsible]
+====
+[source,plantuml]
+----
+include::resources/diagram-plantuml_commutative_diagram_01.puml[]
+----
+====
+
+[plantuml,diagram-plantuml_commutative_diagram_01,format="svg"]
 ....
-hide empty description
-skinparam shadowing false
-skinparam arrow {
-  Color black
-}
-skinparam state {
-  BorderColor transparent
-  BackgroundColor transparent
-  Padding 0
-}
-
-left to right direction
-
-state "**V**" as V1
-state "**V**" as V2
-state "**V**" as V3
-
-V1 --> V2 : S
-V2 --> V3 : T
-V2 --> V1 : S<sup>-1</sup>
-V3 --> V2 : T<sup> -1</sup>
-V1 --> V3 : TS
-V3 --> V1 : (TS)<sup>-1</sup>
+include::resources/diagram-plantuml_commutative_diagram_01.puml[]
 ....
-
 
 === Class Diagram
 
 ==== Proxy Design Pattern
 
-.PlantUMLの例
+[source,plantuml]
+----
+class Client
+interface Subject {
+  +doIt()
+}
+
+class Proxy {
+  +doIt()
+}
+
+Subject <|-- Proxy
+
+Client -> Subject : doIt()
+----
+
 [plantuml, asciidoc_diagram_plantuml_class_proxy_pattern, svg]
 ....
 class Client
