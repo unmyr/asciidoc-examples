@@ -460,7 +460,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_accents">Accents</a></li>
 <li><a href="#_stretchy_brackets">Stretchy brackets</a></li>
 <li><a href="#_evaluation_at_limits">Evaluation at limits</a></li>
-<li><a href="#_case_definitions">Case definitions</a></li>
+<li><a href="#_case_definitions">Case definitions</a>
+<ul class="sectlevel3">
+<li><a href="#_factorial">Factorial</a></li>
+<li><a href="#_collatz_conjecture">Collatz conjecture</a></li>
+</ul>
+</li>
 <li><a href="#_maxwells_equations">Maxwell&#8217;s Equations</a></li>
 <li><a href="#_statistics">Statistics</a></li>
 <li><a href="#_fractions_on_fractions">Fractions on fractions</a></li>
@@ -996,6 +1001,35 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect2">
 <h3 id="_case_definitions">Case definitions</h3>
+<div class="sect3">
+<h4 id="_factorial">Factorial</h4>
+<div class="listingblock">
+<div class="title"><strong>The LaTeX code</strong></div>
+<div class="content">
+<pre class="highlight"><code class="language-latex" data-lang="latex">n! =
+\begin{cases}
+  1       &amp; \text{if $(n = 0)$} \\
+  n(n-1)! &amp; \text{if $(n &lt; 1)$}
+\end{cases}</code></pre>
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Rendered</dt>
+</dl>
+</div>
+<div class="stemblock">
+<div class="content">
+\[n! =
+\begin{cases}
+  1       &amp; \text{if $(n = 0)$} \\
+  n(n-1)! &amp; \text{if $(n &lt; 1)$}
+\end{cases}\]
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_collatz_conjecture">Collatz conjecture</h4>
 <div class="listingblock">
 <div class="title"><strong>The LaTeX code</strong></div>
 <div class="content">
@@ -1014,6 +1048,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="stemblock">
 <div class="content">
 \[f(n) = \begin{cases} \frac{n}{2}, &amp; \text{if } n\text{ is even} \\ 3n+1, &amp; \text{if } n\text{ is odd} \end{cases}\]
+</div>
 </div>
 </div>
 </div>
@@ -1260,7 +1295,7 @@ a_{31} &amp; a_{32} &amp; a_{33}
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-07-03 15:10:36 UTC
+Last updated 2022-07-27 11:04:00 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
