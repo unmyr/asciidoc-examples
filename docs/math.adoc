@@ -361,6 +361,31 @@ Rendered::
 ++++
 
 === Case definitions
+
+==== Factorial
+
+[source,latex]
+.*The LaTeX code*
+----
+n! =
+\begin{cases}
+  1       & \text{if $(n = 0)$} \\
+  n(n-1)! & \text{if $(n < 1)$}
+\end{cases}
+----
+
+Rendered::
+[latexmath]
+++++
+n! =
+\begin{cases}
+  1       & \text{if $(n = 0)$} \\
+  n(n-1)! & \text{if $(n < 1)$}
+\end{cases}
+++++
+
+==== Collatz conjecture
+
 .*The LaTeX code*
 [source,latex]
 ----
@@ -370,6 +395,7 @@ f(n) =
   3n+1, & \text{if } n\text{ is odd}
 \end{cases}
 ----
+
 Rendered::
 [stem,latexmath]
 ++++
