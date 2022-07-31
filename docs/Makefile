@@ -1,9 +1,11 @@
 BASE_DIR=..
+DOC_ROOT=.
+
 DEST_DIR=$(BASE_DIR)/dist
 SRC_IMAGES_DIR=$(IMAGES_DIR)
 DST_IMAGES_DIR=$(DEST_DIR)/$(IMAGES_DIR)
 
-include $(BASE_DIR)/asciidoc.mk
+include $(DOC_ROOT)/asciidoc.mk
 
 HTML_LIST=\
 mkdir_and_copy \
