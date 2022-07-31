@@ -1,0 +1,350 @@
+:toc: right
+:toclevels: 3
+
+:bl: pass:p[ +]
+
+ifeval::["{backend}" == "pdf"]
+:table_options: options="header, unbreakable"
+endif::[]
+ifeval::["{backend}" != "pdf"]
+:table_options: options="header, autowidth, unbreakable"
+endif::[]
+
+:lambda-cap: pass:q,r[__&#923;__]
+
+:alpha: pass:q,r[__&#945;__]
+:beta:  pass:q,r[__&#946;__]
+:gamma: pass:q,r[__&#947;__]
+:delta: pass:q,r[__&#948;__]
+:epsilon: pass:q,r[__&#1013;__]
+:varepsilon: pass:q,r[__&#949;__]
+:theta: pass:q,r[__&#952;__]
+:kappa: pass:q,r[__&#954;__]
+:lambda: pass:q,r[__&#955;__]
+:pi: pass:q,r[__&#960;__]
+:sigma: pass:q,r[__&#963;__]
+:tau: pass:q,r[__&#964;__]
+//:phi: pass:q,r[__&#981;__]
+//:varphi: pass:q,r[__&#966;__]
+:chi: pass:q,r[__&#967;__]
+:psi: pass:q,r[__&#968;__]
+:omega: pass:q,r[__&#969;__]
+:oo: &#8734;
+
+ifeval::["{backend}" != "pdf"]
+:phi: pass:r[&#120601;]
+:varphi: pass:r[__&#120535;__]
+:CC: ℂ
+:FF: 𝔽
+:QQ: ℚ
+:RR: ℝ
+:ZZ: ℤ
+:Sym: 𝕾
+endif::[]
+
+ifeval::["{backend}" == "pdf"]
+:phi: pass:macros[image:U03D5_phi_straight.svg[ϕ]]
+:varphi: pass:r[image:U03C6_phi_loopy_form.svg[φ]]
+:CC: pass:q[**C**]
+:FF: pass:q[**F**]
+:QQ: pass:q[**Q**]
+:RR: pass:q[**R**]
+:ZZ: pass:q[**Z**]
+:Sym: pass:q[__S__]
+endif::[]
+
+ifndef::leveloffset[]
+:stem: latexmath
+endif::[]
+
+== Mathematical fonts
+
+include::unicode_font_greek_letters.adoc[leveloffset=+1]
+
+=== curly d
+.curly d
+[cols="8a,9a,3a,3a,3a,3a,4a,18a" {table_options}]
+|===
+2+h| Type                                   5+h| Rendered                                                       |
+h| HTML Entity                   h| Tex Alt   h| N        h| I          h| B          h| BI           h| LaTeX h| Names
+
+>|  `\&#x2202;`{bl}    `\&#8706;` | `\partial` |   &#8706; |   _&#8706;_ |   *&#8706;* |   *_&#8706;_* | | PARTIAL DIFFERENTIAL
+>|  `\&#x1D715;`{bl} `\&#120597;` |            |           | _&#120597;_ |             |               | | MATHEMATICAL ITALIC PARTIAL DIFFERENTIAL
+>|  `\&#x1D6DB;`{bl} `\&#120539;` |            |           |             | *&#120539;* |               | | MATHEMATICAL BOLD PARTIAL DIFFERENTIAL
+>|  `\&#x1D74F;`{bl} `\&#120655;` |            |           |             |             | *_&#120655;_* | | MATHEMATICAL BOLD ITALIC PARTIAL DIFFERENTIAL
+>|  `\&#x1D789;`{bl} `\&#120713;` |            |           |             | *&#120713;* |               | | MATHEMATICAL SANS-SERIF BOLD PARTIAL DIFFERENTIAL
+>|  `\&#x1D7C3;`{bl} `\&#120771;` |            |           |             |             | *_&#120771;_* | | MATHEMATICAL SANS-SERIF BOLD ITALIC PARTIAL DIFFERENTIAL
+|===
+
+.Reference
+* link:++https://en.wikipedia.org/wiki/%E2%88%82++[partial - ∂ - Wikipedia]
+
+=== Blackboard bold
+.Blackboard bold
+[cols="5d,9d,3d,3a,6d" {table_options}]
+|===
+2+| Type                     2+| Rendered                                    |
+h| HTML Entity h| TeX alt     h| HTML              h| LaTeX                 h| Notes
+
+>|  `\&#x2102;`{bl}     `\&#8450;` | `\mathbb{C}` |   [big]##&#8450;## | latexmath:[\mathbb{C}] | Represents the set of complex numbers.
+>| `\&#x1D53D;`{bl}   `\&#120125;` | `\mathbb{F}` | [big]##&#120125;## | latexmath:[\mathbb{F}] | Represents a field. Often used for finite fields, with a subscript to indicate the order.
+>|  `\&#x210D;`{bl}     `\&#8461;` | `\mathbb{H}` |   [big]##&#8461;## | latexmath:[\mathbb{H}] | Represents the https://en.wikipedia.org/wiki/Quaternion[quaternions]
+  (the H stands for https://en.wikipedia.org/wiki/William_Rowan_Hamilton[Hamilton]),
+  or the upper half-plane, or hyperbolic space, or hyperhomology of a complex.
+
+>|  `\&#x2115;`{bl}     `\&#8469;` | `\mathbb{N}` |   [big]##&#8469;## | latexmath:[\mathbb{N}] | Represents the set of natural numbers. May or may not include zero.
+>|  `\&#x211A;`{bl}     `\&#8474;` | `\mathbb{Q}` |   [big]##&#8474;## | latexmath:[\mathbb{Q}] | Represents the set of rational numbers. (The Q stands for quotient.)
+>|  `\&#x211D;`{bl}     `\&#8477;` | `\mathbb{R}` |   [big]##&#8477;## | latexmath:[\mathbb{R}] | Represents the set of real numbers.
+>|  `\&#x2124;`{bl}     `\&#8484;` | `\mathbb{Z}` |   [big]##&#8484;## | latexmath:[\mathbb{Z}] | Represents the set of integers.
+|===
+
+include::unicode_font_fraktur_symbols.adoc[leveloffset=+1]
+
+include::unicode_font_rsfs.adoc[leveloffset=+1]
+
+=== Mathematical Alphanumeric Symbols
+ifeval::["{backend}" == "pdf"]
+:table_options_nh: options="unbreakable"
+endif::[]
+ifeval::["{backend}" != "pdf"]
+:table_options_nh: options="autowidth, unbreakable"
+endif::[]
+
+g の字形は大きく異なる。
+
+[cols="1a,1a,1a,1a" {table_options} grid=rows]
+.Bold
+|===
+| A-G | H-N | O-T | U-Z
+
+|
+[cols="1d,1a" {table_options_nh}]
+!===
+! *A*,*a* ! &#119808;,&#119834;
+! *B*,*b* ! &#119809;,&#119835;
+! *C*,*c* ! &#119810;,&#119836;
+! *D*,*d* ! &#119811;,&#119837;
+! *E*,*e* ! &#119812;,&#119838;
+! *F*,*f* ! &#119813;,&#119839;
+! *G*,*g* ! &#119814;,&#119840;
+!===
+|
+[cols="1d,1a" {table_options_nh}]
+!===
+! *H*,*h* ! &#119815;,&#119841;
+! *I*,*i* ! &#119816;,&#119842;
+! *J*,*j* ! &#119817;,&#119843;
+! *K*,*k* ! &#119818;,&#119844;
+! *L*,*l* ! &#119819;,&#119845;
+! *M*,*m* ! &#119820;,&#119846;
+! *N*,*n* ! &#119821;,&#119847;
+!===
+|
+[cols="1d,1a" {table_options_nh}]
+!===
+! *O*,*o* ! &#119822;,&#119848;
+! *P*,*p* ! &#119823;,&#119849;
+! *Q*,*q* ! &#119824;,&#119850;
+! *R*,*r* ! &#119825;,&#119851;
+! *S*,*s* ! &#119826;,&#119852;
+! *T*,*t* ! &#119827;,&#119853;
+!===
+|
+[cols="1d,1a" {table_options_nh}]
+!===
+! *U*,*u* ! &#119828;,&#119854;
+! *V*,*v* ! &#119829;,&#119855;
+! *W*,*w* ! &#119830;,&#119856;
+! *X*,*x* ! &#119831;,&#119857;
+! *Y*,*y* ! &#119832;,&#119858;
+! *Z*,*z* ! &#119833;,&#119859;
+!===
+|===
+
+[cols="1a,1a,1a,1a" {table_options} grid=rows]
+.Italic
+|===
+| A-G | H-N | O-T | U-Z
+
+|
+[cols="1d,1a" {table_options_nh}]
+!===
+! _A_,_a_ ! &#119860;,&#119886;
+! _B_,_b_ ! &#119861;,&#119887;
+! _C_,_c_ ! &#119862;,&#119888;
+! _D_,_d_ ! &#119863;,&#119889;
+! _E_,_e_ ! &#119864;,&#119890;
+! _F_,_f_ ! &#119865;,&#119891;
+! _G_,_g_ ! &#119866;,&#119892;
+!===
+|
+[cols="1d,1a" {table_options_nh}]
+!===
+! _H_,_h_ ! &#119867;,  &#8462;
+! _I_,_i_ ! &#119868;,&#119894;
+! _J_,_j_ ! &#119869;,&#119895;
+! _K_,_k_ ! &#119870;,&#119896;
+! _L_,_l_ ! &#119871;,&#119897;
+! _M_,_m_ ! &#119872;,&#119898;
+! _N_,_n_ ! &#119873;,&#119899;
+!===
+|
+[cols="1d,1a" {table_options_nh}]
+!===
+! _O_,_o_ ! &#119874;,&#119900;
+! _P_,_p_ ! &#119875;,&#119901;
+! _Q_,_q_ ! &#119876;,&#119902;
+! _R_,_r_ ! &#119877;,&#119903;
+! _S_,_s_ ! &#119878;,&#119904;
+! _T_,_t_ ! &#119879;,&#119905;
+!===
+|
+[cols="1d,1a" {table_options_nh}]
+!===
+! _U_,_u_ ! &#119880;,&#119906;
+! _V_,_v_ ! &#119881;,&#119907;
+! _W_,_w_ ! &#119882;,&#119908;
+! _X_,_x_ ! &#119883;,&#119909;
+! _Y_,_y_ ! &#119884;,&#119910;
+! _Z_,_z_ ! &#119885;,&#119911;
+!===
+|===
+
+[cols="1a,1a,1a,1a" {table_options} grid=rows]
+.Bold italic
+|===
+| A-G | H-N | O-T | U-Z
+
+|
+[cols="1d,1a" {table_options_nh}]
+!===
+! *_A_*,*_a_* ! &#119912;,&#119938;
+! *_B_*,*_b_* ! &#119913;,&#119939;
+! *_C_*,*_c_* ! &#119914;,&#119940;
+! *_D_*,*_d_* ! &#119915;,&#119941;
+! *_E_*,*_e_* ! &#119916;,&#119942;
+! *_F_*,*_f_* ! &#119917;,&#119943;
+! *_G_*,*_g_* ! &#119918;,&#119944;
+!===
+|
+[cols="1d,1a" {table_options_nh}]
+!===
+! *_H_*,*_h_* ! &#119919;,&#119945;
+! *_I_*,*_i_* ! &#119920;,&#119946;
+! *_J_*,*_j_* ! &#119921;,&#119947;
+! *_K_*,*_k_* ! &#119922;,&#119948;
+! *_L_*,*_l_* ! &#119923;,&#119949;
+! *_M_*,*_m_* ! &#119924;,&#119950;
+! *_N_*,*_n_* ! &#119925;,&#119951;
+!===
+|
+[cols="1d,1a" {table_options_nh}]
+!===
+! *_O_*,*_o_* ! &#119926;,&#119952;
+! *_P_*,*_p_* ! &#119927;,&#119953;
+! *_Q_*,*_q_* ! &#119928;,&#119954;
+! *_R_*,*_r_* ! &#119929;,&#119955;
+! *_S_*,*_s_* ! &#119930;,&#119956;
+! *_T_*,*_t_* ! &#119931;,&#119957;
+!===
+|
+[cols="1d,1a" {table_options_nh}]
+!===
+! *_U_*,*_u_* ! &#119932;,&#119958;
+! *_V_*,*_v_* ! &#119933;,&#119959;
+! *_W_*,*_w_* ! &#119934;,&#119960;
+! *_X_*,*_x_* ! &#119935;,&#119961;
+! *_Y_*,*_y_* ! &#119936;,&#119962;
+! *_Z_*,*_z_* ! &#119937;,&#119963;
+!===
+|===
+
+<<<
+
+=== Superscripts and subscripts
+
+.Superscripts
+[cols="^.^5a,4a,4a,18a,8a" {table_options}]
+|===
+| Rendered   | hex         | decimal    | Character name      | Notes
+
+|  `&#8304;` | `\&#x2070;` | `\&#8304;` | SUPERSCRIPT ZERO    |
+|   `&#185;` | `\&#x00B9;` |  `\&#185;` | SUPERSCRIPT ONE     |
+|   `&#178;` | `\&#x00B2;` |  `\&#178;` | SUPERSCRIPT TWO     |
+|   `&#179;` | `\&#x00B3;` |  `\&#179;` | SUPERSCRIPT THREE   |
+|  `&#8305;` | `\&#x2071;` | `\&#8305;` | SUPERSCRIPT LATIN SMALL LETTER I |
+|  `&#8308;` | `\&#x2074;` | `\&#8308;` | SUPERSCRIPT FOUR    |
+|  `&#8309;` | `\&#x2075;` | `\&#8309;` | SUPERSCRIPT FIVE    |
+|  `&#8310;` | `\&#x2076;` | `\&#8310;` | SUPERSCRIPT SIX     |
+|  `&#8311;` | `\&#x2077;` | `\&#8311;` | SUPERSCRIPT SEVEN   |
+|  `&#8312;` | `\&#x2078;` | `\&#8312;` | SUPERSCRIPT EIGHT   |
+|  `&#8313;` | `\&#x2079;` | `\&#8313;` | SUPERSCRIPT NINE    |
+|  `&#8314;` | `\&#x207A;` | `\&#8314;` | SUPERSCRIPT PLUS SIGN |
+|  `&#8315;` | `\&#x207B;` | `\&#8315;` | SUPERSCRIPT MINUS |
+|  `&#8316;` | `\&#x207C;` | `\&#8316;` | SUPERSCRIPT EQUALS SIGN |
+|  `&#8317;` | `\&#x207D;` | `\&#8317;` | SUPERSCRIPT LEFT PARENTHESIS |
+|  `&#8318;` | `\&#x207E;` | `\&#8318;` | SUPERSCRIPT RIGHT PARENTHESIS |
+|  `&#8319;` | `\&#x207F;` | `\&#8319;` | SUPERSCRIPT LATIN SMALL LETTER N  |
+|===
+
+.Subscripts
+[cols="^.^5a,4a,4a,18a,8a" {table_options}]
+|===
+| Rendered   | hex         | decimal    | Character name      | Notes
+|  `&#8320;` | `\&#x2080;` | `\&#8320;` | SUBSCRIPT ZERO      |
+|  `&#8321;` | `\&#x2081;` | `\&#8321;` | SUBSCRIPT ONE       |
+|  `&#8322;` | `\&#x2082;` | `\&#8322;` | SUBSCRIPT TWO       |
+|  `&#8323;` | `\&#x2083;` | `\&#8323;` | SUBSCRIPT THREE     |
+|  `&#8324;` | `\&#x2084;` | `\&#8324;` | SUBSCRIPT FOUR      |
+|  `&#8325;` | `\&#x2085;` | `\&#8325;` | SUBSCRIPT FIVE      |
+|  `&#8326;` | `\&#x2086;` | `\&#8326;` | SUBSCRIPT SIX       |
+|  `&#8327;` | `\&#x2087;` | `\&#8327;` | SUBSCRIPT SEVEN     |
+|  `&#8328;` | `\&#x2088;` | `\&#8328;` | SUBSCRIPT EIGHT     |
+|  `&#8329;` | `\&#x2089;` | `\&#8329;` | SUBSCRIPT NINE      |
+|  `&#8330;` | `\&#x208A;` | `\&#8330;` | SUBSCRIPT PLUS SIGN |
+|  `&#8331;` | `\&#x208B;` | `\&#8331;` | SUBSCRIPT MINUS     |
+|  `&#8332;` | `\&#x208C;` | `\&#8332;` | SUBSCRIPT EQUALS SIGN |
+|  `&#8333;` | `\&#x208D;` | `\&#8333;` | SUBSCRIPT LEFT PARENTHESIS |
+|  `&#8334;` | `\&#x208E;` | `\&#8334;` | SUBSCRIPT RIGHT PARENTHESIS |
+|  `&#8336;` | `\&#x2090;` | `\&#8336;` | LATIN SUBSCRIPT SMALL LETTER A |
+|  `&#8337;` | `\&#x2091;` | `\&#8337;` | LATIN SUBSCRIPT SMALL LETTER E |
+|  `&#8338;` | `\&#x2092;` | `\&#8338;` | LATIN SUBSCRIPT SMALL LETTER O |
+|  `&#8339;` | `\&#x2093;` | `\&#8339;` | LATIN SUBSCRIPT SMALL LETTER X |
+|  `&#8340;` | `\&#x2094;` | `\&#8340;` | LATIN SUBSCRIPT SMALL LETTER SCHWA |
+|  `&#8341;` | `\&#x2095;` | `\&#8341;` | LATIN SUBSCRIPT SMALL LETTER H |
+|  `&#8342;` | `\&#x2096;` | `\&#8342;` | LATIN SUBSCRIPT SMALL LETTER K |
+|  `&#8343;` | `\&#x2097;` | `\&#8343;` | LATIN SUBSCRIPT SMALL LETTER L |
+|  `&#8344;` | `\&#x2098;` | `\&#8344;` | LATIN SUBSCRIPT SMALL LETTER M |
+|  `&#8345;` | `\&#x2099;` | `\&#8345;` | LATIN SUBSCRIPT SMALL LETTER N |
+|  `&#8346;` | `\&#x209A;` | `\&#8346;` | LATIN SUBSCRIPT SMALL LETTER P |
+|  `&#8347;` | `\&#x209B;` | `\&#8347;` | LATIN SUBSCRIPT SMALL LETTER S |
+|  `&#8348;` | `\&#x209C;` | `\&#8348;` | LATIN SUBSCRIPT SMALL LETTER T |
+|===
+
+* https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts[Unicode subscripts and superscripts - Wikipedia]
+* http://www.asahi-net.or.jp/~ax2s-kmtn/ref/unicode/u2070.html[Unicode 上付き・下付き - CyberLibrarian - ASAHI Net]
+* https://www.fileformat.info/info/unicode/block/superscripts_and_subscripts/list.htm[Unicode Characters in the Superscripts and Subscripts Block]
+
+=== Other letter
+
+.Lowercase Letter
+[cols="1a,2a,1a,1a,2a" {table_options}]
+|===
+2+h| Type                                2+h| Rendered  h|
+h| HTML Entity                 h| Tex Alt  h| HTML      h| LaTeX             h| Names
+
+>|  `\&#x0131;` {bl} `\&#305;`  | `\imath`  |     &#305; | latexmath:[\imath] | Latin Small Letter Dotless I
+>|  `\&#x0237;` {bl} `\&#567;`  | `\jmath`  |     &#567; | latexmath:[\jmath] | Latin Small Letter Dotless J
+>|  `\&#x2113;` {bl} `\&#8467;` | `\ell`    |    &#8467; | latexmath:[\ell]   | Script Small L (traditional litre symbol)
+>|  `\&#x210F;` {bl} `\&#8465;` | `\hbar`   |    &#8463; | latexmath:[\hbar]  | Planck Constant Over Two Pi
+|===
+
+.Uppercase Letter
+[cols="1a,2a,1a,1a,2a" {table_options}]
+|===
+2+h| Type                                2+h| Rendered  h|
+h| HTML Entity                 h| Tex Alt  h| HTML      h| LaTeX             h| Names
+
+>|  `\&#x211C;` {bl} `\&#8476;` | `\Re`     |    &#8476; | latexmath:[\Re]    | Black-Letter Capital R
+>|  `\&#x2111;` {bl} `\&#8465;` | `\Im`     |    &#8465; | latexmath:[\Im]    | Black-Letter Capital I
+|===

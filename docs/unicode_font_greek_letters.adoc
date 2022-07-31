@@ -1,0 +1,152 @@
+ifndef::leveloffset[]
+:stem: latexmath
+endif::[]
+
+== Greek alphabet
+
+.Greek alphabet (lower case)
+[cols="8a,9a,3a,3a,3a,3a,4a,18a" {table_options}]
+|===
+2+h| Type                                       5+h| Rendered                                                |
+h| HTML Entity                    h| Tex Alt      h| N      h| I         h| B        h| BI         h| LaTeX h| Names
+
+>|  `\&#x03B1;`{bl}      `\&#945;` | `\alpha`      |  &#945; |   _&#945;_ |  *&#945;* |  *_&#945;_* | latexmath:[\Large\alpha] |
+>| `\&#x1D6C2;`{bl}   `\&#120514;` |               |         |            | &#120514; |             | | Mathematical Bold Small Alpha
+>|  `\&#x03B2;`{bl}      `\&#946;` | `\beta`       |  &#946; |   _&#946;_ |  *&#946;* |  *_&#946;_* | latexmath:[\Large\beta] |
+>| `\&#x1D6C3;`{bl}   `\&#120515;` |               |         |            | &#120515; |             | |
+>|  `\&#x03B3;`{bl}      `\&#947;` | `\gamma`      |  &#947; |   _&#947;_ |  *&#947;* |  *_&#947;_* | latexmath:[\Large\gamma] |
+>| `\&#x1D6C4;`{bl}   `\&#120516;` |               |         |            | &#120516; |             | |
+>|  `\&#x03B4;`{bl}   `\&#948;`    | `\delta`      |  &#948; |   _&#948;_ |  *&#948;* |  *_&#948;_* | latexmath:[\Large\delta] |
+>| `\&#x1D6C5;`{bl}   `\&#120517;` |               |         |            | &#120517; |             | |
+>|  `\&#x03B5;`{bl}   `\&#949;`    | `\varepsilon` |  &#949; |   _&#949;_ |  *&#949;* |  *_&#949;_* | latexmath:[\Large\varepsilon] |
+>| `\&#x1D6C6;`{bl}   `\&#120518;` |               |         |            | &#120518; |             | |
+>|  `\&#x03F5;`{bl}   `\&#1013;`   | `\epsilon`    | &#1013; |  _&#1013;_ | *&#1013;* | *_&#1013;_* | latexmath:[\Large\epsilon] |
+>|  `\&#x03B6;`{bl}   `\&#950;`    | `\zeta`       |  &#950; |   _&#950;_ |  *&#950;* |  *_&#950;_* | latexmath:[\Large\zeta] |
+>| `\&#x1D6C7;`{bl}   `\&#120519;` |               |         |            | &#120519; |             | |
+>|  `\&#x03B7;`{bl}   `\&#951;`    | `\eta`        |  &#951; |   _&#951;_ |  *&#951;* |  *_&#951;_* | latexmath:[\Large\eta] |
+>| `\&#x1D6C8;`{bl}   `\&#120520;` |               |         |            | &#120520; |             | |
+>|  `\&#x03B8;`{bl}      `\&#952;` | `\theta`      |  &#952; |   _&#952;_ |  *&#952;* |  *_&#952;_* | latexmath:[\Large\theta] | Greek Small Letter Theta
+>| `\&#x1D6C9;`{bl}   `\&#120521;` |               |         |            | &#120521; |             | |
+>|  `\&#x03D1;`{bl}      `\&#977;` | `\vartheta`   |  &#977; |   _&#977;_ |  *&#977;* |  *_&#977;_* | latexmath:[\Large\vartheta] | Greek Theta Symbol
+>| `\&#x1D78B;`{bl}   `\&#120715;` |               |         |            | &#120715; |             | |
+>|  `\&#x03B9;`{bl}      `\&#953;` | `\iota`       |  &#953; |   _&#953;_ |  *&#953;* |  *_&#953;_* | latexmath:[\Large\iota] |
+>| `\&#x1D6CA;`{bl}   `\&#120522;` |               |         |            | &#120522; |             | |
+>|  `\&#x03BA;`{bl}      `\&#954;` | `\kappa`      |  &#954; |   _&#954;_ |  *&#954;* |  *_&#954;_* | latexmath:[\Large\kappa] |
+>| `\&#x1D6CB;`{bl}   `\&#120523;` |               |         |            | &#120523; |             | |
+>|  `\&#x03BB;`{bl}      `\&#955;` | `\lambda`     |  &#955; |   _&#955;_ |  *&#955;* |  *_&#955;_* | latexmath:[\Large\lambda] |
+>| `\&#x1D6CC;`{bl}   `\&#120524;` |               |         |            | &#120524; |             | |
+>|  `\&#x03BC;`{bl}      `\&#956;` | `\mu`         |  &#956; |   _&#956;_ |  *&#956;* |  *_&#956;_* | latexmath:[\Large\mu] |
+>| `\&#x1D6CD;`{bl}   `\&#120525;` |               |         |            | &#120525; |             | |
+>|  `\&#x03BD;`{bl}      `\&#957;` | `\nu`         |  &#957; |   _&#957;_ |  *&#957;* |  *_&#957;_* | latexmath:[\Large\nu] |
+>| `\&#x1D6CE;`{bl}   `\&#120526;` |               |         |            | &#120526; |             | |
+>|  `\&#x03BE;`{bl}      `\&#958;` | `\xi`         |  &#958; |   _&#958;_ |  *&#958;* |  *_&#958;_* | latexmath:[\Large\xi] |
+>| `\&#x1D6CF;`{bl}   `\&#120527;` |               |         |            | &#120527; |             | |
+>|  `\&#x03BF;`{bl}      `\&#959;` | `\omicron`    |  &#959; |   _&#959;_ |  *&#959;* |  *_&#959;_* | latexmath:[\Large\omicron] |
+>| `\&#x1D6D0;`{bl}   `\&#120528;` |               |         |            | &#120528; |             | |
+>|  `\&#x03C0;`{bl}      `\&#960;` | `\pi`         | &#0960; |  _&#0960;_ | *&#0960;* | *_&#0960;_* | latexmath:[\Large\pi] |
+>| `\&#x1D6D1;`{bl}   `\&#120529;` |               |         |            | &#120529; |             | |
+>|  `\&#x03D6;`{bl}      `\&#982;` | `\varpi`      | &#0982; |  _&#0982;_ | *&#0982;* | *_&#0982;_* | latexmath:[\Large\varpi] |
+>| `\&#x1D78F;`{bl}   `\&#120719;` |               |         |            | &#120719; |             | |
+>| `\&#x1D7C9;`{bl}   `\&#120777;` |               |         |            | &#120777; |             | |
+>| `\&#x003C1;`{bl}      `\&#961;` | `\rho`        | &#0961; |  _&#0961;_ | *&#0961;* | *_&#0961;_* | latexmath:[\Large\rho] | greek small letter rho
+>| `\&#x1D6D2;`{bl}   `\&#120530;` |               |         |            | &#120530; |             | |
+>| `\&#x003F1;`{bl}   `\&#1009;`   | `\varrho`     | &#1009; |  _&#1009;_ | *&#1009;* | *_&#1009;_* | latexmath:[\Large\varrho] | greek rho symbol
+>| `\&#x1D78E;`{bl}   `\&#120718;` | n/a           |         |            | &#120718; |             | |
+>|  `\&#x03C3;`{bl}      `\&#963;` | `\sigma`      | &#0963; |  _&#0963;_ | *&#0963;* | *_&#0963;_* | latexmath:[\Large\sigma] |
+>| `\&#x1D6D4;`{bl}   `\&#120532;` |               |         |            | &#120532; |             | |
+>|  `\&#x03C2;`{bl}      `\&#962;` | `\varsigma`   | &#0962; |  _&#0962;_ | *&#0962;* | *_&#0962;_* | latexmath:[\Large\varsigma] |
+>| `\&#x1D6D3;`{bl}   `\&#120531;` |               |         |            | &#120531; |             | |
+>|  `\&#x03C4;`{bl}      `\&#964;` | `\tau`        | &#0964; |  _&#0964;_ | *&#0964;* | *_&#0964;_* | latexmath:[\Large\tau] |
+>| `\&#x1D6D5;`{bl}   `\&#120533;` |               |         |            | &#120533; |             | |
+>| `\&#x003C5;`{bl}      `\&#965;` | `\upsilon`    | &#0965; |  _&#0965;_ | *&#0965;* | *_&#0965;_* | latexmath:[\Large\upsilon] |
+>| `\&#x1D6D6;`{bl}   `\&#120534;` |               |         |            | &#120534; |             | |
+>|  `\&#x0278;`{bl}      `\&#632;` | n/a           | &#0632; |  _&#0632;_ | *&#0632;* | *_&#0632;_* | | Latin Small Letter Phi
+>| link:++https://graphemica.com/%CF%86++[`\&#x03C6;`]{bl}      `\&#966;`
+                                   | `\varphi` (image:U03C6_phi_loopy_form.svg[])
+                                                   | &#0966; |  _&#0966;_ | *&#0966;* | *_&#0966;_* | latexmath:[\Large\varphi] | Greek Small Letter Phi  footnote:[loopy form が表示されるのが正しい]
+>| `\&#x1D74B;`{bl}   `\&#120651;` |               |         |  &#120651; |           |             | | mathematical bold italic small phi (U+1D74B)
+>| `\&#x1D6D7;`{bl}   `\&#120535;` |               |         |            | &#120535; |             | | mathematical bold small phi (U+1D6D7)
+>| link:++https://graphemica.com/%E1%B5%A9++[`\&#x1D69;`]{bl}     `\&#7529;`
+                                   |               | &#7529; |  _&#7529;_ | *&#7529;* | *_&#7529;_* | | greek subscript small letter phi (U+1D69)
+>| link:++https://graphemica.com/%CF%95++[`\&#x03D5;`]{bl}      `\&#981;` | `\phi` (image:U03D5_phi_straight.svg[])
+                                                   | &#0981; |  _&#0981;_ | *&#0981;* | *_&#0981;_* | latexmath:[\Large\phi] | Greek Phi Symbol footnote:[straight phiが表示されるのが正しい]
+>| `\&#x1D719;`{bl}   `\&#120601;` |               |         |  &#120601; |           |             | | mathematical italic phi symbol
+>| `\&#x1D6DF;`{bl}   `\&#120543;` |               |         |            | &#120543; |             | | mathematical bold phi symbol (U+1D6DF)
+>|  `\&#x03C7;`{bl}      `\&#967;` | `\chi`        | &#0967; |  _&#0967;_ | *&#0967;* | *_&#0967;_* | latexmath:[\Large\chi] |
+>| `\&#x1D6D8;`{bl}   `\&#120536;` |               |         |            | &#120536; |             | |
+>|  `\&#x03C8;`{bl}      `\&#968;` | `\psi`        | &#0968; |  _&#0968;_ | *&#0968;* | *_&#0968;_* | latexmath:[\Large\psi] |
+>| `\&#x1D6D9;`{bl}   `\&#120537;` |               |         |            | &#120537; |             | |
+>|  `\&#x03C9;`{bl}      `\&#969;` | `\omega`      | &#0969; |  _&#0969;_ | *&#0969;* | *_&#0969;_* | latexmath:[\Large\omega] |
+>| `\&#x1D6DA;`{bl}   `\&#120538;` |               |         |            | &#120538; |             | |
+|===
+
+.Greek alphabet (uppercase)
+[cols="8a,9a,3a,3a,3a,3a,4a,18a" {table_options}]
+|===
+2+h| Type                       5+h| Rendered                                                       |
+h| HTML Entity                    h| Tex Alt      h| N      h| I         h| B        h| BI         h| LaTeX h| Names
+
+>|  `\&#x0391;`{bl}      `\&#913;` | n/a         |  &#913; |  _&#913;_ |  *&#913;* |  *_&#913;_* | | Greek capital letter alpha
+>| `\&#x1D6A8;`{bl}   `\&#120488;` | n/a         |         |           | &#120488; |             | |
+>|  `\&#x0392;`{bl}      `\&#914;` | n/a         |  &#914; |  _&#914;_ |  *&#914;* |  *_&#914;_* | | Greek capital letter beta
+>| `\&#x1D6A9;`{bl}   `\&#120489;` | n/a         |         |           | &#120489; |             | |
+>|  `\&#x0393;`{bl}      `\&#915;` | `\Gamma`    |  &#915; |  _&#915;_ |  *&#915;* |  *_&#915;_* | latexmath:[\Large\Gamma] | Greek Capital Letter Gamma
+>| `\&#x1D6AA;`{bl}   `\&#120490;` | n/a         |         |           | &#120490; |             | | mathematical bold capital gamma
+>|  `\&#x0394;`{bl}      `\&#916;` | `\Delta`    |  &#916; |  _&#916;_ |  *&#916;* |  *_&#916;_* | latexmath:[\Large\Delta] | Greek capital letter delta
+>| `\&#x1D6AB;`{bl}   `\&#120491;` | n/a         |         |           | &#120491; |             | |
+>|  `\&#x0395;`{bl}      `\&#917;` | n/a         |  &#917; |  _&#917;_ |  *&#917;* |  *_&#917;_* | | Greek capital letter epsilon
+>| `\&#x1D6AC;`{bl}   `\&#120492;` | n/a         |         |           | &#120492; |             | |
+>|  `\&#x0396;`{bl}      `\&#918;` | n/a         |  &#918; |  _&#918;_ |  *&#918;* |  *_&#918;_* | | Greek capital letter zeta
+>| `\&#x1D6AD;`{bl}   `\&#120493;` | n/a         |         |           | &#120493; |             | | Zeta
+>|  `\&#x0397;`{bl}      `\&#919;` | n/a         |  &#919; |  _&#919;_ |  *&#919;* |  *_&#919;_* | | Greek capital letter eta
+>| `\&#x1D6AE;`{bl}   `\&#120494;` | n/a         |         |           | &#120494; |             | | Eta
+>|  `\&#x0398;`{bl}      `\&#920;` | `\Theta`    |  &#920; |  _&#920;_ |  *&#920;* |  *_&#920;_* | latexmath:[\Large\Theta] | Greek capital letter theta
+>| `\&#x1D6E9;`{bl}   `\&#120553;` | n/a         |         | &#120553; |           |             | | mathematical italic capital theta
+>| `\&#x1D6AF;`{bl}   `\&#120495;` | n/a         |         |           | &#120495; |             | | mathematical bold capital theta
+>|  `\&#x03F4;`{bl}     `\&#1012;` |             | &#1012; | _&#1012;_ | *&#1012;* | *_&#1012;_* | | Greek capital theta symbol
+>| `\&#x1D6B9;`{bl}   `\&#120505;` | n/a         |         |           | &#120505; |             | | mathematical bold capital theta symbol
+>|  `\&#x0399;`{bl}      `\&#921;` | n/a         |  &#921; |  _&#921;_ |  *&#921;* |  *_&#921;_* | | Greek capital letter iota
+>| `\&#x1D6B0;`{bl}   `\&#120496;` | n/a         |         |           | &#120496; |             | | Iota
+>|  `\&#x039A;`{bl}      `\&#922;` | n/a         |  &#922; |  _&#922;_ |  *&#922;* |  *_&#922;_* | | Greek capital letter kappa
+>| `\&#x1D6B1;`{bl}   `\&#120497;` | n/a         |         |           | &#120497; |             | | Kappa
+>|  `\&#x039B;`{bl}      `\&#923;` | `\Lambda`   |  &#923; |  _&#923;_ |  *&#923;* |  *_&#923;_* | latexmath:[\Large\Lambda] | Greek capital letter lambda
+>| `\&#x1D6B2;`{bl}   `\&#120498;` | n/a         |         |           | &#120498; |             | | Lambda
+>|  `\&#x039C;`{bl}      `\&#924;` | n/a         |  &#924; |  _&#924;_ |  *&#924;* |  *_&#924;_* | | Greek capital letter mu
+>| `\&#x1D6B3;`{bl}   `\&#120499;` | n/a         |         |           | &#120499; |             | | Mu
+>|  `\&#x039D;`{bl}      `\&#925;` | n/a         |  &#925; |  _&#925;_ |  *&#925;* |  *_&#925;_* | | Greek capital letter nu
+>| `\&#x1D6B4;`{bl}   `\&#120500;` | n/a         |         |           | &#120500; |             | | Nu
+>|  `\&#x039E;`{bl}      `\&#926;` | `\Xi`       |  &#926; |  _&#926;_ |  *&#926;* |  *_&#926;_* | latexmath:[\Large\Xi] | Greek capital letter xi
+>| `\&#x1D6B5;`{bl}   `\&#120501;` | n/a         |         |           | &#120501; |             | | Xi
+>|  `\&#x039F;`{bl}      `\&#927;` | n/a         |  &#927; |  _&#927;_ |  *&#927;* |  *_&#927;_* | | Greek capital letter omicron
+>| `\&#x1D6B6;`{bl}   `\&#120502;` | n/a         |         |           | &#120502; |             | | Omicron
+>|  `\&#x03A0;`{bl}      `\&#928;` | `\Pi`       |  &#928; |  _&#928;_ |  *&#928;* |  *_&#928;_* | latexmath:[\Large\Pi] | Greek capital letter pi
+>| `\&#x1D6B7;`{bl}   `\&#120503;` | n/a         |         |           | &#120503; |             | | Pi
+>|  `\&#x03A1;`{bl}      `\&#929;` | n/a         |  &#929; |  _&#929;_ |  *&#929;* |  *_&#929;_* | | Greek capital letter rho
+>| `\&#x1D6B8;`{bl}   `\&#120504;` | n/a         |         |           | &#120504; |             | | Rho
+>|  `\&#x03A3;`{bl}      `\&#931;` | `\Sigma`    |  &#931; |  _&#931;_ |  *&#931;* |  *_&#931;_* | latexmath:[\Large\Sigma] | Greek capital letter sigma
+>|  `\&#x03DA;`{bl}      `\&#986;` | n/a         |  &#986; |  _&#986;_ |  *&#986;* |  *_&#986;_* | |
+>| `\&#x1D6BA;`{bl}   `\&#120506;` |             |         |           | &#120506; |             | |
+>|  `\&#x03A4;`{bl}      `\&#932;` | n/a         |  &#932; |  _&#932;_ |  *&#932;* |  *_&#932;_* | | Greek capital letter tau
+>| `\&#x1D6BB;`{bl}   `\&#120507;` | n/a         |         |           | &#120507; |             | | Tau
+>|  `\&#x03A5;`{bl}      `\&#933;` | n/a         |  &#933; |  _&#933;_ |  *&#933;* |  *_&#933;_* | | Greek capital letter upsilon
+>| `\&#x1D6BC;`{bl}   `\&#120508;` | n/a         |         |           | &#120508; |             | | Upsilon
+>|  `\&#x03D2;`{bl}      `\&#978;` | `\Upsilon`  |  &#978; |  _&#978;_ |  *&#978;* |  *_&#978;_* | latexmath:[\Large\Upsilon] | greek upsilon with hook symbol
+>|  `\&#x03A6;`{bl}      `\&#934;` | `\Phi`      |  &#934; |  _&#934;_ |  *&#934;* |  *_&#934;_* | latexmath:[\Large\Phi] | Greek capital letter phi
+>| `\&#x1D6BD;`{bl}   `\&#120509;` | n/a         |         |           | &#120509; |             | | Phi
+>|  `\&#x03A7;`{bl}      `\&#935;` | n/a         |  &#935; |  _&#935;_ |  *&#935;* |  *_&#935;_* | | Greek capital letter chi
+>| `\&#x1D6BE;`{bl}   `\&#120510;` | n/a         |         |           | &#120510; |             | | Chi
+>|  `\&#x03A8;`{bl}      `\&#936;` | `\Psi`      |  &#936; |  _&#936;_ |  *&#936;* |  *_&#936;_* | latexmath:[\Large\Psi] | Greek capital letter psi
+>| `\&#x1D6BF;`{bl}   `\&#120511;` | n/a         |         |           | &#120511; |             | | Psi
+>|  `\&#x03A9;`{bl}      `\&#937;` | `\Omega`    |  &#937; |  _&#937;_ |  *&#937;* |  *_&#937;_* | latexmath:[\Large\Omega] | Greek capital letter omega
+>| `\&#x1D6C0;`{bl}   `\&#120512;` | n/a         |         |           | &#120512; |             | | Omega
+>|  `\&#x2127;`{bl}     `\&#8487;` | `\mho`      | &#8487; | _&#8487;_ | *&#8487;* | *_&#8487;_* | latexmath:[\Large\mho] |
+>|  `\&#x2207;`{bl}     `\&#8711;` | `\nabla`    | &#8711; | _&#8711;_ | *&#8711;* | *_&#8711;_* | latexmath:[\Large\nabla] | nabla
+>| `\&#x1D6C1;`{bl}   `\&#120513;` | n/a         |         |           | &#120513; |             | | nabla
+|===
+
+* https://qiita.com/minfuk/items/0bd1ffa20b44759d486e[TeXの数式記号とUnicodeのマッピング（途中） - Qiita]
+* Phi
+** https://en.wikipedia.org/wiki/Phi[Phi - Wikipedia]
+** https://github.com/adobe-fonts/source-code-pro/issues/120[U+03C6 and U+03D5 swapped (Forms of the Greek letter Phi) · Issue ...]
+** https://github.com/adobe-fonts/source-sans-pro/issues/70[Greek phi symbol 03D5 ϕ should have a full stroke · Issue #70 · adobe ...]
+** http://takamu.sakura.ne.jp/xml-entity-names-ja/index.html[A.2 ファイ - 文字に対するXML実体の定義(第2版)(XML Entity Definitions for ...]

@@ -7,7 +7,7 @@ ifeval::["{backend}" == "html5"]
 <<asciidoc_images.adoc#,Images>> {vbar}
 <<asciidoc_listing.adoc#,Listing>> {vbar}
 <<asciidoc_tables.adoc#,Tables>> {vbar}
-<<math.adoc#,Math>> {vbar}
+<<math.adoc#,Math>> (<<math_font_chars.adoc#,fonts>>, <<math_font_symbols.adoc#,symbols>>) /
 <<diagram-graphviz.adoc#,Graphviz>> {vbar}
 <<diagram-plantuml.adoc#,PlantUML>> +
 endif::[]

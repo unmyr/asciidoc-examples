@@ -1,0 +1,64 @@
+ifeval::["{backend}" == "pdf"]
+:table_options_nh: options="unbreakable"
+endif::[]
+ifeval::["{backend}" != "pdf"]
+:table_options_nh: options="autowidth, unbreakable"
+endif::[]
+
+== Ralph Smith's Formal Script Symbol Fonts
+
+[cols="1a,1a,1a,1a" {table_options} grid=rows]
+.Script
+|===
+| A-G | H-N | O-T | U-Z
+
+|
+[cols="1h,1a" {table_options_nh}]
+!===
+! A,a ! &#119964;,&#120016;,&#119990;,&#120042;
+! B,b ! &#8492;,&#120017;,&#119991;,&#120043;
+! C,c ! &#119966;,&#120018;,&#119992;,&#120044;
+! D,d ! &#119967;,&#120019;,&#119993;,&#120045;
+! E,e ! &#8496;,&#120020;,&#8495;,&#120046;
+! F,f ! &#8497;,&#120021;,&#119995;,&#120047;
+! G,g ! &#119970;,&#120022;,&#8458;,&#120048;
+!===
+|
+[cols="1h,1a" {table_options_nh}]
+!===
+! H,h ! &#8459;,&#120023;,&#119997;,&#120049;
+! I,i ! &#8464;,&#120024;,&#119998;,&#120050;
+! J,j ! &#119973;,&#120025;,&#119999;,&#120051;
+! K,k ! &#119974;,&#120026;,&#120000;,&#120052;
+! L,l ! &#8466;,&#120027;,&#120001;,&#120053;
+! M,m ! &#8499;,&#120028;,&#120002;,&#120054;
+! N,n ! &#119977;,&#120029;,&#120003;,&#120055;
+!===
+|
+[cols="1h,1a" {table_options_nh}]
+!===
+! O,o ! &#119978;,&#120030;,&#8500;,&#120056;
+! P,p ! &#119979;,&#120031;,&#120005;,&#120057;
+! Q,q ! &#119980;,&#120032;,&#120006;,&#120058;
+! R,r ! &#8475;,&#120033;,&#120007;,&#120059;
+! S,s ! &#119982;,&#120034;,&#120008;,&#120060;
+! T,t ! &#119983;,&#120035;,&#120009;,&#120061;
+!===
+|
+[cols="1h,1a" {table_options_nh}]
+!===
+! U,u ! &#119984;,&#120036;,&#120010;,&#120062;
+! V,v ! &#119985;,&#120037;,&#120011;,&#120063;
+! W,w ! &#119986;,&#120038;,&#120012;,&#120064;
+! X,x ! &#119987;,&#120039;,&#120013;,&#120065;
+! Y,y ! &#119988;,&#120040;,&#120014;,&#120066;
+! Z,z ! &#119989;,&#120041;,&#120015;,&#120067;
+!===
+|===
+
+* https://tug.org/FontCatalogue/ralphsmithsformalscript/[The LaTeX Font Catalogue – Ralph Smith's Formal Script Symbol Fonts]
+* http://www.asahi-net.or.jp/~ax2s-kmtn/ref/unicode/u1d400.html[Unicode 数学用英数字記号 - CyberLibrarian - Asahi-net]
+* https://en.wikipedia.org/wiki/Letterlike_Symbols[Letterlike Symbols - Wikipedia]
+* http://unicode.scarfboy.com/?s=U%2B2110
+* https://blog.emwai.jp/utility/html-entities/mathematical-alphanumeric-symbols/[HTML文字実体参照表（数学用英数字記号） ‹ HTMLエンティティ表 ‹ WEB ...]
+* https://www.compart.com/en/unicode/block/U+1D400[Unicode Block “Mathematical Alphanumeric Symbols”]

@@ -17,6 +17,8 @@ $(DEST_DIR)/asciidoc_listing.html \
 $(DEST_DIR)/asciidoc_tables.html \
 $(DEST_DIR)/diagram-graphviz.html \
 $(DEST_DIR)/diagram-plantuml.html \
+$(DEST_DIR)/math_font_chars.html \
+$(DEST_DIR)/math_font_symbols.html \
 $(DEST_DIR)/math.html \
 $(DEST_DIR)/index.html
 
