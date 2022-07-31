@@ -133,47 +133,6 @@ ifeval::["{backend}" == "html5"]
 pass:[<ruby><rb>hello world</rb><rp>（</rp><rt>こんにちは世界</rt><rp>）</rp></ruby>]
 endif::[]
 
-=== ifdef
-
-[source,asciidoc,subs="verbatim,quotes"]
-----
-**ifdef::asciidoctor[]**
-I'm asciidoctor.
-**endif::asciidoctor[]**
-
-**ifdef::backend-html5[]**
-:twoinches: width='144'
-:full-width: width='100%'
-:half-width: width='50%'
-:half-size:
-:thumbnail: width='60'
-**endif::[]**
-
-**ifdef::basebackend-html[]** <1>
-true if html5, asciidoctor-pdf
-**endif::[]**
-
-**ifdef::backend-pdf[]**
-:twoinches: pdfwidth='2in'
-:full-width: pdfwidth='100vw'
-:half-width: pdfwidth='50vw'
-:half-size: pdfwidth='50%'
-:thumbnail: pdfwidth='20mm'
-**endif::[]**
-
-**ifdef::backend-docbook5[]**
-:twoinches: width='50mm'
-:full-width: scaledwidth='100%'
-:half-width: scaledwidth='50%'
-:half-size: width='50%'
-:thumbnail: width='20mm'
-**endif::[]**
-----
-<1> That's not going to work in Asciidoctor PDF.
-
-.Reference
-* https://asciidoctor.org/docs/user-manual/#checking-multiple-attributes-ifdef-and-ifndef-only[48.4. Checking multiple attributes (ifdef and ifndef only) | Asciidoctor User Manual]
-
 === Include Directive
 
 [source,asciidoc]
