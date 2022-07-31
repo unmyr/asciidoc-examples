@@ -1,0 +1,121 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+:icons: font
+
+include::header.adoc[]
+
+endif::[]
+
+:bl: pass:p[ +]
+
+== Font
+
+ifeval::["{backend}" == "html5"]
+* <<math_font_chars.adoc#,Mathematical fonts>>
+* <<math_font_symbols.adoc#,Mathematical symbols>>
+* <<unicode_font_arrows.adoc#,Arrows>>
+endif::[]
+
+=== AsciiDoc Basic
+
+A -> B, C <- D, E => F and <= replacements
+
+[source,python]
+.Callouts
+----
+def hello():
+    print("Hello")  # <1>
+----
+<1> world
+
+=== Currency Symbols
+
+.Currency Symbols
+[cols="1a,2a,1a,1a,2a" {table_options}]
+|===
+2+h| Type                                   2+h| Rendered           h|
+h| HTML Entity                 h| Tex Alt     h| HTML      h| LaTeX h| Names
+
+>|    `\&#x24;` {bl}  `\&#36;`  |              |      &#36; |        | Dollar Sign
+>|    `\&#xA2;` {bl} `\&#162;`  |              |     &#162; |        | Cent Sign
+>|    `\&#xA5;` {bl} `\&#165;`  |              |     &#165; |        | Yen Sign
+>|  `\&#x20AC;` {bl} `\&#8364;` |              |    &#8364; |        | Euro Sign
+>|  `\&#x20BF;` {bl} `\&#8383;` |              |    &#8383; |        | Bitcoin Sign
+|===
+.Reference
+* https://www.compart.com/en/unicode/category/Sc[List of Unicode Characters of Category “Currency Symbol” - Compart]
+
+=== Geometric Shapes
+
+.Geometric Shapes
+[cols="2d,2d,8a" {table_options}]
+|===
+h| Type                        h| Rendered h|
+h| HTML Entity                 h| HTML     h| Names
+
+>| https://www.fileformat.info/info/unicode/char/25b2/index.htm[`\&#x25B2;`]{bl} `\&#9650;`
+ | &#9650; | 'BLACK UP-POINTING TRIANGLE' (U+25B2)
+>| https://www.fileformat.info/info/unicode/char/25b2/index.htm[`\&#x25B3;`]{bl} `\&#9651;`
+ | &#9651; | 'WHITE UP-POINTING TRIANGLE' (U+25B3)
+>| https://www.fileformat.info/info/unicode/char/25b6/index.htm[`\&#x25B6;`]{bl} `\&#9654;`
+ | &#9654; | 'BLACK RIGHT-POINTING TRIANGLE' (U+25B6)
+>| https://www.fileformat.info/info/unicode/char/25ba/index.htm[`\&#x25BA;`]{bl} `\&#9658;`
+ | &#9658; | 'BLACK RIGHT-POINTING POINTER' (U+25BA)
+>| https://www.fileformat.info/info/unicode/char/25bc/index.htm[`\&#x25BC;`]{bl} `\&#9660;`
+ | &#9660; | 'BLACK DOWN-POINTING TRIANGLE' (U+25BC)
+|===
+
+* https://www.fileformat.info/info/unicode/block/geometric_shapes/list.htm[Unicode Characters in the Geometric Shapes Block]
+* https://webtan.impress.co.jp/e/2016/06/07/23018[Webデザイン：アイコンや装飾に標準フォントで使えるUnicode文字455個まとめ | 初代編集長ブログ―安田英久 | Web担当者Forum] +
+  矢印系, 絵文字
+
+=== Emoji
+.Dice symbols - Unicode Replacement
+[cols="4d,4d,2d,2a,6a" {table_options}]
+|===
+2+| Type                    2+| Rendered                   |
+h| HTML Entity h| TeX alt    h| HTML              h| LaTeX h| Notes
+
+
+>| `\&#x2680;` |              |   [big]##&#9856;## | | Die Face-1
+>| `\&#x2681;` |              |   [big]##&#9857;## | | Die Face-2
+>| `\&#x2682;` |              |   [big]##&#9858;## | | Die Face-3
+>| `\&#x2683;` |              |   [big]##&#9859;## | | Die Face-4
+>| `\&#x2684;` |              |   [big]##&#9860;## | | Die Face-5
+>| `\&#x2685;` |              |   [big]##&#9861;## | | Die Face-6
+|===
+
+=== Misc
+
+.Punctuation
+[cols="2d,2d,8a" {table_options}]
+|===
+h| Type                                    h| Rendered h|
+h| HTML Entity                             h| HTML     h| Names
+
+>|    `\&#x26;` {bl} `\&#38;` {bl} `\&amp;`
+ | {bl} &#0038; {bl} &amp; | Ampersand
+>|    `\&#xD8;` {bl} `\&#216;`
+ | &#216; |
+|===
+
+.Misc - Unicode Replacement
+[cols="2d,2d,8a" {table_options}]
+|===
+h| Type                        h| Rendered h|
+h| HTML Entity                 h| HTML     h| Notes
+
+>|  `\&#x32FF;`{bl} `\&#13055;` |  &#13055; | Reiwa
+|===
+
+ifeval::["{backend}" == "pdf"]
+// === Mathematical fonts
+include::math_font_chars.adoc[leveloffset=+1]
+
+// === Mathematical symbols
+include::math_font_symbols.adoc[leveloffset=+1]
+
+// === Arrows
+include::unicode_font_arrows.adoc[leveloffset=+1]
+endif::[]

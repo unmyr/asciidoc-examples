@@ -1,0 +1,165 @@
+:toc: right
+:toclevels: 3
+
+ifeval::["{backend}" == "pdf"]
+:table_options: options="header, unbreakable"
+endif::[]
+ifeval::["{backend}" != "pdf"]
+:table_options: options="header, autowidth, unbreakable"
+endif::[]
+
+==== Arrows
+
+.AsciiDoc textual symbol replacements
+[cols="8d,10d,10d,12d,18d" {table_options}]
+|===
+| Rendered | decimal    | hex            | Syntax     | Name
+| ->       | `\&#8594;` | `\&#x2192;`    | `-&gt;`  | Single right arrow
+| =>       | `\&#8658;` | `\&#x21D2;`    | `=&gt;`  | Double right arrow
+| <-       | `\&#8592;` | `\&#x2190;`    | `&lt;-` | Single left arrow
+| <=       | `\&#8656;` | `\&#x21D0;`    | `&lt;=`  | Double left arrow
+|===
+
+.Simple arrows
+[cols="^.^5a,4a,4a,18a,8a" {table_options}]
+|===
+| Rendered   | hex         | decimal     | Character name        | Tex alt
+
+|  `&#8592;` | `\&#x2190;` |  `\&#8592;` | LEFTWARDS ARROW       | `\leftarrow` or `\gets` +
+asciidoc alt: `&lt;-`
+|  `&#8593;` | `\&#x2191;` |  `\&#8593;` | UPWARDS ARROW         | `\uparrow`
+|  `&#8594;` | `\&#x2192;` |  `\&#8594;` | RIGHTWARDS ARROW      | `\to` or `\rightarrow` +
+asciidoc alt: `-&gt;`
+|  `&#8595;` | `\&#x2193;` |  `\&#8595;` | DOWNWARDS ARROW       | `\downarrow`
+|  `&#8596;` | `\&#x2194;` |  `\&#8596;` | LEFT RIGHT ARROW      | `\leftrightarrow`
+|  `&#8597;` | `\&#x2195;` |  `\&#8597;` | UP DOWN ARROW         | `\updownarrow`
+|  `&#8598;` | `\&#x2196;` |  `\&#8598;` | NORTH WEST ARROW      | `\nwarrow`
+|  `&#8599;` | `\&#x2197;` |  `\&#8599;` | NORTH EAST ARROW      | `\nearrow`
+|  `&#8600;` | `\&#x2198;` |  `\&#8600;` | SOUTH EAST ARROW      | `\searrow`
+|  `&#8601;` | `\&#x2199;` |  `\&#8601;` | SOUTH WEST ARROW      | `\swarrow`
+| `&#10229;` | `\&#x27F5;` | `\&#10229;` | LONG LEFTWARDS ARROW  | `\longleftarrow`
+| `&#10230;` | `\&#x27F6;` | `\&#10230;` | LONG RIGHTWARDS ARROW | `\longrightarrow`
+| `&#10231;` | `\&#x27F7;` | `\&#10231;` | LONG LEFT RIGHT ARROW | `\longleftrightarrow`
+|===
+
+.Arrows with modifications
+[cols="^.^5a,4a,4a,18a,8a" {table_options}]
+|===
+| Rendered   | hex         | decimal     | Character name        | Tex alt
+
+|  `&#8606;` | `\&#x219E;` |  `\&#8606;` | LEFTWARDS TWO HEADED ARROW | `\twoheadleftarrow`
+|  `&#8607;` | `\&#x219F;` |  `\&#8607;` | Upwards Two Headed Arrow |
+|  `&#8608;` | `\&#x21A0;` |  `\&#8608;` | RIGHTWARDS TWO HEADED ARROW | `\twoheadrightarrow`
+|  `&#8609;` | `\&#x21A0;` |  `\&#8609;` | Rightwards Two Headed Arrow |
+|  `&#8611;` | `\&#x21A3;` |  `\&#8611;` | RIGHTWARDS ARROW WITH TAIL | `\rightarrowtail`
+|  `&#8614;` | `\&#x21A6;` |  `\&#8614;` | RIGHTWARDS ARROW FROM BAR | `\mapsto`
+|  `&#8617;` | `\&#x21A9;` |  `\&#8617;` | LEFTWARDS ARROW WITH HOOK | `\hookleftarrow`
+|  `&#8618;` | `\&#x21AA;` |  `\&#8618;` | RIGHTWARDS ARROW WITH HOOK | `\hookrightarrow`
+|  `&#8621;` | `\&#x21AD;` |  `\&#8621;` | LEFT RIGHT WAVE ARROW | `\leftrightsquigarrow`
+|  `&#8622;` | `\&#x21AE;` |  `\&#8622;` | LEFT RIGHT ARROW WITH STROKE | `\nleftrightarrow`
+|===
+
+.Keyboard symbols and circle arrows
+[cols="^.^5a,4a,4a,18a,8a" {table_options}]
+|===
+| Rendered   | hex         | decimal     | Character name        | Tex alt
+
+|  `&#8630;` | `\&#x21B6;` |  `\&#8630;` | ANTICLOCKWISE TOP SEMICIRCLE ARROW | `\curvearrowleft`
+|  `&#8631;` | `\&#x21B7;` |  `\&#8631;` | CLOCKWISE TOP SEMICIRCLE ARROW | `\curvearrowright`
+|  `&#8634;` | `\&#x21BA;` |  `\&#8634;` | ANTICLOCKWISE OPEN CIRCLE ARROW | `\circlearrowleft`
+|  `&#8635;` | `\&#x21BB;` |  `\&#8635;` | CLOCKWISE OPEN CIRCLE ARROW | `\circlearrowright`
+|===
+
+.Harpoons
+[cols="^.^5a,4a,4a,18a,8a" {table_options}]
+|===
+| Rendered   | hex         | decimal     | Character name        | Tex alt
+
+|  `&#8636;` | `\&#x21BC;` |  `\&#8636;` | LEFTWARDS HARPOON WITH BARB UPWARDS | `\leftharpoonup`
+|  `&#8637;` | `\&#x21BD;` |  `\&#8637;` | LEFTWARDS HARPOON WITH BARB DOWNWARDS | `\leftharpoondown`
+|  `&#8638;` | `\&#x21BE;` |  `\&#8638;` | UPWARDS HARPOON WITH BARB RIGHTWARDS |
+|  `&#8639;` | `\&#x21BF;` |  `\&#8639;` | PWARDS HARPOON WITH BARB LEFTWARDS |
+|  `&#8640;` | `\&#x21C0;` |  `\&#8640;` | RIGHTWARDS HARPOON WITH BARB UPWARDS | `\rightharpoonup`
+|  `&#8641;` | `\&#x21C1;` |  `\&#8641;` | RIGHTWARDS HARPOON WITH BARB DOWNWARDS | `\rightharpoondown`
+|  `&#8642;` | `\&#x21C2;` |  `\&#8642;` | DOWNWARDS HARPOON WITH BARB RIGHTWARDS |
+|  `&#8643;` | `\&#x21C3;` |  `\&#8643;` | 	DOWNWARDS HARPOON WITH BARB LEFTWARDS |
+|===
+
+.Paired arrows and harpoons
+[cols="^.^5a,4a,4a,18a,8a" {table_options}]
+|===
+| Rendered   | hex         | decimal     | Character name        | Tex alt
+
+|  `&#8644;` | `\&#x21C4;` |  `\&#8644;` | RIGHTWARDS ARROW OVER LEFTWARDS ARROW | `\rightleftarrows`
+|  `&#8645;` | `\&#x21C5;` |  `\&#8645;` | UPWARDS ARROW LEFTWARDS OF DOWNWARDS ARROW |
+|  `&#8646;` | `\&#x21C6;` |  `\&#8646;` | LEFTWARDS ARROW OVER RIGHTWARDS ARROW |
+|  `&#8647;` | `\&#x21C7;` |  `\&#8647;` | LEFTWARDS PAIRED ARROWS | `\leftleftarrows`
+|  `&#8648;` | `\&#x21C8;` |  `\&#8648;` | UPWARDS PAIRED ARROWS | `\upuparrows`
+|  `&#8649;` | `\&#x21C9;` |  `\&#8649;` | RIGHTWARDS PAIRED ARROWS | `\rightrightarrows`
+|  `&#8650;` | `\&#x21CA;` |  `\&#8650;` | DOWNWARDS PAIRED ARROWS | `\downdownarrows`
+|  `&#8651;` | `\&#x21CB;` |  `\&#8651;` | LEFTWARDS HARPOON OVER RIGHTWARDS HARPOON |
+|  `&#8652;` | `\&#x21CC;` |  `\&#8652;` | RIGHTWARDS HARPOON OVER LEFTWARDS HARPOON | `\rightleftharpoons`
+|===
+
+.Double arrows
+[cols="^.^5a,4a,4a,18a,8a" {table_options}]
+|===
+| Rendered   | hex         | decimal     | Character name        | Tex alt
+
+|  `&#8653;` | `\&#x21CD;` |  `\&#8653;` | LEFTWARDS DOUBLE ARROW WITH STROKE |
+|  `&#8654;` | `\&#x21CE;` |  `\&#8654;` | LEFT RIGHT DOUBLE ARROW WITH STROKE | `\nLeftrightarrow`
+|  `&#8655;` | `\&#x21CF;` |  `\&#8655;` | RIGHTWARDS DOUBLE ARROW WITH STROKE |
+|  `&#8656;` | `\&#x21D0;` |  `\&#8656;` | LEFTWARDS DOUBLE ARROW | `\Leftarrow`
+|  `&#8657;` | `\&#x21D1;` |  `\&#8657;` | UPWARDS DOUBLE ARROW | `\Uparrow`
+|  `&#8658;` | `\&#x21D2;` |  `\&#8658;` | RIGHTWARDS DOUBLE ARROW | `\Rightarrow`
+|  `&#8659;` | `\&#x21D3;` |  `\&#8659;` | DOWNWARDS DOUBLE ARROW | `\Downarrow`
+|  `&#8660;` | `\&#x21D4;` |  `\&#8660;` | LEFT RIGHT DOUBLE ARROW | `\Leftrightarrow`
+|  `&#8661;` | `\&#x21D5;` |  `\&#8661;` | UP DOWN DOUBLE ARROW | `\Updownarrow`
+|  `&#8662;` | `\&#x21D6;` |  `\&#8662;` | NORTH WEST DOUBLE ARROW |
+|  `&#8663;` | `\&#x21D7;` |  `\&#8663;` | NORTH EAST DOUBLE ARROW |
+|  `&#8664;` | `\&#x21D8;` |  `\&#8664;` | SOUTH EAST DOUBLE ARROW |
+|  `&#8665;` | `\&#x21D9;` |  `\&#8665;` | SOUTH WEST DOUBLE ARROW |
+| `&#10232;` | `\&#x27F8;` | `\&#10232;` | LONG LEFTWARDS DOUBLE ARROW | `\Longleftarrow`
+| `&#10233;` | `\&#x27F9;` | `\&#10233;` | LONG RIGHTWARDS DOUBLE ARROW | `\implies` or `\Longrightarrow`
+| `&#10234;` | `\&#x27FA;` | `\&#10234;` | LONG LEFT RIGHT DOUBLE ARROW | `\iff` or `\Longleftrightarrow`
+| `&#10237;` | `\&#x27FD;` | `\&#10237;` | LONG LEFTWARDS DOUBLE ARROW FROM BAR |
+| `&#10238;` | `\&#x27FE;` | `\&#10238;` | LONG RIGHTWARDS DOUBLE ARROW FROM BAR |
+| `&#10498;` | `\&#x2902;` | `\&#10498;` | LEFTWARDS DOUBLE ARROW WITH VERTICAL STROKE |
+| `&#10499;` | `\&#x2903;` | `\&#10499;` | RIGHTWARDS DOUBLE ARROW WITH VERTICAL STROKE |
+| `&#10500;` | `\&#x2904;` | `\&#10500;` | LEFT RIGHT DOUBLE ARROW WITH VERTICAL STROKE |
+|===
+
+.Miscellaneous arrows and keyboard symbols
+|===
+| Rendered   | hex         | decimal     | Character name        | Tex alt
+
+|  `&#8666;` | `\&#x21DA;` |  `\&#8666;` | LEFTWARDS TRIPLE ARROW |
+|  `&#8667;` | `\&#x21DB;` |  `\&#8667;` | RIGHTWARDS TRIPLE ARROW | `\Rrightarrow`
+|  `&#8668;` | `\&#x21DC;` |  `\&#8668;` | LEFTWARDS SQUIGGLE ARROW |
+|  `&#8669;` | `\&#x21DD;` |  `\&#8669;` | RIGHTWARDS SQUIGGLE ARROW | `\leadsto`
+|===
+
+.White arrows and keyboard symbols
+[cols="^.^5a,4a,4a,18a,8a" {table_options}]
+|===
+| Rendered   | hex         | decimal     | Character name        | Tex alt
+
+|  `&#8678;` | `\&#x21E6;` |  `\&#8678;` | Leftwards Thick Arrow  |
+|  `&#8679;` | `\&#x21E7;` |  `\&#8679;` | Upwards Thick Arrow    |
+|  `&#8680;` | `\&#x21E8;` |  `\&#8680;` | Rightwards Thick Arrow |
+|  `&#8681;` | `\&#x21E9;` |  `\&#8681;` | Downwards Thick Arrow  |
+|===
+
+.Miscellaneous arrows
+[cols="^.^5a,4a,4a,18a,8a" {table_options}]
+|===
+| Rendered   | hex         | decimal     | Character name        | Tex alt
+
+| `&#10235;` | `\&#x27FB;` | `\&#10235;` | LONG LEFTWARDS ARROW FROM BAR |
+| `&#10236;` | `\&#x27FC;` | `\&#10236;` | LONG RIGHTWARDS ARROW FROM BAR | `\longmapsto`
+| `&#10518;` | `\&#x2916;` | `\&#10518;` | RIGHTWARDS TWO-HEADED ARROW WITH TAIL |
+|===
+
+* https://en.wikipedia.org/wiki/Arrow_(symbol)[Arrow (symbol) - Wikipedia]
+* https://unicode.org/charts/nameslist/n_2190.html[Arrows]
+* https://www.key-shortcut.com/en/writing-systems/35-symbols/arrows/[Unicode: Arrows, all of them (⇪ ↹ ⬈ ↘ ⟾ ↶) for HTML charset UTF-8]

@@ -3,11 +3,12 @@ ifeval::["{backend}" == "html5"]
 <<index.adoc#,Index>> {vbar}
 <<asciidoc_block_admonition.adoc#,Block admonition>> {vbar}
 <<asciidoc_blocks.adoc#,Blocks>> {vbar}
+<<asciidoc_fonts.adoc#,Fonts>> {vbar}
 <<asciidoc_icons.adoc#,Icons>> {vbar}
 <<asciidoc_images.adoc#,Images>> {vbar}
 <<asciidoc_listing.adoc#,Listing>> {vbar}
 <<asciidoc_tables.adoc#,Tables>> {vbar}
-<<math.adoc#,Math>> (<<math_font_chars.adoc#,fonts>>, <<math_font_symbols.adoc#,symbols>>) /
+<<math.adoc#,Math>> (<<math_font_chars.adoc#,fonts>>, <<math_font_symbols.adoc#,symbols>>) {vbar}
 <<diagram-graphviz.adoc#,Graphviz>> {vbar}
 <<diagram-plantuml.adoc#,PlantUML>> +
 endif::[]
