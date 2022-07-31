@@ -3,6 +3,7 @@ ifeval::["{backend}" == "html5"]
 <<index.adoc#,Index>> {vbar}
 <<asciidoc_block_admonition.adoc#,Block admonition>> {vbar}
 <<asciidoc_blocks.adoc#,Blocks>> {vbar}
+<<asciidoc_conditionals.adoc#,ifdef, etc>> {vbar}
 <<asciidoc_fonts.adoc#,Fonts>> {vbar}
 <<asciidoc_icons.adoc#,Icons>> {vbar}
 <<asciidoc_images.adoc#,Images>> {vbar}

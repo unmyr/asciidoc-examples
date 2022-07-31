@@ -11,6 +11,7 @@ HTML_LIST=\
 mkdir_and_copy \
 $(DEST_DIR)/asciidoc_block_admonition.html \
 $(DEST_DIR)/asciidoc_blocks.html \
+$(DEST_DIR)/asciidoc_conditionals.html \
 $(DEST_DIR)/asciidoc_fonts.html \
 $(DEST_DIR)/asciidoc_icons.html \
 $(DEST_DIR)/asciidoc_images.html \

@@ -1,0 +1,56 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+:icons: font
+
+include::header.adoc[]
+
+endif::[]
+
+// For preview in VS-Code
+ifndef::imagesdir[]
+:imagesdir: images
+endif::[]
+
+== Conditionals
+
+* https://docs.asciidoctor.org/asciidoc/latest/directives/conditionals/[Conditionals | Asciidoctor Docs^]
+
+=== ifdef and ifndef Directives
+
+==== Include header if top level
+
+[source,asciidoc,subs="verbatim,quotes"]
+----
+**ifndef::leveloffset[]**
+:toc: left
+:toclevels: 3
+:icons: font
+
+**include::header.adoc[]**
+
+**endif::[]**
+----
+
+==== GitHub
+
+* Refer local image directory on GitHub
++
+[source,asciidoc,subs="verbatim,quotes"]
+----
+**ifdef::env-github[]**
+:imagesdir: images
+**endif::[]**
+----
+
+* Provide an alternative on GFA
++
+[source,asciidoc,subs="verbatim,quotes"]
+----
+**ifndef::env-github[]**
+:stem: latexmath
+**endif::[]**
+**ifndef::env-github[]**
+Unsupported on GitHub flavored AsciiDoc.
+**endif::[]**
+----
