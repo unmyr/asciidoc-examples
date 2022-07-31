@@ -670,7 +670,6 @@ pre.rouge {
 <li><a href="#_ruby">ruby</a></li>
 </ul>
 </li>
-<li><a href="#_ifdef">ifdef</a></li>
 <li><a href="#_include_directive">Include Directive</a></li>
 <li><a href="#_predefined_attributes">Predefined attributes</a></li>
 </ul>
@@ -869,60 +868,6 @@ This paragraph gets a lot of attention.</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ifdef">ifdef</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code data-lang="asciidoc"><strong>ifdef::asciidoctor[]</strong>
-I'm asciidoctor.
-<strong>endif::asciidoctor[]</strong>
-
-<strong>ifdef::backend-html5[]</strong>
-:twoinches: width='144'
-:full-width: width='100%'
-:half-width: width='50%'
-:half-size:
-:thumbnail: width='60'
-<strong>endif::[]</strong>
-
-<strong>ifdef::basebackend-html[]</strong> <i class="conum" data-value="1"></i><b>(1)</b>
-true if html5, asciidoctor-pdf
-<strong>endif::[]</strong>
-
-<strong>ifdef::backend-pdf[]</strong>
-:twoinches: pdfwidth='2in'
-:full-width: pdfwidth='100vw'
-:half-width: pdfwidth='50vw'
-:half-size: pdfwidth='50%'
-:thumbnail: pdfwidth='20mm'
-<strong>endif::[]</strong>
-
-<strong>ifdef::backend-docbook5[]</strong>
-:twoinches: width='50mm'
-:full-width: scaledwidth='100%'
-:half-width: scaledwidth='50%'
-:half-size: width='50%'
-:thumbnail: width='20mm'
-<strong>endif::[]</strong></code></pre>
-</div>
-</div>
-<div class="colist arabic">
-<table>
-<tr>
-<td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>That&#8217;s not going to work in Asciidoctor PDF.</td>
-</tr>
-</table>
-</div>
-<div class="ulist">
-<div class="title">Reference</div>
-<ul>
-<li>
-<p><a href="https://asciidoctor.org/docs/user-manual/#checking-multiple-attributes-ifdef-and-ifndef-only">48.4. Checking multiple attributes (ifdef and ifndef only) | Asciidoctor User Manual</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
 <h3 id="_include_directive">Include Directive</h3>
 <div class="listingblock">
 <div class="content">
@@ -1092,7 +1037,7 @@ include::chapter03.adoc[leveloffset=+1]</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-07-31 17:05:01 UTC
+Last updated 2022-07-31 17:56:42 UTC
 </div>
 </div>
 </body>
