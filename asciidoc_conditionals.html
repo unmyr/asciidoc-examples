@@ -769,57 +769,35 @@ true if html5, asciidoctor-pdf
 </div>
 <div class="sect3">
 <h4 id="_github">GitHub</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Refer local image directory on GitHub</p>
+<div class="paragraph">
+<p>Provide an alternative on GFA</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight"><code data-lang="asciidoc"><strong>ifndef::imagesdir[]</strong>
-:imagesdir: images
+:imagesdir: images <i class="conum" data-value="1"></i><b>(1)</b>
+<strong>endif::[]</strong>
+
+<strong>ifndef::env-github[]</strong>
+\include::../../../stem.adoc[] <i class="conum" data-value="2"></i><b>(2)</b>
+<strong>endif::[]</strong>
+
+<strong>ifdef::env-github[]</strong>
+:stem: latexmath <i class="conum" data-value="2"></i><b>(2)</b>
 <strong>endif::[]</strong></code></pre>
 </div>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code data-lang="asciidoc"><strong>ifdef::env-github[]</strong>
-:imagesdir: images
-<strong>endif::[]</strong></code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>Provide an alternative on GFA</p>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code data-lang="asciidoc"><strong>ifndef::env-github[]</strong>
-:stem: latexmath
-<strong><strong>*
-</strong>ifndef::env-github[]<strong>
-Unsupported on GitHub flavored AsciiDoc.
-</strong>endif::[]</strong>*</code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>Misc</p>
-<div class="listingblock">
-<div class="content">
-<pre>**ifndef::imagesdir[]**
-:imagesdir: images
-**endif::[]**
-
-**ifndef::env-github[]**
-include::../../../stem.adoc[]
-**endif::[]**
-
-**ifdef::env-github[]**
-:stem: latexmath
-**endif::[]**</pre>
-</div>
-</div>
-</li>
-</ul>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Refer local image directory on GitHub</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Take a workaround for GitHub&#8217;s failure to include external files</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -828,7 +806,7 @@ include::../../../stem.adoc[]
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-07-31 16:56:05 UTC
+Last updated 2022-07-31 17:05:01 UTC
 </div>
 </div>
 </body>
