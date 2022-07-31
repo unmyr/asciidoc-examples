@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<title>Asciidoctor Diagram: PlantUML</title>
+<title>Conditionals</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -435,6 +435,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 pre.rouge table td { padding: 5px; }
 pre.rouge table pre { margin: 0; }
@@ -656,13 +657,12 @@ pre.rouge {
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_asciidoctor_diagram_plantuml">Asciidoctor Diagram: PlantUML</a>
+<li><a href="#_conditionals">Conditionals</a>
 <ul class="sectlevel2">
-<li><a href="#_use_case_diagram">Use Case Diagram</a></li>
-<li><a href="#_commutative_diagram">Commutative diagram</a></li>
-<li><a href="#_class_diagram">Class Diagram</a>
+<li><a href="#_ifdef_and_ifndef_directives">ifdef and ifndef Directives</a>
 <ul class="sectlevel3">
-<li><a href="#_proxy_design_pattern">Proxy Design Pattern</a></li>
+<li><a href="#_include_header_if_top_level">Include header if top level</a></li>
+<li><a href="#_github">GitHub</a></li>
 </ul>
 </li>
 </ul>
@@ -675,7 +675,7 @@ pre.rouge {
 <p><a href="index.html">Index</a> |
 <a href="asciidoc_block_admonition.html">Block admonition</a> |
 <a href="asciidoc_blocks.html">Blocks</a> |
-<a href="asciidoc_conditionals.html">ifdef, etc</a> |
+<a href="#">ifdef, etc</a> |
 <a href="asciidoc_fonts.html">Fonts</a> |
 <a href="asciidoc_icons.html">Icons</a> |
 <a href="asciidoc_images.html">Images</a> |
@@ -683,92 +683,63 @@ pre.rouge {
 <a href="asciidoc_tables.html">Tables</a> |
 <a href="math.html">Math</a> (<a href="math_font_chars.html">fonts</a>, <a href="math_font_symbols.html">symbols</a>) |
 <a href="diagram-graphviz.html">Graphviz</a> |
-<a href="#">PlantUML</a><br></p>
+<a href="diagram-plantuml.html">PlantUML</a><br></p>
 </div>
 <div class="sect1">
-<h2 id="_asciidoctor_diagram_plantuml">Asciidoctor Diagram: PlantUML</h2>
+<h2 id="_conditionals">Conditionals</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_use_case_diagram">Use Case Diagram</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code data-lang="plantuml">@startuml
-:Alice: -&gt; (Hello)
-:アリス: -&gt; (こんにちは)
-@enduml</code></pre>
-</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/plantuml_sample_sd_01_defaultFontName_omit.svg" alt="plantuml sample sd 01 defaultFontName omit" width="387" height="86">
-</div>
-<div class="title">Figure 1. defaultFontName is omitted</div>
-</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.asciidoctor.org/asciidoc/latest/directives/conditionals/" target="_blank" rel="noopener">Conditionals | Asciidoctor Docs</a></p>
+</li>
+</ul>
 </div>
 <div class="sect2">
-<h3 id="_commutative_diagram">Commutative diagram</h3>
-<details>
-<summary class="title">Details</summary>
-<div class="content">
-<div class="listingblock">
-<div class="content">
-<pre class="rouge highlight"><code data-lang="plantuml">hide empty description
-skinparam shadowing false
-skinparam arrow {
-  Color black
-}
-skinparam state {
-  BorderColor transparent
-  BackgroundColor transparent
-  Padding 0
-}
-
-left to right direction
-
-state "**V**" as V1
-state "**V**" as V2
-state "**V**" as V3
-
-V1 --&gt; V2 : S
-V2 --&gt; V3 : T
-V2 --&gt; V1 : S&lt;sup&gt;-1&lt;/sup&gt;
-V3 --&gt; V2 : T&lt;sup&gt; -1&lt;/sup&gt;
-V1 --&gt; V3 : TS
-V3 --&gt; V1 : (TS)&lt;sup&gt;-1&lt;/sup&gt;</code></pre>
-</div>
-</div>
-</div>
-</details>
-<div class="imageblock">
-<div class="content">
-<img src="images/diagram-plantuml_commutative_diagram_01.svg" alt="diagram plantuml commutative diagram 01" width="326" height="129">
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_class_diagram">Class Diagram</h3>
+<h3 id="_ifdef_and_ifndef_directives">ifdef and ifndef Directives</h3>
 <div class="sect3">
-<h4 id="_proxy_design_pattern">Proxy Design Pattern</h4>
+<h4 id="_include_header_if_top_level">Include header if top level</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="plantuml">class Client
-interface Subject {
-  +doIt()
-}
+<pre class="rouge highlight"><code data-lang="asciidoc"><strong>ifndef::leveloffset[]</strong>
+:toc: left
+:toclevels: 3
+:icons: font
 
-class Proxy {
-  +doIt()
-}
+<strong>include::header.adoc[]</strong>
 
-Subject &lt;|-- Proxy
-
-Client -&gt; Subject : doIt()</code></pre>
+<strong>endif::[]</strong></code></pre>
 </div>
 </div>
-<div class="imageblock">
+</div>
+<div class="sect3">
+<h4 id="_github">GitHub</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Refer local image directory on GitHub</p>
+<div class="listingblock">
 <div class="content">
-<img src="images/asciidoc_diagram_plantuml_class_proxy_pattern.svg" alt="asciidoc diagram plantuml class proxy pattern" width="239" height="203">
+<pre class="rouge highlight"><code data-lang="asciidoc"><strong>ifdef::env-github[]</strong>
+:imagesdir: images
+<strong>endif::[]</strong></code></pre>
 </div>
+</div>
+</li>
+<li>
+<p>Provide an alternative on GFA</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc"><strong>ifndef::env-github[]</strong>
+:stem: latexmath
+<strong>endif::[]</strong>
+<strong>ifndef::env-github[]</strong>
+Unsupported on GitHub flavored AsciiDoc.
+<strong>endif::[]</strong></code></pre>
+</div>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
