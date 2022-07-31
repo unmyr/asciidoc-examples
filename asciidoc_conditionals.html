@@ -662,6 +662,7 @@ pre.rouge {
 <li><a href="#_ifdef_and_ifndef_directives">ifdef and ifndef Directives</a>
 <ul class="sectlevel3">
 <li><a href="#_include_header_if_top_level">Include header if top level</a></li>
+<li><a href="#_various_backends">Various backends</a></li>
 <li><a href="#_github">GitHub</a></li>
 </ul>
 </li>
@@ -713,11 +714,72 @@ pre.rouge {
 </div>
 </div>
 <div class="sect3">
+<h4 id="_various_backends">Various backends</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc"><strong>ifdef::asciidoctor[]</strong>
+I'm asciidoctor.
+<strong>endif::asciidoctor[]</strong>
+
+<strong>ifdef::backend-html5[]</strong>
+:twoinches: width='144'
+:full-width: width='100%'
+:half-width: width='50%'
+:half-size:
+:thumbnail: width='60'
+<strong>endif::[]</strong>
+
+<strong>ifdef::basebackend-html[]</strong> <i class="conum" data-value="1"></i><b>(1)</b>
+true if html5, asciidoctor-pdf
+<strong>endif::[]</strong>
+
+<strong>ifdef::backend-pdf[]</strong>
+:twoinches: pdfwidth='2in'
+:full-width: pdfwidth='100vw'
+:half-width: pdfwidth='50vw'
+:half-size: pdfwidth='50%'
+:thumbnail: pdfwidth='20mm'
+<strong>endif::[]</strong>
+
+<strong>ifdef::backend-docbook5[]</strong>
+:twoinches: width='50mm'
+:full-width: scaledwidth='100%'
+:half-width: scaledwidth='50%'
+:half-size: width='50%'
+:thumbnail: width='20mm'
+<strong>endif::[]</strong></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>That&#8217;s not going to work in Asciidoctor PDF.</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<div class="title">Reference</div>
+<ul>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#checking-multiple-attributes-ifdef-and-ifndef-only">48.4. Checking multiple attributes (ifdef and ifndef only) | Asciidoctor User Manual</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
 <h4 id="_github">GitHub</h4>
 <div class="ulist">
 <ul>
 <li>
 <p>Refer local image directory on GitHub</p>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc"><strong>ifndef::imagesdir[]</strong>
+:imagesdir: images
+<strong>endif::[]</strong></code></pre>
+</div>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="rouge highlight"><code data-lang="asciidoc"><strong>ifdef::env-github[]</strong>
@@ -732,10 +794,28 @@ pre.rouge {
 <div class="content">
 <pre class="rouge highlight"><code data-lang="asciidoc"><strong>ifndef::env-github[]</strong>
 :stem: latexmath
-<strong>endif::[]</strong>
-<strong>ifndef::env-github[]</strong>
+<strong><strong>*
+</strong>ifndef::env-github[]<strong>
 Unsupported on GitHub flavored AsciiDoc.
-<strong>endif::[]</strong></code></pre>
+</strong>endif::[]</strong>*</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Misc</p>
+<div class="listingblock">
+<div class="content">
+<pre>**ifndef::imagesdir[]**
+:imagesdir: images
+**endif::[]**
+
+**ifndef::env-github[]**
+include::../../../stem.adoc[]
+**endif::[]**
+
+**ifdef::env-github[]**
+:stem: latexmath
+**endif::[]**</pre>
 </div>
 </div>
 </li>
@@ -748,7 +828,7 @@ Unsupported on GitHub flavored AsciiDoc.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-07-31 16:32:12 UTC
+Last updated 2022-07-31 16:56:05 UTC
 </div>
 </div>
 </body>
