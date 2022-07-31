@@ -75,46 +75,20 @@ true if html5, asciidoctor-pdf
 
 ==== GitHub
 
-* Refer local image directory on GitHub
-+
+Provide an alternative on GFA
 [source,asciidoc,subs="verbatim,quotes"]
 ----
 **ifndef::imagesdir[]**
-:imagesdir: images
-**endif::[]**
-----
-+
-[source,asciidoc,subs="verbatim,quotes"]
-----
-**ifdef::env-github[]**
-:imagesdir: images
-**endif::[]**
-----
-
-* Provide an alternative on GFA
-+
-[source,asciidoc,subs="verbatim,quotes"]
-----
-**ifndef::env-github[]**
-:stem: latexmath
-****
-**ifndef::env-github[]**
-Unsupported on GitHub flavored AsciiDoc.
-**endif::[]**
-----
-
-* Misc
-+
-----
-**ifndef::imagesdir[]**
-:imagesdir: images
+:imagesdir: images //<1>
 **endif::[]**
 
 **ifndef::env-github[]**
-\include::../../../stem.adoc[]
+\include::../../../stem.adoc[] //<2>
 **endif::[]**
 
 **ifdef::env-github[]**
-:stem: latexmath
+:stem: latexmath //<2>
 **endif::[]**
 ----
+<1> Refer local image directory on GitHub
+<2> Take a workaround for GitHub's failure to include external files
