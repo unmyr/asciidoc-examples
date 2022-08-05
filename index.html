@@ -781,19 +781,58 @@ not working</p>
 <div class="paragraph">
 <p>Asciidoctor automatically assigns the ID <code>_section_title</code> to this section.</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>Internal cross references</p>
 <div class="listingblock">
+<div class="title">Example 1. Cross reference using the ID of the target section</div>
 <div class="content">
-<pre class="rouge highlight"><code data-lang="asciidoc">= Section Title
+<pre class="rouge highlight"><code data-lang="asciidoc">See &lt;&lt;_internal_cross_references&gt;&gt;.
+
+== Internal Cross References
 ...</code></pre>
 </div>
 </div>
 <div class="listingblock">
+<div class="title">Example 3. Cross reference with custom xreflabel text</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">See &lt;&lt;_internal_cross_references,Section&gt;&gt;.</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example 3. Cross reference using a section&#8217;s title</div>
 <div class="content">
 <pre class="rouge highlight"><code data-lang="asciidoc">See &lt;&lt;Internal Cross References&gt;&gt;.
 
 == Internal Cross References
 ...</code></pre>
 </div>
+</div>
+</li>
+<li>
+<p>Document to Document Cross References</p>
+<div class="listingblock">
+<div class="title">list.adoc</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">== List
+...</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example 1</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">xref:list.adoc#_list[List]</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Example 2</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="asciidoc">&lt;&lt;list.adoc#_list,List&gt;&gt;</code></pre>
+</div>
+</div>
+</li>
+</ul>
 </div>
 <div class="listingblock">
 <div class="title">Assigning an ID to a paragraph</div>
@@ -1037,7 +1076,7 @@ include::chapter03.adoc[leveloffset=+1]</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-07-31 17:56:42 UTC
+Last updated 2022-08-05 11:58:49 UTC
 </div>
 </div>
 </body>
