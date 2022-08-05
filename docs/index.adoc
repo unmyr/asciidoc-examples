@@ -72,7 +72,7 @@ See <<_internal_cross_references>>.
 ----
 +
 [source,asciidoc]
-.Example 3. Cross reference with custom xreflabel text
+.Example 2. Cross reference with custom xreflabel text
 ----
 See <<_internal_cross_references,Section>>.
 ----
