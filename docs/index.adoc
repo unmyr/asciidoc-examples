@@ -60,18 +60,51 @@ his URL has repeating underscores link:++https://asciidoctor.org/now_this__link_
 
 Asciidoctor automatically assigns the ID `_section_title` to this section.
 
+* Internal cross references
++
 [source,asciidoc]
+.Example 1. Cross reference using the ID of the target section
 ----
-= Section Title
+See <<_internal_cross_references>>.
+
+== Internal Cross References
 ...
 ----
-
++
 [source,asciidoc]
+.Example 3. Cross reference with custom xreflabel text
+----
+See <<_internal_cross_references,Section>>.
+----
++
+[source,asciidoc]
+.Example 3. Cross reference using a section's title
 ----
 See <<Internal Cross References>>.
 
 == Internal Cross References
 ...
+----
+
+* Document to Document Cross References
++
+[source,asciidoc]
+.list.adoc
+----
+== List
+...
+----
++
+[source,asciidoc]
+.Example 1
+----
+xref:list.adoc#_list[List]
+----
++
+[source,asciidoc]
+.Example 2
+----
+<<list.adoc#_list,List>>
 ----
 
 [source,asciidoc]
