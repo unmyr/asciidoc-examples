@@ -22,6 +22,7 @@ $(DEST_DIR)/diagram-plantuml.html \
 $(DEST_DIR)/math_font_chars.html \
 $(DEST_DIR)/math_font_symbols.html \
 $(DEST_DIR)/math.html \
+$(DEST_DIR)/syntax_highlighting.html \
 $(DEST_DIR)/unicode_font_arrows.html \
 $(DEST_DIR)/index.html
 

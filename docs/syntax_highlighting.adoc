@@ -1,0 +1,1790 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 4
+:icons: font
+
+ifndef::imagesdir[]
+:imagesdir: images
+endif::[]
+
+include::header.adoc[]
+
+endif::[]
+
+:bl: pass:p[ +]
+
+ifeval::["{source-highlighter}" == "coderay"]
+:enable-linenums: %linenums
+:coderay-linenums-mode: inline
+endif::[]
+ifeval::["{source-highlighter}" == "rouge"]
+:enable-linenums:
+endif::[]
+
+ifeval::["{backend}" != "pdf"]
+:o: ✓
+:x: ✗
+endif::[]
+ifeval::["{backend}" == "pdf"]
+:o: ✓
+:x: ×
+endif::[]
+
+== Syntax Highlighting Source Code: {source-highlighter}
+
+=== How to use
+[source,asciidoc]
+----
+= Document Title
+:source-highlighter: <value>
+----
+
+.Recognized values and supported environments for the source-highlighter attribute
+[cols="7a,7a,14a" {table_options}]
+|===
+| Library Name | Attribute Value | Supported Environments
+
+| https://asciidoctor.org/docs/user-manual/#coderay[CodeRay^]
+| `coderay`
+| Asciidoctor, AsciidoctorJ, Asciidoctor PDF
+
+| https://highlightjs.org/[highlight.js^]
+| `highlightjs`
+| Asciidoctor, AsciidoctorJ, Asciidoctor.js
+
+| prettify
+| `prettify`
+| Asciidoctor, AsciidoctorJ, Asciidoctor.js
+
+| https://asciidoctor.org/docs/user-manual/#pygments[Pygments^]
+| `pygments`
+| Asciidoctor, Asciidoctor PDF
+
+| https://asciidoctor.org/docs/user-manual/#rouge[Rouge^]
+| `rouge`
+| Asciidoctor, Asciidoctor PDF
+
+| https://gist.github.com/powerman/d56b2675dfed38deb298[GFA (GitHub Flavored Asciidoc)^]
+| `html-pipeline`
+| GitHub
+|===
+
+=== Source substitutions
+
+[WARNING]
+====
+It's not work properly with `asciidoctor-pdf` footnote:[Asciidoctor 1.5.8, asciidoctor-pdf (1.5.0.alpha.16)].
+
+* `subs="-callouts"` option is ignored
+* `quotes` replacements does not work properly.
+
+image::syntax_highlighting_source_subs_01.png[]
+====
+
+
+==== Callouts
+
+[example]
+====
+[source,asciidoc,subs="-callouts"]
+--------
+----
+line of code  // <1>
+line of code  # <2>
+line of code  ;; <3>
+----
+<1> A callout behind a line comment for C-style languages.
+<2> A callout behind a line comment for Ruby, Python, Perl, etc.
+<3> A callout behind a line comment for Clojure.
+--------
+
+[source,plaintext]
+----
+line of code  // <1>
+line of code  # <2>
+line of code  ;; <3>
+----
+<1> A callout behind a line comment for C-style languages.
+<2> A callout behind a line comment for Ruby, Python, Perl, etc.
+<3> A callout behind a line comment for Clojure.
+====
+
+[example]
+====
+[source,asciidoc,subs="-callouts"]
+--------
+[source,xml]
+----
+<section>
+  <title>Section Title</title> <!--1-->
+</section>
+----
+<1> The section title is required.
+--------
+
+[source,xml]
+----
+<section>
+  <title>Section Title</title> <!--1-->
+</section>
+----
+<1> The section title is required.
+====
+
+.Reference
+* https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#source-code[Source Code - AsciiDoc Syntax Quick Reference | Asciidoctor]
+
+==== Apply source highlights and quotes
+
+.markup-in-source
+[source,java]
+----
+System.out.println("Hello *bold* text").
+----
+
+.Apply source highlights and quotes with `verbatim`
+[example]
+====
+.*AsciiDoc code*
+[source,asciidoc,subs="-callouts"]
+--------
+.markup-in-source
+[source,java,subs="verbatim,quotes"]
+----
+System.out.println("Hello *bold* text"). # <1>
+----
+<1> bolder
+--------
+
+.*Rendered*
+[source,java,subs="verbatim,quotes"]
+----
+System.out.println("Hello *bold* text"). # <1>
+----
+<1> bolder
+====
+
+.Apply source highlights and quotes with no `verbatim`
+[example]
+====
+.*AsciiDoc code*
+[source,asciidoc,subs="-callouts"]
+--------
+[source,java,subs="specialcharacters,callouts,quotes"]
+----
+System.out.println("Hello *bold* text"). # <1>
+----
+<1> bolder
+--------
+
+.*Rendered*
+[source,java,subs="specialcharacters,callouts,quotes"]
+----
+System.out.println("Hello *bold* text"). # <1>
+----
+<1> bolder
+====
+
+==== Disable callouts
+
+.An illegal XML tag - disable callouts
+[example]
+====
+.*AsciiDoc code*
+[source,asciidoc,subs="-callouts"]
+--------
+[source,xml,subs="-callouts"]
+----
+<1>
+  content inside "1" tag
+</1>
+----
+--------
+
+.*Rendered*
+[source,xml,subs="-callouts"]
+----
+<1>
+  content inside "1" tag
+</1>
+----
+====
+
+==== Attributes
+
+[cols="^1a,^1a,^1a" {table_options}]
+|===
+| CodeRay | Rouge | GitHub
+
+| o       | o     | x
+|===
+
+[source,asciidoc]
+--------
+[source{enable-linenums},css]
+----
+body {
+    font-size: 12pt;
+    background: #fff url(temp.png) top left no-repeat;
+}
+----
+--------
+
+.*Rendered*
+[source{enable-linenums},css]
+----
+body {
+    font-size: 12pt;
+    background: #fff url(temp.png) top left no-repeat;
+}
+----
+
+.*Rendered (No attributes)*
+[source,css]
+----
+body {
+    font-size: 12pt;
+    background: #fff url(temp.png) top left no-repeat;
+}
+----
+
+=== Examples: {source-highlighter}
+[cols="3a,^1a,^1a,^1a" {table_options}]
+|===
+| Languages              | CodeRay      | Rouge        | GitHub
+
+| Ada                    | n/a          | `ada`        | `ada`
+| C-family > C           | `c`          | `c`          | `c`
+| C-family > {CPP}       | `cpp`        | `cpp`        | `cpp`
+| C-family > CUDA        | `c`          | `cuda`       | `cuda`
+| C#                     | n/a          | `csharp`     | `csharp`
+| D                      | n/a          | `d`          | `d`
+| Fortran                | n/a          | `fortran`    | `fortran`
+| Go                     | `go`         | `go`         | `go`
+| Haskell                | n/a          | `haskell`    | `haskell`
+| Java                   | `java`       | `java`       | `java`
+| Julia                  | n/a          | `julia`      | `julia`
+| Lisp-family > Clojure  | `clojure`    | `clojure`    | `clojure`
+| Lisp-family > Common Lisp | `common-lisp` | `common-lisp` | `common-lisp`
+| Lisp-family > Scheme   | `scheme`     | `scheme`     | `scheme`
+| Lua                    | `lua`        | `lua`        | `lua`
+| NASM                   | n/a          | `nasm`       | `nasm`
+| Perl                   | n/a          | `perl`       | `perl`
+| PowerShell             | n/a          | `powershell` | `powershell`
+| Python-family > Cython | `cython`     | `cython`     | `cython`
+| Python-family > Python | `python`     | `python`     | `python`
+| R                      | n/a          | `r`          | `r`
+| Ruby                   | `ruby`       | `ruby`       | `ruby`
+| Rust                   | n/a          | `rust`       | `rust`
+| Shell-family > Console | n/a          | `console`    | `console`
+| Shell-family > Shell   | n/a          | `shell`      | `shell`
+| Protocol Buffer        | n/a          | `protobuf`   | `protobuf`
+| SQL                    | n/a          | `sql`        | `sql`
+| Makefile               | n/a          | `makefile`   | `makefile`
+| JSON                   | `json`       | `json`       | `json`
+| YAML                   | `yaml`       | `yaml`       | `yaml`
+| HTML                   | `html`       | `html`       | `html` 
+| CSS                    | `css`        | `css`        | `css`
+| SCSS                   | `scss`       | `scss`       | `scss`
+| JavaScript             | `javascript` | `javascript` | `javascript`
+| TypeScript             | n/a          | `typescript` | `typescript` 
+| CSS                    | `css`        | `css`        | `css`
+| SCSS                   | `scss`       | `scss`       | `scss`
+| JSP                    | n/a          | `jsp`        | `jsp`
+| PHP                    | `php`        | `php`        | `php`
+| Diff                   | `diff`       | `diff`       | `diff`
+| Dot                    | n/a          | `dot`        | `dot`
+| AsciiDoc               | n/a          | `asciidoc`   | `asciidoc`
+| LaTeX                  | n/a          | `latex`      | `latex`
+| Markdown               | n/a          | `markdown`   | `markdown`
+| reStructuredText       | n/a          | `rst`        | `rst`
+|===
+
+==== Ada
+[cols="1a,1a,1a,1a" {table_options}]
+|===
+|          3+h| Short names
+h| Languages h| CodeRay  h| Rouge | GitHub
+
+| Ada         |           | `ada` | `ada`
+|===
+
+[source,ada]
+----
+with Ada.Directories;
+with Ada.Direct_IO;
+with Ada.Text_IO;
+
+procedure Extra_IO.Read_File (Name : String) is
+
+   package Dirs renames Ada.Directories;
+   package Text_IO renames Ada.Text_IO;
+
+   -- Get the size of the file for a new string.
+   Size : Natural := Natural (Dirs.Size (Name));
+   subtype File_String is String (1 .. Size);
+
+   -- Instantiate Direct_IO for our file type.
+   package FIO is new Ada.Direct_IO (File_String);
+
+   File     : FIO.File_Type;
+   Contents : File_String;
+
+begin
+   FIO.Open (File, FIO.In_File, Name);
+   FIO.Read (File, Contents);
+   FIO.Close (File);
+
+   Text_IO.Put (Contents);
+end Extra_IO.Read_File;
+----
+
+==== Assembly
+[cols="1a,2a,2a,2a" {table_options}]
+|===
+|          3+h| Short names
+h| Languages h| CodeRay  h| Rouge  | GitHub
+
+| NASM        |           | `nasm` | `nasm`
+|===
+
+* NASM
++
+[source,nasm]
+----
+%macro IRQ 2
+    global irq%1
+    irq%1:
+        cli
+        push byte 0     ; push a dummy error code
+        push byte %2    ; push the IRQ number
+        jmp  irq_common_stub
+%endmacro
+
+extern irq_handler
+
+irq_common_stub:
+    pusha           ; Pushes edi,esi,ebp,esp,ebx,edx,ecx,eax
+    mov ax, ds      ; Lower 16-bits of eax = ds.
+    push eax        ; save the data segment descriptor
+    mov ax, 0x10    ; load the kernel data segment descriptor
+    mov edx, eax
+    call irq_handler
+
+%assign i 0
+%rep 8
+ISR_NOERRCODE i
+%assign i i+1
+%endrep
+
+ISR_NOERRCODE 9
+----
+
+==== C/C++, CUDA, C#
+
+[cols="1a,1a,1a,1a" {table_options}]
+|===
+|          3+h| Short names
+h| Languages h| CodeRay h| Rouge                 h| GitHub
+
+| C           | `c`      | `c`                    | `c`
+| C++         | `cpp`    | `cpp`, `c{plus}{plus}` | `cpp`
+| C#          |          | `csharp`, `c#`         | `csharp`
+| Cuda        | `c`      | `cuda`, `cu`           | `cuda`
+|===
+
+ifeval::["{source-highlighter}" == "coderay"]
+:formatter-cuda: c
+endif::[]
+ifeval::["{source-highlighter}" == "rouge"]
+:formatter-cuda: cuda
+endif::[]
+ifeval::["{source-highlighter}" == "html-pipeline"]
+:formatter-cuda: cuda
+endif::[]
+
+* C
++
+[source,c]
+.c
+----
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello world!\n");
+}
+----
+
+* {CPP}
++
+[source,cpp]
+.cpp
+----
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello World" << endl;
+}
+----
+
+* CUDA
++
+.{formatter-cuda}
+[source,{formatter-cuda}]
+----
+#include <cstdio>
+
+__global__ void helloFromGPU() {
+    std::printf("Hello World\n");
+    __syncthreads();
+}
+
+int main() {
+    dim3 block(1, 10);
+    helloFromGPU<<<1, block>>>();
+}
+----
+
+* C#
++
+[source,csharp]
+.csharp
+----
+// reverse byte order (16-bit)
+public static UInt16 ReverseBytes(UInt16 value)
+{
+  return (UInt16)((value & 0xFFU) << 8 | (value & 0xFF00U) >> 8);
+}
+----
+
+==== D
+
+[cols="1a,1a,1a,1a" {table_options}]
+|===
+|          3+h| Short names
+h| Languages h| CodeRay h| Rouge h| GitHub
+
+| D           | n/a      | `d`    | `d`
+|===
+
+[source,d]
+.d
+----
+import std.algorithm, std.conv, std.functional,
+    std.math, std.regex, std.stdio;
+
+alias round = pipe!(to!real, std.math.round, to!string);
+static reFloatingPoint = ctRegex!`[0-9]+\.[0-9]+`;
+
+void main()
+{
+    // Replace anything that looks like a real
+    // number with the rounded equivalent.
+    stdin
+        .byLine
+        .map!(l => l.replaceAll!(c => c.hit.round)
+                                (reFloatingPoint))
+        .each!writeln;
+}
+----
+
+==== Fortran
+
+[cols="1a,1a,1a,1a" {table_options}]
+|===
+|          3+h| Short names
+h| Languages h| CodeRay h| Rouge    h| GitHub
+
+| fortran     | n/a      | `fortran` | `fortran`
+|===
+
+[source,fortran]
+----
+program bottles
+
+    implicit none
+    integer :: nbottles
+
+    do nbottles = 99, 1, -1
+        call print_bottles(nbottles)
+    end do
+
+contains
+
+    subroutine print_bottles(n)
+        implicit none
+        integer, intent(in) :: n
+
+        write(*, "(I0, 1X, 'bottles of beer on the wall,')") n
+        write(*, "(I0, 1X, 'bottles of beer.')") n
+        write(*, "('Take one down, pass it around,')")
+        write(*, "(I0, 1X, 'bottles of beer on the wall.', /)") n - 1
+    end subroutine print_bottles
+
+end program bottles
+----
+
+==== Go
+
+[cols="1a,1a,1a,1a" {table_options}]
+|===
+|          3+h| Short names
+h| Languages h| CodeRay h| Rouge h| GitHub
+
+| Go          | `go`    | `go`  | `go`
+|===
+
+.Go
+[source,go]
+----
+Func main(){
+  fmt.Println("Hello world!")
+}
+----
+
+==== Haskell and related languages
+
+[cols="1a,2a" {table_options}]
+|===
+| Languages        | Short names
+
+| Haskell          | `haskell`, `hs`
+| Literate Haskell | `lhs`, `literate-haskell`, `lhaskell`
+|===
+
+.Haskell
+[source,haskell]
+----
+quicksort :: Ord a => [a] -> [a]
+quicksort []     = []
+quicksort (p:xs) = (quicksort lesser) ++ [p] ++ (quicksort greater)
+    where
+        lesser  = filter (< p) xs
+        greater = filter (>= p) xs
+----
+
+.Literate Haskell
+[source,lhs]
+----
+In Bird-style you have to leave a blank before the code.
+
+> fact :: Integer -> Integer
+> fact 0 = 1
+> fact n = n * fact (n-1)
+
+And you have to leave a blank line after the code as well.
+----
+
+==== Java and related languages
+
+[cols="1a,1a,1a,1a" {table_options}]
+|===
+|          3+h| Short names
+h| Languages h| CodeRay  h| Rouge       h| GitHub
+
+| Java        | `java`    | `java`       | `java`
+| .properties | n/a       | `properties` | `properties`
+| JSP         | n/a       | `jsp`       | `jsp`
+|===
+
+===== Java
+[source,java]
+.java
+----
+private static boolean[] buildRandomBalancedWord(int n, String $val) {
+  if ($val != null) return new boolean[0];
+  boolean[] word = new boolean[n * 2];
+  List<Integer> positions = IntStream.range(0, 2 * n).boxed().collect(Collectors.toList());
+  for (int i = n; i > 0; i--) {
+    int index = random.nextInt(n + i);
+    word[positions.remove(index)] = true;
+  }
+  return word;
+}
+----
+
+===== .properties
+
+[source,properties,title='.properties']
+.properties
+----
+# You are reading the ".properties" entry.
+! The exclamation mark can also mark text as comments.
+website = http\://en.wikipedia.org/
+language = English
+country : Poland
+continent=Europe
+key.with.dots=This is the value that could be looked up with the key "key.with.dots".
+----
+
+===== JSP
+[source,jsp]
+.jsp
+----
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.time.LocalDateTime" %>
+
+<%! int day = 3; %>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple JSP Application</title>
+	</head>
+	<body>
+        <%-- This is a JSP comment --%>
+		<h1>Hello world!</h1>
+		<h2>Current time is <%= LocalDateTime.now() %></h2>
+
+        <% if (day == 1 || day == 7) { %>
+            <p> Today is weekend</p>
+        <% } else { %>
+            <p> Today is not weekend</p>
+        <% } %>
+
+        h2>Using JavaBeans in JSP</h2>
+        <jsp:useBean id="test" class="action.TestBean" />
+        <jsp:setProperty name="test"  property="message"  value="Hello JSP..." />
+
+        <p>Got message:</p>
+        <jsp:getProperty name="test" property="message" />
+	</body>
+</html>
+----
+
+==== Julia
+
+[cols="1a,1a,1a,1a" {table_options}]
+|===
+|          3+h| Short names
+h| Languages h| CodeRay  h| Rouge       h| GitHub
+
+| Julia       | n/a       | `julia`      | `julia`
+|===
+
+[source,julia]
+----
+type MyType1
+    x::Int
+end
+immutable MyType2
+    x::Int
+end
+----
+
+[source,julia]
+----
+using PyPlot
+using PyCall
+@pyimport mpl_toolkits.mplot3d.axes3d as axes3d
+X, Y, Z = axes3d.get_test_data(0.1)
+
+fig = figure()
+ax = gca(projection="3d")
+
+for angle in linspace(0,360,19)
+    surf(X, Y, Z, cmap="gnuplot")
+    ax[:view_init](azim=angle, elev=-30)
+    IJulia.clear_output(true)
+    draw()
+    display(fig)
+end
+clf()
+----
+
+
+==== Perl
+* Perl
++
+[source,perl]
+.perl
+----
+#!/usr/bin/env perl
+use warnings;
+print "a: ";
+my $a = "foo";
+print $a;
+----
+
+==== Python / Cython
+
+[cols="1d,1a,1d,1d,1d" options="autowidth"]
+.Python, Cython
+|===
+2+h|                       3+h| Renderer
+h| Languages h| Short names  h| GitHub h| Rouge h| CodeRay
+
+h| Python     | python       ^| {o}    ^| {o}   ^| {o}
+.2+h| Python Console
+              | python       ^| {o}    ^| {o}   ^| {o}
+              | pycon        ^| {x}    ^| {x}   ^| {x}
+h| Cython     | cython       ^| {o}    ^| {o}   ^| {x}
+|===
+
+.Python
+[source,python]
+----
+def fib(n):    # write Fibonacci series up to n
+    """Print a Fibonacci series up to n."""
+    a, b = 0, 1
+    while a < n:
+        print a,
+        a, b = b, a+b
+----
+
+[source,python]
+.PythonConsole (python)
+----
+>>> import importlib.metadata
+>>> eps = importlib.metadata.entry_points()
+>>> eps
+{'console_scripts': (
+    EntryPoint(name='jupyter-kernel', value='jupyter_client.kernelapp:main', group='console_scripts'),
+    # ..snip
+    EntryPoint(name='parent_finalize', value='setuptools.dist:_Distribution.finalize_options', group='setuptools.finalize_distribution_options'))}
+>>> eps.select(group=group)
+----
+
+[source,cython]
+.Cython
+----
+cdef extern from 'foo.h':
+    int foo_int
+    struct foo_struct:
+        pass
+
+ctypedef int word
+----
+
+==== Lisp-family
+
+Common Lisp, Scheme, Clojure, etc.
+
+[cols="1d,1a,1d,1d,1d" options="autowidth"]
+.Common Lisp, Scheme, Clojure
+|===
+2+h|                        3+h| Renderer
+h| Languages h| Short names   h| GitHub h| Rouge h| CodeRay
+
+h| Common Lisp
+  | common-lisp{bl}cl{bl}lisp ^| {o}    ^| {o}   ^| {x}
+.2+h| Scheme  | *scheme*      ^| {o}    ^| {o}   ^| {x}
+              | scm           ^| {o}    ^| {x}   ^| {x}
+.2+h| Clojure | *clojure*     ^| {o}    ^| {o}   ^| {o}
+              | clj           ^| {o}    ^| {o}   ^| {x}
+|===
+
+* Common Lisp
++
+[source,common-lisp]
+.common-lisp
+----
+(defun square (x) (* x x))
+----
++
+[source,cl]
+.cl
+----
+(defun square (x) (* x x))
+----
++
+[source,lisp]
+.lisp
+----
+(defun square (x) (* x x))
+----
+
+* Scheme
++
+[source,scheme]
+.scheme
+----
+(define Y
+  (lambda (m)
+    ((lambda (f) (m (lambda (a) ((f f) a))))
+     (lambda (f) (m (lambda (a) ((f f) a)))))))
+----
+
+* Clojure
++
+[source,clojure]
+.clojure
+----
+(defn make-adder [x]
+  (let [y x]
+    (fn [z] (+ y z))))
+(def add2 (make-adder 2))
+(add2 4)
+----
+
+==== Lua
+
+[cols="1a,1a,1a,1a" {table_options}]
+|===
+|          3+h| Short names
+h| Languages h| CodeRay  h| Rouge  h| GitHub
+
+| Lua         | `lua`     | `lua`   | `lua`
+|===
+
+.Lua
+[source,lua]
+----
+-- defines a factorial function
+function fact (n)
+  if n == 0 then
+    return 1
+  else
+    return n * fact(n-1)
+  end
+end
+
+print("enter a number:")
+a = io.read("*number")        -- read a number
+print(fact(a))
+----
+
+==== R
+
+[cols="1a,1a" {table_options}]
+|===
+| Languages        | Short names (Rouge)
+
+| R console transcripts or{bl}R CMD BATCH output | `rconsole`, `rout`
+| R documentation | `rst`, `rest`, `restructuredtext`
+| S, S-plus, and R source code | `splus`, `s`, `r`
+|===
+
+.R source code
+[source,r]
+----
+dbenford <- function(x){
+    log10(1 + 1/x)
+}
+
+pbenford <- function(q){
+    cumprobs <- cumsum(dbenford(1:9))
+    return(cumprobs[q])
+}
+----
+
+==== Ruby
+
+[cols="1d,1a,1d,1d,1d" options="autowidth"]
+|===
+2+h|                       3+h| Renderer
+h| Languages h| Short names  h| GitHub h| Rouge h| CodeRay
+
+.2+h| Ruby
+              | ruby         ^| {x}    ^| {o}   ^| {o}
+| rb{bl}rbx{bl}jruby{bl}macruby{bl}rake
+                             ^| {o}    ^| {x}   ^| {x}
+|===
+
+* ruby
++
+[source,ruby]
+.app.rb
+----
+require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+end
+----
+
+* rb
++
+[source,rb]
+.app.rb
+----
+require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+end
+----
+
+==== Rust
+
+[cols="1d,1a,1d,1d,1d" options="autowidth"]
+|===
+2+h|                       3+h| Renderer
+h| Languages h| Short names  h| GitHub h| Rouge  h| CodeRay
+
+h| Rust       | rust{bl}rs   ^| {o}    ^| {o}    ^| {x}
+|===
+
+[source,rust]
+.rust or rs
+----
+[allow(dead_code)]
+fn first_word_len(s: &String) -> usize {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' || item == b',' {
+            return i;
+        }
+    }
+
+    s.len()
+}
+----
+
+==== Data file format
+[cols="3a,1a,2a,1a" {table_options}]
+|===
+ |                              3+h| Short names
+h| Languages                      h| CodeRay h| Rouge              h| GitHub
+
+| JSON data structures             | `json`   | `json`              | `json`
+| JSON data structures +
+(with missing object curly braces) |          | `json-object`       |
+| JSON-LD linked data              |          | `jsonld`, `json-ld` |
+| YAML                             |          | `yaml`              | `yaml`
+|===
+
+* JSON
++
+[source,json]
+.json
+----
+{ "one": 1, "two": 2, "null": null, "simple": true }
+----
+
+* YAML
++
+[source,yaml]
+.yaml
+----
+- hosts: webservers
+  vars:
+    http_port: 80
+    max_clients: 200
+    remote_user: root
+    tasks:
+  - name: test connection
+    ping:
+----
+
+==== Various domain-specific languages
+
+[cols="2a,2a,3a,2a" {table_options}]
+|===
+ |             3+h| Short names
+h| Languages     h| CodeRay      h| Rouge              h| GitHub
+
+| Protocol Buffer |               | `protobuf`, `proto` | `protobuf`
+|===
+
+.Protocol Buffer
+[source,protobuf]
+----
+message Person {
+  required string name = 1;
+  required int32 id = 2;
+  optional string email = 3;
+}
+----
+
+==== Html / CSS / JavaScript / TypeScript / HTTP / PHP
+
+[cols="1a,1a,4a,1a" {table_options}]
+|===
+ |          2+h| Short names
+h| Languages  h| CodeRay     h| Rouge                        h| GitHub
+
+| HTML         | `html`       | `html`                        | `html` 
+| CSS          | `css`        | `css`                         | `css`
+| SCSS         |              | `scss`                        | `scss`
+| JavaScript   | `javascript` | `javascript`, `js`            | `javascript`
+| TypeScript   |              | `typescript`                  | `typescript`
+| HTTP         |              | `http`                        | `http`
+| PHP          | `php`        | `php`, `php3`, `php4`, `php5` | `php`
+|===
+
+===== HTML
+
+[source,html]
+.index.html
+----
+<html>
+  <head><title>Title!</title></head>
+  <body>
+    <p id="foo">Hello, World!</p>
+    <script type="text/javascript">var a = 1;</script>
+    <style type="text/css">#foo { font-weight: bold; }</style>
+  </body>
+</html>
+----
+
+===== CSS
+
+[source,css]
+----
+body {
+    font-size: 12pt;
+    background: #fff url(temp.png) top left no-repeat;
+}
+----
+
+===== SCSS
+
+.SCSS
+[source,scss]
+----
+@for $i from 1 through 3 {
+  .item-#{$i} {
+    width: 2em * $i;
+  }
+}
+----
+
+===== JavaScript
+
+[source,javascript]
+.promise_await_single.js
+----
+// @ts-check
+/* eslint-disable no-console */
+async function main() {
+  const result = await new Promise(
+    (resolve) => {
+      setTimeout(
+        () => {
+          console.log('A::END');
+          resolve(3);
+        },
+        3000,
+      );
+    },
+  );
+  console.log(`A::result=${result}`);
+}
+
+main();
+----
+
+[source,javascript]
+..eslintrc
+----
+module.exports = {
+  extends: [
+    'plugin:vue/vue3-recommended',
+    '@vue/prettier',
+    '@vue/prettier/@typescript-eslint',
+  ],
+  rules: {
+    // override/add rules settings here, such as:
+    // 'vue/no-unused-vars': 'error'
+  },
+}
+----
+
+===== TypeScript
+
+[cols="1d,1a,1d,1d,1d" options="autowidth"]
+.TypeScript
+|===
+2+h|                        3+h| Renderer
+h| Languages h| Short names   h| GitHub h| Rouge h| CodeRay
+
+h| TypeScript
+             | typescript, ts ^| {o}    ^| {o}   ^| {o}
+|===
+
+.TypeScript
+[source,typescript]
+----
+class HelloWorld extends React.Component<{date: Date}, void> {
+  render() {
+    return (
+      <p>
+        Hello, <input type="text" placeholder="Your name here" />!
+        It is {this.props.date.toTimeString()}
+      </p>
+    );
+  }
+}
+
+setInterval(function() {
+  ReactDOM.render(
+    <HelloWorld date={new Date()} />,
+    document.getElementById('example')
+  );
+}, 500);
+----
+
+===== HTTP
+
+[cols="1a,1a,1a,1a" {table_options}]
+|===
+|          3+h| Short names
+h| Languages h| CodeRay h| Rouge h| GitHub
+
+| HTTP        | n/a      | `http` | `http`
+|===
+
+[source,http]
+----
+POST /demo/submit/ HTTP/1.1
+Host: rouge.jneen.net
+Cache-Control: max-age=0
+Origin: http://rouge.jayferd.us
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2)
+    AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.63 Safari/535.7
+Content-Type: application/json
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Referer: http://pygments.org/
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: windows-949,utf-8;q=0.7,*;q=0.3
+
+{"name":"test","lang":"text","boring":true}
+----
+
+===== PHP
+
+[cols="1a,1a,1a,1a" {table_options}]
+|===
+|          3+h| Short names
+h| Languages h| CodeRay h| Rouge h| GitHub
+
+| PHP         | `php`    | `php`  | `php`
+|===
+
+[source,php]
+----
+<?php
+echo "Hello world";
+?>
+----
+
+==== Makefile / CMake
+
+[cols="1d,1a,1d,1d,1d" options="autowidth"]
+.Makefile
+|===
+2+h|                       3+h| Renderer
+h| Languages h| Short names  h| GitHub h| Rouge h| CodeRay
+
+.2+h| Makefile
+| **makefile**{bl}bsdmake{bl}**make**{bl}mf
+                             ^| {o}    ^| {o}   ^| {x}
+              | Makefile     ^| {o}    ^| {x}   ^| {x}
+h| CMake      | cmake        ^| {o}    ^| {o}   ^| {x}
+|===
+
+* Makefile
++
+[source,makefile]
+.makefile
+----
+.PHONY: all
+all: $(OBJ)
+
+$(OBJ): $(SOURCE)
+	@echo "compiling..."
+	$(GCC) $(CFLAGS) $< > $@
+----
++
+[source,make]
+.make
+----
+.PHONY: all
+all: $(OBJ)
+
+$(OBJ): $(SOURCE)
+	@echo "compiling..."
+	$(GCC) $(CFLAGS) $< > $@
+----
+
+* CMake
++
+[source,cmake]
+.cmake
+----
+cmake_minimum_required(VERSION 2.8.3)
+
+project(foo C)
+
+# some note
+add_executable(foo utils.c "foo.c")
+target_link_libraries(foo ${LIBRARIES})
+----
+
+==== Various shells: Shell family
+
+[cols="1d,1a,1d,1d,1d" options="autowidth"]
+|===
+2+h|                        3+h| Renderer
+h| Languages h| Short names   h| GitHub h| Rouge h| CodeRay
+
+h| AWK        | awk           ^| {o}    ^| {o}   ^| {x}
+h| Shell
+ | shell{bl}sh{bl}bash{bl}ksh{bl}zsh
+                              ^| {o}    ^| {o}   ^| {x}
+
+h| Shell      | shell-script  ^| {o}    ^| {x}   ^| {x}
+
+.2+h| Shell-Session
+              | *console*     ^| {o}    ^| {o}   ^| {x}
+              | shell-session ^| {x}    ^| {o}   ^| {x}
+|===
+
+* Shell
++
+[source,shell]
+.shell
+----
+# If not running interactively, don't do anything
+[[ -z "$PS1" ]] && return
+----
++
+[source,sh]
+.sh
+----
+# If not running interactively, don't do anything
+[[ -z "$PS1" ]] && return
+----
++
+[source,shell-script]
+.shell-script
+----
+# If not running interactively, don't do anything
+[[ -z "$PS1" ]] && return
+----
+
+* Bash
++
+[source,bash]
+.bash
+----
+# If not running interactively, don't do anything
+[[ -z "$PS1" ]] && return
+----
++
+[source,bash]
+.bash
+----
+#!/bin/bash
+timestamp=`date +%s`
+secret=test_secret
+client_id=test_client
+sign=`echo -n $client_id$timestamp$secret | sha256sum | awk '{print $1}'`
+server=localhost:3000
+curl -iv \
+-X POST \
+-H "Content-Type: application/json; charset=utf-8" \
+-d '{"request": {"requestId": "'$1'"}, "type": "VerifyRequest", "timestamp": "'$timestamp'", "sign": "'
+$sign'"}' \ваываываыва
+"http://$server/api/v1/$client_id/uprid.json"
+----
+
+* Korn Shell
++
+[source,ksh]
+.ksh
+----
+#!/usr/bin/ksh
+
+# Commentary......
+
+file=/path/file
+if [[ $file = $1 ]];then
+   command
+fi
+----
+
+* Z shell
++
+[source,zsh]
+.zsh
+----
+# If not running interactively, don't do anything
+[[ -z "$PS1" ]] && return
+----
+
+* AWK
++
+[source,awk]
+.awk
+----
+BEGIN     {    # Simulate echo(1)
+     for (i = 1; i < ARGC; i++) printf "%s ", ARGV[i]
+     printf "\n"
+     exit }
+----
+
+* Shell session
++
+[source,console]
+.console
+----
+$ echo "Hello ${USER}."
+Hello Bob.
+----
++
+[source,shell-session]
+.shell-session
+----
+$ echo "Hello ${USER}."
+Hello Bob.
+----
+
+==== Various shells: DOS
+
+[cols="1d,1a,1a,1a,1a" options="autowidth"]
+|===
+2+h|                         3+h| Renderer
+h| Languages h| Short names    h| GitHub h| Rouge h| CodeRay
+
+.3+h| Batch
+                  | bat{bl}batch{bl}dosbatch{bl}**winbatch**
+                               ^| {o}    ^| {o}   ^| {x}
+                  | cmd        ^| {o}    ^| {x}   ^| {x}
+                  | dos        ^| {x}    ^| {x}   ^| {x}
+h| MS-DOS Session | doscon     ^| {x}    ^| {x}   ^| {x}
+|===
+
+* Batch
++
+[source,winbatch]
+.winbatch (cmd.exe)
+----
+md T:\Recovery\WindowsRE
+copy C:\Winre.wim T:\Recovery\WindowsRE
+Reagentc /setreimage /path T:\Recovery\WindowsRE
+----
++
+[source,bat]
+.bat (cmd.exe)
+----
+md T:\Recovery\WindowsRE
+copy C:\Winre.wim T:\Recovery\WindowsRE
+Reagentc /setreimage /path T:\Recovery\WindowsRE
+----
++
+[source,batch]
+.batch (cmd.exe)
+----
+md T:\Recovery\WindowsRE
+copy C:\Winre.wim T:\Recovery\WindowsRE
+Reagentc /setreimage /path T:\Recovery\WindowsRE
+----
++
+[source,dosbatch]
+.dosbatch (cmd.exe)
+----
+md T:\Recovery\WindowsRE
+copy C:\Winre.wim T:\Recovery\WindowsRE
+Reagentc /setreimage /path T:\Recovery\WindowsRE
+----
+
+* MS-DOS Session
++
+[source,doscon]
+.doscon
+----
+C:\>echo %OS%
+Windows_NT
+
+C:\>
+----
+
+==== Various shells: PowerShell
+
+[cols="1d,1a,1d,1d,1d" options="autowidth"]
+|===
+2+h|                              3+h| Renderer
+h| Languages h| Short names         h| GitHub h| Rouge  h| CodeRay
+
+.3+h| PowerShell
+         | *powershell*{bl}**posh** ^| {o}    ^| {o}    ^| {x}
+         | ps1{bl}psm1{bl}pwsh      ^| {o}    ^| {x}    ^| {x}
+         | ps                       ^| {x}    ^| {x}    ^| {x}
+h| PowerShell Session
+     | ps1con{bl}pwsh-session       ^| {x}    ^| {x}    ^| {x}
+|===
+
+* PowerShell
++
+[source,powershell]
+.powershell
+----
+Start-Process -FilePath "～\ssp.exe" -ArgumentList "/g","～\ghost\folder_name"
+----
++
+[source,posh]
+.posh
+----
+Start-Process -FilePath "～\ssp.exe" -ArgumentList "/g","～\ghost\folder_name"
+----
+
+* PowerShell session
++
+[source,pwsh-session]
+.pwsh-session
+----
+c:\> cd \
+c:\> set $env:VENV="c:\env"
+c:\> python -m venv $env:VENV
+c:\> cd $env:VENV
+----
++
+[source,ps1con]
+.ps1con
+----
+c:\> cd \
+c:\> set $env:VENV="c:\env"
+c:\> python -m venv $env:VENV
+c:\> cd $env:VENV
+----
+
+==== Various SQL dialects and related interactive sessions
+[cols="5a,5a,4a"]
+|===
+| Languages                 | Short names | Notes
+
+| MySQL                     | `mysql` |
+| psql sessions             | `psql`, {bl} `postgresql-console`, {bl} `postgres-console` |
+| PostgreSQL dialect of SQL | `postgresql`, `postgres` | asciidoctor-rouge is considered plaintext
+| Sessions using sqlite3    | `sql` |
+|===
+
+* PostgreSQL
++
+[source,sql]
+.sql
+----
+CREATE ROLE ripple_connect_user WITH LOGIN PASSWORD 'password';
+ALTER USER ripple_connect_user SUPERUSER;
+ALTER USER ripple_connect_user CREATEDB;
+CREATE DATABASE ripple_connect_db OWNER ripple_connect_user;
+
+CREATE ROLE ledger0_user WITH LOGIN PASSWORD 'password';
+ALTER USER ledger0_user SUPERUSER;
+ALTER USER ledger0_user CREATEDB;
+CREATE DATABASE ledger0 OWNER ledger0_user;
+
+CREATE ROLE connector_user WITH LOGIN PASSWORD 'password';
+ALTER USER connector_user SUPERUSER;
+ALTER USER connector_user CREATEDB;
+CREATE DATABASE connector OWNER connector_user;
+
+CREATE ROLE validator_user WITH LOGIN PASSWORD 'password';
+ALTER USER validator_user SUPERUSER;
+ALTER USER validator_user CREATEDB;
+CREATE DATABASE validator OWNER validator_user;
+----
++
+[source,sql]
+.sql
+----
+ALTER SCHEMA name RENAME TO new_name;
+ALTER SCHEMA name OWNER TO new_owner;
+----
++
+[source,pgsql]
+.pgsql
+----
+ALTER SCHEMA name RENAME TO new_name;
+ALTER SCHEMA name OWNER TO new_owner;
+----
+
+ifeval::["{source-highlighter}" == "coderay"]
+
+=== CodeRay
+
+Available languages::
+C, C++
+Clojure (new)
+CSS
+Delphi
+diff
+ERB
+Go
+Groovy
+HAML (new)
+HTML
+Java
+JavaScript
+JSON
+Lua
+PHP
+Python
+Ruby
+Sass
+SQL
+Taskpaper
+XML
+YAML
+
+endif::[]
+
+ifeval::["{source-highlighter}" == "rouge"]
+
+=== Rogue
+[source,shell]
+----
+sudo gem install rouge
+sudo gem install asciidoctor-rouge
+----
+
+[source,shell]
+----
+sudo apt install --no-install-recommends -y rouge
+----
+endif::[]
+
+==== Diff
+[cols="3a,1a,2a,1a" {table_options}]
+|===
+|                                         3+h| Short names
+h| Languages                                h| CodeRay      h| Rouge          h| GitHub
+
+| unified or context-style diffs or patches  | `diff`        | `diff`, `udiff` | `diff`
+| WDiff                                      |               | `wdiff`         |
+|===
+
+.Diff
+[source,diff]
+----
+--- file1	2012-10-16 15:07:58.086886874 +0100
++++ file2	2012-10-16 15:08:07.642887236 +0100
+@@ -1,3 +1,3 @@
+ a b c
+-d e f
++D E F
+ g h i
+----
+
+==== Dot
+
+[cols="1a,1a,1a,1a" {table_options}]
+|===
+|          3+h| Short names
+h| Languages h| CodeRay h| Rouge h| GitHub
+
+| Dot         | n/a      | `dot`  | `dot`
+|===
+
+[source,dot]
+----
+// The graph name and the semicolons are optional
+graph G {
+	a -- b -- c;
+	b -- d;
+}
+----
+
+==== non-HTML markup languages for Technical documentation
+Markdown, reStructuredText, LaTeX, etc.
+
+[cols="1d,1a,1d,1d,1d" options="autowidth"]
+.Makefile
+|===
+2+h|                       3+h| Renderer
+h| Languages h| Short names  h| GitHub h| Rouge h| CodeRay
+
+.2+h| Markdown
+              | **markdown** ^| {o}    ^| {o}   ^| {x}
+              | md
+                             ^| {x}    footnote:[`#` と `and` と数字に色が付く程度]
+                                       ^| {o}   ^| {x}
+h| reStructuredText
+ | restructuredtext{bl}rst{bl}rest
+                             ^| {o}    ^| {x}   ^| {x}
+h| LaTeX      | latex{bl}tex ^| {o}    ^| {o}   ^| {x}
+|===
+
+* Markdown
++
+[source,markdown]
+.markdown
+----
+# タイトル
+
+Markdown has cool [reference links][ref 1]
+and [regular links too](http://example.com)
+
+[ref 1]: http://example.com
+
+## Lists
+
+### 順序なしリスト
+
+* 第 1 四半期
+    * 睦月
+    * 如月
+    * 弥生
+* 第 2 四半期
+    * 卯月
+    * 皐月
+    * 水無月
+----
+
+* reStructuredText
++
+[source,rst]
+.rst
+----
+タイトル
+########
+
+reStructuredText has cool `reference links`_
+and `regular links too <http://example.com>`_
+
+Lists
+=====
+
+* 第 1 四半期
+
+  * 睦月
+  * 如月
+  * 弥生
+
+* 第 2 四半期
+
+  * 卯月
+  * 皐月
+  * 水無月
+----
++
+[source,rest]
+.rest
+----
+タイトル
+########
+
+reStructuredText has cool `reference links`_
+and `regular links too <http://example.com>`_
+
+Lists
+=====
+
+* 第 1 四半期
+
+  * 睦月
+  * 如月
+  * 弥生
+
+* 第 2 四半期
+
+  * 卯月
+  * 皐月
+  * 水無月
+----
++
+[source,restructuredtext]
+.restructuredtext
+----
+タイトル
+########
+
+reStructuredText has cool `reference links`_
+and `regular links too <http://example.com>`_
+
+Lists
+=====
+
+* 第 1 四半期
+
+  * 睦月
+  * 如月
+  * 弥生
+
+* 第 2 四半期
+
+  * 卯月
+  * 皐月
+  * 水無月
+----
+
+* LaTeX
++
+[source,latex]
+.latex
+----
+\left(\begin{array}{rr}
+  -\frac{1}{2} &  \frac{1}{2} \\[1.0ex]
+   \frac{1}{2} & -\frac{1}{2}
+\end{array}\right)
+----
++
+[source,tex]
+.tex
+----
+\left(\begin{array}{rr}
+  -\frac{1}{2} &  \frac{1}{2} \\[1.0ex]
+   \frac{1}{2} & -\frac{1}{2}
+\end{array}\right)
+----
+
+* Plain text
++
+[source,text]
+.text
+----
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
+
+# "local" is for Unix domain socket connections only
+local   all             all                                     peer
+----
++
+[source,fundamental]
+.fundamental
+----
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
+
+# "local" is for Unix domain socket connections only
+local   all             all                                     peer
+----
++
+[source,plain text]
+.plain text
+----
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
+
+# "local" is for Unix domain socket connections only
+local   all             all                                     peer
+----
+
+.References
+* https://gotohayato.com/content/464[ふだん Markdown を書く技術者のための reStructuredText 文法まとめ | gotohayato.com^]
+* https://knowledge.rinpress.com/index.php/Markdown%E6%96%87%E6%B3%95%E8%A6%9A%E6%9B%B8[Markdown文法覚書 - とある社畜の頭脳整理 - Mediawiki^]
+.reStructuredText
+* http://docutils.sourceforge.net/docs/user/rst/quickref.html[Quick reStructuredText^]
+* http://rst.aaroniles.net/[reStructuredText Viewer^]
+
+=== Reference
+// tag::reference[]
+* https://asciidoctor.org/docs/user-manual/#source-code-blocks[46. Syntax Highlighting Source Code^]
+* https://asciidoctor.org/docs/user-manual/#nesting-blocks-and-passthrough-macros[Nesting blocks and passthrough macros^]
+
+.coderay
+* http://coderay.rubychan.de/[CodeRay^]
+
+.highlight.js
+* https://highlightjs.org/[highlight.js^]
+
+.Rouge
+* http://rouge.jneen.net/[{Rouge}^]
+* https://github.com/jirutka/asciidoctor-rouge[jirutka/asciidoctor-rouge: Rouge code highlighter support for ... - GitHub^]
+* https://github.com/rouge-ruby/rouge[rouge-ruby/rouge: A pure Ruby code highlighter that is compatible with Pygments - GitHub^] +
+  A pure Ruby code highlighter that is compatible with Pygments
+* Pygments
+** http://pygments.org/docs/lexers/[Available lexers — Pygments^]
+
+.GitHub
+* https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks[Creating and highlighting code blocks - GitHub Docs^]
+* https://dev.classmethod.jp/articles/syntax-highlight-language-list/[{left_sb}GitHub{right_sb} コードブロックでシンタックスハイライト可能な言語一覧 | DevelopersIO^]
+
+//^
+
+// end::reference[]
