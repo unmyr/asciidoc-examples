@@ -1446,6 +1446,15 @@ c:\> python -m venv $env:VENV
 c:\> cd $env:VENV
 ----
 
+==== vim
+
+[source,viml]
+.~/.vimrc
+----
+set background=dark
+set belloff=all
+----
+
 ==== Various SQL dialects and related interactive sessions
 [cols="5a,5a,4a"]
 |===
