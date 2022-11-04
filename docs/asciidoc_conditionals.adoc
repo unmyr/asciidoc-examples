@@ -25,10 +25,28 @@ endif::[]
 **ifndef::leveloffset[]**
 :toc: left
 :toclevels: 3
+**endif::[]**
+
+// For preview in VS-Code
+**ifndef::imagesdir[]**
+:imagesdir: images
+**endif::[]**
+
+**ifndef::env-github[]**
 :icons: font
+**endif::[]**
 
-**include::header.adoc[]**
+**ifdef::env-github[]**
+// Alternative to `:icons: font` on GitHub.
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+**endif::[]**
 
+**ifndef::leveloffset[]**
+\include::header.adoc[]
 **endif::[]**
 ----
 
@@ -78,12 +96,26 @@ true if html5, asciidoctor-pdf
 Provide an alternative on GFA
 [source,asciidoc,subs="verbatim,quotes"]
 ----
+// For preview in VS-Code
 **ifndef::imagesdir[]**
 :imagesdir: images //<1>
 **endif::[]**
 
 **ifndef::env-github[]**
-\include::../../../stem.adoc[] //<2>
+:icons: font
+**endif::[]**
+
+**ifdef::env-github[]**
+// Alternative to `:icons: font` on GitHub.
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+**endif::[]**
+
+**ifndef::env-github[]**
+include::../../../stem.adoc[] //<2>
 **endif::[]**
 
 **ifdef::env-github[]**
