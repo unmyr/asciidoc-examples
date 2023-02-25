@@ -274,6 +274,8 @@ h| HTML Entity                h| Tex alt     h| HTML       h| Character name    
 >| `\&#x2033;`{bl}  `\&#8243;` |              |   `&#8243;` | Double Prime | JIS名称: 分
 >| `\&#x2034;`{bl}  `\&#8244;` |              |   `&#8244;` | Triple Prime | JIS名称: 秒
 >| `\&#x2035;`{bl}  `\&#8245;` | `\backprime` | &#8245;     | Reversed Prime |
+>|  `\&#x5B;` {bl}   `\&#91;`  | `\lbrack`    |     `&#91;` | Left Square Bracket  |
+>|  `\&#x5D;` {bl}   `\&#93;`  | `\rbrack`    |     `&#93;` | Right Square Bracket |
 >| `\&#x27E8;`{bl} `\&#10216;` | `\langle`    |  `&#10216;` | Mathematical Left Angle Bracket |
 >| `\&#x27E9;`{bl} `\&#10217;` | `\rangle`    |  `&#10217;` | Mathematical Right Angle Bracket |
 >| `\&#x3008;`{bl} `\&#12296;` |              |  `&#12296;` | LEFT ANGLE BRACKET |

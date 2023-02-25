@@ -580,3 +580,24 @@ Rendered::
 ++++
 f(x) \sim x^2, \quad x\to\infty
 ++++
+
+=== Set notations
+
+.*The LaTeX code*
+[source,latex]
+----
+S = \left\{x \middle| x \in \left[0, \frac{1}{2} \right] \right\}
+----
+Rendered(display mode)::
+[stem,latexmath]
+++++
+S = \left\{x \middle| x \in \left[0, \frac{1}{2} \right] \right\}
+++++
+
+.*The LaTeX code*
+[source,latex]
+----
+S = \left\lbrace x | x \in \left\lbrack 0, \frac{1}{2} \right\rbrack \right\rbrace
+----
+Rendered(inline mode)::
+latexmath:[S = \left\lbrace x \middle| x \in \left\lbrack 0, \frac{1}{2} \right\rbrack \right\rbrace]
