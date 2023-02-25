@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg height='44pt' preserveAspectRatio='xMidYMid meet' viewBox='0.00 0.00 242.00 44.00' width='242pt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'>
 <g class='graph' id='graph0' transform='scale(1 1) rotate(0) translate(4 40)'>
 <title>G</title>
-<polygon fill='white' points='-4,4 -4,-40 238,-40 238,4 -4,4' stroke='transparent'/>
+<polygon fill='white' points='-4,4 -4,-40 238,-40 238,4 -4,4' stroke='none'/>
 
 <g class='node' id='node1'>
 <title>松</title>
@@ -18,8 +18,8 @@
 
 <g class='edge' id='edge1'>
 <title>松&#45;&gt;竹</title>
-<path d='M54.4,-18C62.39,-18 71.31,-18 79.82,-18' fill='none' stroke='black'/>
-<polygon fill='black' points='79.92,-21.5 89.92,-18 79.92,-14.5 79.92,-21.5' stroke='black'/>
+<path d='M54.4,-18C61.89,-18 70.18,-18 78.2,-18' fill='none' stroke='black'/>
+<polygon fill='black' points='78.1,-21.5 88.1,-18 78.1,-14.5 78.1,-21.5' stroke='black'/>
 </g>
 
 <g class='node' id='node3'>
@@ -30,8 +30,8 @@
 
 <g class='edge' id='edge2'>
 <title>竹&#45;&gt;梅</title>
-<path d='M144.4,-18C152.39,-18 161.31,-18 169.82,-18' fill='none' stroke='black'/>
-<polygon fill='black' points='169.92,-21.5 179.92,-18 169.92,-14.5 169.92,-21.5' stroke='black'/>
+<path d='M144.4,-18C151.89,-18 160.18,-18 168.2,-18' fill='none' stroke='black'/>
+<polygon fill='black' points='168.1,-21.5 178.1,-18 168.1,-14.5 168.1,-21.5' stroke='black'/>
 </g>
 </g>
 </svg>

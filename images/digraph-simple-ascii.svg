@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg height='44pt' preserveAspectRatio='xMidYMid meet' viewBox='0.00 0.00 245.09 44.00' width='245pt' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg'>
 <g class='graph' id='graph0' transform='scale(1 1) rotate(0) translate(4 40)'>
 <title>G</title>
-<polygon fill='white' points='-4,4 -4,-40 241.09,-40 241.09,4 -4,4' stroke='transparent'/>
+<polygon fill='white' points='-4,4 -4,-40 241.09,-40 241.09,4 -4,4' stroke='none'/>
 
 <g class='node' id='node1'>
 <title>Foo</title>
@@ -18,8 +18,8 @@
 
 <g class='edge' id='edge1'>
 <title>Foo&#45;&gt;Bar</title>
-<path d='M54.88,-18C62.85,-18 71.74,-18 80.24,-18' fill='none' stroke='black'/>
-<polygon fill='black' points='80.33,-21.5 90.33,-18 80.33,-14.5 80.33,-21.5' stroke='black'/>
+<path d='M54.88,-18C62.41,-18 70.77,-18 78.84,-18' fill='none' stroke='black'/>
+<polygon fill='black' points='78.82,-21.5 88.82,-18 78.82,-14.5 78.82,-21.5' stroke='black'/>
 </g>
 
 <g class='node' id='node3'>
@@ -30,8 +30,8 @@
 
 <g class='edge' id='edge2'>
 <title>Bar&#45;&gt;Baz</title>
-<path d='M145.67,-18C153.63,-18 162.49,-18 170.98,-18' fill='none' stroke='black'/>
-<polygon fill='black' points='171.07,-21.5 181.07,-18 171.07,-14.5 171.07,-21.5' stroke='black'/>
+<path d='M145.19,-18C152.8,-18 161.29,-18 169.49,-18' fill='none' stroke='black'/>
+<polygon fill='black' points='169.28,-21.5 179.28,-18 169.28,-14.5 169.28,-21.5' stroke='black'/>
 </g>
 </g>
 </svg>
