@@ -435,6 +435,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
@@ -460,12 +461,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_accents">Accents</a></li>
 <li><a href="#_stretchy_brackets">Stretchy brackets</a></li>
 <li><a href="#_evaluation_at_limits">Evaluation at limits</a></li>
-<li><a href="#_case_definitions">Case definitions</a>
-<ul class="sectlevel3">
-<li><a href="#_factorial">Factorial</a></li>
-<li><a href="#_collatz_conjecture">Collatz conjecture</a></li>
-</ul>
-</li>
+<li><a href="#_case_definitions">Case definitions</a></li>
 <li><a href="#_maxwells_equations">Maxwell&#8217;s Equations</a></li>
 <li><a href="#_statistics">Statistics</a></li>
 <li><a href="#_fractions_on_fractions">Fractions on fractions</a></li>
@@ -489,7 +485,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <a href="asciidoc_images.html">Images</a> |
 <a href="asciidoc_listing.html">Listing</a> |
 <a href="asciidoc_tables.html">Tables</a> |
-<a href="syntax_highlighting.html">Source</a>
+<a href="syntax_highlighting.html">Source</a> |
 <a href="#">Math</a> (<a href="math_font_chars.html">fonts</a>, <a href="math_font_symbols.html">symbols</a>) |
 <a href="diagram-graphviz.html">Graphviz</a> |
 <a href="diagram-plantuml.html">PlantUML</a><br></p>
@@ -1005,10 +1001,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect2">
 <h3 id="_case_definitions">Case definitions</h3>
-<div class="sect3">
-<h4 id="_factorial">Factorial</h4>
-<div class="listingblock">
-<div class="title"><strong>The LaTeX code</strong></div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Factorial</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">The AsciiMath code</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Rendered</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-latex" data-lang="latex">n! =
 \begin{cases}
@@ -1016,13 +1021,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
   n(n-1)! &amp; \text{if $(n &lt; 1)$}
 \end{cases}</code></pre>
 </div>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Rendered</dt>
-</dl>
-</div>
-<div class="stemblock">
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="stemblock">
 <div class="content">
 \[n! =
 \begin{cases}
@@ -1030,12 +1030,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
   n(n-1)! &amp; \text{if $(n &lt; 1)$}
 \end{cases}\]
 </div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_collatz_conjecture">Collatz conjecture</h4>
-<div class="listingblock">
-<div class="title"><strong>The LaTeX code</strong></div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Collatz conjecture</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">The AsciiMath code</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Rendered</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-latex" data-lang="latex">f(n) =
 \begin{cases}
@@ -1043,18 +1054,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
   3n+1, &amp; \text{if } n\text{ is odd}
 \end{cases}</code></pre>
 </div>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Rendered</dt>
-</dl>
-</div>
-<div class="stemblock">
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="stemblock">
 <div class="content">
-\[f(n) = \begin{cases} \frac{n}{2}, &amp; \text{if } n\text{ is even} \\ 3n+1, &amp; \text{if } n\text{ is odd} \end{cases}\]
+\[f(n) =
+\begin{cases}
+  \frac{n}{2}, &amp; \text{if } n\text{ is even} \\
+  3n+1, &amp; \text{if } n\text{ is odd}
+\end{cases}\]
 </div>
-</div>
-</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_maxwells_equations">Maxwell&#8217;s Equations</h3>
@@ -1296,10 +1308,24 @@ a_{31} &amp; a_{32} &amp; a_{33}
 </div>
 <div class="sect2">
 <h3 id="_set_notations">Set notations</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><code>middle</code>, <code>lbrack</code>, <code>rbrack</code>, <code>lbrace</code>, <code>lbrace</code> are not available in asciidoctor-mathematical.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="listingblock">
 <div class="title"><strong>The LaTeX code</strong></div>
 <div class="content">
-<pre class="highlight"><code class="language-latex" data-lang="latex">S = \left\{x \middle| x \in \left[0, \frac{1}{2} \right] \right\}</code></pre>
+<pre class="highlight"><code class="language-latex" data-lang="latex">S = \left\{x \;\middle|\; x \in \left[0, \frac{1}{2} \right] \right\}</code></pre>
 </div>
 </div>
 <div class="dlist">
@@ -1309,20 +1335,20 @@ a_{31} &amp; a_{32} &amp; a_{33}
 </div>
 <div class="stemblock">
 <div class="content">
-\[S = \left\{x \middle| x \in \left[0, \frac{1}{2} \right] \right\}\]
+\[S = \left\{x \;\middle|\; x \in \left[0, \frac{1}{2} \right] \right\}\]
 </div>
 </div>
 <div class="listingblock">
 <div class="title"><strong>The LaTeX code</strong></div>
 <div class="content">
-<pre class="highlight"><code class="language-latex" data-lang="latex">S = \left\lbrace x | x \in \left\lbrack 0, \frac{1}{2} \right\rbrack \right\rbrace</code></pre>
+<pre class="highlight"><code class="language-latex" data-lang="latex">S = \left\lbrace x \;\middle|\; x \in \left\lbrack 0, \frac{1}{2} \right\rbrack \right\rbrace</code></pre>
 </div>
 </div>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Rendered(inline mode)</dt>
 <dd>
-<p>\(S = \left\lbrace x \middle| x \in \left\lbrack 0, \frac{1}{2} \right\rbrack \right\rbrace\)</p>
+<p>\(S = \left\lbrace x \;\middle|\; x \in \left\lbrack 0, \frac{1}{2} \right\rbrack \right\rbrace\)</p>
 </dd>
 </dl>
 </div>
@@ -1332,7 +1358,7 @@ a_{31} &amp; a_{32} &amp; a_{33}
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-02-25 19:52:00 UTC
+Last updated 2023-02-26 09:33:57 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
