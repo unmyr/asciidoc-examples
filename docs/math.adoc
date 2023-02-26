@@ -1,6 +1,7 @@
 ifndef::leveloffset[]
 :toc: left
 :toclevels: 3
+:icons: font
 endif::[]
 
 include::header.adoc[]
@@ -362,10 +363,14 @@ Rendered::
 
 === Case definitions
 
-==== Factorial
+.Factorial
+[cols="1a,1a" {table_options}]
+|===
+h| The AsciiMath code
+h| Rendered
 
+|
 [source,latex]
-.*The LaTeX code*
 ----
 n! =
 \begin{cases}
@@ -373,9 +378,8 @@ n! =
   n(n-1)! & \text{if $(n < 1)$}
 \end{cases}
 ----
-
-Rendered::
-[latexmath]
+|
+[stem,latexmath]
 ++++
 n! =
 \begin{cases}
@@ -383,10 +387,15 @@ n! =
   n(n-1)! & \text{if $(n < 1)$}
 \end{cases}
 ++++
+|===
 
-==== Collatz conjecture
+.Collatz conjecture
+[cols="1a,1a" {table_options}]
+|===
+h| The AsciiMath code
+h| Rendered
 
-.*The LaTeX code*
+|
 [source,latex]
 ----
 f(n) =
@@ -395,12 +404,16 @@ f(n) =
   3n+1, & \text{if } n\text{ is odd}
 \end{cases}
 ----
-
-Rendered::
+|
 [stem,latexmath]
 ++++
-f(n) = \begin{cases} \frac{n}{2}, & \text{if } n\text{ is even} \\ 3n+1, & \text{if } n\text{ is odd} \end{cases}
+f(n) =
+\begin{cases}
+  \frac{n}{2}, & \text{if } n\text{ is even} \\
+  3n+1, & \text{if } n\text{ is odd}
+\end{cases}
 ++++
+|===
 
 === Maxwell's Equations
 .The LaTeX code
@@ -583,21 +596,41 @@ f(x) \sim x^2, \quad x\to\infty
 
 === Set notations
 
+[NOTE]
+====
+`middle`, `lbrack`, `rbrack`, `lbrace`, `lbrace` are not available in asciidoctor-mathematical.
+====
+
+ifeval::["{stem-target}" != "asciidoctor-mathematical"]
 .*The LaTeX code*
 [source,latex]
 ----
-S = \left\{x \middle| x \in \left[0, \frac{1}{2} \right] \right\}
+S = \left\{x \;\middle|\; x \in \left[0, \frac{1}{2} \right] \right\}
 ----
 Rendered(display mode)::
 [stem,latexmath]
 ++++
-S = \left\{x \middle| x \in \left[0, \frac{1}{2} \right] \right\}
+S = \left\{x \;\middle|\; x \in \left[0, \frac{1}{2} \right] \right\}
 ++++
 
 .*The LaTeX code*
 [source,latex]
 ----
-S = \left\lbrace x | x \in \left\lbrack 0, \frac{1}{2} \right\rbrack \right\rbrace
+S = \left\lbrace x \;\middle|\; x \in \left\lbrack 0, \frac{1}{2} \right\rbrack \right\rbrace
 ----
 Rendered(inline mode)::
-latexmath:[S = \left\lbrace x \middle| x \in \left\lbrack 0, \frac{1}{2} \right\rbrack \right\rbrace]
+latexmath:[S = \left\lbrace x \;\middle|\; x \in \left\lbrack 0, \frac{1}{2} \right\rbrack \right\rbrace]
+endif::[]
+
+ifeval::["{stem-target}" == "asciidoctor-mathematical"]
+.*The LaTeX code*
+[source,latex]
+----
+S = \left\{x \mid x \in \left[0, \frac{1}{2} \right] \right\}
+----
+Rendered(display mode)::
+[stem,latexmath]
+++++
+S = \left\{x \mid x \in \left[0, \frac{1}{2} \right] \right\}
+++++
+endif::[]

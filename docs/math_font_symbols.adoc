@@ -48,6 +48,37 @@ endif::[]
 
 == Mathematical symbols
 
+.References
+* https://www.fileformat.info/info/unicode/block/mathematical_operators/list.htm[Unicode Characters in the Mathematical Operators Block]
+* https://qiita.com/minfuk/items/0bd1ffa20b44759d486e[TeXの数式記号とUnicodeのマッピング（途中） - Qiita]
+* https://www.compart.com/en/unicode/block/U+2200[Unicode Block “Mathematical Operators”^]
+* https://www.compart.com/en/unicode/block/U+2A00[Unicode Block “Supplemental Mathematical Operators”^]
+* http://detexify.kirelabs.org/classify.html[Detexify LaTeX handwritten symbol recognition^]
+
+=== Brackets
+
+.General punctuation
+[cols="6a,5a,4a,16a,8a" {table_options}]
+|===
+2+h| Type                                 h| Rendered                      2+h|
+h| HTML Entity                h| Tex alt  h| HTML, Tex                       h| Character name     h| Notes
+
+
+
+
+>|  `\&#x28;` {bl}    `\&#40;` |           |     `&#40;`                      | Left Parenthesis |
+>|  `\&#x29;` {bl}    `\&#41;` |           |     `&#41;`                      | Right Parenthesis |
+>|  `\&#x7D;` {bl}   `\&#125;` | `\rbrace` |     `&#93;`, latexmath:[\rbrace] | Right Curly Bracket |
+>|  `\&#x7B;` {bl}   `\&#123;` | `\lbrace` |     `&#91;`, latexmath:[\lbrace] | Left Curly Bracket  |
+>|  `\&#x7D;` {bl}   `\&#125;` | `\rbrace` |     `&#93;`, latexmath:[\rbrace] | Right Curly Bracket |
+>|  `\&#x5B;` {bl}    `\&#91;` | `\lbrack` |     `&#91;`, latexmath:[\lbrack] | Left Square Bracket  |
+>|  `\&#x5D;` {bl}    `\&#93;` | `\rbrack` |     `&#93;`, latexmath:[\rbrack] | Right Square Bracket |
+>| `\&#x27E8;`{bl} `\&#10216;` | `\langle` |  `&#10216;`, latexmath:[\langle] | Mathematical Left Angle Bracket |
+>| `\&#x27E9;`{bl} `\&#10217;` | `\rangle` |  `&#10217;`, latexmath:[\rangle] | Mathematical Right Angle Bracket |
+>| `\&#x3008;`{bl} `\&#12296;` |           |  `&#12296;`                      | Left Angle Bracket |
+>| `\&#x3009;`{bl} `\&#12297;` |           |  `&#12297;`                      | Right Angle Bracket |
+|===
+
 === Operation symbols
 
 .Operation symbols
@@ -56,111 +87,109 @@ endif::[]
 2+h| Type                                     2+h| Rendered                          h|
 h| HTML Entity                 h| Tex Alt       h| HTML      h| LaTeX                h| Character name
 
->|   `\&#xD7;` {bl}   `\&#215;` | `\times`       |   `&#215;` | latexmath:[\times]    | MULTIPLICATION SIGN
->|   `\&#xF7;` {bl}   `\&#247;` | `\div`         |   `&#247;` | latexmath:[\div]      | DIVISION SIGN
->| `\&#x2217;` {bl}  `\&#8727;` | `\ast`         |  `&#8727;` | latexmath:[\ast]      | ASTERISK OPERATOR
->| `\&#x2218;` {bl}  `\&#8728;` | `\circ`        |  `&#8728;` | latexmath:[\circ]     | RING OPERATOR
->| `\&#x25EF;` {bl}  `\&#9711;` | `\bigcirc`     |  `&#9711;` | latexmath:[\bigcirc]  | LARGE CIRCLE
->| `\&#x2219;` {bl}  `\&#8729;` | `\bullet`      |  `&#8729;` | latexmath:[\bullet]   | BULLET OPERATOR
->| `\&#x00B1;` {bl}   `\&#177;` | `\pm`          |   `&#177;` | latexmath:[\pm]       | PLUS-MINUS SIGN
->| `\&#x2213;` {bl}  `\&#8723;` | `\mp`          |  `&#8723;` | latexmath:[\mp]       | MINUS-OR-PLUS SIGN
->| `\&#x2207;` {bl}  `\&#8711;` | `\nabla`       |  `&#8711;` | latexmath:[\nabla]    | NABLA
+>|   `\&#xD7;` {bl}   `\&#215;` | `\times`       |   `&#215;` | latexmath:[\times]    | Multiplication Sign
+>|   `\&#xF7;` {bl}   `\&#247;` | `\div`         |   `&#247;` | latexmath:[\div]      | Division Sign
+>| `\&#x2217;` {bl}  `\&#8727;` | `\ast`         |  `&#8727;` | latexmath:[\ast]      | Asterisk Operator
+>| `\&#x2218;` {bl}  `\&#8728;` | `\circ`        |  `&#8728;` | latexmath:[\circ]     | Ring Operator
+>| `\&#x25EF;` {bl}  `\&#9711;` | `\bigcirc`     |  `&#9711;` | latexmath:[\bigcirc]  | Large Circle
+>| `\&#x2219;` {bl}  `\&#8729;` | `\bullet`      |  `&#8729;` | latexmath:[\bullet]   | Bullet Operator
+>| `\&#x00B1;` {bl}   `\&#177;` | `\pm`          |   `&#177;` | latexmath:[\pm]       | Plus-Minus Sign
+>| `\&#x2213;` {bl}  `\&#8723;` | `\mp`          |  `&#8723;` | latexmath:[\mp]       | Minus-or-Plus Sign
+>| `\&#x2207;` {bl}  `\&#8711;` | `\nabla`       |  `&#8711;` | latexmath:[\nabla]    | Nabla
 >| `\&#x2240;` {bl}  `\&#8768;` | `\wr`          |    &#8768; | latexmath:[\wr]       | Wreath Product
->| `\&#x2295;` {bl}  `\&#8853;` | `\oplus`       |  `&#8853;` | latexmath:[\oplus]    | CIRCLED PLUS
->| `\&#x2296;` {bl}  `\&#8854;` | `\ominus`      |  `&#8854;` | latexmath:[\ominus]   | CIRCLED MINUS
->| `\&#x2297;` {bl}  `\&#8855;` | `\otimes`      |  `&#8855;` | latexmath:[\otimes]   | CIRCLED TIMES
->| `\&#x2298;` {bl}  `\&#8856;` | `\oslash`      |  `&#8856;` | latexmath:[\oslash]   | CIRCLED DIVISION SLASH
->| `\&#x2299;` {bl}  `\&#8857;` | `\odot`        |  `&#8857;` | latexmath:[\odot]     | CIRCLED DOT OPERATOR
->| `\&#x229A;` {bl}  `\&#8858;` | `\circledcirc` |  `&#8858;` | latexmath:[\circledcirc] |
->| `\&#x229B;` {bl}  `\&#8859;` | `\circledast`  |  `&#8859;` | latexmath:[\circledast]  | CIRCLED ASTERISK OPERATOR
->| `\&#x229D;` {bl}  `\&#8861;` | `\circleddash` |  `&#8861;` | latexmath:[\circleddash] |	CIRCLED DASH
->| `\&#x229E;` {bl}  `\&#8862;` | `\boxplus`     |  `&#8862;` | latexmath:[\boxplus]  | SQUARED PLUS
->| `\&#x229F;` {bl}  `\&#8863;` | `\boxminus`    |  `&#8863;` | latexmath:[\boxminus] | SQUARED MINUS
->| `\&#x22A0;` {bl}  `\&#8864;` | `\boxtimes`    |  `&#8864;` | latexmath:[\boxtimes] | SQUARED TIMES
->| `\&#x22A1;` {bl}  `\&#8865;` | `\boxdot`      |  `&#8865;` | latexmath:[\boxdot]   | SQUARED DOT OPERATOR
->| `\&#x22C5;` {bl}  `\&#8901;` | `\cdot`        |  `&#8901;` | latexmath:[\cdot]     | DOT OPERATOR
->| `\&#x22C6;` {bl}  `\&#8902;` | `\star`        |  `&#8902;` | latexmath:[\star]     | STAR OPERATOR
+>| `\&#x2295;` {bl}  `\&#8853;` | `\oplus`       |  `&#8853;` | latexmath:[\oplus]    | Circled Plus
+>| `\&#x2296;` {bl}  `\&#8854;` | `\ominus`      |  `&#8854;` | latexmath:[\ominus]   | Circled Minus
+>| `\&#x2297;` {bl}  `\&#8855;` | `\otimes`      |  `&#8855;` | latexmath:[\otimes]   | Circled Times
+>| `\&#x2298;` {bl}  `\&#8856;` | `\oslash`      |  `&#8856;` | latexmath:[\oslash]   | Circled Division Slash
+>| `\&#x2299;` {bl}  `\&#8857;` | `\odot`        |  `&#8857;` | latexmath:[\odot]     | Circled Dot Operator
+>| `\&#x229A;` {bl}  `\&#8858;` | `\circledcirc` |  `&#8858;` | latexmath:[\circledcirc] | Circled Ring Operator
+>| `\&#x229B;` {bl}  `\&#8859;` | `\circledast`  |  `&#8859;` | latexmath:[\circledast]  | Circled Asterisk Operator
+>| `\&#x229D;` {bl}  `\&#8861;` | `\circleddash` |  `&#8861;` | latexmath:[\circleddash] | Circled Dash
+>| `\&#x229E;` {bl}  `\&#8862;` | `\boxplus`     |  `&#8862;` | latexmath:[\boxplus]  | Squared Plus
+>| `\&#x229F;` {bl}  `\&#8863;` | `\boxminus`    |  `&#8863;` | latexmath:[\boxminus] | Squared Minus
+>| `\&#x22A0;` {bl}  `\&#8864;` | `\boxtimes`    |  `&#8864;` | latexmath:[\boxtimes] | Squared Times
+>| `\&#x22A1;` {bl}  `\&#8865;` | `\boxdot`      |  `&#8865;` | latexmath:[\boxdot]   | Squared Dot Operator
+>| `\&#x22C5;` {bl}  `\&#8901;` | `\cdot`        |  `&#8901;` | latexmath:[\cdot]     | Dot Operator
+>| `\&#x22C6;` {bl}  `\&#8902;` | `\star`        |  `&#8902;` | latexmath:[\star]     | Star Operator
 >| `\&#x22C8;` {bl}  `\&#8904;` | `\bowtie` or `\Join`
-                                                 |  `&#8904;` | latexmath:[\Join]     | BOWTIE
->| `\&#x22C9;` {bl}  `\&#8905;` | `\ltimes`      |  `&#8905;` | latexmath:[\ltimes]   | LEFT NORMAL FACTOR SEMIDIRECT PRODUCT
->| `\&#x22CA;` {bl}  `\&#8906;` | `\rtimes`      |  `&#8906;` | latexmath:[\rtimes]   | RIGHT NORMAL FACTOR SEMIDIRECT PRODUCT
->| `\&#x2227;` {bl}  `\&#8743;` | `\wedge`       |  `&#8743;` | latexmath:[\wedge]    | LOGICAL AND
->| `\&#x2228;` {bl}  `\&#8744;` | `\vee`         |  `&#8744;` | latexmath:[\vee]      | LOGICAL OR
->| `\&#x22C0;` {bl}  `\&#8896;` | `\bigwedge`    |  `&#8896;` | latexmath:[\bigwedge] | N-ARY LOGICAL AND
->| `\&#x22C1;` {bl}  `\&#8897;` | `\bigvee`      |  `&#8897;` | latexmath:[\bigvee]   | N-ARY LOGICAL OR
+                                                 |  `&#8904;` | latexmath:[\Join]     | Bowtie
+>| `\&#x22C9;` {bl}  `\&#8905;` | `\ltimes`      |  `&#8905;` | latexmath:[\ltimes]   | Left Normal Factor Semidirect PRODUCT
+>| `\&#x22CA;` {bl}  `\&#8906;` | `\rtimes`      |  `&#8906;` | latexmath:[\rtimes]   | Right Normal Factor Semidirect PRODUCT
+>| `\&#x2227;` {bl}  `\&#8743;` | `\wedge`       |  `&#8743;` | latexmath:[\wedge]    | Logical And
+>| `\&#x2228;` {bl}  `\&#8744;` | `\vee`         |  `&#8744;` | latexmath:[\vee]      | Logical Or
+>| `\&#x22C0;` {bl}  `\&#8896;` | `\bigwedge`    |  `&#8896;` | latexmath:[\bigwedge] | N-Ary Logical And
+>| `\&#x22C1;` {bl}  `\&#8897;` | `\bigvee`      |  `&#8897;` | latexmath:[\bigvee]   | N-Ary Logical Or
+>| `\&#x007C;` {bl}  `\&#0124;` | `\mid` or `\middle`
+                                                 | `{vbar}`   | latexmath:[\mid]       | Vertical Line
 >| `\&#x2016;` {bl}  `\&#8214;` | `{backslash}{vbar}` or `\Arrowvert`
                                                  |  `&#8214;` | latexmath:[\Arrowvert] | Double Vertical Line
 |===
 
 === Relation symbols
 .Equals sign
-[cols="^.^5a,4a,4a,18a,8a" {table_options}]
+[cols="^.^6a,9a,^.^3a,^.^3a,17a" {table_options}]
 |===
-| Rendered  | hex         | decimal    | Character name   | Tex alt
+2+h| Type                                     2+h| Rendered                          h|
+h| HTML Entity                h| Tex Alt         h| HTML      h| LaTeX                h| Character name
 
-| `=`       | `\&#x003D;` | `\&#0061;` | EQUALS SIGN      |
-| `&#42890;` | `\&#xA78A;` | `\&#42890;` | Modifier Letter Short Equals Sign |
-| `&#65309;` | `\&#xFF1D;` | `\&#65309;` | FULLWIDTH EQUALS SIGN |
-| `&#8764;` | `\&#x223C;` | `\&#8764;` | TILDE OPERATOR   | `\sim`
-| `&#8765;` | `\&#x223D;` | `\&#8765;` |                  | `\backsim`
-| `&#8769;` | `\&#x2241;` | `\&#8769;` | NOT TILDE        | `\nsim`
-| `&#8771;` | `\&#x2243;` | `\&#8771;` | ASYMPTOTICALLY EQUAL TO | `\simeq`
-| `&#8773;` | `\&#x2245;` | `\&#8773;` | APPROXIMATELY EQUAL TO | `\cong`
-| `&#8776;` | `\&#x2248;` | `\&#8776;` | ALMOST EQUAL TO  | `\approx`
-| `&#8781;` | `\&#x224D;` | `\&#8781;` | EQUIVALENT TO    | `\asymp`
-| `&#8778;` | `\&#x2250;` | `\&#8778;` |                  | `\doteq`
-| `&#8779;` | `\&#x2251;` | `\&#8779;` | GEOMETRICALLY EQUAL TO | `\doteqdot`
-| `&#8786;` | `\&#x2252;` | `\&#8786;` | APPROXIMATELY EQUAL TO OR THE IMAGE OF | `\fallingdotseq`
-| `&#8787;` | `\&#x2253;` | `\&#8787;` | IMAGE OF OR APPROXIMATELY EQUAL TO | `\risingdotseq`
-| `&#8788;` | `\&#x2254;` | `\&#8788;` | COLON EQUALS     |
-| `&#8789;` | `\&#x2255;` | `\&#8789;` | EQUALS COLON     |
-| `&#8796;` | `\&#x225C;` | `\&#8796;` | DELTA EQUAL TO   |
-| `&#8797;` | `\&#x225D;` | `\&#8797;` | EQUAL TO BY DEFINITION |
-| `&#8800;` | `\&#x2260;` | `\&#8800;` | NOT EQUAL TO     | `\ne`
-| `&#8801;` | `\&#x2261;` | `\&#8801;` | IDENTICAL TO     | `\equiv`
-| `&#8802;` | `\&#x2262;` | `\&#8802;` | NOT IDENTICAL TO |
+| `\&#x003D;` {bl}  `\&#0061;` |                  | `=` | latexmath:[=] | Equals Sign
+| `\&#xA78A;` {bl} `\&#42890;` |                  | `&#42890;` | | Modifier Letter Short Equals Sign
+| `\&#xFF1D;` {bl} `\&#65309;` |                  | `&#65309;` | | Fullwidth Equals Sign
+| `\&#x223C;` {bl}  `\&#8764;` | `\sim`           |  `&#8764;` | latexmath:[\sim] | Tilde Operator
+| `\&#x223D;` {bl}  `\&#8765;` | `\backsim`       |  `&#8765;` | latexmath:[\backsim] | Reversed Tilde
+| `\&#x2241;` {bl}  `\&#8769;` | `\nsim`          |  `&#8769;` | latexmath:[\nsim] | Not Tilde
+| `\&#x2243;` {bl}  `\&#8771;` | `\simeq`         |  `&#8771;` | latexmath:[\simeq] | Asymptotically Equal To
+| `\&#x2245;` {bl}  `\&#8773;` | `\cong`          |  `&#8773;` | latexmath:[\cong] | Approximately Equal To
+| `\&#x2248;` {bl}  `\&#8776;` | `\approx`        |  `&#8776;` | latexmath:[\approx] | Almost Equal To
+| `\&#x224D;` {bl}  `\&#8781;` | `\asymp`         |  `&#8781;` | latexmath:[\asymp] | Equivalent To
+| `\&#x2250;` {bl}  `\&#8784;` | `\doteq`         |  `&#8784;` | latexmath:[\doteq] | Approaches the Limit
+| `\&#x2251;` {bl}  `\&#8785;` | `\doteqdot`      |  `&#8785;` | latexmath:[\doteqdot] | Geometrically Equal To
+| `\&#x2252;` {bl}  `\&#8786;` | `\fallingdotseq` |  `&#8786;` | latexmath:[\fallingdotseq] | Approximately Equal to or the Image Of
+| `\&#x2253;` {bl}  `\&#8787;` | `\risingdotseq`  |  `&#8787;` | latexmath:[\risingdotseq] | Image of or Approximately Equal To
+| `\&#x2254;` {bl}  `\&#8788;` | `:=`             |  `&#8788;` | latexmath:[:=] | Colon Equals
+| `\&#x2255;` {bl}  `\&#8789;` | `=:`             |  `&#8789;` | latexmath:[=:] | Equals Colon
+| `\&#x225C;` {bl}  `\&#8796;` |                  |  `&#8796;` |   | Delta Equal To
+| `\&#x225D;` {bl}  `\&#8797;` |                  |  `&#8797;` |   | Equal to By Definition
+| `\&#x2260;` {bl}  `\&#8800;` | `\ne`            |  `&#8800;` | latexmath:[\ne]  | Not Equal To
+| `\&#x2261;` {bl}  `\&#8801;` | `\equiv`         |  `&#8801;` | latexmath:[\equiv]  | Identical To
+| `\&#x2262;` {bl}  `\&#8802;` | `\not\equiv`     |  `&#8802;` | latexmath:[\not\equiv]  | Not Identical To
 |===
 
 * https://en.wikipedia.org/wiki/Equals_sign[Equals sign - Wikipedia]
 
 === Inequality
 .Inequality
-[cols="^.^5a,4a,4a,18a,8a" {table_options}]
+[cols="^.^6a,8a,^.^4a,^.^4a,17a" {table_options}]
 |===
-| Rendered   | hex         | decimal     | Character name  | Tex alt
+2+h| Type                                     2+h| Rendered                          h|
+h| HTML Entity                h| Tex Alt       h| HTML      h| LaTeX                h| Character name
 
-| `&lt;`     |             |             | |
-| `&gt;`     |             |             | |
-|  `&#8733;` | `\&#x221D;` |  `\&#8733;` | | `\propto`
-|  `&#8804;` | `\&#x2264;` |  `\&#8804;` | LESS-THAN OR EQUAL TO      | `\le` or `\leq`
-|  `&#8805;` | `\&#x2265;` |  `\&#8805;` | GREATER-THAN OR EQUAL TO   | `\ge` or `\geq`
-|  `&#8806;` | `\&#x2266;` |  `\&#8806;` | LESS-THAN OVER EQUAL TO    | `\leqq`
-|  `&#8807;` | `\&#x2267;` |  `\&#8807;` | GREATER-THAN OVER EQUAL TO | `\geqq`
-|  `&#8810;` | `\&#x226A;` |  `\&#8810;` | MUCH LESS-THAN             | `\ll`
-|  `&#8811;` | `\&#x226B;` |  `\&#8811;` | MUCH GREATER-THAN          | `\gg`
-|  `&#8814;` | `\&#x226E;` |  `\&#8814;` | NOT LESS-THAN              |
-|  `&#8815;` | `\&#x226F;` |  `\&#8815;` | NOT GREATER-THAN           |
-| `&#10877;` | `\&#x2A7D;` | `\&#10877;` | LESS-THAN OR SLANTED EQUAL TO    | `\leqslant`
-| `&#10878;` | `\&#x2A7E;` | `\&#10878;` | GREATER-THAN OR SLANTED EQUAL TO | `\geqslant`
-| `&#10901;` | `\&#x2A95;` | `\&#10901;` | SLANTED EQUAL TO OR LESS-THAN    | `\eqslantless`
-| `&#10902;` | `\&#x2A96;` | `\&#10902;` | SLANTED EQUAL TO OR GREATER-THAN | `\eqslantgtr`
+| `\&#x3C;` {bl} `\&#60;` {bl} `\&lt;` | `&lt;`  |  `&lt;`    | latexmath:[<]            | Less-Than Sign
+| `\&#x3E;` {bl} `\&#62;` {bl} `\&gt;` | `&gt;`  |  `&gt;`    | latexmath:[>]            | Greater-Than Sign
+| `\&#x221D;` {bl}  `\&#8733;` | `\propto`       |  `&#8733;` | latexmath:[\propto]      | Proportional To
+| `\&#x2264;` {bl}  `\&#8804;` | `\le` or `\leq` |  `&#8804;` | latexmath:[\leq]         | Less-Than or Equal To    
+| `\&#x2265;` {bl}  `\&#8805;` | `\ge` or `\geq` |  `&#8805;` | latexmath:[\geq]         | Greater-Than or Equal To 
+| `\&#x2266;` {bl}  `\&#8806;` | `\leqq`         |  `&#8806;` | latexmath:[\leqq]        | Less-Than Over Equal To
+| `\&#x2267;` {bl}  `\&#8807;` | `\geqq`         |  `&#8807;` | latexmath:[\geqq]        | Greater-Than Over Equal To
+| `\&#x226A;` {bl}  `\&#8810;` | `\ll`           |  `&#8810;` | latexmath:[\ll]          | Much Less-Than
+| `\&#x226B;` {bl}  `\&#8811;` | `\gg`           |  `&#8811;` | latexmath:[\gg]          | Much Greater-Than
+| `\&#x226E;` {bl}  `\&#8814;` | `\not\lt` or `\nless` | `&#8814;` | latexmath:[\not\lt], latexmath:[\nless] | Not Less-Than
+| `\&#x226F;` {bl}  `\&#8815;` | `\not\gt` or `\ngtr` | `&#8815;` | latexmath:[\not\gt], latexmath:[\ngtr] | Not Greater-Than
+| `\&#x2270;` {bl}  `\&#8816;` | `\nleq`         |  `&#8816;` | latexmath:[\nleq]        | Neither Less-Than Nor Equal To
+| `\&#x2271;` {bl}  `\&#8817;` | `\ngeq`         |  `&#8817;` | latexmath:[\ngeq]      | Neither Greater-Than Nor Equal To
+| `\&#x2A7D;` {bl} `\&#10877;` | `\leqslant`     | `&#10877;` | latexmath:[\leqslant]    | Less-Than or Slanted Equal To
+| `\&#x2A7E;` {bl} `\&#10878;` | `\geqslant`     | `&#10878;` | latexmath:[\geqslant]    | Greater-Than or Slanted Equal To
+| `\&#x2A95;` {bl} `\&#10901;` | `\eqslantless`  | `&#10901;` | latexmath:[\eqslantless] | Slanted Equal to or Less-Than
+| `\&#x2A96;` {bl} `\&#10902;` | `\eqslantgtr`   | `&#10902;` | latexmath:[\eqslantgtr]  | Slanted Equal to or Greater-Than
 |===
 
 [cols="1a,2a" options="autowidth"]
 |===
 | Rendered   | Tex alt
 
-| latexmath:[\nleq]      | \nleq
-| latexmath:[\ngeq]      | \ngeq
-| latexmath:[\nless]     | \nless
-| latexmath:[\ngtr]      | \ngtr
 | latexmath:[\nleqslant] | \nleqslant
 | latexmath:[\ngeqslant] | \ngeqslant
 |===
-
-
-* https://www.fileformat.info/info/unicode/block/mathematical_operators/list.htm[Unicode Characters in the Mathematical Operators Block]
-* https://qiita.com/minfuk/items/0bd1ffa20b44759d486e[TeXの数式記号とUnicodeのマッピング（途中） - Qiita]
 
 === Sets
 
@@ -169,81 +198,81 @@ h| HTML Entity                 h| Tex Alt       h| HTML      h| LaTeX           
 |===
 h| HTML Entity                | Tex alt       | See      | Name
 
->| `\&#x2201;`{bl} `\&#8705;` | `\complement` | &#8705; | COMPLEMENT
->| `\&#x2205;`{bl} `\&#8709;` | `\emptyset`   | &#8709;  | EMPTY SET
->| `\&#x2229;`{bl} `\&#8745;` | `\cap`        | &#8745;  | INTERSECTION
->| `\&#x222a;`{bl} `\&#8746;` | `\cup`        | &#8746;  | UNION
->| `\&#x2208;`{bl} `\&#8712;` | `\in`         | &#8712;  | ELEMENT OF
->| `\&#x2209;`{bl} `\&#8713;` | `\notin`      | &#8713;  | NOT AN ELEMENT OF
->| `\&#x220b;`{bl} `\&#8715;` | `\ni`         | &#8715;  | CONTAINS AS MEMBER
->| `\&#x220C;`{bl} `\&#8716;` | `\not\ni`     | &#8716;  | DOES NOT CONTAIN AS MEMBER
+>| `\&#x2201;`{bl} `\&#8705;` | `\complement`    | &#8705;, latexmath:[\complement]    | Complement
+>| `\&#x2205;`{bl} `\&#8709;` | `\emptyset`      | &#8709;, latexmath:[\emptyset]      | Empty Set
+>| `\&#x2229;`{bl} `\&#8745;` | `\cap`           | &#8745;, latexmath:[\cap]           | Intersection
+>| `\&#x222a;`{bl} `\&#8746;` | `\cup`           | &#8746;, latexmath:[\cup]           | Union
+>| `\&#x2208;`{bl} `\&#8712;` | `\in`            | &#8712;, latexmath:[\in]            | Element Of
+>| `\&#x2209;`{bl} `\&#8713;` | `\notin`         | &#8713;, latexmath:[\notin]         | Not An Element Of
+>| `\&#x220b;`{bl} `\&#8715;` | `\ni`            | &#8715;, latexmath:[\ni]            | Contains as Member
+>| `\&#x220C;`{bl} `\&#8716;` | `\not\ni`        | &#8716;, latexmath:[\not\ni]        | Does Not Contain as Member
 >| http://www.fileformat.info/info/unicode/char/2216/index.htm[`\&#x2216;`]{bl} `\&#8726;` | `\backslash` or `\setminus` | &#8726;  | SET MINUS
->| `\&#x2282;`{bl} `\&#8834;` | `\subset`     | &#8834;  | SUBSET OF
->| `\&#x2283;`{bl} `\&#8835;` | `\supset`     | &#8835;  | SUPERSET OF
->| `\&#x2284;`{bl} `\&#8836;` |               | &#8836;  | NOT A SUBSET OF
->| `\&#x2285;`{bl} `\&#8837;` |               | &#8837;  | NOT A SUPERSET OF
->| `\&#x2286;`{bl} `\&#8838;` | `\subseteq`   | &#8838;  | SUBSET OF OR EQUAL TO
->| `\&#x2287;`{bl} `\&#8839;` | `\supseteq`   | &#8839;  | SUPERSET OF OR EQUAL TO
->| `\&#x2288;`{bl} `\&#8840;` | `\nsubseteq`  | &#8840;  | NEITHER A SUBSET OF NOR EQUAL TO
->| `\&#x2289;`{bl} `\&#8841;` | `\nsupseteq`  | &#8841;  | NEITHER A SUPERSET OF NOR EQUAL TO
->| `\&#x228a;`{bl} `\&#8842;` | `\subsetneq`  | &#8842;  | SUBSET OF WITH NOT EQUAL TO
->| `\&#x228b;`{bl} `\&#8843;` | `\supsetneq`  | &#8843;  | SUPERSET OF WITH NOT EQUAL TO
->| `\&#x22b2;`{bl} `\&#8882;` |               | &#8882;  | NORMAL SUBGROUP OF
->| `\&#x22b3;`{bl} `\&#8883;` |               | &#8883;  | CONTAINS AS NORMAL SUBGROUP
->| `\&#x22b4;`{bl} `\&#8884;` |               | &#8884;  | NORMAL SUBGROUP OF OR EQUAL TO
->| `\&#x22b5;`{bl} `\&#8885;` |               | &#8885;  | CONTAINS AS NORMAL SUBGROUP OR EQUAL TO
->| http://www.fileformat.info/info/unicode/char/25C1/index.htm[`\&#x25C1;`]{bl} `\&#9665;` | | &#9665;  |
->| http://www.fileformat.info/info/unicode/char/25C3/index.htm[`\&#x25C3;`]{bl} `\&#9667;` | `\triangleleft` | &#9667;  | WHITE LEFT-POINTING SMALL TRIANGLE
->| http://www.fileformat.info/info/unicode/char/25B7/index.htm[`\&#x25B7;`]{bl} `\&#9655;` | | &#9655;  |
->| http://www.fileformat.info/info/unicode/char/25B9/index.htm[`\&#x25B9;`]{bl} `\&#9657;` | `\triangleright` | &#9657;  | WHITE RIGHT-POINTING SMALL TRIANGLE
+>| `\&#x2282;`{bl} `\&#8834;` | `\subset`        | &#8834;, latexmath:[\subset]        | Subset Of
+>| `\&#x2283;`{bl} `\&#8835;` | `\supset`        | &#8835;, latexmath:[\supset]        | Superset Of
+>| `\&#x2284;`{bl} `\&#8836;` | `\not\subset`    | &#8836;, latexmath:[\not\subset]    | Not A Subset Of
+>| `\&#x2285;`{bl} `\&#8837;` | `\not\supset`    | &#8837;, latexmath:[\not\supset]    | Not A Superset Of
+>| `\&#x2286;`{bl} `\&#8838;` | `\subseteq`      | &#8838;, latexmath:[\subseteq]      | Subset of or Equal To
+>| `\&#x2287;`{bl} `\&#8839;` | `\supseteq`      | &#8839;, latexmath:[\supseteq]      | Superset of or Equal To
+>| `\&#x2288;`{bl} `\&#8840;` | `\nsubseteq`     | &#8840;, latexmath:[\nsubseteq]     | Neither A Subset of Nor Equal To
+>| `\&#x2289;`{bl} `\&#8841;` | `\nsupseteq`     | &#8841;, latexmath:[\nsupseteq]     | Neither A Superset of Nor Equal To
+>| `\&#x228a;`{bl} `\&#8842;` | `\subsetneq`     | &#8842;, latexmath:[\subsetneq]     | Subset of with Not Equal To
+>| `\&#x228b;`{bl} `\&#8843;` | `\supsetneq`     | &#8843;, latexmath:[\supsetneq]     | Superset of with Not Equal To
+>| `\&#x22b2;`{bl} `\&#8882;` | `\triangleleft`  | &#8882;, latexmath:[\triangleleft]  | Normal Subgroup Of
+>| `\&#x22b3;`{bl} `\&#8883;` | `\triangleright` | &#8883;, latexmath:[\triangleright] | Contains as Normal Subgroup
+>| `\&#x22b4;`{bl} `\&#8884;` |                  | &#8884;  | Normal Subgroup of or Equal To
+>| `\&#x22b5;`{bl} `\&#8885;` |                  | &#8885;  | Contains as Normal Subgroup or Equal To
+>| http://www.fileformat.info/info/unicode/char/25C1/index.htm[`\&#x25C1;`]{bl} `\&#9665;` | | &#9665;  | White Left-Pointing Triangle
+>| http://www.fileformat.info/info/unicode/char/25C3/index.htm[`\&#x25C3;`]{bl} `\&#9667;` | `\triangleleft` | &#9667;  | White Left-Pointing Small Triangle
+>| http://www.fileformat.info/info/unicode/char/25B7/index.htm[`\&#x25B7;`]{bl} `\&#9655;` | | &#9655;  | White Right-Pointing Triangle
+>| http://www.fileformat.info/info/unicode/char/25B9/index.htm[`\&#x25B9;`]{bl} `\&#9657;` | `\triangleright` | &#9657;  | White Right-Pointing Small Triangle
 |===
 
 === Logical symbols
 
 .Logical symbols
-[cols="4a,4a,8a,^.^5a,18a" {table_options}]
+[cols="5a,10a,^.^5a,15a" {table_options}]
 |===
-| hex         | decimal     | Tex alt      | Rendered   | Character name
+| HTML Entity                  | Tex alt      | Rendered   | Character name
 
-| http://www.fileformat.info/info/unicode/char/2227/index.htm[`\&#x2227;`] |  `\&#8743;` | `\land`      |  `&#8743;` | LOGICAL AND
-| http://www.fileformat.info/info/unicode/char/2228/index.htm[`\&#x2228;`] |  `\&#8744;` | `\lor`       |  `&#8744;` | LOGICAL OR
-| `\&#x00AC;` |  `\&#172;`  | `\neg`       |   `&#172;` | NOT SIGN
-| `\&#x2200;` |  `\&#8704;` | `\forall`    |  `&#8704;` | FOR ALL
-| `\&#x2203;` |  `\&#8707;` | `\exists`    |  `&#8707;` | THERE EXISTS
-| `\&#x2204;` |  `\&#8708;` | `\nexists`   |  `&#8708;` | THERE DOES NOT EXIST
-| `\&#x2234;` |  `\&#8756;` | `\therefore` |  `&#8756;` | Therefore
-| `\&#x2235;` |  `\&#8757;` | `\because`   |  `&#8757;` | BECAUSE
-| `\&#x22A2;` |  `\&#8866;` | `\vdash`     |  `&#8866;` | RIGHT TACK
-| `\&#x22A4;` |  `\&#8868;` | `\top`       |  `&#8868;` | DOWN TACK
-| `\&#x22A8;` | `\&#8872;`  | `\models`    |  `&#8872;` | TRUE
-| `\&#x27F8;` | `\&#10232;` | `\impliedby` | `&#10232;` | LONG LEFTWARDS DOUBLE ARROW
-| `\&#x27F9;` | `\&#10233;` | `\implies`   | `&#10233;` | LONG RIGHTWARDS DOUBLE ARROW
-| `\&#x27FA;` | `\&#10234;` | `\iff` or `\Longleftrightarrow` | `&#10234;` | LONG LEFT RIGHT DOUBLE ARROW
+| http://www.fileformat.info/info/unicode/char/2227/index.htm[`\&#x2227;`] {bl} `\&#8743;` | `\land`      |  `&#8743;` | LOGICAL AND
+| http://www.fileformat.info/info/unicode/char/2228/index.htm[`\&#x2228;`] {bl} `\&#8744;` | `\lor`       |  `&#8744;` | LOGICAL OR
+| `\&#x00AC;` {bl}  `\&#172;`  | `\neg`       |   `&#172;` | NOT SIGN
+| `\&#x2200;` {bl}  `\&#8704;` | `\forall`    |  `&#8704;` | FOR ALL
+| `\&#x2203;` {bl}  `\&#8707;` | `\exists`    |  `&#8707;` | THERE EXISTS
+| `\&#x2204;` {bl}  `\&#8708;` | `\nexists`   |  `&#8708;` | THERE DOES NOT EXIST
+| `\&#x2234;` {bl}  `\&#8756;` | `\therefore` |  `&#8756;` | Therefore
+| `\&#x2235;` {bl}  `\&#8757;` | `\because`   |  `&#8757;` | BECAUSE
+| `\&#x22A2;` {bl}  `\&#8866;` | `\vdash`     |  `&#8866;` | RIGHT TACK
+| `\&#x22A4;` {bl}  `\&#8868;` | `\top`       |  `&#8868;` | DOWN TACK
+| `\&#x22A8;` {bl}  `\&#8872;` | `\models`    |  `&#8872;` | TRUE
+| `\&#x27F8;` {bl} `\&#10232;` | `\impliedby` | `&#10232;` | LONG LEFTWARDS DOUBLE ARROW
+| `\&#x27F9;` {bl} `\&#10233;` | `\implies`   | `&#10233;` | LONG RIGHTWARDS DOUBLE ARROW
+| `\&#x27FA;` {bl} `\&#10234;` | `\iff` or `\Longleftrightarrow` | `&#10234;` | LONG LEFT RIGHT DOUBLE ARROW
 |===
 
 === Sum-class symbol
 .Sum-class symbol
-[cols="4a,4a,6a,^.^5a,18a" {table_options}]
+[cols="5a,6a,^.^5a,17a" {table_options}]
 |===
-h| hex         h| decimal    h| Tex alt     h| Rendered         h| Character name
+h| HTML Entity                 h| Tex alt     h| Rendered         h| Character name
 
->| `\&#x220F;` >|  `\&#8719;` | `\prod`      |  [big]##&#8719;## |
->| `\&#x2210;` >|  `\&#8720;` | `\coprod`    |  [big]##&#8720;## |
->| `\&#x2211;` >|  `\&#8721;` | `\sum`       |  [big]##&#8721;## |
->| `\&#x222B;` >|  `\&#8747;` | `\int`       |  [big]##&#8747;## |
->| `\&#x222E;` >|  `\&#8750;` | `\oint`      |  [big]##&#8750;## |
->| `\&#x22C2;` >|  `\&#8898;` | `\bigcap`    |  [big]##&#8898;## |
->| `\&#x22C3;` >|  `\&#8899;` | `\bigcup`    |  [big]##&#8899;## |
->| `\&#x2A00;` >| `\&#10752;` | `\bigodot`   | [big]##&#10752;## |
->| `\&#x2A01;` >| `\&#10753;` | `\bigoplus`  | [big]##&#10753;## |
->| `\&#x2A02;` >| `\&#10754;` | `\bigotimes` | [big]##&#10754;## |
->| `\&#x2A04;` >| `\&#10756;` | `\biguplus`  | [big]##&#10756;## |
->| `\&#x2A06;` >| `\&#10758;` | `\bigsqcup`  | [big]##&#10758;## |
+>| `\&#x220F;` {bl}  `\&#8719;` | `\prod`      |  [big]##&#8719;## |
+>| `\&#x2210;` {bl}  `\&#8720;` | `\coprod`    |  [big]##&#8720;## |
+>| `\&#x2211;` {bl}  `\&#8721;` | `\sum`       |  [big]##&#8721;## |
+>| `\&#x222B;` {bl}  `\&#8747;` | `\int`       |  [big]##&#8747;## |
+>| `\&#x222E;` {bl}  `\&#8750;` | `\oint`      |  [big]##&#8750;## |
+>| `\&#x22C2;` {bl}  `\&#8898;` | `\bigcap`    |  [big]##&#8898;## |
+>| `\&#x22C3;` {bl}  `\&#8899;` | `\bigcup`    |  [big]##&#8899;## |
+>| `\&#x2A00;` {bl} `\&#10752;` | `\bigodot`   | [big]##&#10752;## |
+>| `\&#x2A01;` {bl} `\&#10753;` | `\bigoplus`  | [big]##&#10753;## |
+>| `\&#x2A02;` {bl} `\&#10754;` | `\bigotimes` | [big]##&#10754;## |
+>| `\&#x2A04;` {bl} `\&#10756;` | `\biguplus`  | [big]##&#10756;## |
+>| `\&#x2A06;` {bl} `\&#10758;` | `\bigsqcup`  | [big]##&#10758;## |
 |===
 
 === Geometric Symbols
 .Sets
-[cols="1a,2a,1a,1a,1a,2a" {table_options}]
+[cols="5a,8a,4a,4a,4a,7a" {table_options}]
 |===
 3+h| Type                                                           2+h| Rendered                       h|
 h| HTML Entity                h| Tex Alt           h| AsciiMath       h| HTML   h| LaTeX                h| Names
@@ -263,7 +292,7 @@ h| HTML Entity                h| Tex Alt           h| AsciiMath       h| HTML   
 === Punctuation and Ellipses
 
 .General punctuation
-[cols="5a,4a,4a,18a,8a" {table_options}]
+[cols="6a,7a,4a,14a,8a" {table_options}]
 |===
 2+h| Type                                    h| Rendered   h|                    h|
 h| HTML Entity                h| Tex alt     h| HTML       h| Character name     h| Notes
@@ -274,12 +303,6 @@ h| HTML Entity                h| Tex alt     h| HTML       h| Character name    
 >| `\&#x2033;`{bl}  `\&#8243;` |              |   `&#8243;` | Double Prime | JIS名称: 分
 >| `\&#x2034;`{bl}  `\&#8244;` |              |   `&#8244;` | Triple Prime | JIS名称: 秒
 >| `\&#x2035;`{bl}  `\&#8245;` | `\backprime` | &#8245;     | Reversed Prime |
->|  `\&#x5B;` {bl}   `\&#91;`  | `\lbrack`    |     `&#91;` | Left Square Bracket  |
->|  `\&#x5D;` {bl}   `\&#93;`  | `\rbrack`    |     `&#93;` | Right Square Bracket |
->| `\&#x27E8;`{bl} `\&#10216;` | `\langle`    |  `&#10216;` | Mathematical Left Angle Bracket |
->| `\&#x27E9;`{bl} `\&#10217;` | `\rangle`    |  `&#10217;` | Mathematical Right Angle Bracket |
->| `\&#x3008;`{bl} `\&#12296;` |              |  `&#12296;` | LEFT ANGLE BRACKET |
->| `\&#x3009;`{bl} `\&#12297;` |              |  `&#12297;` | RIGHT ANGLE BRACKET |
 |===
 
 .Ellipses
