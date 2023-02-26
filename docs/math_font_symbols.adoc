@@ -161,34 +161,28 @@ h| HTML Entity                h| Tex Alt         h| HTML      h| LaTeX          
 .Inequality
 [cols="^.^6a,8a,^.^4a,^.^4a,17a" {table_options}]
 |===
-2+h| Type                                     2+h| Rendered                          h|
-h| HTML Entity                h| Tex Alt       h| HTML      h| LaTeX                h| Character name
+2+h| Type                                     2+h| Rendered                             h|
+h| HTML Entity                h| Tex Alt        h| HTML      h| LaTeX                   h| Character name
 
-| `\&#x3C;` {bl} `\&#60;` {bl} `\&lt;` | `&lt;`  |  `&lt;`    | latexmath:[<]            | Less-Than Sign
-| `\&#x3E;` {bl} `\&#62;` {bl} `\&gt;` | `&gt;`  |  `&gt;`    | latexmath:[>]            | Greater-Than Sign
-| `\&#x221D;` {bl}  `\&#8733;` | `\propto`       |  `&#8733;` | latexmath:[\propto]      | Proportional To
-| `\&#x2264;` {bl}  `\&#8804;` | `\le` or `\leq` |  `&#8804;` | latexmath:[\leq]         | Less-Than or Equal To    
-| `\&#x2265;` {bl}  `\&#8805;` | `\ge` or `\geq` |  `&#8805;` | latexmath:[\geq]         | Greater-Than or Equal To 
-| `\&#x2266;` {bl}  `\&#8806;` | `\leqq`         |  `&#8806;` | latexmath:[\leqq]        | Less-Than Over Equal To
-| `\&#x2267;` {bl}  `\&#8807;` | `\geqq`         |  `&#8807;` | latexmath:[\geqq]        | Greater-Than Over Equal To
-| `\&#x226A;` {bl}  `\&#8810;` | `\ll`           |  `&#8810;` | latexmath:[\ll]          | Much Less-Than
-| `\&#x226B;` {bl}  `\&#8811;` | `\gg`           |  `&#8811;` | latexmath:[\gg]          | Much Greater-Than
-| `\&#x226E;` {bl}  `\&#8814;` | `\not\lt` or `\nless` | `&#8814;` | latexmath:[\not\lt], latexmath:[\nless] | Not Less-Than
-| `\&#x226F;` {bl}  `\&#8815;` | `\not\gt` or `\ngtr` | `&#8815;` | latexmath:[\not\gt], latexmath:[\ngtr] | Not Greater-Than
-| `\&#x2270;` {bl}  `\&#8816;` | `\nleq`         |  `&#8816;` | latexmath:[\nleq]        | Neither Less-Than Nor Equal To
-| `\&#x2271;` {bl}  `\&#8817;` | `\ngeq`         |  `&#8817;` | latexmath:[\ngeq]      | Neither Greater-Than Nor Equal To
-| `\&#x2A7D;` {bl} `\&#10877;` | `\leqslant`     | `&#10877;` | latexmath:[\leqslant]    | Less-Than or Slanted Equal To
-| `\&#x2A7E;` {bl} `\&#10878;` | `\geqslant`     | `&#10878;` | latexmath:[\geqslant]    | Greater-Than or Slanted Equal To
-| `\&#x2A95;` {bl} `\&#10901;` | `\eqslantless`  | `&#10901;` | latexmath:[\eqslantless] | Slanted Equal to or Less-Than
-| `\&#x2A96;` {bl} `\&#10902;` | `\eqslantgtr`   | `&#10902;` | latexmath:[\eqslantgtr]  | Slanted Equal to or Greater-Than
-|===
-
-[cols="1a,2a" options="autowidth"]
-|===
-| Rendered   | Tex alt
-
-| latexmath:[\nleqslant] | \nleqslant
-| latexmath:[\ngeqslant] | \ngeqslant
+>| `\&#x3C;` {bl} `\&#60;` {bl} `\&lt;` | `&lt;`  |  `&lt;`    | latexmath:[<]            | Less-Than Sign
+>| `\&#x3E;` {bl} `\&#62;` {bl} `\&gt;` | `&gt;`  |  `&gt;`    | latexmath:[>]            | Greater-Than Sign
+>| `\&#x221D;` {bl}  `\&#8733;` | `\propto`       |  `&#8733;` | latexmath:[\propto]      | Proportional To
+>| `\&#x2264;` {bl}  `\&#8804;` | `\le` or `\leq` |  `&#8804;` | latexmath:[\leq]         | Less-Than or Equal To    
+>| `\&#x2265;` {bl}  `\&#8805;` | `\ge` or `\geq` |  `&#8805;` | latexmath:[\geq]         | Greater-Than or Equal To 
+>| `\&#x2266;` {bl}  `\&#8806;` | `\leqq`         |  `&#8806;` | latexmath:[\leqq]        | Less-Than Over Equal To
+>| `\&#x2267;` {bl}  `\&#8807;` | `\geqq`         |  `&#8807;` | latexmath:[\geqq]        | Greater-Than Over Equal To
+>| `\&#x226A;` {bl}  `\&#8810;` | `\ll`           |  `&#8810;` | latexmath:[\ll]          | Much Less-Than
+>| `\&#x226B;` {bl}  `\&#8811;` | `\gg`           |  `&#8811;` | latexmath:[\gg]          | Much Greater-Than
+>| `\&#x226E;` {bl}  `\&#8814;` | `\not\lt` or `\nless` | `&#8814;` | latexmath:[\not\lt], latexmath:[\nless] | Not Less-Than
+>| `\&#x226F;` {bl}  `\&#8815;` | `\not\gt` or `\ngtr` | `&#8815;` | latexmath:[\not\gt], latexmath:[\ngtr] | Not Greater-Than
+>| `\&#x2270;` {bl}  `\&#8816;` | `\nleq`         |  `&#8816;` | latexmath:[\nleq]        | Neither Less-Than Nor Equal To
+>| `\&#x2271;` {bl}  `\&#8817;` | `\ngeq`         |  `&#8817;` | latexmath:[\ngeq]        | Neither Greater-Than Nor Equal To
+>| `\&#x2A7D;` {bl} `\&#10877;` | `\leqslant`     | `&#10877;` | latexmath:[\leqslant]    | Less-Than or Slanted Equal To
+>| `\&#x2A7E;` {bl} `\&#10878;` | `\geqslant`     | `&#10878;` | latexmath:[\geqslant]    | Greater-Than or Slanted Equal To
+>| `\&#x2A87;` {bl} `\&#10887;` | `\nleqslant`    | `&#10887;` | latexmath:[\nleqslant]   | Less-Than and Single-Line Not Equal To
+>| `\&#x2A88;` {bl} `\&#10888;` | `\ngeqslant`    | `&#10888;` | latexmath:[\ngeqslant]   | Greater-Than and Single-Line Not Equal To
+>| `\&#x2A95;` {bl} `\&#10901;` | `\eqslantless`  | `&#10901;` | latexmath:[\eqslantless] | Slanted Equal to or Less-Than
+>| `\&#x2A96;` {bl} `\&#10902;` | `\eqslantgtr`   | `&#10902;` | latexmath:[\eqslantgtr]  | Slanted Equal to or Greater-Than
 |===
 
 === Sets
