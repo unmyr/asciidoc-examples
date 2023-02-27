@@ -148,8 +148,8 @@ h| HTML Entity                h| Tex Alt         h| HTML    h| LaTeX            
 | `\&#x2253;` {bl}  `\&#8787;` | `\risingdotseq`  |  &#8787; | latexmath:[\risingdotseq]  | Image of or Approximately Equal To
 | `\&#x2254;` {bl}  `\&#8788;` | `:=`             |  &#8788; | latexmath:[:=]             | Colon Equals
 | `\&#x2255;` {bl}  `\&#8789;` | `=:`             |  &#8789; | latexmath:[=:]             | Equals Colon
-| `\&#x225C;` {bl}  `\&#8796;` |                  |  &#8796; |                            | Delta Equal To
-| `\&#x225D;` {bl}  `\&#8797;` |                  |  &#8797; |                            | Equal to By Definition
+| `\&#x225C;` {bl}  `\&#8796;` | `\overset{\rm \Delta}{=}` | &#8796; | latexmath:[\overset{\rm \Delta}{=}] | Delta Equal To
+| `\&#x225D;` {bl}  `\&#8797;` | `\overset{\rm def}{=}` | &#8797; | latexmath:[\overset{\rm def}{=}] | Equal to By Definition
 | `\&#x2260;` {bl}  `\&#8800;` | `\ne`            |  &#8800; | latexmath:[\ne]            | Not Equal To
 | `\&#x2261;` {bl}  `\&#8801;` | `\equiv`         |  &#8801; | latexmath:[\equiv]         | Identical To
 | `\&#x2262;` {bl}  `\&#8802;` | `\not\equiv`     |  &#8802; | latexmath:[\not\equiv]     | Not Identical To
