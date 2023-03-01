@@ -435,8 +435,122 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<style>
+pre.rouge table td { padding: 5px; }
+pre.rouge table pre { margin: 0; }
+pre.rouge, pre.rouge .w {
+  color: #24292f;
+  background-color: #f6f8fa;
+}
+pre.rouge .k, pre.rouge .kd, pre.rouge .kn, pre.rouge .kp, pre.rouge .kr, pre.rouge .kt, pre.rouge .kv {
+  color: #cf222e;
+}
+pre.rouge .gr {
+  color: #f6f8fa;
+}
+pre.rouge .gd {
+  color: #82071e;
+  background-color: #ffebe9;
+}
+pre.rouge .nb {
+  color: #953800;
+}
+pre.rouge .nc {
+  color: #953800;
+}
+pre.rouge .no {
+  color: #953800;
+}
+pre.rouge .nn {
+  color: #953800;
+}
+pre.rouge .sr {
+  color: #116329;
+}
+pre.rouge .na {
+  color: #116329;
+}
+pre.rouge .nt {
+  color: #116329;
+}
+pre.rouge .gi {
+  color: #116329;
+  background-color: #dafbe1;
+}
+pre.rouge .kc {
+  color: #0550ae;
+}
+pre.rouge .l, pre.rouge .ld, pre.rouge .m, pre.rouge .mb, pre.rouge .mf, pre.rouge .mh, pre.rouge .mi, pre.rouge .il, pre.rouge .mo, pre.rouge .mx {
+  color: #0550ae;
+}
+pre.rouge .sb {
+  color: #0550ae;
+}
+pre.rouge .bp {
+  color: #0550ae;
+}
+pre.rouge .ne {
+  color: #0550ae;
+}
+pre.rouge .nl {
+  color: #0550ae;
+}
+pre.rouge .py {
+  color: #0550ae;
+}
+pre.rouge .nv, pre.rouge .vc, pre.rouge .vg, pre.rouge .vi, pre.rouge .vm {
+  color: #0550ae;
+}
+pre.rouge .o, pre.rouge .ow {
+  color: #0550ae;
+}
+pre.rouge .gh {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .s, pre.rouge .sa, pre.rouge .sc, pre.rouge .dl, pre.rouge .sd, pre.rouge .s2, pre.rouge .se, pre.rouge .sh, pre.rouge .sx, pre.rouge .s1, pre.rouge .ss {
+  color: #0a3069;
+}
+pre.rouge .nd {
+  color: #8250df;
+}
+pre.rouge .nf, pre.rouge .fm {
+  color: #8250df;
+}
+pre.rouge .err {
+  color: #f6f8fa;
+  background-color: #82071e;
+}
+pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cm, pre.rouge .cp, pre.rouge .cpf, pre.rouge .c1, pre.rouge .cs {
+  color: #6e7781;
+}
+pre.rouge .gl {
+  color: #6e7781;
+}
+pre.rouge .gt {
+  color: #6e7781;
+}
+pre.rouge .ni {
+  color: #24292f;
+}
+pre.rouge .si {
+  color: #24292f;
+}
+pre.rouge .ge {
+  color: #24292f;
+  font-style: italic;
+}
+pre.rouge .gs {
+  color: #24292f;
+  font-weight: bold;
+}
+</style>
 </head>
-<body class="article toc2 toc-right">
+<body class="article toc2 toc-left">
 <div id="header">
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -445,8 +559,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_brackets">Brackets</a></li>
 <li><a href="#_operation_symbols">Operation symbols</a></li>
-<li><a href="#_relation_symbols">Relation symbols</a></li>
+<li><a href="#_relation_symbols">Relation symbols</a>
+<ul class="sectlevel3">
+<li><a href="#_equals_sign">Equals sign</a></li>
 <li><a href="#_inequality">Inequality</a></li>
+<li><a href="#_others">others</a></li>
+</ul>
+</li>
 <li><a href="#_sets">Sets</a></li>
 <li><a href="#_logical_symbols">Logical symbols</a></li>
 <li><a href="#_sum_class_symbol">Sum-class symbol</a></li>
@@ -472,7 +591,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><a href="https://qiita.com/minfuk/items/0bd1ffa20b44759d486e">TeXの数式記号とUnicodeのマッピング（途中） - Qiita</a></p>
 </li>
 <li>
+<p>U+2200</p>
+<div class="ulist">
+<ul>
+<li>
 <p><a href="https://www.compart.com/en/unicode/block/U+2200" target="_blank" rel="noopener">Unicode Block “Mathematical Operators”</a></p>
+</li>
+<li>
+<p><a href="https://www.fileformat.info/info/unicode/block/mathematical_operators/list.htm">Unicode Characters in the Mathematical Operators Block</a></p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p><a href="https://www.compart.com/en/unicode/block/U+25A0" target="_blank" rel="noopener">Unicode Block “Geometric Shapes”</a></p>
@@ -1132,7 +1261,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>\(\ltimes\)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Left Normal Factor Semidirect PRODUCT</p>
+<p>Left Normal Factor Semidirect Product</p>
 </div></div></td>
 </tr>
 <tr>
@@ -1149,7 +1278,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>\(\rtimes\)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Right Normal Factor Semidirect PRODUCT</p>
+<p>Right Normal Factor Semidirect Product</p>
 </div></div></td>
 </tr>
 <tr>
@@ -1259,6 +1388,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect2">
 <h3 id="_relation_symbols">Relation symbols</h3>
+<div class="sect3">
+<h4 id="_equals_sign">Equals sign</h4>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 3. Equals sign</caption>
 <colgroup>
@@ -1320,6 +1451,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Fullwidth Equals Sign</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2260;</code> <br>  <code>&amp;#8800;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\ne</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>&#8800;</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\ne\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Not Equal To</p>
 </div></div></td>
 </tr>
 <tr>
@@ -1547,14 +1695,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x225C;</code> <br>  <code>&amp;#8796;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\overset{\rm \Delta}{=}</code></p>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="latex"><span class="k">\overset</span><span class="p">{</span><span class="k">\scriptscriptstyle\Delta</span><span class="p">}{</span>=<span class="p">}</span></code></pre>
+</div>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8796;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\overset{\rm \Delta}{=}\)</p>
+<p>\(\overset{\scriptscriptstyle\Delta}{=}\)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Delta Equal To</p>
@@ -1564,34 +1714,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x225D;</code> <br>  <code>&amp;#8797;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\overset{\rm def}{=}</code></p>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="latex"><span class="k">\overset</span><span class="p">{</span><span class="k">\scriptscriptstyle\rm</span> def<span class="p">}{</span>=<span class="p">}</span></code></pre>
+</div>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8797;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\overset{\rm def}{=}\)</p>
+<p>\(\overset{\scriptscriptstyle\rm def}{=}\)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Equal to By Definition</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2260;</code> <br>  <code>&amp;#8800;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\ne</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8800;</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\ne\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Not Equal To</p>
 </div></div></td>
 </tr>
 <tr>
@@ -1638,28 +1773,32 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_inequality">Inequality</h3>
+<div class="sect3">
+<h4 id="_inequality">Inequality</h4>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 4. Inequality</caption>
 <colgroup>
-<col style="width: 15.3846%;">
-<col style="width: 20.5128%;">
-<col style="width: 10.2564%;">
-<col style="width: 10.2564%;">
-<col style="width: 43.5898%;">
+<col style="width: 11.7647%;">
+<col style="width: 15.6862%;">
+<col style="width: 13.7254%;">
+<col style="width: 7.8431%;">
+<col style="width: 9.8039%;">
+<col style="width: 7.8431%;">
+<col style="width: 33.3336%;">
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Type</p></th>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Rendered</p></th>
-<th class="tableblock halign-center valign-middle"></th>
+<th class="tableblock halign-center valign-middle" colspan="3"><p class="tableblock">Type</p></th>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Rendered</p></th>
+<th class="tableblock halign-left valign-top"></th>
 </tr>
 <tr>
 <th class="tableblock halign-center valign-middle"><p class="tableblock">HTML Entity</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">AsciiMath</p></th>
 <th class="tableblock halign-center valign-middle"><p class="tableblock">HTML</p></th>
 <th class="tableblock halign-center valign-middle"><p class="tableblock">LaTeX</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">AsciiMath</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Character name</p></th>
 </tr>
 <tr>
@@ -1669,11 +1808,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>&lt;</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&lt;</code></p>
+</div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&lt;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(&lt;\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$&lt;\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Less-Than Sign</p>
@@ -1686,11 +1831,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>&gt;</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&gt;</code></p>
+</div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&gt;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(&gt;\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$&gt;\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Greater-Than Sign</p>
@@ -1703,11 +1854,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\propto</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>prop</code></p>
+</div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8733;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\propto\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$prop\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Proportional To</p>
@@ -1720,11 +1877,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\le</code> or <code>\leq</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&lt;=</code></p>
+</div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8804;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\leq\)</p>
+<p>\(\leq\)<br> \(\leq\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$&lt;=\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Less-Than or Equal To</p>
@@ -1737,11 +1900,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\ge</code> or <code>\geq</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>&gt;=</code></p>
+</div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8805;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\geq\)</p>
+<p>\(\geq\)<br> \(\geq\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$&gt;=\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Greater-Than or Equal To</p>
@@ -1754,12 +1923,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\leqq</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8806;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\leqq\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Less-Than Over Equal To</p>
 </div></div></td>
@@ -1771,12 +1942,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\geqq</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8807;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\geqq\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Greater-Than Over Equal To</p>
 </div></div></td>
@@ -1788,12 +1961,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\ll</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8810;</p>
+<p>a &#8810; b</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\ll\)</p>
+<p>\(a \ll b\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Much Less-Than</p>
 </div></div></td>
@@ -1805,12 +1980,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\gg</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8811;</p>
+<p>a &#8811; b</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\gg\)</p>
+<p>\(a \gg b\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Much Greater-Than</p>
 </div></div></td>
@@ -1822,12 +1999,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\not\lt</code> or <code>\nless</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8814;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\not\lt\), \(\nless\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Not Less-Than</p>
 </div></div></td>
@@ -1839,12 +2018,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\not\gt</code> or <code>\ngtr</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8815;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\not\gt\), \(\ngtr\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Not Greater-Than</p>
 </div></div></td>
@@ -1856,12 +2037,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\nleq</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8816;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\nleq\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Neither Less-Than Nor Equal To</p>
 </div></div></td>
@@ -1873,12 +2056,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\ngeq</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8817;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\ngeq\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Neither Greater-Than Nor Equal To</p>
 </div></div></td>
@@ -1890,12 +2075,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\leqslant</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#10877;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\leqslant\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Less-Than or Slanted Equal To</p>
 </div></div></td>
@@ -1907,12 +2094,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\geqslant</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#10878;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\geqslant\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Greater-Than or Slanted Equal To</p>
 </div></div></td>
@@ -1924,12 +2113,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\nleqslant</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#10887;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\nleqslant\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Less-Than and Single-Line Not Equal To</p>
 </div></div></td>
@@ -1941,12 +2132,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\ngeqslant</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#10888;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\ngeqslant\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Greater-Than and Single-Line Not Equal To</p>
 </div></div></td>
@@ -1958,12 +2151,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\eqslantless</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#10901;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\eqslantless\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Slanted Equal to or Less-Than</p>
 </div></div></td>
@@ -1975,12 +2170,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\eqslantgtr</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#10902;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\eqslantgtr\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Slanted Equal to or Greater-Than</p>
 </div></div></td>
@@ -1988,76 +2185,208 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tbody>
 </table>
 </div>
-<div class="sect2">
-<h3 id="_sets">Sets</h3>
+<div class="sect3">
+<h4 id="_others">others</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 5. Sets</caption>
+<caption class="title">Table 5. Relation symbols - others</caption>
 <colgroup>
-<col style="width: 15.3846%;">
-<col style="width: 20.5128%;">
-<col style="width: 10.2564%;">
-<col style="width: 10.2564%;">
-<col style="width: 43.5898%;">
+<col style="width: 14.9253%;">
+<col style="width: 11.9402%;">
+<col style="width: 11.9402%;">
+<col style="width: 11.9402%;">
+<col style="width: 11.9402%;">
+<col style="width: 11.9402%;">
+<col style="width: 25.3737%;">
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Type</p></th>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Rendered</p></th>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Type</p></th>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Rendered</p></th>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">HTML Entity</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">TeX alt</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">AsciiMath</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">HTML</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">LaTeX</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">AsciiMath</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Character name</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>&amp;#x227A;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\prec</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-&lt;</code></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="big">&#8826;</span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\prec\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\$-&lt;\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Precedes</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>&amp;#x2AAF;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\preceq</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-&lt;=</code></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="big">&#10927;</span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\preceq\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\$-&lt;=\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Precedes Above Single-Line Equals Sign</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>&amp;#x227B;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\succ</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&gt;-</code></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="big">&#8827;</span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\succ\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\$&gt;-\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Succeeds</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><p class="tableblock"><code>&amp;#x2AB0;</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>\succeq</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&gt;-=</code></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="big">&#10928;</span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\succeq\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\$&gt;-=\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Succeeds Above Single-Line Equals Sign</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sets">Sets</h3>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 6. LaTeX</caption>
+<colgroup>
+<col style="width: 11.7647%;">
+<col style="width: 15.6862%;">
+<col style="width: 13.7254%;">
+<col style="width: 7.8431%;">
+<col style="width: 11.7647%;">
+<col style="width: 7.8431%;">
+<col style="width: 31.3728%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-center valign-middle" colspan="3"><p class="tableblock">Type</p></th>
+<th class="tableblock halign-center valign-middle" colspan="3"><p class="tableblock">Rendered</p></th>
 <th class="tableblock halign-center valign-middle"></th>
 </tr>
 <tr>
 <th class="tableblock halign-center valign-middle"><p class="tableblock">HTML Entity</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">Tex Alt</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">AsciiMath</p></th>
 <th class="tableblock halign-center valign-middle"><p class="tableblock">HTML</p></th>
 <th class="tableblock halign-center valign-middle"><p class="tableblock">LaTeX</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">AsciiMath</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Character name</p></th>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2201;</code><br> <code>&amp;#8705;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\complement</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8705;</p>
+<p><code>sf "c"</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\complement\)</p>
+<p><em>A</em><sup>&#8705;</sup></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(A^\complement\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$A^(sf "c")\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Complement</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<td class="tableblock halign-right valign-middle" rowspan="2"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2205;</code><br> <code>&amp;#8709;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\emptyset</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><code>O/</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle" rowspan="2"><div class="content"><div class="paragraph">
 <p>&#8709;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\emptyset\)</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$O/\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top" rowspan="2"><div class="content"><div class="paragraph">
 <p>Empty Set</p>
 </div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><code>\varnothing</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\varnothing\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2229;</code><br> <code>&amp;#8745;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\cap</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8745;</p>
+<p><code>nn</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8745;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\cap\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$nn\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Intersection</p>
@@ -2065,16 +2394,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x222a;</code><br> <code>&amp;#8746;</code></p>
+<p><code>&amp;#x222A;</code><br> <code>&amp;#8746;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\cup</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8746;</p>
+<p><code>uu</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8746;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\cup\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$uu\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Union</p>
@@ -2084,14 +2419,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2208;</code><br> <code>&amp;#8712;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\in</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8712;</p>
+<p><code>in</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8712;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\in\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$in\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Element Of</p>
@@ -2101,14 +2442,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2209;</code><br> <code>&amp;#8713;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\notin</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8713;</p>
+<p><code>!in</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8713;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\notin\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$!in\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Not An Element Of</p>
@@ -2116,17 +2463,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x220b;</code><br> <code>&amp;#8715;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\ni</code></p>
+<p><code>&amp;#x220B;</code><br> <code>&amp;#8715;</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8715;</p>
+<p><code>\ni</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8715;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\ni\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Contains as Member</p>
 </div></div></td>
@@ -2135,48 +2484,76 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x220C;</code><br> <code>&amp;#8716;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\not\ni</code></p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8716;</p>
+<p><span class="big">&#8716;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\not\ni\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Does Not Contain as Member</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><a href="http://www.fileformat.info/info/unicode/char/2216/index.htm"><code>&amp;#x2216;</code></a><br> <code>&amp;#8726;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\backslash</code> or <code>\setminus</code></p>
+<td class="tableblock halign-right valign-middle" rowspan="2"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2216;</code><br> <code>&amp;#8726;</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8726;</p>
+<p><code>\backslash</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\backslash\), \(\setminus\)</p>
+<p>X\\A<br> <code>backslash</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle" rowspan="2"><div class="content"><div class="paragraph">
+<p>X&#8726;A</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(X \backslash A\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$X\\A\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top" rowspan="2"><div class="content"><div class="paragraph">
 <p>Set Minus</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><code>\setminus</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><code>setminus</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(X \setminus A\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$X setminus A\$</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2282;</code><br> <code>&amp;#8834;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\subset</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8834;</p>
+<p><code>sub</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8834;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\subset\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$sub\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Subset Of</p>
@@ -2186,14 +2563,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2283;</code><br> <code>&amp;#8835;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\supset</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8835;</p>
+<p><code>sup</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8835;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\supset\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$sup\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Superset Of</p>
@@ -2203,14 +2586,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2284;</code><br> <code>&amp;#8836;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\not\subset</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8836;</p>
+<p><code>cancel(subset)</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8836;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\not\subset\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$cancel(subset)\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Not A Subset Of</p>
@@ -2220,14 +2609,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2285;</code><br> <code>&amp;#8837;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\not\supset</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8837;</p>
+<p><code>cancel(supset)</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8837;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\not\supset\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$cancel(supset)\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Not A Superset Of</p>
@@ -2237,14 +2632,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2286;</code><br> <code>&amp;#8838;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\subseteq</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8838;</p>
+<p><code>sube</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8838;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\subseteq\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$sube\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Subset of or Equal To</p>
@@ -2254,14 +2655,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2287;</code><br> <code>&amp;#8839;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\supseteq</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8839;</p>
+<p><code>supe</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8839;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\supseteq\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$supe\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Superset of or Equal To</p>
@@ -2271,15 +2678,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2288;</code><br> <code>&amp;#8840;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\nsubseteq</code></p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8840;</p>
+<p><span class="big">&#8840;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\nsubseteq\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Neither A Subset of Nor Equal To</p>
 </div></div></td>
@@ -2288,58 +2697,88 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2289;</code><br> <code>&amp;#8841;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\nsupseteq</code></p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8841;</p>
+<p><span class="big">&#8841;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\nsupseteq\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Neither A Superset of Nor Equal To</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x228a;</code><br> <code>&amp;#8842;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\subsetneq</code></p>
+<p><code>&amp;#x228A;</code><br> <code>&amp;#8842;</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8842;</p>
+<p><code>\subsetneq</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8842;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\subsetneq\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Subset of with Not Equal To</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x228b;</code><br> <code>&amp;#8843;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\supsetneq</code></p>
+<p><code>&amp;#x228B;</code><br> <code>&amp;#8843;</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#8843;</p>
+<p><code>\supsetneq</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8843;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\supsetneq\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Superset of with Not Equal To</p>
 </div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 7. Triangle</caption>
+<colgroup>
+<col style="width: 15%;">
+<col style="width: 20%;">
+<col style="width: 10%;">
+<col style="width: 12.5%;">
+<col style="width: 42.5%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Type</p></th>
+<th class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Rendered</p></th>
+<th class="tableblock halign-center valign-middle"></th>
+</tr>
+<tr>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">HTML Entity</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">Tex Alt</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">HTML</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">LaTeX</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Character name</p></th>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x22b2;</code><br> <code>&amp;#8882;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\triangleleft</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
@@ -2356,7 +2795,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x22b3;</code><br> <code>&amp;#8883;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\triangleright</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
@@ -2373,7 +2812,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x22b4;</code><br> <code>&amp;#8884;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8884;</p>
 </div></div></td>
@@ -2386,7 +2825,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
 <p><code>&amp;#x22b5;</code><br> <code>&amp;#8885;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8885;</p>
 </div></div></td>
@@ -2397,9 +2836,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><a href="http://www.fileformat.info/info/unicode/char/25C1/index.htm"><code>&amp;#x25C1;</code></a><br> <code>&amp;#9665;</code></p>
+<p><a href="https://www.compart.com/en/unicode/U+25C1" target="_blank" rel="noopener"><code>&amp;#x25C1;</code></a><br> <code>&amp;#9665;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#9665;</p>
 </div></div></td>
@@ -2410,9 +2849,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><a href="http://www.fileformat.info/info/unicode/char/25C3/index.htm"><code>&amp;#x25C3;</code></a><br> <code>&amp;#9667;</code></p>
+<p><a href="https://www.compart.com/en/unicode/U+25C3" target="_blank" rel="noopener"><code>&amp;#x25C3;</code></a><br> <code>&amp;#9667;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\triangleleft</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
@@ -2427,9 +2866,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><a href="http://www.fileformat.info/info/unicode/char/25B7/index.htm"><code>&amp;#x25B7;</code></a><br> <code>&amp;#9655;</code></p>
+<p><a href="https://www.compart.com/en/unicode/U+25B7" target="_blank" rel="noopener"><code>&amp;#x25B7;</code></a><br> <code>&amp;#9655;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#9655;</p>
 </div></div></td>
@@ -2440,9 +2879,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><a href="http://www.fileformat.info/info/unicode/char/25B9/index.htm"><code>&amp;#x25B9;</code></a><br> <code>&amp;#9657;</code></p>
+<p><a href="https://www.compart.com/en/unicode/U+25B9" target="_blank" rel="noopener"><code>&amp;#x25B9;</code></a><br> <code>&amp;#9657;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\triangleright</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
@@ -2461,7 +2900,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_logical_symbols">Logical symbols</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 6. Logical symbols</caption>
+<caption class="title">Table 8. Logical symbols</caption>
 <colgroup>
 <col style="width: 15.3846%;">
 <col style="width: 20.5128%;">
@@ -2561,7 +3000,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>&#8707;</p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\forall\)</p>
+<p>\(\exists\)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>There Exists</p>
@@ -2708,7 +3147,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><code>&amp;#x27FA;</code> <br> <code>&amp;#10234;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\iff</code> or <code>\Longleftrightarrow</code></p>
+<p><code>\iff</code><br> <code>\Longleftrightarrow</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#10234;</p>
@@ -2726,33 +3165,40 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_sum_class_symbol">Sum-class symbol</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 7. Sum-class symbol</caption>
+<caption class="title">Table 9. Sum-class symbol</caption>
 <colgroup>
-<col style="width: 15.3846%;">
-<col style="width: 20.5128%;">
-<col style="width: 10.2564%;">
-<col style="width: 10.2564%;">
-<col style="width: 43.5898%;">
+<col style="width: 11.7647%;">
+<col style="width: 15.6862%;">
+<col style="width: 15.6862%;">
+<col style="width: 7.8431%;">
+<col style="width: 7.8431%;">
+<col style="width: 7.8431%;">
+<col style="width: 33.3336%;">
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock">Type</p></th>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Rendered</p></th>
-<th class="tableblock halign-center valign-middle"></th>
+<th class="tableblock halign-center valign-middle" colspan="3"><p class="tableblock">Type</p></th>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Rendered</p></th>
+<th class="tableblock halign-left valign-top"></th>
 </tr>
 <tr>
 <th class="tableblock halign-center valign-middle"><p class="tableblock">HTML Entity</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">AsciiMath</p></th>
 <th class="tableblock halign-center valign-middle"><p class="tableblock">HTML</p></th>
 <th class="tableblock halign-center valign-middle"><p class="tableblock">LaTeX</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">AsciiMath</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Character name</p></th>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x220F;</code> <br>  <code>&amp;#8719;</code></p>
+<p><code>&amp;#x220F;</code><br>  <code>&amp;#8719;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\prod</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>prod</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><span class="big">&#8719;</span></p>
@@ -2760,33 +3206,41 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\prod\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$prod\$</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>N-Ary Product</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2210;</code> <br>  <code>&amp;#8720;</code></p>
+<p><code>&amp;#x2210;</code><br>  <code>&amp;#8720;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\coprod</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><span class="big">&#8720;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\coprod\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>N-Ary Coproduct</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2211;</code> <br>  <code>&amp;#8721;</code></p>
+<p><code>&amp;#x2211;</code><br>  <code>&amp;#8721;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\sum</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>sum</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><span class="big">&#8721;</span></p>
@@ -2794,16 +3248,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\sum\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$sum\$</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>N-Ary Summation</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x222B;</code> <br>  <code>&amp;#8747;</code></p>
+<p><code>&amp;#x222B;</code><br>  <code>&amp;#8747;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\int</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>int</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><span class="big">&#8747;</span></p>
@@ -2811,16 +3271,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\int\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$int\$</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Integral</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x222E;</code> <br>  <code>&amp;#8750;</code></p>
+<p><code>&amp;#x222E;</code><br>  <code>&amp;#8750;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\oint</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>oint</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><span class="big">&#8750;</span></p>
@@ -2828,16 +3294,68 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\oint\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$oint\$</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Contour Integral</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x22C2;</code> <br>  <code>&amp;#8898;</code></p>
+<p><code>&amp;#x22C0;</code><br>  <code>&amp;#8896;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\bigwedge</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code><sup>^</sup></code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8896;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\bigwedge\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$^^^\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Logical And</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x22C1;</code><br>  <code>&amp;#8897;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\bigvee</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>vvv</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8897;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\bigvee\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$vvv\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Logical Or</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x22C2;</code><br>  <code>&amp;#8898;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\bigcap</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>nnn</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><span class="big">&#8898;</span></p>
@@ -2845,16 +3363,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\bigcap\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$nnn\$</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>N-Ary Intersection</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x22C3;</code> <br>  <code>&amp;#8899;</code></p>
+<p><code>&amp;#x22C3;</code><br>  <code>&amp;#8899;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\bigcup</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>uuu</code></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><span class="big">&#8899;</span></p>
@@ -2862,139 +3386,164 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\bigcup\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$uuu\$</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>N-Ary Union</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2A00;</code> <br> <code>&amp;#10752;</code></p>
+<p><code>&amp;#x2A00;</code><br> <code>&amp;#10752;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\bigodot</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><span class="big">&#10752;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\bigodot\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>N-Ary Circled Dot Operator</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2A01;</code> <br> <code>&amp;#10753;</code></p>
+<p><code>&amp;#x2A01;</code><br> <code>&amp;#10753;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\bigoplus</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><span class="big">&#10753;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\bigoplus\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>N-Ary Circled Plus Operator</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2A02;</code> <br> <code>&amp;#10754;</code></p>
+<p><code>&amp;#x2A02;</code><br> <code>&amp;#10754;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\bigotimes</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><span class="big">&#10754;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\bigotimes\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>N-Ary Circled Times Operator</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2A04;</code> <br> <code>&amp;#10756;</code></p>
+<p><code>&amp;#x2A04;</code><br> <code>&amp;#10756;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\biguplus</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><span class="big">&#10756;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\biguplus\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>N-Ary Union Operator with Plus</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2A06;</code> <br> <code>&amp;#10758;</code></p>
+<p><code>&amp;#x2A06;</code><br> <code>&amp;#10758;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\bigsqcup</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><span class="big">&#10758;</span></p>
 </div></div></td>
 <td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\bigsqcup\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>N-Ary Square Union Operator</p>
 </div></div></td>
 </tr>
 </tbody>
 </table>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://latex.wikia.org/wiki/Sum-class_symbol">Sum-class symbol | LaTeX Wiki | FANDOM powered by Wikia</a></p>
+</li>
+</ul>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_geometric_symbols">Geometric Symbols</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 8. Geometric Symbols</caption>
+<caption class="title">Table 10. Geometric Symbols</caption>
 <colgroup>
-<col style="width: 15.625%;">
-<col style="width: 25%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 21.875%;">
+<col style="width: 13.8888%;">
+<col style="width: 22.2222%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 19.4446%;">
 </colgroup>
 <tbody>
 <tr>
 <th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Type</p></th>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Rendered</p></th>
-<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-center valign-middle" colspan="3"><p class="tableblock">Rendered</p></th>
+<th class="tableblock halign-center valign-middle"></th>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">HTML Entity</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">AsciiMath</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">HTML</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">LaTeX</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">Tex Alt</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">AsciiMath</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">HTML</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">LaTeX</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">AsciiMath</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Names</p></th>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2220;</code> <br> <code>&amp;#8736;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\angle</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>/_</p>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><code>/_</code><br> <code>angle</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8736;</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\angle\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$/_\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Angle</p>
@@ -3004,16 +3553,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2221;</code> <br> <code>&amp;#8737;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\measuredangle</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8737;</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\measuredangle\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Measured Angle</p>
 </div></div></td>
@@ -3022,16 +3572,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2222;</code> <br> <code>&amp;#8738;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\sphericalangle</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8738;</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\sphericalangle\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Spherical Angle</p>
 </div></div></td>
@@ -3040,16 +3591,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
 <p><code>&amp;#x2225;</code> <br> <code>&amp;#8741;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\parallel</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8741;</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\parallel\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Parallel To</p>
 </div></div></td>
@@ -3058,17 +3610,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
 <p><code>&amp;#x22A5;</code> <br> <code>&amp;#8869;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\bot</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>_|_</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#8869;</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\bot\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$_|_\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Up Tack</p>
@@ -3078,14 +3633,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
 <p><code>&amp;#x25A1;</code> <br> <code>&amp;#9633;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>square</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#9633;</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$square\$</p>
+</div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>White Square</p>
 </div></div></td>
@@ -3094,17 +3652,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
 <p><code>&amp;#x25B3;</code> <br> <code>&amp;#9651;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\triangle</code> <br> <code>\bigtriangleup</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>/_\</p>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>triangle</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#9651;</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\triangle\) <br> \(\bigtriangleup\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$triangle\$</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>White Up-Pointing Triangle</p>
@@ -3114,16 +3675,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
 <p><code>&amp;#x25FB;</code> <br> <code>&amp;#9723;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\Box</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#9723;</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\Box\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>White Medium Square</p>
 </div></div></td>
@@ -3132,16 +3694,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
 <p><code>&amp;#x25BD;</code> <br> <code>&amp;#9661;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p><code>\bigtriangledown</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>&#9661;</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
 <p>\(\bigtriangledown\)</p>
 </div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>White Down-Pointing Triangle</p>
 </div></div></td>
@@ -3152,7 +3715,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_punctuation_and_ellipses">Punctuation and Ellipses</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 9. General punctuation</caption>
+<caption class="title">Table 11. General punctuation</caption>
 <colgroup>
 <col style="width: 13.9534%;">
 <col style="width: 16.279%;">
@@ -3275,7 +3838,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. Ellipses</caption>
+<caption class="title">Table 12. Ellipses</caption>
 <colgroup>
 <col style="width: 15.3846%;">
 <col style="width: 20.5128%;">
@@ -3406,7 +3969,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. Other Punctuation</caption>
+<caption class="title">Table 13. Other Punctuation</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 28.5714%;">
@@ -3481,7 +4044,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_misc">Misc</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. Math Symbol</caption>
+<caption class="title">Table 14. Math Symbol</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 28.5714%;">
@@ -3539,7 +4102,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 13. General Symbol</caption>
+<caption class="title">Table 15. General Symbol</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 28.5714%;">
@@ -3733,7 +4296,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 14. Other Symbols</caption>
+<caption class="title">Table 16. Other Symbols</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 28.5714%;">
@@ -3825,7 +4388,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 15. Misc</caption>
+<caption class="title">Table 17. Misc</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 28.5714%;">
@@ -3904,7 +4467,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-02-27 18:06:23 UTC
+Last updated 2023-03-01 12:01:17 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
