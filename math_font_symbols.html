@@ -557,8 +557,12 @@ pre.rouge .gs {
 <ul class="sectlevel1">
 <li><a href="#_mathematical_symbols">Mathematical symbols</a>
 <ul class="sectlevel2">
-<li><a href="#_brackets">Brackets</a></li>
-<li><a href="#_operation_symbols">Operation symbols</a></li>
+<li><a href="#_general_symbols">General Symbols</a></li>
+<li><a href="#_operation_symbols">Operation symbols</a>
+<ul class="sectlevel3">
+<li><a href="#_sum_class_symbol">Sum-class symbol</a></li>
+</ul>
+</li>
 <li><a href="#_relation_symbols">Relation symbols</a>
 <ul class="sectlevel3">
 <li><a href="#_equals_sign">Equals sign</a></li>
@@ -568,10 +572,15 @@ pre.rouge .gs {
 </li>
 <li><a href="#_sets">Sets</a></li>
 <li><a href="#_logical_symbols">Logical symbols</a></li>
-<li><a href="#_sum_class_symbol">Sum-class symbol</a></li>
 <li><a href="#_geometric_symbols">Geometric Symbols</a></li>
-<li><a href="#_punctuation_and_ellipses">Punctuation and Ellipses</a></li>
-<li><a href="#_misc">Misc</a></li>
+<li><a href="#_punctuation_and_ellipses">Punctuation and Ellipses</a>
+<ul class="sectlevel3">
+<li><a href="#_brackets">Brackets</a></li>
+<li><a href="#_ellipses">Ellipses</a></li>
+<li><a href="#_punctuation">Punctuation</a></li>
+<li><a href="#_other_punctuation">Other Punctuation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -615,184 +624,339 @@ pre.rouge .gs {
 <li>
 <p><a href="http://detexify.kirelabs.org/classify.html" target="_blank" rel="noopener">Detexify LaTeX handwritten symbol recognition</a></p>
 </li>
+<li>
+<p><a href="https://asciidoctor.org/docs/user-manual/#replacements">Replacements | Asciidoctor User Manual</a></p>
+</li>
 </ul>
 </div>
 <div class="sect2">
-<h3 id="_brackets">Brackets</h3>
+<h3 id="_general_symbols">General Symbols</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. General punctuation</caption>
+<caption class="title">Table 1. Math Symbol</caption>
 <colgroup>
-<col style="width: 15.3846%;">
-<col style="width: 23.0769%;">
-<col style="width: 7.6923%;">
-<col style="width: 7.6923%;">
-<col style="width: 46.1539%;">
+<col style="width: 10%;">
+<col style="width: 13.3333%;">
+<col style="width: 13.3333%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 33.3334%;">
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Type</p></th>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Rendered</p></th>
-<th class="tableblock halign-center valign-middle"></th>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Type</p></th>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Rendered</p></th>
+<th class="tableblock halign-left valign-top"></th>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">HTML Entity</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
-<th class="tableblock halign-center valign-middle"><p class="tableblock">HTML</p></th>
-<th class="tableblock halign-center valign-middle"><p class="tableblock">LaTeX</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Character name</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">AsciiMath</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">HTML</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">LaTeX</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">AsciiMath</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Names</p></th>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x28;</code> <br>    <code>&amp;#40;</code></p>
+<p><code>&amp;#x2118;</code> <br> <code>&amp;#8472;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\wp</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#40;</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Left Parenthesis</p>
+<p>&#8472;</p>
 </div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x29;</code> <br>    <code>&amp;#41;</code></p>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\wp\)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#41;</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Right Parenthesis</p>
+<p>Script Capital P (Weierstrass&#8217;s elliptic functions)</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x7D;</code> <br>   <code>&amp;#125;</code></p>
+<p><code>&amp;#x221e;</code> <br> <code>&amp;#8734;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\rbrace</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#125;</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\rbrace\)</p>
+<p><code>\infty</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Right Curly Bracket</p>
+<p><code>oo</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#8734;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\infty\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\$oo\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Infinity</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. General Symbol</caption>
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 13.3333%;">
+<col style="width: 13.3333%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Type</p></th>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Rendered</p></th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">HTML Entity</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">AsciiMath</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">HTML</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">LaTeX</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">AsciiMath</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Names</p></th>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x7B;</code> <br>   <code>&amp;#123;</code></p>
+<p><code>&amp;#xA7;</code><br> <code>&amp;#167;</code><br> <code>&amp;sect;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\lbrace</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#123;</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\lbrace\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Left Curly Bracket</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x5B;</code> <br>    <code>&amp;#91;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\lbrack</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#91;</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\lbrack\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Left Square Bracket</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x5D;</code> <br>    <code>&amp;#93;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\rbrack</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#93;</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\rbrack\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Right Square Bracket</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x27E8;</code><br> <code>&amp;#10216;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\langle</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#10216;</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\langle\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Mathematical Left Angle Bracket</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x27E9;</code><br> <code>&amp;#10217;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\rangle</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#10217;</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\rangle\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Mathematical Right Angle Bracket</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x3008;</code><br> <code>&amp;#12296;</code></p>
+<p><code>\S</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#12296;</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Left Angle Bracket</p>
+<p>&#167;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\S\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Section sign</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x3009;</code><br> <code>&amp;#12297;</code></p>
+<p><code>&amp;#x22C4;</code><br> <code>&amp;#8472;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\diamond</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>diamond</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#8900;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\diamond\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\$diamond\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Diamond Operator</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2660;</code><br> <code>&amp;#9824;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\spadesuit</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>&#12297;</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Right Angle Bracket</p>
+<p>&#9824;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\spadesuit\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Black Spade Suit</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2661;</code><br> <code>&amp;#9825;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\heartsuit</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#9825;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\heartsuit\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>White Heart Suit</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2662;</code><br> <code>&amp;#9826;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\diamondsuit</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#8900;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\diamondsuit\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>White Diamond Suit</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2663;</code><br> <code>&amp;#9827;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\clubsuit</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#9827;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\clubsuit\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Black Club Suit</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x266D;</code><br> <code>&amp;#9837;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\flat</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#9837;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\flat\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Music Flat Sign</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x266E;</code><br> <code>&amp;#9838;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\natural</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#9838;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\natural\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Music Natural Sign</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x266F;</code><br> <code>&amp;#9839;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\sharp</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#9839;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\sharp\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Music Sharp Sign</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2020;</code><br> <code>&amp;#8224;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\dagger</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#8224;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\dagger\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Dagger</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2021;</code><br> <code>&amp;#8225;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\ddagger</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#8225;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\ddagger\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Double Dagger</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x25B4;</code><br> <code>&amp;#9652;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\blacktriangle</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#9652;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\blacktriangle\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Black Up-Pointing Small Triangle</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -801,7 +965,7 @@ pre.rouge .gs {
 <div class="sect2">
 <h3 id="_operation_symbols">Operation symbols</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. Operation symbols</caption>
+<caption class="title">Table 3. Operation symbols</caption>
 <colgroup>
 <col style="width: 15.3846%;">
 <col style="width: 23.0769%;">
@@ -1232,6 +1396,23 @@ pre.rouge .gs {
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2605;</code> <br>  <code>&amp;#9733;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\bigstar</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#9733;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\bigstar\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Black Star</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
 <p><code>&amp;#x22C8;</code> <br>  <code>&amp;#8904;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -1385,13 +1566,349 @@ pre.rouge .gs {
 </tr>
 </tbody>
 </table>
+<div class="sect3">
+<h4 id="_sum_class_symbol">Sum-class symbol</h4>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. Sum-class symbol</caption>
+<colgroup>
+<col style="width: 11.7647%;">
+<col style="width: 15.6862%;">
+<col style="width: 15.6862%;">
+<col style="width: 7.8431%;">
+<col style="width: 7.8431%;">
+<col style="width: 7.8431%;">
+<col style="width: 33.3336%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-center valign-middle" colspan="3"><p class="tableblock">Type</p></th>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Rendered</p></th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+<tr>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">HTML Entity</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">AsciiMath</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">HTML</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">LaTeX</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">AsciiMath</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Character name</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x220F;</code><br>  <code>&amp;#8719;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\prod</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>prod</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8719;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\prod\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$prod\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Product</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2210;</code><br>  <code>&amp;#8720;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\coprod</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8720;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\coprod\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Coproduct</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2211;</code><br>  <code>&amp;#8721;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\sum</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>sum</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8721;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\sum\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$sum\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Summation</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x222B;</code><br>  <code>&amp;#8747;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\int</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>int</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8747;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\int\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$int\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Integral</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x222E;</code><br>  <code>&amp;#8750;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\oint</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>oint</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8750;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\oint\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$oint\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Contour Integral</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x22C0;</code><br>  <code>&amp;#8896;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\bigwedge</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code><sup>^</sup></code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8896;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\bigwedge\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$^^^\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Logical And</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x22C1;</code><br>  <code>&amp;#8897;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\bigvee</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>vvv</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8897;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\bigvee\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$vvv\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Logical Or</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x22C2;</code><br>  <code>&amp;#8898;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\bigcap</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>nnn</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8898;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\bigcap\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$nnn\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Intersection</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x22C3;</code><br>  <code>&amp;#8899;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\bigcup</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>uuu</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#8899;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\bigcup\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\$uuu\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Union</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2A00;</code><br> <code>&amp;#10752;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\bigodot</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#10752;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\bigodot\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Circled Dot Operator</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2A01;</code><br> <code>&amp;#10753;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\bigoplus</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#10753;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\bigoplus\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Circled Plus Operator</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2A02;</code><br> <code>&amp;#10754;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\bigotimes</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#10754;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\bigotimes\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Circled Times Operator</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2A04;</code><br> <code>&amp;#10756;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\biguplus</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#10756;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\biguplus\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Union Operator with Plus</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2A06;</code><br> <code>&amp;#10758;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\bigsqcup</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p><span class="big">&#10758;</span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\bigsqcup\)</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>N-Ary Square Union Operator</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://latex.wikia.org/wiki/Sum-class_symbol">Sum-class symbol | LaTeX Wiki | Fandom</a></p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_relation_symbols">Relation symbols</h3>
 <div class="sect3">
 <h4 id="_equals_sign">Equals sign</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. Equals sign</caption>
+<caption class="title">Table 5. Equals sign</caption>
 <colgroup>
 <col style="width: 15.7894%;">
 <col style="width: 23.6842%;">
@@ -1776,7 +2293,7 @@ pre.rouge .gs {
 <div class="sect3">
 <h4 id="_inequality">Inequality</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 4. Inequality</caption>
+<caption class="title">Table 6. Inequality</caption>
 <colgroup>
 <col style="width: 11.7647%;">
 <col style="width: 15.6862%;">
@@ -2188,7 +2705,7 @@ pre.rouge .gs {
 <div class="sect3">
 <h4 id="_others">others</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 5. Relation symbols - others</caption>
+<caption class="title">Table 7. Relation symbols - others</caption>
 <colgroup>
 <col style="width: 14.9253%;">
 <col style="width: 11.9402%;">
@@ -2288,7 +2805,7 @@ pre.rouge .gs {
 <div class="sect2">
 <h3 id="_sets">Sets</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 6. LaTeX</caption>
+<caption class="title">Table 8. LaTeX</caption>
 <colgroup>
 <col style="width: 11.7647%;">
 <col style="width: 15.6862%;">
@@ -2753,7 +3270,7 @@ pre.rouge .gs {
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 7. Triangle</caption>
+<caption class="title">Table 9. Triangle</caption>
 <colgroup>
 <col style="width: 15%;">
 <col style="width: 20%;">
@@ -2900,7 +3417,7 @@ pre.rouge .gs {
 <div class="sect2">
 <h3 id="_logical_symbols">Logical symbols</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 8. Logical symbols</caption>
+<caption class="title">Table 10. Logical symbols</caption>
 <colgroup>
 <col style="width: 15.3846%;">
 <col style="width: 20.5128%;">
@@ -3163,345 +3680,9 @@ pre.rouge .gs {
 </table>
 </div>
 <div class="sect2">
-<h3 id="_sum_class_symbol">Sum-class symbol</h3>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 9. Sum-class symbol</caption>
-<colgroup>
-<col style="width: 11.7647%;">
-<col style="width: 15.6862%;">
-<col style="width: 15.6862%;">
-<col style="width: 7.8431%;">
-<col style="width: 7.8431%;">
-<col style="width: 7.8431%;">
-<col style="width: 33.3336%;">
-</colgroup>
-<tbody>
-<tr>
-<th class="tableblock halign-center valign-middle" colspan="3"><p class="tableblock">Type</p></th>
-<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Rendered</p></th>
-<th class="tableblock halign-left valign-top"></th>
-</tr>
-<tr>
-<th class="tableblock halign-center valign-middle"><p class="tableblock">HTML Entity</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">AsciiMath</p></th>
-<th class="tableblock halign-center valign-middle"><p class="tableblock">HTML</p></th>
-<th class="tableblock halign-center valign-middle"><p class="tableblock">LaTeX</p></th>
-<th class="tableblock halign-center valign-middle"><p class="tableblock">AsciiMath</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Character name</p></th>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x220F;</code><br>  <code>&amp;#8719;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\prod</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>prod</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#8719;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\prod\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\$prod\$</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>N-Ary Product</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2210;</code><br>  <code>&amp;#8720;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\coprod</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#8720;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\coprod\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>N-Ary Coproduct</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2211;</code><br>  <code>&amp;#8721;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\sum</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>sum</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#8721;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\sum\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\$sum\$</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>N-Ary Summation</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x222B;</code><br>  <code>&amp;#8747;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\int</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>int</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#8747;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\int\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\$int\$</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Integral</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x222E;</code><br>  <code>&amp;#8750;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\oint</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>oint</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#8750;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\oint\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\$oint\$</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Contour Integral</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x22C0;</code><br>  <code>&amp;#8896;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\bigwedge</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code><sup>^</sup></code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#8896;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\bigwedge\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\$^^^\$</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>N-Ary Logical And</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x22C1;</code><br>  <code>&amp;#8897;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\bigvee</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>vvv</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#8897;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\bigvee\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\$vvv\$</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>N-Ary Logical Or</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x22C2;</code><br>  <code>&amp;#8898;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\bigcap</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>nnn</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#8898;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\bigcap\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\$nnn\$</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>N-Ary Intersection</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x22C3;</code><br>  <code>&amp;#8899;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\bigcup</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>uuu</code></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#8899;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\bigcup\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\$uuu\$</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>N-Ary Union</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2A00;</code><br> <code>&amp;#10752;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\bigodot</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#10752;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\bigodot\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>N-Ary Circled Dot Operator</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2A01;</code><br> <code>&amp;#10753;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\bigoplus</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#10753;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\bigoplus\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>N-Ary Circled Plus Operator</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2A02;</code><br> <code>&amp;#10754;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\bigotimes</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#10754;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\bigotimes\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>N-Ary Circled Times Operator</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2A04;</code><br> <code>&amp;#10756;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\biguplus</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#10756;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\biguplus\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>N-Ary Union Operator with Plus</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-middle"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2A06;</code><br> <code>&amp;#10758;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\bigsqcup</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p><span class="big">&#10758;</span></p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
-<p>\(\bigsqcup\)</p>
-</div></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>N-Ary Square Union Operator</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://latex.wikia.org/wiki/Sum-class_symbol">Sum-class symbol | LaTeX Wiki | FANDOM powered by Wikia</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
 <h3 id="_geometric_symbols">Geometric Symbols</h3>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. Geometric Symbols</caption>
+<caption class="title">Table 11. Geometric Symbols</caption>
 <colgroup>
 <col style="width: 13.8888%;">
 <col style="width: 22.2222%;">
@@ -3714,131 +3895,191 @@ pre.rouge .gs {
 </div>
 <div class="sect2">
 <h3 id="_punctuation_and_ellipses">Punctuation and Ellipses</h3>
+<div class="sect3">
+<h4 id="_brackets">Brackets</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. General punctuation</caption>
+<caption class="title">Table 12. Brackets</caption>
 <colgroup>
-<col style="width: 13.9534%;">
-<col style="width: 16.279%;">
-<col style="width: 9.3023%;">
-<col style="width: 9.3023%;">
-<col style="width: 32.5581%;">
-<col style="width: 18.6049%;">
+<col style="width: 15.3846%;">
+<col style="width: 23.0769%;">
+<col style="width: 7.6923%;">
+<col style="width: 7.6923%;">
+<col style="width: 46.1539%;">
 </colgroup>
 <tbody>
 <tr>
 <th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Type</p></th>
 <th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Rendered</p></th>
-<th class="tableblock halign-left valign-top"></th>
-<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-center valign-middle"></th>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">HTML Entity</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Tex alt</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">HTML</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">LaTeX</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">HTML</p></th>
+<th class="tableblock halign-center valign-middle"><p class="tableblock">LaTeX</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Character name</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Notes</p></th>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2B9;</code><br>   <code>&amp;#697;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\prime</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#697;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\prime\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Modifier Letter Prime</p>
+<p><code>&amp;#x28;</code> <br>    <code>&amp;#40;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2BA;</code><br>   <code>&amp;#698;</code></p>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>&#40;</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#698;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Modifier letter double prime</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2032;</code><br>  <code>&amp;#8242;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#8242;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Prime</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2033;</code><br>  <code>&amp;#8243;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#8243;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Double Prime</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>JIS名称: 分</p>
+<p>Left Parenthesis</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2034;</code><br>  <code>&amp;#8244;</code></p>
+<p><code>&amp;#x29;</code> <br>    <code>&amp;#41;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#8244;</p>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>&#41;</p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Triple Prime</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>JIS名称: 秒</p>
+<p>Right Parenthesis</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2035;</code><br>  <code>&amp;#8245;</code></p>
+<p><code>&amp;#x7D;</code> <br>   <code>&amp;#125;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\backprime</code></p>
+<p><code>\rbrace</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>&#125;</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\rbrace\)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#8245;</p>
+<p>Right Curly Bracket</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x7B;</code> <br>   <code>&amp;#123;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\backprime\)</p>
+<p><code>\lbrace</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>&#123;</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\lbrace\)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Reversed Prime</p>
+<p>Left Curly Bracket</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x5B;</code> <br>    <code>&amp;#91;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\lbrack</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>&#91;</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\lbrack\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Left Square Bracket</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x5D;</code> <br>    <code>&amp;#93;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\rbrack</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>&#93;</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\rbrack\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Right Square Bracket</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x27E8;</code><br> <code>&amp;#10216;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\langle</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>&#10216;</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\langle\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Mathematical Left Angle Bracket</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x27E9;</code><br> <code>&amp;#10217;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\rangle</code></p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>&#10217;</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>\(\rangle\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Mathematical Right Angle Bracket</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x3008;</code><br> <code>&amp;#12296;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>&#12296;</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Left Angle Bracket</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x3009;</code><br> <code>&amp;#12297;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"><div class="paragraph">
+<p>&#12297;</p>
+</div></div></td>
+<td class="tableblock halign-center valign-middle"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Right Angle Bracket</p>
+</div></div></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect3">
+<h4 id="_ellipses">Ellipses</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. Ellipses</caption>
+<caption class="title">Table 13. Ellipses</caption>
 <colgroup>
 <col style="width: 15.3846%;">
 <col style="width: 20.5128%;">
@@ -3968,61 +4209,137 @@ pre.rouge .gs {
 </tr>
 </tbody>
 </table>
+<div class="ulist">
+<div class="title">References</div>
+<ul>
+<li>
+<p><a href="https://ejje.weblio.jp/content/ellipses">ellipsesの意味・使い方 - 英和辞典 WEBLIO辞書</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_punctuation">Punctuation</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 13. Other Punctuation</caption>
+<caption class="title">Table 14. General punctuation</caption>
 <colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 28.5714%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 28.5715%;">
+<col style="width: 13.9534%;">
+<col style="width: 16.279%;">
+<col style="width: 9.3023%;">
+<col style="width: 9.3023%;">
+<col style="width: 32.5581%;">
+<col style="width: 18.6049%;">
 </colgroup>
 <tbody>
 <tr>
 <th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Type</p></th>
 <th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Rendered</p></th>
 <th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top"></th>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">HTML Entity</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Tex alt</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">HTML</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">LaTeX</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Names</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Character name</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Notes</p></th>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#xA7;</code> <br>  <code>&amp;#167;</code> <br> <code>&amp;sect;</code></p>
+<p><code>&amp;#x2B9;</code><br>   <code>&amp;#697;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\S</code></p>
+<p><code>\prime</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#167;</p>
+<p>&#697;</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\S\)</p>
+<p>\(\prime\)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Section sign</p>
+<p>Modifier Letter Prime</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2BA;</code><br>   <code>&amp;#698;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#698;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Modifier letter double prime</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2032;</code><br>  <code>&amp;#8242;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#8242;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Prime</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2033;</code><br>  <code>&amp;#8243;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#8243;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Double Prime</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>JIS名称: 分</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x25B4;</code> <br> <code>&amp;#9652;</code></p>
+<p><code>&amp;#x2034;</code><br>  <code>&amp;#8244;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#8244;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Triple Prime</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\blacktriangle</code></p>
+<p>JIS名称: 秒</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2035;</code><br>  <code>&amp;#8245;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#9652;</p>
+<p><code>\backprime</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\blacktriangle\)</p>
+<p>&#8245;</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Black Up-Pointing Small Triangle</p>
+<p>\(\backprime\)</p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Reversed Prime</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 </tr>
 </tbody>
 </table>
@@ -4032,391 +4349,47 @@ pre.rouge .gs {
 <li>
 <p><a href="https://www.fileformat.info/info/unicode/block/greek_and_coptic/list.htm">Unicode Characters in the Greek and Coptic Block</a></p>
 </li>
-<li>
-<p><a href="https://ejje.weblio.jp/content/ellipses">ellipsesの意味・使い方 - 英和辞典 WEBLIO辞書</a></p>
-</li>
-<li>
-<p><a href="https://www.compart.com/en/unicode/category/Po">List of Unicode Characters of Category “Other Punctuation” - Compart</a></p>
-</li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_misc">Misc</h3>
+<div class="sect3">
+<h4 id="_other_punctuation">Other Punctuation</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 14. Math Symbol</caption>
+<caption class="title">Table 15. Other Punctuation</caption>
 <colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 28.5714%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 28.5715%;">
+<col style="width: 10%;">
+<col style="width: 13.3333%;">
+<col style="width: 13.3333%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 33.3334%;">
 </colgroup>
 <tbody>
 <tr>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Type</p></th>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Rendered</p></th>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Type</p></th>
+<th class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">Rendered</p></th>
 <th class="tableblock halign-left valign-top"></th>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-top"><p class="tableblock">HTML Entity</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">AsciiMath</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">HTML</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">LaTeX</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">AsciiMath</p></th>
 <th class="tableblock halign-left valign-top"><p class="tableblock">Names</p></th>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2118;</code> <br> <code>&amp;#8472;</code></p>
+<p><code>&amp;#x5c;</code><br> <code>&amp;#92;</code></p>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\wp</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#8472;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\wp\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Script Capital P (Weierstrass&#8217;s elliptic functions)</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x221e;</code> <br> <code>&amp;#8734;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\infty</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#8734;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\infty\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Infinity</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 15. General Symbol</caption>
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 28.5714%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 28.5715%;">
-</colgroup>
-<tbody>
-<tr>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Type</p></th>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Rendered</p></th>
-<th class="tableblock halign-left valign-top"></th>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">HTML Entity</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">HTML</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">LaTeX</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Names</p></th>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x22C4;</code> <br> <code>&amp;#8472;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\diamond</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#8900;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\diamond\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Diamond Operator</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2660;</code> <br> <code>&amp;#9824;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\spadesuit</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#9824;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\spadesuit\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Black Spade Suit</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2661;</code> <br> <code>&amp;#9825;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\heartsuit</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#9825;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\heartsuit\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>White Heart Suit</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2662;</code> <br> <code>&amp;#9826;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\diamondsuit</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#8900;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\diamondsuit\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>White Diamond Suit</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2663;</code> <br> <code>&amp;#9827;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\clubsuit</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#9827;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\clubsuit\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Black Club Suit</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x266D;</code> <br> <code>&amp;#9837;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\flat</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#9837;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\flat\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Music Flat Sign</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x266E;</code> <br> <code>&amp;#9838;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\natural</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#9838;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\natural\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Music Natural Sign</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x266F;</code> <br> <code>&amp;#9839;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\sharp</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#9839;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\sharp\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Music Sharp Sign</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2020;</code> <br> <code>&amp;#8224;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\dagger</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#8224;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\dagger\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Dagger</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2021;</code> <br> <code>&amp;#8225;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\ddagger</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#8225;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\ddagger\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Double Dagger</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 16. Other Symbols</caption>
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 28.5714%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 28.5715%;">
-</colgroup>
-<tbody>
-<tr>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Type</p></th>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Rendered</p></th>
-<th class="tableblock halign-left valign-top"></th>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">HTML Entity</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">HTML</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">LaTeX</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Names</p></th>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2322;</code> <br> <code>&amp;#8994;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\frown</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#8994;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\frown\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Frown</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2323;</code> <br> <code>&amp;#8995;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\smile</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#8995;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\smile\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Smile</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2572;</code> <br> <code>&amp;#9586;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\diagdown</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#9586;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\diagdown\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Box Drawings Light Diagonal Upper Left to Lower Right</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2605;</code> <br> <code>&amp;#9733;</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><code>\bigstar</code></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>&#9733;</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>\(\bigstar\)</p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Black Star</p>
-</div></div></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 17. Misc</caption>
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 28.5714%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 28.5715%;">
-</colgroup>
-<tbody>
-<tr>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Type</p></th>
-<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Rendered</p></th>
-<th class="tableblock halign-left valign-top"></th>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-top"><p class="tableblock">HTML Entity</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Tex Alt</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">HTML</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">LaTeX</p></th>
-<th class="tableblock halign-left valign-top"><p class="tableblock">Names</p></th>
-</tr>
-<tr>
-<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x5c;</code> <br> <code>&amp;#92;</code></p>
-</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>&#92;</p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Reverse Solidus</p>
@@ -4424,10 +4397,13 @@ pre.rouge .gs {
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x2216;</code> <br> <code>&amp;#8726;</code></p>
+<p><code>&amp;#x2216;</code><br> <code>&amp;#8726;</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><code>\backslash</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>backslash</code></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>&#8726;</p>
@@ -4436,28 +4412,95 @@ pre.rouge .gs {
 <p>\(\backslash\)</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\$backslash\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Set Minus</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
-<p><code>&amp;#x5F;</code> <br> <code>&amp;#95;</code></p>
+<p><code>&amp;#x5F;</code><br> <code>&amp;#95;</code></p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>&#95;</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>Low Line</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2572;</code><br> <code>&amp;#9586;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\diagdown</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#9586;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\diagdown\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Box Drawings Light Diagonal Upper Left to Lower Right</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2322;</code><br> <code>&amp;#8994;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\frown</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>frown</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#8994;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\frown\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\$frown\$</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Frown</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-right valign-top"><div class="content"><div class="paragraph">
+<p><code>&amp;#x2323;</code><br> <code>&amp;#8995;</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>\smile</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>&#8995;</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>\(\smile\)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Smile</p>
 </div></div></td>
 </tr>
 </tbody>
 </table>
 <div class="ulist">
+<div class="title">References</div>
 <ul>
 <li>
-<p><a href="https://asciidoctor.org/docs/user-manual/#replacements">Replacements | Asciidoctor User Manual</a></p>
+<p><a href="https://www.compart.com/en/unicode/category/Po">List of Unicode Characters of Category “Other Punctuation” - Compart</a></p>
 </li>
 </ul>
 </div>
@@ -4465,9 +4508,10 @@ pre.rouge .gs {
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-03-01 12:01:17 UTC
+Last updated 2023-03-01 13:10:37 UTC
 </div>
 </div>
 <script type="text/x-mathjax-config">
