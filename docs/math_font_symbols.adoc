@@ -44,10 +44,6 @@ ifeval::["{backend}" == "pdf"]
 :vdots: :
 endif::[]
 
-ifndef::leveloffset[]
-:stem: latexmath
-endif::[]
-
 == Mathematical symbols
 
 .References
@@ -60,27 +56,39 @@ endif::[]
 * https://www.compart.com/en/unicode/block/U+27F0[Unicode Block “Supplemental Arrows-A”^]
 * https://www.compart.com/en/unicode/block/U+2A00[Unicode Block “Supplemental Mathematical Operators”^]
 * http://detexify.kirelabs.org/classify.html[Detexify LaTeX handwritten symbol recognition^]
+* https://asciidoctor.org/docs/user-manual/#replacements[Replacements | Asciidoctor User Manual]
 
-=== Brackets
+=== General Symbols
 
-.General punctuation
-[cols="2a,3a,^.^1a,^.^1a,6a" {table_options}]
+.Math Symbol
+[cols="3a,4a,4a,3a,3a,3a,10a" {table_options}]
 |===
-2+h| Type                               2+h| Rendered                          h|
-h| HTML Entity                 h| Tex Alt h| HTML      h| LaTeX                h| Character name
+3+h| Type                                            3+h| Rendered                                    h|
+h| HTML Entity                 h| Tex Alt h| AsciiMath h| HTML   h| LaTeX             h| AsciiMath    h| Names
 
+>|  `\&#x2118;` {bl} `\&#8472;` | `\wp`    |            | &#8472; | latexmath:[\wp]    |                | Script Capital P (Weierstrass's elliptic functions)
+>|  `\&#x221e;` {bl} `\&#8734;` | `\infty` | `oo`       | &#8734; | latexmath:[\infty] | asciimath:[oo] | Infinity
+|===
 
+.General Symbol
+[cols="3a,4a,4a,3a,3a,3a,10a" {table_options}]
+|===
+3+h| Type                                                 3+h| Rendered                                                     h|
+h| HTML Entity               h| Tex Alt        h| AsciiMath h| HTML      h| LaTeX                     h| AsciiMath          h| Names
 
->|  `\&#x28;` {bl}    `\&#40;` |           |     &#40; |                     | Left Parenthesis
->|  `\&#x29;` {bl}    `\&#41;` |           |     &#41; |                     | Right Parenthesis
->|  `\&#x7D;` {bl}   `\&#125;` | `\rbrace` |    &#125; | latexmath:[\rbrace] | Right Curly Bracket
->|  `\&#x7B;` {bl}   `\&#123;` | `\lbrace` |    &#123; | latexmath:[\lbrace] | Left Curly Bracket
->|  `\&#x5B;` {bl}    `\&#91;` | `\lbrack` |     &#91; | latexmath:[\lbrack] | Left Square Bracket
->|  `\&#x5D;` {bl}    `\&#93;` | `\rbrack` |     &#93; | latexmath:[\rbrack] | Right Square Bracket
->| `\&#x27E8;`{bl} `\&#10216;` | `\langle` |  &#10216; | latexmath:[\langle] | Mathematical Left Angle Bracket
->| `\&#x27E9;`{bl} `\&#10217;` | `\rangle` |  &#10217; | latexmath:[\rangle] | Mathematical Right Angle Bracket
->| `\&#x3008;`{bl} `\&#12296;` |           |  &#12296; |                     | Left Angle Bracket
->| `\&#x3009;`{bl} `\&#12297;` |           |  &#12297; |                     | Right Angle Bracket
+>| `\&#xA7;`{bl} `\&#167;`{bl} `\&sect;`
+                              | `\S`             |           |     &#167; | latexmath:[\S]             |                     | Section sign
+>| `\&#x22C4;`{bl} `\&#8472;` | `\diamond`       | `diamond` |    &#8900; | latexmath:[\diamond]       | asciimath:[diamond] | Diamond Operator
+>| `\&#x2660;`{bl} `\&#9824;` | `\spadesuit`     |           |    &#9824; | latexmath:[\spadesuit]     |                     | Black Spade Suit
+>| `\&#x2661;`{bl} `\&#9825;` | `\heartsuit`     |           |    &#9825; | latexmath:[\heartsuit]     |                     | White Heart Suit
+>| `\&#x2662;`{bl} `\&#9826;` | `\diamondsuit`   |           |    &#8900; | latexmath:[\diamondsuit]   |                     | White Diamond Suit
+>| `\&#x2663;`{bl} `\&#9827;` | `\clubsuit`      |           |    &#9827; | latexmath:[\clubsuit]      |                     | Black Club Suit
+>| `\&#x266D;`{bl} `\&#9837;` | `\flat`          |           |    &#9837; | latexmath:[\flat]          |                     | Music Flat Sign
+>| `\&#x266E;`{bl} `\&#9838;` | `\natural`       |           |    &#9838; | latexmath:[\natural]       |                     | Music Natural Sign
+>| `\&#x266F;`{bl} `\&#9839;` | `\sharp`         |           |    &#9839; | latexmath:[\sharp]         |                     | Music Sharp Sign
+>| `\&#x2020;`{bl} `\&#8224;` | `\dagger`        |           |    &#8224; | latexmath:[\dagger]        |                     | Dagger
+>| `\&#x2021;`{bl} `\&#8225;` | `\ddagger`       |           |    &#8225; | latexmath:[\ddagger]       |                     | Double Dagger
+>| `\&#x25B4;`{bl} `\&#9652;` | `\blacktriangle` |           |    &#9652; | latexmath:[\blacktriangle] |                     | Black Up-Pointing Small Triangle
 |===
 
 === Operation symbols
@@ -115,6 +123,7 @@ h| HTML Entity                 h| Tex Alt       h| HTML    h| LaTeX             
 >| `\&#x22A1;` {bl}  `\&#8865;` | `\boxdot`      |  &#8865; | latexmath:[\boxdot]      | Squared Dot Operator
 >| `\&#x22C5;` {bl}  `\&#8901;` | `\cdot`        |  &#8901; | latexmath:[\cdot]        | Dot Operator
 >| `\&#x22C6;` {bl}  `\&#8902;` | `\star`        |  &#8902; | latexmath:[\star]        | Star Operator
+>| `\&#x2605;` {bl}  `\&#9733;` | `\bigstar`     |  &#9733; | latexmath:[\bigstar]     | Black Star
 >| `\&#x22C8;` {bl}  `\&#8904;` | `\bowtie` or `\Join`
                                                  |  &#8904; | latexmath:[\Join]        | Bowtie
 >| `\&#x22C9;` {bl}  `\&#8905;` | `\ltimes`      |  &#8905; | latexmath:[\ltimes]      | Left Normal Factor Semidirect Product
@@ -128,6 +137,32 @@ h| HTML Entity                 h| Tex Alt       h| HTML    h| LaTeX             
 >| `\&#x2016;` {bl}  `\&#8214;` | `{backslash}{vbar}` or `\Arrowvert`
                                                  |  &#8214; | latexmath:[\Arrowvert]   | Double Vertical Line
 |===
+
+
+==== Sum-class symbol
+.Sum-class symbol
+[cols="^.^6a,8a,8a,^.^4a,^.^4a,^.^4a,17a" {table_options}]
+|===
+3+h| Type                                                3+h| Rendered                                                h|
+h| HTML Entity                h| Tex Alt     h| AsciiMath  h| HTML             h| LaTeX                 h| AsciiMath  h| Character name
+
+>| `\&#x220F;`{bl}  `\&#8719;` | `\prod`      | `prod`      |  [big]##&#8719;## | latexmath:[\prod]      | asciimath:[prod] | N-Ary Product
+>| `\&#x2210;`{bl}  `\&#8720;` | `\coprod`    |             |  [big]##&#8720;## | latexmath:[\coprod]    |                  | N-Ary Coproduct
+>| `\&#x2211;`{bl}  `\&#8721;` | `\sum`       | `sum`       |  [big]##&#8721;## | latexmath:[\sum]       | asciimath:[sum]  | N-Ary Summation
+>| `\&#x222B;`{bl}  `\&#8747;` | `\int`       | `int`       |  [big]##&#8747;## | latexmath:[\int]       | asciimath:[int]  | Integral
+>| `\&#x222E;`{bl}  `\&#8750;` | `\oint`      | `oint`      |  [big]##&#8750;## | latexmath:[\oint]      | asciimath:[oint] | Contour Integral
+>| `\&#x22C0;`{bl}  `\&#8896;` | `\bigwedge`  | `^^^`       |  [big]##&#8896;## | latexmath:[\bigwedge]  | asciimath:[^^^]  | N-Ary Logical And
+>| `\&#x22C1;`{bl}  `\&#8897;` | `\bigvee`    | `vvv`       |  [big]##&#8897;## | latexmath:[\bigvee]    | asciimath:[vvv]  | N-Ary Logical Or
+>| `\&#x22C2;`{bl}  `\&#8898;` | `\bigcap`    | `nnn`       |  [big]##&#8898;## | latexmath:[\bigcap]    | asciimath:[nnn]  | N-Ary Intersection
+>| `\&#x22C3;`{bl}  `\&#8899;` | `\bigcup`    | `uuu`       |  [big]##&#8899;## | latexmath:[\bigcup]    | asciimath:[uuu]  | N-Ary Union
+>| `\&#x2A00;`{bl} `\&#10752;` | `\bigodot`   |             | [big]##&#10752;## | latexmath:[\bigodot]   |                  | N-Ary Circled Dot Operator
+>| `\&#x2A01;`{bl} `\&#10753;` | `\bigoplus`  |             | [big]##&#10753;## | latexmath:[\bigoplus]  |                  | N-Ary Circled Plus Operator
+>| `\&#x2A02;`{bl} `\&#10754;` | `\bigotimes` |             | [big]##&#10754;## | latexmath:[\bigotimes] |                  | N-Ary Circled Times Operator
+>| `\&#x2A04;`{bl} `\&#10756;` | `\biguplus`  |             | [big]##&#10756;## | latexmath:[\biguplus]  |                  | N-Ary Union Operator with Plus
+>| `\&#x2A06;`{bl} `\&#10758;` | `\bigsqcup`  |             | [big]##&#10758;## | latexmath:[\bigsqcup]  |                  | N-Ary Square Union Operator
+|===
+
+* https://latex.wikia.org/wiki/Sum-class_symbol[Sum-class symbol | LaTeX Wiki | Fandom]
 
 === Relation symbols
 
@@ -303,31 +338,6 @@ h| HTML Entity                h| Tex Alt        h| HTML      h| LaTeX           
                                                  | &#10234; | latexmath:[\iff]           | Long Left Right Double Arrow
 |===
 
-=== Sum-class symbol
-.Sum-class symbol
-[cols="^.^6a,8a,8a,^.^4a,^.^4a,^.^4a,17a" {table_options}]
-|===
-3+h| Type                                                3+h| Rendered                                                h|
-h| HTML Entity                h| Tex Alt     h| AsciiMath  h| HTML             h| LaTeX                 h| AsciiMath  h| Character name
-
->| `\&#x220F;`{bl}  `\&#8719;` | `\prod`      | `prod`      |  [big]##&#8719;## | latexmath:[\prod]      | asciimath:[prod] | N-Ary Product
->| `\&#x2210;`{bl}  `\&#8720;` | `\coprod`    |             |  [big]##&#8720;## | latexmath:[\coprod]    |                  | N-Ary Coproduct
->| `\&#x2211;`{bl}  `\&#8721;` | `\sum`       | `sum`       |  [big]##&#8721;## | latexmath:[\sum]       | asciimath:[sum]  | N-Ary Summation
->| `\&#x222B;`{bl}  `\&#8747;` | `\int`       | `int`       |  [big]##&#8747;## | latexmath:[\int]       | asciimath:[int]  | Integral
->| `\&#x222E;`{bl}  `\&#8750;` | `\oint`      | `oint`      |  [big]##&#8750;## | latexmath:[\oint]      | asciimath:[oint] | Contour Integral
->| `\&#x22C0;`{bl}  `\&#8896;` | `\bigwedge`  | `^^^`       |  [big]##&#8896;## | latexmath:[\bigwedge]  | asciimath:[^^^]  | N-Ary Logical And
->| `\&#x22C1;`{bl}  `\&#8897;` | `\bigvee`    | `vvv`       |  [big]##&#8897;## | latexmath:[\bigvee]    | asciimath:[vvv]  | N-Ary Logical Or
->| `\&#x22C2;`{bl}  `\&#8898;` | `\bigcap`    | `nnn`       |  [big]##&#8898;## | latexmath:[\bigcap]    | asciimath:[nnn]  | N-Ary Intersection
->| `\&#x22C3;`{bl}  `\&#8899;` | `\bigcup`    | `uuu`       |  [big]##&#8899;## | latexmath:[\bigcup]    | asciimath:[uuu]  | N-Ary Union
->| `\&#x2A00;`{bl} `\&#10752;` | `\bigodot`   |             | [big]##&#10752;## | latexmath:[\bigodot]   |                  | N-Ary Circled Dot Operator
->| `\&#x2A01;`{bl} `\&#10753;` | `\bigoplus`  |             | [big]##&#10753;## | latexmath:[\bigoplus]  |                  | N-Ary Circled Plus Operator
->| `\&#x2A02;`{bl} `\&#10754;` | `\bigotimes` |             | [big]##&#10754;## | latexmath:[\bigotimes] |                  | N-Ary Circled Times Operator
->| `\&#x2A04;`{bl} `\&#10756;` | `\biguplus`  |             | [big]##&#10756;## | latexmath:[\biguplus]  |                  | N-Ary Union Operator with Plus
->| `\&#x2A06;`{bl} `\&#10758;` | `\bigsqcup`  |             | [big]##&#10758;## | latexmath:[\bigsqcup]  |                  | N-Ary Square Union Operator
-|===
-
-* https://latex.wikia.org/wiki/Sum-class_symbol[Sum-class symbol | LaTeX Wiki | FANDOM powered by Wikia]
-
 === Geometric Symbols
 .Geometric Symbols
 [cols="5a,^.^8a,^.^4a,^.^4a,^.^4a,^.^4a,7a" separator="¦" {table_options}]
@@ -350,19 +360,27 @@ h¦ HTML Entity                h¦ Tex Alt           h¦ AsciiMath       h¦ HTM
 
 === Punctuation and Ellipses
 
-.General punctuation
-[cols="6a,7a,4a,4a,14a,8a" {table_options}]
-|===
-2+h| Type                                  2+h| Rendered                         h|                    h|
-h| HTML Entity                h| Tex alt     h| HTML    h| LaTeX                 h| Character name              h| Notes
+==== Brackets
 
->|  `\&#x2B9;`{bl}   `\&#697;` | `\prime`     |   &#697; | latexmath:[\prime]     | Modifier Letter Prime        |
->|  `\&#x2BA;`{bl}   `\&#698;` |              |   &#698; |                        | Modifier letter double prime |
->| `\&#x2032;`{bl}  `\&#8242;` |              |  &#8242; |                        | Prime                        |
->| `\&#x2033;`{bl}  `\&#8243;` |              |  &#8243; |                        | Double Prime                 | JIS名称: 分
->| `\&#x2034;`{bl}  `\&#8244;` |              |  &#8244; |                        | Triple Prime                 | JIS名称: 秒
->| `\&#x2035;`{bl}  `\&#8245;` | `\backprime` |  &#8245; | latexmath:[\backprime] | Reversed Prime               |
+.Brackets
+[cols="2a,3a,^.^1a,^.^1a,6a" {table_options}]
 |===
+2+h| Type                               2+h| Rendered                          h|
+h| HTML Entity                 h| Tex Alt h| HTML      h| LaTeX                h| Character name
+
+>|  `\&#x28;` {bl}    `\&#40;` |           |     &#40; |                     | Left Parenthesis
+>|  `\&#x29;` {bl}    `\&#41;` |           |     &#41; |                     | Right Parenthesis
+>|  `\&#x7D;` {bl}   `\&#125;` | `\rbrace` |    &#125; | latexmath:[\rbrace] | Right Curly Bracket
+>|  `\&#x7B;` {bl}   `\&#123;` | `\lbrace` |    &#123; | latexmath:[\lbrace] | Left Curly Bracket
+>|  `\&#x5B;` {bl}    `\&#91;` | `\lbrack` |     &#91; | latexmath:[\lbrack] | Left Square Bracket
+>|  `\&#x5D;` {bl}    `\&#93;` | `\rbrack` |     &#93; | latexmath:[\rbrack] | Right Square Bracket
+>| `\&#x27E8;`{bl} `\&#10216;` | `\langle` |  &#10216; | latexmath:[\langle] | Mathematical Left Angle Bracket
+>| `\&#x27E9;`{bl} `\&#10217;` | `\rangle` |  &#10217; | latexmath:[\rangle] | Mathematical Right Angle Bracket
+>| `\&#x3008;`{bl} `\&#12296;` |           |  &#12296; |                     | Left Angle Bracket
+>| `\&#x3009;`{bl} `\&#12297;` |           |  &#12297; |                     | Right Angle Bracket
+|===
+
+==== Ellipses
 
 .Ellipses
 [cols="^.^6a,8a,^.^4a,^.^4a,17a" {table_options}]
@@ -379,70 +397,44 @@ h| HTML Entity                h| Tex Alt  h| HTML    h| LaTeX             h| Cha
 >| `\&#x2807;`{bl} `\&#10247;` |           | &#10247; |                    | Braille Pattern Dots-123
 |===
 
-.Other Punctuation
-[cols="1a,2a,1a,1a,2a" {table_options}]
-|===
-2+h| Type                                       2+h| Rendered                             h|
-h| HTML Entity                 h| Tex Alt         h| HTML    h| LaTeX                     h| Names
+.References
+* https://ejje.weblio.jp/content/ellipses[ellipsesの意味・使い方 - 英和辞典 WEBLIO辞書]
 
->| `\&#xA7;` {bl}  `\&#167;` {bl} `\&sect;`
-                                | `\S`             |  &#167;  | latexmath:[\S]             | Section sign
->| `\&#x25B4;` {bl} `\&#9652;`  | `\blacktriangle` |  &#9652; | latexmath:[\blacktriangle] | Black Up-Pointing Small Triangle
+==== Punctuation
+
+.General punctuation
+[cols="6a,7a,4a,4a,14a,8a" {table_options}]
 |===
+2+h| Type                                  2+h| Rendered                         h|                    h|
+h| HTML Entity                h| Tex alt     h| HTML    h| LaTeX                 h| Character name              h| Notes
+
+>|  `\&#x2B9;`{bl}   `\&#697;` | `\prime`     |   &#697; | latexmath:[\prime]     | Modifier Letter Prime        |
+>|  `\&#x2BA;`{bl}   `\&#698;` |              |   &#698; |                        | Modifier letter double prime |
+>| `\&#x2032;`{bl}  `\&#8242;` |              |  &#8242; |                        | Prime                        |
+>| `\&#x2033;`{bl}  `\&#8243;` |              |  &#8243; |                        | Double Prime                 | JIS名称: 分
+>| `\&#x2034;`{bl}  `\&#8244;` |              |  &#8244; |                        | Triple Prime                 | JIS名称: 秒
+>| `\&#x2035;`{bl}  `\&#8245;` | `\backprime` |  &#8245; | latexmath:[\backprime] | Reversed Prime               |
+|===
+
 
 .References
 * https://www.fileformat.info/info/unicode/block/greek_and_coptic/list.htm[Unicode Characters in the Greek and Coptic Block]
-* https://ejje.weblio.jp/content/ellipses[ellipsesの意味・使い方 - 英和辞典 WEBLIO辞書]
+
+==== Other Punctuation
+
+.Other Punctuation
+[cols="3a,4a,4a,3a,3a,3a,10a" {table_options}]
+|===
+3+h| Type                                                  3+h| Rendered                                                       h|
+h| HTML Entity               h| Tex Alt        h| AsciiMath  h| HTML      h| LaTeX                     h| AsciiMath            h| Names
+
+>|   `\&#x5c;`{bl} `\&#92;`   |                 |             |      &#92; |                            |                       | Reverse Solidus
+>| `\&#x2216;`{bl} `\&#8726;` | `\backslash`    | `backslash` |    &#8726; | latexmath:[\backslash]     | asciimath:[backslash] | Set Minus
+>|   `\&#x5F;`{bl} `\&#95;`   |                 |             |      &#95; |                            |                       | Low Line
+>| `\&#x2572;`{bl} `\&#9586;` | `\diagdown`     |             |    &#9586; | latexmath:[\diagdown]      |                       | Box Drawings Light Diagonal Upper Left to Lower Right
+>| `\&#x2322;`{bl} `\&#8994;` | `\frown`        | `frown`     |    &#8994; | latexmath:[\frown]         | asciimath:[frown]     | Frown
+>| `\&#x2323;`{bl} `\&#8995;` | `\smile`        |             |    &#8995; | latexmath:[\smile]         |                       | Smile
+|===
+
+.References
 * https://www.compart.com/en/unicode/category/Po[List of Unicode Characters of Category “Other Punctuation” - Compart]
-
-=== Misc
-
-.Math Symbol
-[cols="1a,2a,1a,1a,2a" {table_options}]
-|===
-2+h| Type                               2+h| Rendered                     h|
-h| HTML Entity                 h| Tex Alt h| HTML    h| LaTeX             h| Names
-
->|  `\&#x2118;` {bl} `\&#8472;` | `\wp`    |  &#8472; | latexmath:[\wp]    | Script Capital P (Weierstrass's elliptic functions)
->|  `\&#x221e;` {bl} `\&#8734;` | `\infty` |  &#8734; | latexmath:[\infty] | Infinity
-|===
-
-.General Symbol
-[cols="1a,2a,1a,1a,2a" {table_options}]
-|===
-2+h| Type                                     2+h| Rendered                             h|
-h| HTML Entity                 h| Tex Alt       h| HTML      h| LaTeX                   h| Names
->|  `\&#x22C4;` {bl} `\&#8472;` | `\diamond`     |    &#8900; | latexmath:[\diamond]     | Diamond Operator
->|  `\&#x2660;` {bl} `\&#9824;` | `\spadesuit`   |    &#9824; | latexmath:[\spadesuit]   | Black Spade Suit
->|  `\&#x2661;` {bl} `\&#9825;` | `\heartsuit`   |    &#9825; | latexmath:[\heartsuit]   | White Heart Suit
->|  `\&#x2662;` {bl} `\&#9826;` | `\diamondsuit` |    &#8900; | latexmath:[\diamondsuit] | White Diamond Suit
->|  `\&#x2663;` {bl} `\&#9827;` | `\clubsuit`    |    &#9827; | latexmath:[\clubsuit]    | Black Club Suit
->|  `\&#x266D;` {bl} `\&#9837;` | `\flat`        |    &#9837; | latexmath:[\flat]        | Music Flat Sign
->|  `\&#x266E;` {bl} `\&#9838;` | `\natural`     |    &#9838; | latexmath:[\natural]     | Music Natural Sign
->|  `\&#x266F;` {bl} `\&#9839;` | `\sharp`       |    &#9839; | latexmath:[\sharp]       | Music Sharp Sign
->|  `\&#x2020;` {bl} `\&#8224;` | `\dagger`      |    &#8224; | latexmath:[\dagger]      | Dagger
->|  `\&#x2021;` {bl} `\&#8225;` | `\ddagger`     |    &#8225; | latexmath:[\ddagger]     | Double Dagger
-|===
-
-.Other Symbols
-[cols="1a,2a,1a,1a,2a" {table_options}]
-|===
-2+h| Type                                  2+h| Rendered                        h|
-h| HTML Entity                 h| Tex Alt    h| HTML    h| LaTeX                h| Names
-
->|  `\&#x2322;` {bl} `\&#8994;` | `\frown`    |  &#8994; | latexmath:[\frown]    | Frown
->|  `\&#x2323;` {bl} `\&#8995;` | `\smile`    |  &#8995; | latexmath:[\smile]    | Smile
->|  `\&#x2572;` {bl} `\&#9586;` | `\diagdown` |  &#9586; | latexmath:[\diagdown] | Box Drawings Light Diagonal Upper Left to Lower Right
->|  `\&#x2605;` {bl} `\&#9733;` | `\bigstar`  |  &#9733; | latexmath:[\bigstar]  | Black Star
-|===
-
-.Misc
-[cols="1a,2a,1a,1a,2a" {table_options}]
-|===
-2+h| Type                                   2+h| Rendered                         h|
-h| HTML Entity                 h| Tex Alt     h| HTML    h| LaTeX                 h| Names
->|    `\&#x5c;` {bl} `\&#92;`   |              |    &#92; |                        | Reverse Solidus
->|  `\&#x2216;` {bl} `\&#8726;` | `\backslash` |  &#8726; | latexmath:[\backslash] | Set Minus
->|    `\&#x5F;` {bl} `\&#95;`   |              |    &#95; |                        | Low Line
-|===
-* https://asciidoctor.org/docs/user-manual/#replacements[Replacements | Asciidoctor User Manual]
