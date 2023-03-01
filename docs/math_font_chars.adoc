@@ -68,12 +68,12 @@ include::unicode_font_greek_letters.adoc[leveloffset=+1]
 2+h| Type                                   5+h| Rendered                                                       |
 h| HTML Entity                   h| Tex Alt   h| N        h| I          h| B          h| BI           h| LaTeX h| Names
 
->|  `\&#x2202;`{bl}    `\&#8706;` | `\partial` |   &#8706; |   _&#8706;_ |   *&#8706;* |   *_&#8706;_* | | PARTIAL DIFFERENTIAL
->|  `\&#x1D715;`{bl} `\&#120597;` |            |           | _&#120597;_ |             |               | | MATHEMATICAL ITALIC PARTIAL DIFFERENTIAL
->|  `\&#x1D6DB;`{bl} `\&#120539;` |            |           |             | *&#120539;* |               | | MATHEMATICAL BOLD PARTIAL DIFFERENTIAL
->|  `\&#x1D74F;`{bl} `\&#120655;` |            |           |             |             | *_&#120655;_* | | MATHEMATICAL BOLD ITALIC PARTIAL DIFFERENTIAL
->|  `\&#x1D789;`{bl} `\&#120713;` |            |           |             | *&#120713;* |               | | MATHEMATICAL SANS-SERIF BOLD PARTIAL DIFFERENTIAL
->|  `\&#x1D7C3;`{bl} `\&#120771;` |            |           |             |             | *_&#120771;_* | | MATHEMATICAL SANS-SERIF BOLD ITALIC PARTIAL DIFFERENTIAL
+>|  `\&#x2202;`{bl}    `\&#8706;` | `\partial` |   &#8706; |   _&#8706;_ |   *&#8706;* |   *_&#8706;_* | | Partial Differential
+>|  `\&#x1D715;`{bl} `\&#120597;` |            |           | _&#120597;_ |             |               | | Mathematical Italic Partial Differential
+>|  `\&#x1D6DB;`{bl} `\&#120539;` |            |           |             | *&#120539;* |               | | Mathematical Bold Partial Differential
+>|  `\&#x1D74F;`{bl} `\&#120655;` |            |           |             |             | *_&#120655;_* | | Mathematical Bold Italic Partial Differential
+>|  `\&#x1D789;`{bl} `\&#120713;` |            |           |             | *&#120713;* |               | | Mathematical Sans-Serif Bold Partial Differential
+>|  `\&#x1D7C3;`{bl} `\&#120771;` |            |           |             |             | *_&#120771;_* | | Mathematical Sans-Serif Bold Italic Partial Differential
 |===
 
 .Reference
@@ -266,59 +266,60 @@ g の字形は大きく異なる。
 .Superscripts
 [cols="^.^5a,4a,4a,18a,8a" {table_options}]
 |===
-| Rendered   | hex         | decimal    | Character name      | Notes
+| Rendered   | hex         | decimal    | Character name                   | Notes
 
-|  `&#8304;` | `\&#x2070;` | `\&#8304;` | SUPERSCRIPT ZERO    |
-|   `&#185;` | `\&#x00B9;` |  `\&#185;` | SUPERSCRIPT ONE     |
-|   `&#178;` | `\&#x00B2;` |  `\&#178;` | SUPERSCRIPT TWO     |
-|   `&#179;` | `\&#x00B3;` |  `\&#179;` | SUPERSCRIPT THREE   |
-|  `&#8305;` | `\&#x2071;` | `\&#8305;` | SUPERSCRIPT LATIN SMALL LETTER I |
-|  `&#8308;` | `\&#x2074;` | `\&#8308;` | SUPERSCRIPT FOUR    |
-|  `&#8309;` | `\&#x2075;` | `\&#8309;` | SUPERSCRIPT FIVE    |
-|  `&#8310;` | `\&#x2076;` | `\&#8310;` | SUPERSCRIPT SIX     |
-|  `&#8311;` | `\&#x2077;` | `\&#8311;` | SUPERSCRIPT SEVEN   |
-|  `&#8312;` | `\&#x2078;` | `\&#8312;` | SUPERSCRIPT EIGHT   |
-|  `&#8313;` | `\&#x2079;` | `\&#8313;` | SUPERSCRIPT NINE    |
-|  `&#8314;` | `\&#x207A;` | `\&#8314;` | SUPERSCRIPT PLUS SIGN |
-|  `&#8315;` | `\&#x207B;` | `\&#8315;` | SUPERSCRIPT MINUS |
-|  `&#8316;` | `\&#x207C;` | `\&#8316;` | SUPERSCRIPT EQUALS SIGN |
-|  `&#8317;` | `\&#x207D;` | `\&#8317;` | SUPERSCRIPT LEFT PARENTHESIS |
-|  `&#8318;` | `\&#x207E;` | `\&#8318;` | SUPERSCRIPT RIGHT PARENTHESIS |
-|  `&#8319;` | `\&#x207F;` | `\&#8319;` | SUPERSCRIPT LATIN SMALL LETTER N  |
+|  `&#8304;` | `\&#x2070;` | `\&#8304;` | Superscript Zero                 |
+|   `&#185;` | `\&#x00B9;` |  `\&#185;` | Superscript One                  |
+|   `&#178;` | `\&#x00B2;` |  `\&#178;` | Superscript Two                  |
+|   `&#179;` | `\&#x00B3;` |  `\&#179;` | Superscript Three                |
+|  `&#8305;` | `\&#x2071;` | `\&#8305;` | Superscript Latin Small Letter I |
+|  `&#8308;` | `\&#x2074;` | `\&#8308;` | Superscript Four                 |
+|  `&#8309;` | `\&#x2075;` | `\&#8309;` | Superscript Five                 |
+|  `&#8310;` | `\&#x2076;` | `\&#8310;` | Superscript Six                  |
+|  `&#8311;` | `\&#x2077;` | `\&#8311;` | Superscript Seven                |
+|  `&#8312;` | `\&#x2078;` | `\&#8312;` | Superscript Eight                |
+|  `&#8313;` | `\&#x2079;` | `\&#8313;` | Superscript Nine                 |
+|  `&#8314;` | `\&#x207A;` | `\&#8314;` | Superscript Plus Sign            |
+|  `&#8315;` | `\&#x207B;` | `\&#8315;` | Superscript Minus                |
+|  `&#8316;` | `\&#x207C;` | `\&#8316;` | Superscript Equals Sign          |
+|  `&#8317;` | `\&#x207D;` | `\&#8317;` | Superscript Left Parenthesis     |
+|  `&#8318;` | `\&#x207E;` | `\&#8318;` | Superscript Right Parenthesis    |
+|  `&#8319;` | `\&#x207F;` | `\&#8319;` | Superscript Latin Small Letter N |
 |===
 
 .Subscripts
 [cols="^.^5a,4a,4a,18a,8a" {table_options}]
 |===
 | Rendered   | hex         | decimal    | Character name      | Notes
-|  `&#8320;` | `\&#x2080;` | `\&#8320;` | SUBSCRIPT ZERO      |
-|  `&#8321;` | `\&#x2081;` | `\&#8321;` | SUBSCRIPT ONE       |
-|  `&#8322;` | `\&#x2082;` | `\&#8322;` | SUBSCRIPT TWO       |
-|  `&#8323;` | `\&#x2083;` | `\&#8323;` | SUBSCRIPT THREE     |
-|  `&#8324;` | `\&#x2084;` | `\&#8324;` | SUBSCRIPT FOUR      |
-|  `&#8325;` | `\&#x2085;` | `\&#8325;` | SUBSCRIPT FIVE      |
-|  `&#8326;` | `\&#x2086;` | `\&#8326;` | SUBSCRIPT SIX       |
-|  `&#8327;` | `\&#x2087;` | `\&#8327;` | SUBSCRIPT SEVEN     |
-|  `&#8328;` | `\&#x2088;` | `\&#8328;` | SUBSCRIPT EIGHT     |
-|  `&#8329;` | `\&#x2089;` | `\&#8329;` | SUBSCRIPT NINE      |
-|  `&#8330;` | `\&#x208A;` | `\&#8330;` | SUBSCRIPT PLUS SIGN |
-|  `&#8331;` | `\&#x208B;` | `\&#8331;` | SUBSCRIPT MINUS     |
-|  `&#8332;` | `\&#x208C;` | `\&#8332;` | SUBSCRIPT EQUALS SIGN |
-|  `&#8333;` | `\&#x208D;` | `\&#8333;` | SUBSCRIPT LEFT PARENTHESIS |
-|  `&#8334;` | `\&#x208E;` | `\&#8334;` | SUBSCRIPT RIGHT PARENTHESIS |
-|  `&#8336;` | `\&#x2090;` | `\&#8336;` | LATIN SUBSCRIPT SMALL LETTER A |
-|  `&#8337;` | `\&#x2091;` | `\&#8337;` | LATIN SUBSCRIPT SMALL LETTER E |
-|  `&#8338;` | `\&#x2092;` | `\&#8338;` | LATIN SUBSCRIPT SMALL LETTER O |
-|  `&#8339;` | `\&#x2093;` | `\&#8339;` | LATIN SUBSCRIPT SMALL LETTER X |
-|  `&#8340;` | `\&#x2094;` | `\&#8340;` | LATIN SUBSCRIPT SMALL LETTER SCHWA |
-|  `&#8341;` | `\&#x2095;` | `\&#8341;` | LATIN SUBSCRIPT SMALL LETTER H |
-|  `&#8342;` | `\&#x2096;` | `\&#8342;` | LATIN SUBSCRIPT SMALL LETTER K |
-|  `&#8343;` | `\&#x2097;` | `\&#8343;` | LATIN SUBSCRIPT SMALL LETTER L |
-|  `&#8344;` | `\&#x2098;` | `\&#8344;` | LATIN SUBSCRIPT SMALL LETTER M |
-|  `&#8345;` | `\&#x2099;` | `\&#8345;` | LATIN SUBSCRIPT SMALL LETTER N |
-|  `&#8346;` | `\&#x209A;` | `\&#8346;` | LATIN SUBSCRIPT SMALL LETTER P |
-|  `&#8347;` | `\&#x209B;` | `\&#8347;` | LATIN SUBSCRIPT SMALL LETTER S |
-|  `&#8348;` | `\&#x209C;` | `\&#8348;` | LATIN SUBSCRIPT SMALL LETTER T |
+
+|  `&#8320;` | `\&#x2080;` | `\&#8320;` | Subscript Zero      |
+|  `&#8321;` | `\&#x2081;` | `\&#8321;` | Subscript One       |
+|  `&#8322;` | `\&#x2082;` | `\&#8322;` | Subscript Two       |
+|  `&#8323;` | `\&#x2083;` | `\&#8323;` | Subscript Three     |
+|  `&#8324;` | `\&#x2084;` | `\&#8324;` | Subscript Four      |
+|  `&#8325;` | `\&#x2085;` | `\&#8325;` | Subscript Five      |
+|  `&#8326;` | `\&#x2086;` | `\&#8326;` | Subscript Six       |
+|  `&#8327;` | `\&#x2087;` | `\&#8327;` | Subscript Seven     |
+|  `&#8328;` | `\&#x2088;` | `\&#8328;` | Subscript Eight     |
+|  `&#8329;` | `\&#x2089;` | `\&#8329;` | Subscript Nine      |
+|  `&#8330;` | `\&#x208A;` | `\&#8330;` | Subscript Plus Sign |
+|  `&#8331;` | `\&#x208B;` | `\&#8331;` | Subscript Minus     |
+|  `&#8332;` | `\&#x208C;` | `\&#8332;` | Subscript Equals Sign |
+|  `&#8333;` | `\&#x208D;` | `\&#8333;` | Subscript Left Parenthesis |
+|  `&#8334;` | `\&#x208E;` | `\&#8334;` | Subscript Right Parenthesis |
+|  `&#8336;` | `\&#x2090;` | `\&#8336;` | Latin Subscript Small Letter A |
+|  `&#8337;` | `\&#x2091;` | `\&#8337;` | Latin Subscript Small Letter E |
+|  `&#8338;` | `\&#x2092;` | `\&#8338;` | Latin Subscript Small Letter O |
+|  `&#8339;` | `\&#x2093;` | `\&#8339;` | Latin Subscript Small Letter X |
+|  `&#8340;` | `\&#x2094;` | `\&#8340;` | Latin Subscript Small Letter Schwa |
+|  `&#8341;` | `\&#x2095;` | `\&#8341;` | Latin Subscript Small Letter H |
+|  `&#8342;` | `\&#x2096;` | `\&#8342;` | Latin Subscript Small Letter K |
+|  `&#8343;` | `\&#x2097;` | `\&#8343;` | Latin Subscript Small Letter L |
+|  `&#8344;` | `\&#x2098;` | `\&#8344;` | Latin Subscript Small Letter M |
+|  `&#8345;` | `\&#x2099;` | `\&#8345;` | Latin Subscript Small Letter N |
+|  `&#8346;` | `\&#x209A;` | `\&#8346;` | Latin Subscript Small Letter P |
+|  `&#8347;` | `\&#x209B;` | `\&#8347;` | Latin Subscript Small Letter S |
+|  `&#8348;` | `\&#x209C;` | `\&#8348;` | Latin Subscript Small Letter T |
 |===
 
 * https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts[Unicode subscripts and superscripts - Wikipedia]
