@@ -61,7 +61,7 @@ endif::[]
 === General Symbols
 
 .Math Symbol
-[cols="3a,4a,4a,3a,3a,3a,10a" {table_options}]
+[cols="6a,5a,4a,3a,3a,3a,9a" {table_options}]
 |===
 3+h| Type                                            3+h| Rendered                                    h|
 h| HTML Entity                 h| Tex Alt h| AsciiMath h| HTML   h| LaTeX             h| AsciiMath    h| Names
@@ -71,10 +71,10 @@ h| HTML Entity                 h| Tex Alt h| AsciiMath h| HTML   h| LaTeX       
 |===
 
 .General Symbol
-[cols="3a,4a,4a,3a,3a,3a,10a" {table_options}]
+[cols="8a,13a,7a,^.^3a,^.^3a,^.^3a,9a" {table_options}]
 |===
 3+h| Type                                                 3+h| Rendered                                                     h|
-h| HTML Entity               h| Tex Alt        h| AsciiMath h| HTML      h| LaTeX                     h| AsciiMath          h| Names
+h| HTML Entity               h| Tex Alt h| Ascii&#8203;Math h| HTML      h| LaTeX                     h| Ascii&#8203;Math   h| Names
 
 >| `\&#xA7;`{bl} `\&#167;`{bl} `\&sect;`
                               | `\S`             |           |     &#167; | latexmath:[\S]             |                     | Section sign
@@ -141,10 +141,10 @@ h| HTML Entity                 h| Tex Alt       h| HTML    h| LaTeX             
 
 ==== Sum-class symbol
 .Sum-class symbol
-[cols="^.^6a,8a,8a,^.^4a,^.^4a,^.^4a,17a" {table_options}]
+[cols="^.^9a,11a,8a,^.^4a,^.^4a,^.^4a,15a" {table_options}]
 |===
 3+h| Type                                                3+h| Rendered                                                h|
-h| HTML Entity                h| Tex Alt     h| AsciiMath  h| HTML             h| LaTeX                 h| AsciiMath  h| Character name
+h| HTML Entity         h| Tex Alt     h| Ascii&#8203;Math  h| HTML             h| LaTeX                h| Ascii&#8203;Math h| Character name
 
 >| `\&#x220F;`{bl}  `\&#8719;` | `\prod`      | `prod`      |  [big]##&#8719;## | latexmath:[\prod]      | asciimath:[prod] | N-Ary Product
 >| `\&#x2210;`{bl}  `\&#8720;` | `\coprod`    |             |  [big]##&#8720;## | latexmath:[\coprod]    |                  | N-Ary Coproduct
@@ -169,76 +169,76 @@ h| HTML Entity                h| Tex Alt     h| AsciiMath  h| HTML             h
 ==== Equals sign
 
 .Equals sign
-[cols="^.^6a,9a,^.^3a,^.^3a,17a" {table_options}]
+[cols="^.^6a,10a,^.^3a,^.^3a,16a" {table_options}]
 |===
-2+h| Type                                      2+h| Rendered                             h|
-h| HTML Entity                h| Tex Alt         h| HTML    h| LaTeX                     h| Character name
+2+h| Type                                       2+h| Rendered                             h|
+h| HTML Entity                 h| Tex Alt         h| HTML    h| LaTeX                     h| Character name
 
-| `\&#x003D;` {bl}  `\&#0061;` |                  |        = | latexmath:[=]              | Equals Sign
-| `\&#xA78A;` {bl} `\&#42890;` |                  | &#42890; |                            | Modifier Letter Short Equals Sign
-| `\&#xFF1D;` {bl} `\&#65309;` |                  | &#65309; |                            | Fullwidth Equals Sign
-| `\&#x2260;` {bl}  `\&#8800;` | `\ne`            |  &#8800; | latexmath:[\ne]            | Not Equal To
-| `\&#x223C;` {bl}  `\&#8764;` | `\sim`           |  &#8764; | latexmath:[\sim]           | Tilde Operator
-| `\&#x223D;` {bl}  `\&#8765;` | `\backsim`       |  &#8765; | latexmath:[\backsim]       | Reversed Tilde
-| `\&#x2241;` {bl}  `\&#8769;` | `\nsim`          |  &#8769; | latexmath:[\nsim]          | Not Tilde
-| `\&#x2243;` {bl}  `\&#8771;` | `\simeq`         |  &#8771; | latexmath:[\simeq]         | Asymptotically Equal To
-| `\&#x2245;` {bl}  `\&#8773;` | `\cong`          |  &#8773; | latexmath:[\cong]          | Approximately Equal To
-| `\&#x2248;` {bl}  `\&#8776;` | `\approx`        |  &#8776; | latexmath:[\approx]        | Almost Equal To
-| `\&#x224D;` {bl}  `\&#8781;` | `\asymp`         |  &#8781; | latexmath:[\asymp]         | Equivalent To
-| `\&#x2250;` {bl}  `\&#8784;` | `\doteq`         |  &#8784; | latexmath:[\doteq]         | Approaches the Limit
-| `\&#x2251;` {bl}  `\&#8785;` | `\doteqdot`      |  &#8785; | latexmath:[\doteqdot]      | Geometrically Equal To
-| `\&#x2252;` {bl}  `\&#8786;` | `\fallingdotseq` |  &#8786; | latexmath:[\fallingdotseq] | Approximately Equal to or the Image Of
-| `\&#x2253;` {bl}  `\&#8787;` | `\risingdotseq`  |  &#8787; | latexmath:[\risingdotseq]  | Image of or Approximately Equal To
-| `\&#x2254;` {bl}  `\&#8788;` | `:=`             |  &#8788; | latexmath:[:=]             | Colon Equals
-| `\&#x2255;` {bl}  `\&#8789;` | `=:`             |  &#8789; | latexmath:[=:]             | Equals Colon
-| `\&#x225C;` {bl}  `\&#8796;` |
+>| `\&#x003D;` {bl}  `\&#0061;` |                  |        = | latexmath:[=]              | Equals Sign
+>| `\&#xA78A;` {bl} `\&#42890;` |                  | &#42890; |                            | Modifier Letter Short Equals Sign
+>| `\&#xFF1D;` {bl} `\&#65309;` |                  | &#65309; |                            | Fullwidth Equals Sign
+>| `\&#x2260;` {bl}  `\&#8800;` | `\ne`            |  &#8800; | latexmath:[\ne]            | Not Equal To
+>| `\&#x223C;` {bl}  `\&#8764;` | `\sim`           |  &#8764; | latexmath:[\sim]           | Tilde Operator
+>| `\&#x223D;` {bl}  `\&#8765;` | `\backsim`       |  &#8765; | latexmath:[\backsim]       | Reversed Tilde
+>| `\&#x2241;` {bl}  `\&#8769;` | `\nsim`          |  &#8769; | latexmath:[\nsim]          | Not Tilde
+>| `\&#x2243;` {bl}  `\&#8771;` | `\simeq`         |  &#8771; | latexmath:[\simeq]         | Asymptotically Equal To
+>| `\&#x2245;` {bl}  `\&#8773;` | `\cong`          |  &#8773; | latexmath:[\cong]          | Approximately Equal To
+>| `\&#x2248;` {bl}  `\&#8776;` | `\approx`        |  &#8776; | latexmath:[\approx]        | Almost Equal To
+>| `\&#x224D;` {bl}  `\&#8781;` | `\asymp`         |  &#8781; | latexmath:[\asymp]         | Equivalent To
+>| `\&#x2250;` {bl}  `\&#8784;` | `\doteq`         |  &#8784; | latexmath:[\doteq]         | Approaches the Limit
+>| `\&#x2251;` {bl}  `\&#8785;` | `\doteqdot`      |  &#8785; | latexmath:[\doteqdot]      | Geometrically Equal To
+>| `\&#x2252;` {bl}  `\&#8786;` | `\fallingdotseq` |  &#8786; | latexmath:[\fallingdotseq] | Approximately Equal to or the Image Of
+>| `\&#x2253;` {bl}  `\&#8787;` | `\risingdotseq`  |  &#8787; | latexmath:[\risingdotseq]  | Image of or Approximately Equal To
+>| `\&#x2254;` {bl}  `\&#8788;` | `:=`             |  &#8788; | latexmath:[:=]             | Colon Equals
+>| `\&#x2255;` {bl}  `\&#8789;` | `=:`             |  &#8789; | latexmath:[=:]             | Equals Colon
+>| `\&#x225C;` {bl}  `\&#8796;` |
 [source,latex]
 ----
 \overset{\scriptscriptstyle\Delta}{=}
 ----
-                                                  |  &#8796; | latexmath:[\overset{\scriptscriptstyle\Delta}{=}]
+                                                   |  &#8796; | latexmath:[\overset{\scriptscriptstyle\Delta}{=}]
                                                                                           | Delta Equal To
-| `\&#x225D;` {bl}  `\&#8797;` |
+>| `\&#x225D;` {bl}  `\&#8797;` |
 [source,latex]
 ----
 \overset{\scriptscriptstyle\rm def}{=}
 ----
-                                                  |  &#8797; | latexmath:[\overset{\scriptscriptstyle\rm def}{=}]
+                                                   |  &#8797; | latexmath:[\overset{\scriptscriptstyle\rm def}{=}]
                                                                                           | Equal to By Definition
-| `\&#x2261;` {bl}  `\&#8801;` | `\equiv`         |  &#8801; | latexmath:[\equiv]         | Identical To
-| `\&#x2262;` {bl}  `\&#8802;` | `\not\equiv`     |  &#8802; | latexmath:[\not\equiv]     | Not Identical To
+>| `\&#x2261;` {bl}  `\&#8801;` | `\equiv`         |  &#8801; | latexmath:[\equiv]         | Identical To
+>| `\&#x2262;` {bl}  `\&#8802;` | `\not\equiv`     |  &#8802; | latexmath:[\not\equiv]     | Not Identical To
 |===
 
 * https://en.wikipedia.org/wiki/Equals_sign[Equals sign - Wikipedia]
 
 ==== Inequality
 .Inequality
-[cols="^.^6a,8a,7a,^.^4a,^.^5a,^.^4a,17a" {table_options}]
+[cols="^.^11a,15a,6a,^.^4a,^.^5a,^.^3a,17a" {table_options}]
 |===
-3+h| Type                                                3+h| Rendered                                                  h|
-h| HTML Entity                h| Tex Alt      h| AsciiMath h| HTML         h| LaTeX                  h| AsciiMath       h| Character name
+3+h| Type                                               3+h| Rendered                                                  h|
+h| HTML Entity             h| Tex Alt h| Ascii&#8203;Math h| HTML         h| LaTeX                 h| Ascii&#8203;Math h| Character name
 
->| `\&#x3C;` {bl} `\&#60;` {bl} `\&lt;` | `&lt;`  | `<`     |         &lt; | latexmath:[<]            | asciimath:[<]    | Less-Than Sign
->| `\&#x3E;` {bl} `\&#62;` {bl} `\&gt;` | `&gt;`  | `>`     |         &gt; | latexmath:[>]            | asciimath:[>]    | Greater-Than Sign
->| `\&#x221D;` {bl}  `\&#8733;` | `\propto`       | `prop`  |      &#8733; | latexmath:[\propto]      | asciimath:[prop] | Proportional To
->| `\&#x2264;` {bl}  `\&#8804;` | `\le` or `\leq` | `&lt;=` |      &#8804; | latexmath:[\leq]{bl} latexmath:[\leq]
-                                                                                                      | asciimath:[<=] | Less-Than or Equal To    
->| `\&#x2265;` {bl}  `\&#8805;` | `\ge` or `\geq` | `&gt;=` |      &#8805; | latexmath:[\geq]{bl} latexmath:[\geq]
-                                                                                                      | asciimath:[>=] | Greater-Than or Equal To 
->| `\&#x2266;` {bl}  `\&#8806;` | `\leqq`         |         |      &#8806; | latexmath:[\leqq]        |                | Less-Than Over Equal To
->| `\&#x2267;` {bl}  `\&#8807;` | `\geqq`         |         |      &#8807; | latexmath:[\geqq]        |                | Greater-Than Over Equal To
->| `\&#x226A;` {bl}  `\&#8810;` | `\ll`           |         |  a &#8810; b | latexmath:[a \ll b]      |                | Much Less-Than
->| `\&#x226B;` {bl}  `\&#8811;` | `\gg`           |         |  a &#8811; b | latexmath:[a \gg b]      |                | Much Greater-Than
->| `\&#x226E;` {bl}  `\&#8814;` | `\not\lt` or `\nless` |   |      &#8814; | latexmath:[\not\lt], latexmath:[\nless] | | Not Less-Than
->| `\&#x226F;` {bl}  `\&#8815;` | `\not\gt` or `\ngtr` |    |      &#8815; | latexmath:[\not\gt], latexmath:[\ngtr] |  | Not Greater-Than
->| `\&#x2270;` {bl}  `\&#8816;` | `\nleq`         |         |      &#8816; | latexmath:[\nleq]        |                | Neither Less-Than Nor Equal To
->| `\&#x2271;` {bl}  `\&#8817;` | `\ngeq`         |         |      &#8817; | latexmath:[\ngeq]        |                | Neither Greater-Than Nor Equal To
->| `\&#x2A7D;` {bl} `\&#10877;` | `\leqslant`     |         |     &#10877; | latexmath:[\leqslant]    |                | Less-Than or Slanted Equal To
->| `\&#x2A7E;` {bl} `\&#10878;` | `\geqslant`     |         |     &#10878; | latexmath:[\geqslant]    |                | Greater-Than or Slanted Equal To
->| `\&#x2A87;` {bl} `\&#10887;` | `\nleqslant`    |         |     &#10887; | latexmath:[\nleqslant]   |                | Less-Than and Single-Line Not Equal To
->| `\&#x2A88;` {bl} `\&#10888;` | `\ngeqslant`    |         |     &#10888; | latexmath:[\ngeqslant]   |                | Greater-Than and Single-Line Not Equal To
->| `\&#x2A95;` {bl} `\&#10901;` | `\eqslantless`  |         |     &#10901; | latexmath:[\eqslantless] |                | Slanted Equal to or Less-Than
->| `\&#x2A96;` {bl} `\&#10902;` | `\eqslantgtr`   |         |     &#10902; | latexmath:[\eqslantgtr]  |                | Slanted Equal to or Greater-Than
+>| `\&#x3C;`{bl} `\&#60;`{bl} `\&lt;` | `&lt;`   | `<`     |         &lt; | latexmath:[<]            | asciimath:[<]    | Less-Than Sign
+>| `\&#x3E;`{bl} `\&#62;`{bl} `\&gt;` | `&gt;`   | `>`     |         &gt; | latexmath:[>]            | asciimath:[>]    | Greater-Than Sign
+>| `\&#x221D;`{bl}  `\&#8733;` | `\propto`       | `prop`  |      &#8733; | latexmath:[\propto]      | asciimath:[prop] | Proportional To
+>| `\&#x2264;`{bl}  `\&#8804;` | `\le` or `\leq` | `&lt;=` |      &#8804; | latexmath:[\leq]{bl} latexmath:[\leq]
+                                                                                                     | asciimath:[<=] | Less-Than or Equal To    
+>| `\&#x2265;`{bl}  `\&#8805;` | `\ge` or `\geq` | `&gt;=` |      &#8805; | latexmath:[\geq]{bl} latexmath:[\geq]
+                                                                                                     | asciimath:[>=] | Greater-Than or Equal To 
+>| `\&#x2266;`{bl}  `\&#8806;` | `\leqq`         |         |      &#8806; | latexmath:[\leqq]        |                | Less-Than Over Equal To
+>| `\&#x2267;`{bl}  `\&#8807;` | `\geqq`         |         |      &#8807; | latexmath:[\geqq]        |                | Greater-Than Over Equal To
+>| `\&#x226A;`{bl}  `\&#8810;` | `\ll`           |         |  a &#8810; b | latexmath:[a \ll b]      |                | Much Less-Than
+>| `\&#x226B;`{bl}  `\&#8811;` | `\gg`           |         |  a &#8811; b | latexmath:[a \gg b]      |                | Much Greater-Than
+>| `\&#x226E;`{bl}  `\&#8814;` | `\not\lt` or `\nless` |   |      &#8814; | latexmath:[\not\lt], latexmath:[\nless] | | Not Less-Than
+>| `\&#x226F;`{bl}  `\&#8815;` | `\not\gt` or `\ngtr` |    |      &#8815; | latexmath:[\not\gt], latexmath:[\ngtr] |  | Not Greater-Than
+>| `\&#x2270;`{bl}  `\&#8816;` | `\nleq`         |         |      &#8816; | latexmath:[\nleq]        |                | Neither Less-Than Nor Equal To
+>| `\&#x2271;`{bl}  `\&#8817;` | `\ngeq`         |         |      &#8817; | latexmath:[\ngeq]        |                | Neither Greater-Than Nor Equal To
+>| `\&#x2A7D;`{bl} `\&#10877;` | `\leqslant`     |         |     &#10877; | latexmath:[\leqslant]    |                | Less-Than or Slanted Equal To
+>| `\&#x2A7E;`{bl} `\&#10878;` | `\geqslant`     |         |     &#10878; | latexmath:[\geqslant]    |                | Greater-Than or Slanted Equal To
+>| `\&#x2A87;`{bl} `\&#10887;` | `\nleqslant`    |         |     &#10887; | latexmath:[\nleqslant]   |                | Less-Than and Single-Line Not Equal To
+>| `\&#x2A88;`{bl} `\&#10888;` | `\ngeqslant`    |         |     &#10888; | latexmath:[\ngeqslant]   |                | Greater-Than and Single-Line Not Equal To
+>| `\&#x2A95;`{bl} `\&#10901;` | `\eqslantless`  |         |     &#10901; | latexmath:[\eqslantless] |                | Slanted Equal to or Less-Than
+>| `\&#x2A96;`{bl} `\&#10902;` | `\eqslantgtr`   |         |     &#10902; | latexmath:[\eqslantgtr]  |                | Slanted Equal to or Greater-Than
 |===
 
 ==== others
@@ -258,10 +258,10 @@ h| HTML Entity h| TeX alt h| AsciiMath       h| HTML             h| LaTeX       
 === Sets
 
 .LaTeX
-[cols="^.^6a,^.^8a,^.^7a,^.^4a,^.^6a,^.^4a,16a" {table_options}]
+[cols="^.^11a,^.^15a,^.^10a,^.^4a,^.^6a,^.^3a,13a" {table_options}]
 |===
 3+h| Type                                                3+h| Rendered                                                              h|
-   h| HTML Entity               h| Tex Alt       h| AsciiMath h| HTML            h| LaTeX                     h| AsciiMath          h| Character name
+   h| HTML Entity               h| Tex Alt       h| AsciiMath h| HTML            h| LaTeX                     h| Ascii&#8203;Math   h| Character name
 
    >| `\&#x2201;`{bl} `\&#8705;` | `\complement`  | `sf "c"`   | _A_^&#8705;^     | latexmath:[A^\complement]  | asciimath:[A^(sf "c")] | Complement
 .2+>| `\&#x2205;`{bl} `\&#8709;` | `\emptyset`    | `O/`    .2+| &#8709;          | latexmath:[\emptyset]      | asciimath:[O/]   .2+| Empty Set
@@ -292,7 +292,7 @@ h| HTML Entity h| TeX alt h| AsciiMath       h| HTML             h| LaTeX       
 |===
 
 .Triangle
-[cols="^.^6a,^.^8a,^.^4a,^.^5a,17a" {table_options}]
+[cols="^.^6a,^.^10a,^.^4a,^.^5a,15a" {table_options}]
 |===
 2+h| Type                                     2+h| Rendered                             h|
 h| HTML Entity                h| Tex Alt        h| HTML    h| LaTeX                     h| Character name
@@ -340,10 +340,10 @@ h| HTML Entity                h| Tex Alt        h| HTML      h| LaTeX           
 
 === Geometric Symbols
 .Geometric Symbols
-[cols="5a,^.^8a,^.^4a,^.^4a,^.^4a,^.^4a,7a" separator="¦" {table_options}]
+[cols="7a,^.^12a,^.^6a,^.^4a,^.^4a,^.^3a,7a" separator="¦" {table_options}]
 |===
 3+h¦ Type                                                           3+h¦ Rendered                                                    h¦
-h¦ HTML Entity                h¦ Tex Alt           h¦ AsciiMath       h¦ HTML   h¦ LaTeX                       h¦ AsciiMath          h¦ Names
+h¦ HTML Entity                h¦ Tex Alt          h¦ Ascii&#8203;Math h¦ HTML   h¦ LaTeX                       h¦ Ascii&#8203;Math   h¦ Names
 
 >¦ `\&#x2220;` {bl} `\&#8736;` ¦ `\angle`           ¦ `/_`{bl} `angle` ¦ &#8736; ¦ latexmath:[\angle]           ¦ asciimath:[/_]      ¦ Angle
 >¦ `\&#x2221;` {bl} `\&#8737;` ¦ `\measuredangle`   ¦                  ¦ &#8737; ¦ latexmath:[\measuredangle]   ¦                     ¦ Measured Angle
@@ -403,7 +403,7 @@ h| HTML Entity                h| Tex Alt  h| HTML    h| LaTeX             h| Cha
 ==== Punctuation
 
 .General punctuation
-[cols="6a,7a,4a,4a,14a,8a" {table_options}]
+[cols="7a,8a,4a,4a,13a,8a" {table_options}]
 |===
 2+h| Type                                  2+h| Rendered                         h|                    h|
 h| HTML Entity                h| Tex alt     h| HTML    h| LaTeX                 h| Character name              h| Notes
@@ -423,10 +423,10 @@ h| HTML Entity                h| Tex alt     h| HTML    h| LaTeX                
 ==== Other Punctuation
 
 .Other Punctuation
-[cols="3a,4a,4a,3a,3a,3a,10a" {table_options}]
+[cols="7a,9a,8a,3a,3a,3a,10a" {table_options}]
 |===
 3+h| Type                                                  3+h| Rendered                                                       h|
-h| HTML Entity               h| Tex Alt        h| AsciiMath  h| HTML      h| LaTeX                     h| AsciiMath            h| Names
+h| HTML Entity               h| Tex Alt        h| AsciiMath  h| HTML      h| LaTeX                     h| Ascii&#8203;Math     h| Names
 
 >|   `\&#x5c;`{bl} `\&#92;`   |                 |             |      &#92; |                            |                       | Reverse Solidus
 >| `\&#x2216;`{bl} `\&#8726;` | `\backslash`    | `backslash` |    &#8726; | latexmath:[\backslash]     | asciimath:[backslash] | Set Minus
