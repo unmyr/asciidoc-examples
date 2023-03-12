@@ -54,7 +54,7 @@ ifeval::["{backend}" == "pdf"]
 endif::[]
 
 ifndef::leveloffset[]
-:stem: latexmath
+include::../../stem.adoc[]
 endif::[]
 
 == Mathematical fonts
@@ -261,6 +261,149 @@ g の字形は大きく異なる。
 
 <<<
 
+=== Math fonts
+
+:upper_A: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">A</span><span style="font-size: 20%;"> </span>]
+:upper_B: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">B</span><span style="font-size: 20%;"> </span>]
+:upper_C: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">C </span>]
+:upper_D: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">D </span>]
+:upper_E: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">E </span>]
+:upper_F: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">F </span>]
+:upper_G: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">G </span>]
+:upper_H: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">H </span>]
+:upper_I: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">I </span>]
+:upper_J: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">J </span>]
+:upper_K: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">K </span>]
+:upper_L: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">L </span>]
+:upper_M: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">M </span>]
+:upper_N: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">N </span>]
+:upper_O: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">O </span>]
+:upper_P: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">P</span><span style="font-size: 20%;"> </span>]
+:upper_Q: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">Q</span><span style="font-size: 20%;"> </span>]
+:upper_R: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">R</span>]
+:upper_S: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">S</span><span style="font-size: 20%;"> </span>]
+:upper_T: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">T</span><span style="font-size: 20%;"> </span>]
+:upper_U: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">U </span>]
+:upper_V: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">V </span>]
+:upper_W: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">W </span>]
+:upper_X: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">X </span>]
+:upper_Y: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">Y </span>]
+:upper_Z: pass:[<span style="font-family: 'century'; font-style: italic; font-size: 110%;">Z </span>]
+
+:lower_a: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">a</span>]
+:lower_b: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">b</span>]
+:lower_c: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">c</span>]
+:lower_d: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">d</span>]
+:lower_e: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">e</span>]
+:lower_f: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">f</span><span style="font-size: 20%;"> </span>]
+:lower_g: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">g</span>]
+:lower_h: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">h</span>]
+:lower_i: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">i</span>]
+:lower_j: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">j</span>]
+:lower_k: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">k</span>]
+:lower_l: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">l</span>]
+:lower_m: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">m</span>]
+:lower_n: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">n</span>]
+:lower_o: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">o</span>]
+:lower_p: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">p</span>]
+:lower_q: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">q</span>]
+:lower_r: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">r</span>]
+:lower_s: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">s</span>]
+:lower_t: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">t</span>]
+:lower_u: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">u</span>]
+:lower_v: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">v</span>]
+:lower_w: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">w</span>]
+:lower_x: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">x</span>]
+:lower_y: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">y</span>]
+:lower_z: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">z</span>]
+
+.Math fonts
+[cols="1a,1a,1a,1a,1a,1a" {table_options}]
+|===
+| A-Z   | Latex         | century   |  a-z  | Latex         | Georgia
+
+| *_A_* | latexmath:[A] | {upper_A} | *_a_* | latexmath:[a] | {lower_a}
+| *_B_* | latexmath:[B] | {upper_B} | *_b_* | latexmath:[b] | {lower_b}
+| *_C_* | latexmath:[C] | {upper_C} | *_c_* | latexmath:[c] | {lower_c}
+| *_D_* | latexmath:[D] | {upper_D} | *_d_* | latexmath:[d] | {lower_d}
+| *_E_* | latexmath:[E] | {upper_E} | *_e_* | latexmath:[e] | {lower_e}
+| *_F_* | latexmath:[F] | {upper_F} | *_f_* | latexmath:[f] | {lower_f}
+| *_G_* | latexmath:[G] | {upper_G} | *_g_* | latexmath:[g] | {lower_g}
+| *_H_* | latexmath:[H] | {upper_H} | *_h_* | latexmath:[h] | {lower_h}
+| *_I_* | latexmath:[I] | {upper_I} | *_i_* | latexmath:[i] | {lower_i}
+| *_J_* | latexmath:[J] | {upper_J} | *_j_* | latexmath:[j] | {lower_j}
+| *_K_* | latexmath:[K] | {upper_K} | *_k_* | latexmath:[k] | {lower_k}
+| *_L_* | latexmath:[L] | {upper_L} | *_l_* | latexmath:[l] | {lower_l}
+| *_M_* | latexmath:[M] | {upper_M} | *_m_* | latexmath:[m] | {lower_m}
+| *_N_* | latexmath:[N] | {upper_N} | *_n_* | latexmath:[n] | {lower_n}
+| *_O_* | latexmath:[O] | {upper_O} | *_o_* | latexmath:[o] | {lower_o}
+| *_P_* | latexmath:[P] | {upper_P} | *_p_* | latexmath:[p] | {lower_p}
+| *_Q_* | latexmath:[Q] | {upper_Q} | *_q_* | latexmath:[q] | {lower_q}
+| *_R_* | latexmath:[R] | {upper_R} | *_r_* | latexmath:[r] | {lower_r}
+| *_S_* | latexmath:[S] | {upper_S} | *_s_* | latexmath:[s] | {lower_s}
+| *_T_* | latexmath:[T] | {upper_T} | *_t_* | latexmath:[t] | {lower_t}
+| *_U_* | latexmath:[U] | {upper_U} | *_u_* | latexmath:[u] | {lower_u}
+| *_V_* | latexmath:[V] | {upper_V} | *_v_* | latexmath:[v] | {lower_v}
+| *_W_* | latexmath:[W] | {upper_W} | *_w_* | latexmath:[w] | {lower_w}
+| *_X_* | latexmath:[X] | {upper_X} | *_x_* | latexmath:[x] | {lower_x}
+| *_Y_* | latexmath:[Y] | {upper_Y} | *_y_* | latexmath:[y] | {lower_y}
+| *_Z_* | latexmath:[Z] | {upper_Z} | *_z_* | latexmath:[z] | {lower_z}
+|===
+
+:upper_Gamma: pass:[<span style="font-family: 'Georgia'; font-style: normal; font-size: 120%;">&#915;</span>]
+:upper_Delta: pass:[<span style="font-family: 'Georgia'; font-style: normal; font-size: 130%;">&#916;</span>]
+:upper_Theta: pass:[<span style="font-family: 'Georgia'; font-style: normal; font-size: 120%;">&#920;</span>]
+:upper_Lambda: pass:[<span style="font-family: 'Georgia'; font-style: normal; font-size: 110%;">&#923;</span>]
+:upper_Pi: pass:[<span style="font-family: 'Georgia'; font-style: normal; font-size: 120%;">&#928;</span>]
+:upper_Sigma: pass:[<span style="font-family: 'Georgia'; font-style: normal; font-size: 120%;">&#931;</span>]
+:upper_Phi: pass:[<span style="font-family: 'Georgia'; font-style: normal; font-size: 100%;">&#934;</span>]
+:upper_Omega: pass:[<span style="font-family: 'Georgia'; font-style: normal; font-size: 120%;">&#937;</span>]
+
+:alpha: pass:q[__&#945;__]
+:beta: pass:q[__&#946;__]
+:gamma: pass:q[__&#947;__]
+:gamma_g: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">&#947;</span>]
+:delta: pass:q[__&#948;__]
+:delta_g: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 100%;">&#948;</span>]
+:epsilon: pass:q[__&#1013;__]
+:varepsilon: pass:q[__&#949;__]
+:theta: pass:q[__&#952;__]
+:theta_g: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 100%;">&#952;</span>]
+:lambda: pass:q[__&#955;__]
+:lambda_g: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 100%;">&#955;</span>]
+:mu: pass:q[__&#956;__]
+:pi: pass:q[&#960;]
+:pi_g: pass:[<span style="font-family: 'Georgia'; font-style: normal; font-size: 100%;">&#960;</span>]
+:rho: pass:q[__&#961;__]
+:sigma: pass:q[__&#963;__]
+:sigma_g: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 100%;">&#963;</span>]
+:tau: pass:q[__&#964;__]
+:phi: pass:q[__&#981;__]
+:phi_g: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 100%;">&#981;</span>]
+:varphi: pass:q[__&#966;__]
+:varphi_g: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 100%;">&#966;</span>]
+:chi: pass:q[__&#967;__]
+:psi: pass:q[__&#968;__]
+:omega: pass:q[__&#969;__]
+:omega_g: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 100%;">&#969;</span>]
+
+.Greek alphabet
+[cols="1a,1a,1a,1a,1a,1a" {table_options}]
+|===
+| &#913;-&#937; | Latex               | AsciiDoc       | &#945;-&#969;  | Latex               | Italic,Georgia
+
+| *&#915;*      | latexmath:[\Gamma]  | {upper_Gamma}  | *_&#947;_*     | latexmath:[\gamma]  | {gamma},{gamma_g}
+| *&#916;*      | latexmath:[\Delta]  | {upper_Delta}  | *_&#948;_*     | latexmath:[\delta]  | {delta},{delta_g}
+| *&#920;*      | latexmath:[\Theta]  | {upper_Theta}  | *_&#952;_*     | latexmath:[\theta]  | {theta},{theta_g}
+| *&#923;*      | latexmath:[\Lambda] | {upper_Lambda} | *_&#955;_*     | latexmath:[\lambda] | {lambda},{lambda_g}
+| *&#928;*      | latexmath:[\Pi]     | {upper_Pi}     | *_&#960;_*     | latexmath:[\pi]     | {pi},{pi_g}
+| *&#931;*      | latexmath:[\Sigma]  | {upper_Sigma}  | *_&#963;_*     | latexmath:[\sigma]  | {sigma},{sigma_g}
+| *&#934;*      | latexmath:[\Phi]    | {upper_Phi}    | *_&#981;_*     | latexmath:[\phi]    | {phi},{phi_g}
+| *&#937;*      | latexmath:[\Omega]  | {upper_Omega}  | *_&#969;_*     | latexmath:[\omega]  | {omega},{omega_g}
+|===
+
+<<<
+
 === Superscripts and subscripts
 
 .Superscripts
@@ -348,4 +491,19 @@ h| HTML Entity                 h| Tex Alt  h| HTML      h| LaTeX             h| 
 
 >|  `\&#x211C;` {bl} `\&#8476;` | `\Re`     |    &#8476; | latexmath:[\Re]    | Black-Letter Capital R
 >|  `\&#x2111;` {bl} `\&#8465;` | `\Im`     |    &#8465; | latexmath:[\Im]    | Black-Letter Capital I
+|===
+
+=== Fraction
+
+* https://www.compart.com/en/unicode/decomposition/%3Cfraction%3E[List of Unicode Characters with Decomposition Mapping “Vulgar fraction form”^]
+
+.Lowercase Letter
+[cols="1a,2a,1a,1a,2a" {table_options}]
+|===
+2+h| Type                                                 2+h| Rendered                       h|
+h| HTML Entity                              h| Tex Alt      h| HTML      h| LaTeX             h| Names
+
+>|  `\&#xBC;`{bl} `\&#188;`{bl} `\&frac14;`   | `\frac{1}{4}` | &#188; | latexmath:[\frac{1}{4}] | Vulgar Fraction One Quarte
+>|  `\&#xBD;`{bl} `\&#189;`{bl} `\&half;`     | `\frac{1}{2}` | &#189; | latexmath:[\frac{1}{2}] | Vulgar Fraction One Half
+>|  `\&#xBE;`{bl} `\&#190;`{bl} `\&frac34;`   | `\frac{3}{4}` | &#190; | latexmath:[\frac{3}{4}] | Vulgar Fraction Three Quarters
 |===
