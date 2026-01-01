@@ -1,0 +1,207 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+:icons: font
+
+include::header.adoc[]
+endif::[]
+
+== install asciidoctor 2.0.X
+
+=== Install ruby on Ubuntu 24.04 LTS
+
+. Install rbenv
++
+[source,shell]
+----
+sudo apt update
+sudo apt install -y rbenv
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+----
+
+. Install Required Packages for Building Ruby
++
+[source,shell]
+----
+sudo apt install -y autoconf build-essential libssl-dev libyaml-dev zlib1g-dev \
+libreadline-dev libffi-dev libgmp-dev libncurses5-dev libgdbm-dev uuid-dev
+----
+
+. List available Ruby versions filtered by the latest stable release:
++
+[source,shell]
+----
+rbenv install -l
+----
+
+. Install Ruby Versions
++
+[source,shell]
+----
+rbenv install 3.1.2
+----
+
+. Set Ruby Version
+
+** Set the global Ruby version to 3.1.2
++
+[source,shell]
+----
+rbenv global 3.1.2
+----
+
+. Verify the Ruby version
++
+[source,shell]
+----
+ruby --version
+rbenv versions
+----
+
+=== install asciidoctor on Ubuntu 24.04 LTS
+
+. Show gem version
++
+[source,shell]
+----
+gem --version
+----
+
+. Install Bundler
++
+[source,shell]
+----
+gem install bundler
+----
+
+. Update RubyGems system software
++
+[source,shell]
+----
+gem update --system 3.4.18
+----
+
+. Setup bundler
++
+[source,shell]
+----
+rbenv exec bundle init
+----
+
+. Install dependency of asciidoctor-mathematical
++
+[source,shell]
+----
+sudo apt-get -qq -y install bison flex libffi-dev libxml2-dev libgdk-pixbuf2.0-dev libcairo2-dev libpango1.0-dev fonts-lyx cmake libzstd-dev libwebp-dev g++ pkg-config
+----
++
+[source,shell]
+.for execjs
+----
+sudo apt-get install -y nodejs make
+----
++
+[source,shell]
+.For dot
+----
+sudo apt-get install -y default-jdk graphviz fonts-noto-cjk
+----
+
+. Create a directory and go to the directory (Optional: If you're using a bundler)
++
+[source,shell]
+----
+mkdir ~/bundle_adoc && cd ~/bundle_adoc/
+----
+
+. Generate Gemfile (Optional: If you're using a bundler)
++
+[source,shell]
+----
+bundle init
+----
+
+. Show available versions of asciidoctor and related gems
++
+[source,shell]
+----
+gem list '^asciidoctor-diagram$' --remote --all
+gem list '^asciidoctor-katex$' --remote --all
+gem list '^asciidoctor-mathematical$' --remote --all
+gem list '^asciidoctor-pdf$' --remote --all
+gem list '^asciidoctor-rouge$' --remote --all
+gem list '^asciidoctor$' --remote --all
+gem list '^execjs$' --remote --all
+gem list '^mathematical$' --remote --all
+gem list '^rouge$' --remote --all
+gem list '^rubocop$' --remote --all
+----
+
+. Edit Gemfile +
+NOTE:: The `rouge` cannot use the latest version 4.7.0 as of 2026-01-01 due to the dependency on `asciidoctor-rouge`. As of 2026-01-01, maintenance of `asciidoctor-katex'` is somewhat stagnant.
++
+[source,ruby]
+.$HOME/bundle_adoc/Gemfile
+----
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+gem 'rubocop', '~> 1.82'
+gem 'rouge', '>= 2.2'
+gem 'asciidoctor', '~> 2.0.26'
+gem 'asciidoctor-diagram', '~> 3.1.0'
+gem 'mathematical', '~> 1.6.20'
+gem 'asciidoctor-mathematical', '~> 0.3.5'
+gem 'asciidoctor-rouge', '~> 0.4.0'
+gem 'asciidoctor-katex', '~> 0.4.1'
+gem 'asciidoctor-pdf', '~> 2.3.24'
+gem 'execjs', '~> 2.10.0'
+----
+
+. Configure bundler (Optional: If you're using a bundler)
++
+[source,shell]
+----
+bundle config set --local path 'vendor/bundle'
+----
+
+. Install asciidoctor using Bundler (Optional: If you're using a bundler)
++
+[source,shell]
+----
+time bundle install
+----
+
+. Rehash rbenv
++
+[source,shell]
+----
+rbenv rehash
+----
+
+. Check updated (Optional: If you're using a bundler)
++
+[source,shell]
+----
+rbenv exec bundle outdated
+----
+
+. Check installed (Optional: If you're not using a bundler)
++
+[source,shell]
+----
+bundle exec asciidoctor -v
+----
+
+. Create wrapper command
++
+[source,shell]
+.$HOME/bin/asciidoctor
+----
+#!/bin/bash
+export BUNDLE_GEMFILE="$HOME/bundle_adoc/Gemfile"
+exec bundle exec asciidoctor $*
+----

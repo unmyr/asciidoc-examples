@@ -1,6 +1,7 @@
 ifndef::leveloffset[]
 ifeval::["{backend}" == "html5"]
 <<index.adoc#,Index>> {vbar}
+<<install_asciidoctor.adoc#,Install>> {vbar}
 <<asciidoc_block_admonition.adoc#,Block admonition>> {vbar}
 <<asciidoc_blocks.adoc#,Blocks>> {vbar}
 <<asciidoc_conditionals.adoc#,ifdef, etc>> {vbar}
