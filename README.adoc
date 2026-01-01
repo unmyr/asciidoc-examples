@@ -5,86 +5,12 @@ Example of actions to generate document.
 
 * Base docker images
 ** Base: https://github.com/asciidoctor/docker-asciidoctor
-** https://github.com/tonynv/asciidoctor-action
+** https://github.com/tonynv/asciidoctor-action[tonynv/asciidoctor-action: GitHub Action to build asciidoc^]
 
 === Actions
 
-* https://github.com/marketplace/actions/checkout[Checkout · Actions · GitHub Marketplace^]
-* https://github.com/marketplace/actions/copy-file[Copy file · Actions · GitHub Marketplace^]
-* https://github.com/marketplace/actions/github-pages-action[GitHub Pages action · Actions · GitHub Marketplace^]
-* https://github.com/marketplace/actions/upload-a-build-artifact[Upload a Build Artifact · Actions · GitHub Marketplace^]
+* https://github.blog/news-insights/product-news/github-pages-now-uses-actions-by-default/[GitHub Pages now uses Actions by default - The GitHub Blog^]
+* https://github.com/actions/checkout[actions/checkout: Action for checking out a repo^]
+* https://github.com/actions/upload-pages-artifact[actions/upload-pages-artifact^] +
+  A composite action for packaging and uploading an artifact that can be deployed to GitHub Pages.
 
-=== Example: using artifact
-
-[source,yaml]
-----
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-
-jobs:
-  adoc_build:
-    runs-on: ubuntu-18.04
-    name: convert asciidoc to html
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-    - name: Get build container
-      id: adocbuild
-      uses: tonynv/asciidoctor-action@master
-      with:
-          program: "cd docs && make adoc"
-    - name: Print execution time
-      run: echo "Time ${{ steps.adocbuild.outputs.time }}"
-    - name: Deploy docs to artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: AsciiDoc-document
-        path: html/
-----
-
-=== Example: using GitHub Pages
-
-[source,yaml]
-----
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-
-jobs:
-  adoc_build:
-    runs-on: ubuntu-18.04
-    name: convert asciidoc to html
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-    - name: Get build container
-      id: adocbuild
-      uses: tonynv/asciidoctor-action@master
-      with:
-          program: "cd docs && make adoc"
-    - name: copy .gitignore file
-      uses: canastro/copy-file-action@master
-      with:
-        source: "gh-pages.gitignore"
-        target: "html/.gitignore"
-    - name: Print execution time
-      run: echo "Time ${{ steps.adocbuild.outputs.time }}"
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: html/
-----

@@ -1,0 +1,52 @@
+name: Build and Deploy AsciiDoc to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # Build AsciiDoc HTML files
+  build:
+    runs-on: ubuntu-latest
+    name: convert asciidoc to html
+    steps:
+    # Checkout the repository
+    # See: https://github.com/actions/checkout
+    - name: Checkout
+      uses: actions/checkout@v6
+
+    # Convert AsciiDoc files to HTML using Asciidoctor
+    # See: https://github.com/tonynv/asciidoctor-action
+    - name: Get build container
+      id: adocbuild
+      uses: tonynv/asciidoctor-action@v2
+      with:
+          program: "cd docs && make adoc"
+
+    # Upload the generated site as an artifact for deployment
+    # See: https://github.com/actions/upload-pages-artifact
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: dist/
+
+  # Deploy to GitHub Pages
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy site to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
