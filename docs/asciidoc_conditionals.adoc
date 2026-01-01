@@ -115,7 +115,7 @@ Provide an alternative on GFA
 **endif::[]**
 
 **ifndef::env-github[]**
-include::../../../stem.adoc[] //<2>
+include::./stem.adoc[] //<2>
 **endif::[]**
 
 **ifdef::env-github[]**

@@ -1,0 +1,13 @@
+ifeval::["{backend}" == "html5"]
+
+include::katex.adoc[]
+
+ifndef::use-katex[]
+:stem:
+endif::[]
+
+endif::[]
+
+ifeval::["{backend}" == "pdf"]
+:stem: latexmath
+endif::[]

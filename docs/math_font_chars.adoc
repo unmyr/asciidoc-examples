@@ -54,7 +54,7 @@ ifeval::["{backend}" == "pdf"]
 endif::[]
 
 ifndef::leveloffset[]
-include::../../stem.adoc[]
+include::./stem.adoc[]
 endif::[]
 
 == Mathematical fonts
