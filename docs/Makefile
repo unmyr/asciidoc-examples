@@ -18,7 +18,6 @@ $(DIST_DIR)/asciidoc_images.html \
 $(DIST_DIR)/asciidoc_listing.html \
 $(DIST_DIR)/asciidoc_tables.html \
 $(DIST_DIR)/diagram-graphviz.html \
-$(DIST_DIR)/diagram-plantuml.html \
 $(DIST_DIR)/install_asciidoctor.html \
 $(DIST_DIR)/math_font_chars.html \
 $(DIST_DIR)/math_font_symbols.html \
@@ -27,7 +26,8 @@ $(DIST_DIR)/unicode_font_arrows.html \
 $(DIST_DIR)/index.html
 
 SUB_TARGETS=\
-math
+math \
+plantuml
 
 .PHONY: adoc mkdir_and_copy $(SUB_TARGETS)
 
@@ -42,4 +42,7 @@ $(DIST_DIR)/%.html: %.adoc header.adoc
 	asciidoctor --trace $(AD_OPTS_HTML5_ROUGE) -o "$@" "$<"
 
 math:
+	(cd $@ && make adoc)
+
+plantuml:
 	(cd $@ && make adoc)

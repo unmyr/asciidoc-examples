@@ -6,6 +6,11 @@ AD_OPTS_HTML5_COMMON=\
 --backend=html5 \
 -a imagesdir=$(IMAGES_DIR)
 
+AD_OPTS_HTML5_PLANTUML=\
+--backend=html5 \
+-r asciidoctor-diagram \
+-a imagesdir=$(IMAGES_DIR)
+
 AD_OPTS_HTML5_ROUGE=\
 $(AD_OPTS_HTML5_COMMON) \
 -r asciidoctor-diagram \
