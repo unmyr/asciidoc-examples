@@ -634,3 +634,47 @@ Rendered(display mode)::
 S = \left\{x \mid x \in \left[0, \frac{1}{2} \right] \right\}
 ++++
 endif::[]
+
+=== Equations with numbers
+
+Equations with numbers can be created using the `equation` environment. The equation number is automatically generated and can be referenced with the `\label` and `\ref` commands.
+
+// Example
+
+From the following equations, eliminate _s_ and find latexmath:[x(t), y(t)].
+// Equation 1
+[stem,latexmath]
+++++
+\begin{equation}
+t(x,y) = \frac{x}{1-y} \tag{1}\label{tag_t_xy}
+\end{equation}
+++++
+
+// Equation 2
+[stem,latexmath]
+++++
+\begin{equation}
+s(x,y) = \frac{x}{1+y} \tag{2}\label{tag_s_xy}
+\end{equation}
+++++
+
+// Equation 3
+[stem,latexmath]
+++++
+\begin{equation}
+x^2 + y^2 = 1 \tag{3}\label{tag_x2_y2_1}
+\end{equation}
+++++
+
+From latexmath:[\eqref{tag_t_xy}] and latexmath:[\eqref{tag_s_xy}], eliminate _x_ and rearrange the equation as follows.
+
+[stem,latexmath]
+++++
+\begin{aligned}
+t(1 - y) = x,\quad& s(1 + y)=x \\
+t(1 - y) &= s(1 + y) \\
+t - ty &= s + sy \\
+(s + t)y &= t - s \\
+y &= \frac{t - s}{t + s} \\
+\end{aligned}
+++++
