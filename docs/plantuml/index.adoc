@@ -7,6 +7,86 @@ include::header.adoc[]
 
 == Asciidoctor Diagram: PlantUML
 
+=== Installation
+
+. Install graphviz and plantuml on Ubuntu 24.04 LTS:
++
+[source,bash]
+----
+sudo apt update
+sudo apt install graphviz plantuml
+----
+
+. Verify graphviz installation:
++
+[source,bash]
+----
+dot -V
+----
+
+. Verify plantuml installation:
++
+[source,bash]
+----
+dpkg -L plantuml
+plantuml -version
+----
+
+. Update Gemfile to include `asciidoctor-plantuml`:
++
+[source,ruby]
+----
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+gem 'rubocop', '~> 1.82'
+gem 'rouge', '>= 2.2'
+gem 'asciidoctor', '~> 2.0.26'
+gem 'asciidoctor-diagram', '~> 3.1.0'
+gem 'mathematical', '~> 1.6.20'
+gem 'asciidoctor-mathematical', '~> 0.3.5'
+gem 'asciidoctor-rouge', '~> 0.4.0'
+gem 'asciidoctor-katex', '~> 0.4.1'
+gem 'asciidoctor-pdf', '~> 2.3.24'
+gem 'execjs', '~> 2.10.0'
+gem 'asciidoctor-plantuml', '~> 0.1.1'
+----
+
+. Install the gems:
++
+[source,bash]
+----
+bundle install
+----
+
+. Set the `DIAGRAM_PLANTUML_CLASSPATH` environment variable to point to the PlantUML JAR file:
++
+[source,bash]
+----
+export DIAGRAM_PLANTUML_CLASSPATH="/usr/share/plantuml/plantuml.jar"
+----
+
+[source,java]
+.asciidoctor-diagram failed to load PlantUML JAR file (2026-04-26)
+----
+Exception in thread "main" java.lang.NoClassDefFoundError: net/sourceforge/plantuml/security/SFile
+        at org.asciidoctor.diagram.plantuml.PlantUMLPreprocessor.preprocess(PlantUMLPreprocessor.java:81)
+        at org.asciidoctor.diagram.plantuml.PlantUMLPreprocessor.generate(PlantUMLPreprocessor.java:47)
+        at org.asciidoctor.diagram.LazyDiagramGenerator.generate(LazyDiagramGenerator.java:39)
+        at org.asciidoctor.diagram.CommandProcessor.processRequest(CommandProcessor.java:40)
+        at org.asciidoctor.diagram.AbstractCommandServer.processRequests(AbstractCommandServer.java:47)
+        at org.asciidoctor.diagram.StdInOutCommandServer.processRequests(StdInOutCommandServer.java:23)
+        at org.asciidoctor.diagram.StdInOutCommandServer.main(StdInOutCommandServer.java:13)
+Caused by: java.lang.ClassNotFoundException: net.sourceforge.plantuml.security.SFile
+        at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+        at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+        ... 7 more
+----
+
 === Use Case Diagram
 
 [source,plantuml]
