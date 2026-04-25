@@ -8,7 +8,7 @@ include::header.adoc[]
 
 :stem: latexmath
 
-== latexmath Examples
+== Latex Notation Examples
 
 * https://www.intmath.com/cg5/katex-mathjax-comparison.php[KaTeX and MathJax Comparison Demo - Interactive Mathematics^]
 
