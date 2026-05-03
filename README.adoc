@@ -16,11 +16,11 @@ Example of actions to generate document.
 
 == GitHub Flavored AsciiDoc
 
-=== 機能的な差異 (Functional differences)
-GitHub Flavored AsciiDoc (GFA)は、GitHub上での表示に特化したAsciiDocの方言であり、いくつかの機能的な差異があります。 +
+=== Functional differences
 GitHub Flavored AsciiDoc (GFA) is a dialect of AsciiDoc that is tailored for rendering on GitHub, and it has some functional differences.
 
 * The `include::{startsb}{endsb}` directive is not supported.
+* Math blocks within tables are not supported in GFA.
 
 === Example of writing GFA-specific content
 
@@ -36,10 +36,9 @@ endif::{startsb}{endsb}
 
 === Math equations examples
 
-数式の記述において、AsciiDocとGitHub Flavored AsciiDoc(GFA)では、互換性はありません。 +
 AsciiDoc and GitHub Flavored AsciiDoc (GFA) are not compatible for writing mathematical formulas.
 
-GFA記法の対応関係は次の通りです。
+The correspondence between GFA syntax and AsciiDoc syntax is as follows.
 
 [cols="1,1,1"]
 |===
