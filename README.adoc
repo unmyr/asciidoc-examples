@@ -14,3 +14,79 @@ Example of actions to generate document.
 * https://github.com/actions/upload-pages-artifact[actions/upload-pages-artifact^] +
   A composite action for packaging and uploading an artifact that can be deployed to GitHub Pages.
 
+== GitHub Flavored AsciiDoc
+
+=== 機能的な差異 (Functional differences)
+GitHub Flavored AsciiDoc (GFA)は、GitHub上での表示に特化したAsciiDocの方言であり、いくつかの機能的な差異があります。 +
+GitHub Flavored AsciiDoc (GFA) is a dialect of AsciiDoc that is tailored for rendering on GitHub, and it has some functional differences.
+
+* The `include::{startsb}{endsb}` directive is not supported.
+
+=== Example of writing GFA-specific content
+
+[source,asciidoc]
+----
+ifdef::env-github{startsb}{endsb}
+// GitHub Flavored AsciiDoc (GFA) specific content
+endif::{startsb}{endsb}
+ifndef::env-github{startsb}{endsb}
+// Content for AsciiDoc (not GFA)
+endif::{startsb}{endsb}
+----
+
+=== Math equations examples
+
+数式の記述において、AsciiDocとGitHub Flavored AsciiDoc(GFA)では、互換性はありません。 +
+AsciiDoc and GitHub Flavored AsciiDoc (GFA) are not compatible for writing mathematical formulas.
+
+GFA記法の対応関係は次の通りです。
+
+[cols="1,1,1"]
+|===
+h| AsciiDoc syntax
+h| GFA syntax
+h| Rendered
+
+| latexmath:{startsb}x^2{endsb}
+| &#36;x^2&#36;
+| $x^2$
+
+|
+{startsb}stem,latexmath{endsb} +
+{plus}{plus}{plus}{plus} +
+y=x^2 +
+{plus}{plus}{plus}{plus}
+|
+{startsb}source,math{endsb} +
+---- +
+y=x^2 +
+----
+|
+[source,math]
+----
+y=x^2
+----
+|===
+
+==== Math equation with sidebar
+We can use the math equation in a sidebar.
+
+.Sidebar Title (Optional)
+****
+[source,math]
+----
+y = x^2
+----
+****
+
+==== Example: Sigmoid function
+
+The sigmoid function $\sigma(x) = \frac{1}{1 + e^{-x}}$ is commonly used in neural networks. The range of the sigmoid function( $\sigma(x)$ ) is $[0, 1]$.
+
+[source,math]
+----
+\begin{aligned}
+\sigma(x) &= \frac{1}{1 + e^{-x}} \\
+\sigma'(x) &= \sigma(x)\left(1 - \sigma(x)\right)
+\end{aligned}
+----
