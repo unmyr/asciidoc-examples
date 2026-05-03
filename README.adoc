@@ -1,4 +1,19 @@
 = AsciiDoc examples
+ifdef::env-github[]
+// GitHub Flavored AsciiDoc (GFA) specific content
+// Alternative to `:icons: font` on GitHub.
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+// End of GFA-specific content
+endif::[]
+ifndef::env-github[]
+// Content for AsciiDoc (not GFA)
+\:icons: font
+// End of AsciiDoc-specific content
+endif::[]
 
 == GitHub Actions
 Example of actions to generate document.
@@ -28,9 +43,18 @@ GitHub Flavored AsciiDoc (GFA) is a dialect of AsciiDoc that is tailored for ren
 ----
 ifdef::env-github{startsb}{endsb}
 // GitHub Flavored AsciiDoc (GFA) specific content
+// Alternative to `:icons: font` on GitHub.
+\:tip-caption: :bulb:
+\:note-caption: :information_source:
+\:important-caption: :heavy_exclamation_mark:
+\:caution-caption: :fire:
+\:warning-caption: :warning:
+// End of GFA-specific content
 endif::{startsb}{endsb}
 ifndef::env-github{startsb}{endsb}
 // Content for AsciiDoc (not GFA)
+\:icons: font
+// End of AsciiDoc-specific content
 endif::{startsb}{endsb}
 ----
 
@@ -47,8 +71,12 @@ h| GFA syntax
 h| Rendered
 
 | latexmath:{startsb}x^2{endsb}
-| &#36;x^2&#36;
+| \$x^2\$
 | $x^2$
+
+| The total cost is latexmath:{startsb}100\${endsb}
+| The total cost is \\(100\$\\)
+| The total cost is \(100$\)
 
 |
 {startsb}stem,latexmath{endsb} +
