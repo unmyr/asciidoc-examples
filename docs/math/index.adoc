@@ -12,6 +12,17 @@ include::header.adoc[]
 
 * https://www.intmath.com/cg5/katex-mathjax-comparison.php[KaTeX and MathJax Comparison Demo - Interactive Mathematics^]
 
+=== Math equation with sidebar
+We can use the math equation in a sidebar.
+
+.Sidebar Title (Optional)
+****
+[stem,latexmath]
+++++
+y = x^2
+++++
+****
+
 === Repeating fractions
 .The LaTeX code
 [source,latex]
