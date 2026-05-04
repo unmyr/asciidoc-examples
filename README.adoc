@@ -66,9 +66,16 @@ endif::{startsb}{endsb}
 === Escape characters
 In GFA, the backslash (`\`) is used as an escape character. To include a literal backslash in your content, you need to escape it with another backslash. For example, to include a single backslash, you would write `\\`.
 
-* dollar sign: Price is `\$100`
-* backslash: `\\`
-* curly braces: `\{` and `\}`
+[cols="1,1,1"]
+|===
+h| Character h| GFA syntax h| Rendered
+
+| Dollar sign ($) | `\$` | \$
+| 100 dollars     | `100$` and `$100` | 100$ and $100
+| Shell variable   | `\$FOO=bar` | \$FOO=bar
+| Backslash (\) | `\\` | \
+| Curly braces (`{` and `}`) | `\{` and `\}` | \{ and \}
+|===
 
 === Admonition blocks
 Admonition blocks are used to highlight important information, tips, warnings, etc. They can be created using the following syntax:
