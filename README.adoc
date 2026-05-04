@@ -1,5 +1,7 @@
 = AsciiDoc examples
-toc:[]
+ifndef::leveloffset[]
+:toc: left
+endif::[]
 
 ifdef::env-github[]
 // GitHub Flavored AsciiDoc (GFA) specific content
@@ -140,6 +142,7 @@ y=x^2 +
 y=x^2 +
 ----
 |
+
 [source,math]
 ----
 y=x^2

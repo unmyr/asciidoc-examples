@@ -4,8 +4,6 @@ ifndef::leveloffset[]
 :icons: font
 endif::[]
 
-toc:[]
-
 ifdef::env-github[]
 // GitHub Flavored AsciiDoc (GFA) specific content
 // Alternative to `:icons: font` on GitHub.
@@ -71,48 +69,54 @@ I broke up the next two examples into separate lines so it behaves better on a m
 ----
 \displaystyle\sum_{i=1}^{k+1}i
 ----
+
 Rendered::
-latexmath:[\displaystyle\sum_{i=1}^{k+1}i]
+$\displaystyle\sum_{i=1}^{k+1}i$
 
 .*The LaTeX code*
 [source,latex]
 ----
 \displaystyle= \left(\sum_{i=1}^{k}i\right) +(k+1)
 ----
+
 Rendered::
-latexmath:[\displaystyle= \left(\sum_{i=1}^{k}i\right) +(k+1)]
+$\displaystyle= \left(\sum_{i=1}^{k}i\right) +(k+1)$
 
 .*The LaTeX code*
 [source,latex]
 ----
 \displaystyle= \frac{k(k+1)}{2}+k+1
 ----
+
 Rendered::
-latexmath:[\displaystyle= \frac{k(k+1)}{2}+k+1]
+$\displaystyle= \frac{k(k+1)}{2}+k+1$
 
 .*The LaTeX code*
 [source,latex]
 ----
 \displaystyle= \frac{k(k+1)+2(k+1)}{2}
 ----
+
 Rendered::
-latexmath:[\displaystyle= \frac{k(k+1)+2(k+1)}{2}]
+$\displaystyle= \frac{k(k+1)+2(k+1)}{2}$
 
 .*The LaTeX code*
 [source,latex]
 ----
 \displaystyle= \frac{(k+1)(k+2)}{2}
 ----
+
 Rendered::
-latexmath:[\displaystyle= \frac{(k+1)(k+2)}{2}]
+$\displaystyle= \frac{(k+1)(k+2)}{2}$
 
 .*The LaTeX code*
 [source,latex]
 ----
 \displaystyle= \frac{(k+1)((k+1)+1)}{2}
 ----
+
 Rendered::
-latexmath:[\displaystyle= \frac{(k+1)((k+1)+1)}{2}]
+$\displaystyle= \frac{(k+1)((k+1)+1)}{2}$
 
 === Product notation
 .*The LaTeX code*
@@ -131,7 +135,7 @@ latexmath:[\displaystyle= \frac{(k+1)((k+1)+1)}{2}]
 ----
 
 === Inline math
-And here is some in-line math: latexmath:[k_{n+1} = n^2 + k_n^2 - k_{n-1}], followed by some more text.
+And here is some in-line math: $k_{n+1} = n^2 + k_n^2 - k_{n-1}$, followed by some more text.
 
 The LaTeX code::
 `k_{n+1} = n^2 + k_n^2 - k_{n-1}`
@@ -149,7 +153,9 @@ rather than a div.
 ----
 \Gamma\ \Delta\ \Theta\ \Lambda\ \Xi\ \Pi\ \Sigma\ \Upsilon\ \Phi\ \Psi\ \Omega
 ----
+
 Rendered::
++
 [source,math]
 ----
 \Gamma\ \Delta\ \Theta\ \Lambda\ \Xi\ \Pi\ \Sigma\ \Upsilon\ \Phi\ \Psi\ \Omega
@@ -161,7 +167,9 @@ Rendered::
 \alpha\ \beta\ \gamma\ \delta\ \epsilon\ \zeta\ \eta\ \theta\ \iota\ \kappa\ \lambda\ \mu\ \nu\ \xi
 \ \omicron\ \pi\ \rho\ \sigma\ \tau\ \upsilon\ \phi\ \chi\ \psi\ \omega\ \varepsilon\ \vartheta\ \varpi\ \varrho\ \varsigma\ \varphi
 ----
+
 Rendered::
++
 [source,math]
 ----
 \alpha\ \beta\ \gamma\ \delta\ \epsilon\ \zeta\ \eta\ \theta\ \iota\ \kappa\ \lambda\ \mu\ \nu\ \xi
@@ -186,7 +194,9 @@ Rendered::
 \Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow
 \mapsto\ \hookleftarrow
 ----
+
 Rendered::
++
 [source,math]
 ----
 \Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow
@@ -198,7 +208,9 @@ Rendered::
 ----
 \leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow \Longleftarrow\ \longrightarrow
 ----
+
 Rendered::
++
 [source,math]
 ----
 \leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow \Longleftarrow\ \longrightarrow
@@ -210,7 +222,9 @@ Rendered::
 \Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto
 \hookrightarrow\ \rightharpoonup
 ----
+
 Rendered::
++
 [source,math]
 ----
 \Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto
@@ -223,7 +237,9 @@ Rendered::
 \rightharpoondown\ \leadsto\ \nearrow
 \searrow\ \swarrow\ \nwarrow
 ----
+
 Rendered::
++
 [source,math]
 ----
 \rightharpoondown\ \leadsto\ \nearrow
@@ -237,7 +253,9 @@ Rendered::
 ----
 \surd\ \barwedge\ \veebar\ \odot\ \oplus\ \otimes\ \oslash\ \circledcirc\ \boxdot\bigtriangleup
 ----
+
 Rendered::
++
 [source,math]
 ----
 \surd\ \barwedge\ \veebar\ \odot\ \oplus\ \otimes\ \oslash\ \circledcirc\ \boxdot\bigtriangleup
@@ -248,7 +266,9 @@ Rendered::
 ----
 \bigtriangledown\ \dagger\ \diamond\ \star\ \triangleleft\triangleright\ \angle\ \infty\ \prime\ \triangle
 ----
+
 Rendered::
++
 [source,math]
 ----
 \bigtriangledown\ \dagger\ \diamond\ \star\ \triangleleft\triangleright\ \angle\ \infty\ \prime\ \triangle
@@ -261,7 +281,9 @@ Rendered::
 ----
 \displaystyle \int u \frac{dv}{dx}\,dx=uv-\int \frac{du}{dx}v\,dx
 ----
+
 Rendered::
++
 [source,math]
 ----
 \displaystyle \int u \frac{dv}{dx}\,dx=uv-\int \frac{du}{dx}v\,dx
@@ -272,7 +294,9 @@ Rendered::
 ----
 \displaystyle f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x}
 ----
+
 Rendered::
++
 [source,math]
 ----
 \displaystyle f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x}
@@ -283,7 +307,9 @@ Rendered::
 ----
 \displaystyle \oint \vec{F} \cdot d\vec{s}=0
 ----
+
 Rendered::
++
 [source,math]
 ----
 \displaystyle \oint \vec{F} \cdot d\vec{s}=0
@@ -358,7 +384,9 @@ Here's a workaround: make the fractions smaller with an extra class that targets
 ----
 \hat{x}\ \vec{x}\ \ddot{x}
 ----
+
 Rendered::
++
 [source,math]
 ----
 \hat{x}\ \vec{x}\ \ddot{x}
@@ -382,7 +410,9 @@ Rendered::
 ----
 \left.\frac{x^3}{3}\right|_0^1
 ----
+
 Rendered::
++
 [source,math]
 ----
 \left.\frac{x^3}{3}\right|_0^1
@@ -452,6 +482,7 @@ f(n) =
 \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
 \nabla \cdot \vec{\mathbf{B}} & = 0 \end{aligned}
 ----
+
 [example]
 ====
 [source,math]
@@ -496,7 +527,9 @@ Definition of combination:
 ----
 \frac{n!}{k!(n-k)!} = {^n}C_k
 ----
+
 Rendered::
++
 [source,math]
 ----
 \frac{n!}{k!(n-k)!} = {^n}C_k
@@ -507,7 +540,9 @@ Rendered::
 ----
 {n \choose k}
 ----
+
 Rendered::
++
 [source,math]
 ----
 {n \choose k}
@@ -519,7 +554,9 @@ Rendered::
 ----
 \frac{\frac{1}{x}+\frac{1}{y}}{y-z}
 ----
+
 Rendered::
++
 [source,math]
 ----
 \frac{\frac{1}{x}+\frac{1}{y}}{y-z}
@@ -531,7 +568,9 @@ Rendered::
 ----
 \sqrt[n]{1+x+x^2+x^3+\ldots}
 ----
+
 Rendered::
++
 [source,math]
 ----
 \sqrt[n]{1+x+x^2 + x^3 +\ldots}
@@ -582,7 +621,9 @@ a_{31} & a_{32} & a_{33}
 ----
 f(x) = \sqrt{1+x} \quad (x \ge  -1)
 ----
+
 Rendered::
++
 [source,math]
 ----
 f(x) = \sqrt{1+x} \quad (x \ge  -1)
@@ -615,7 +656,9 @@ f(x) = \sqrt{1+x}, \quad x \ge -1
 ----
 f(x) \sim x^2, \quad x\to\infty
 ----
+
 Rendered::
++
 [source,math]
 ----
 f(x) \sim x^2, \quad x\to\infty
@@ -634,7 +677,9 @@ ifeval::["{stem-target}" != "asciidoctor-mathematical"]
 ----
 S = \left\{x \;\middle|\; x \in \left[0, \frac{1}{2} \right] \right\}
 ----
+
 Rendered(display mode)::
++
 [source,math]
 ----
 S = \left\{x \;\middle|\; x \in \left[0, \frac{1}{2} \right] \right\}
@@ -645,8 +690,9 @@ S = \left\{x \;\middle|\; x \in \left[0, \frac{1}{2} \right] \right\}
 ----
 S = \left\lbrace x \;\middle|\; x \in \left\lbrack 0, \frac{1}{2} \right\rbrack \right\rbrace
 ----
+
 Rendered(inline mode)::
-latexmath:[S = \left\lbrace x \;\middle|\; x \in \left\lbrack 0, \frac{1}{2} \right\rbrack \right\rbrace]
+$S = \left\lbrace x \;\middle|\; x \in \left\lbrack 0, \frac{1}{2} \right\rbrack \right\rbrace$
 endif::[]
 
 ifeval::["{stem-target}" == "asciidoctor-mathematical"]
@@ -655,7 +701,9 @@ ifeval::["{stem-target}" == "asciidoctor-mathematical"]
 ----
 S = \left\{x \mid x \in \left[0, \frac{1}{2} \right] \right\}
 ----
+
 Rendered(display mode)::
++
 [source,math]
 ----
 S = \left\{x \mid x \in \left[0, \frac{1}{2} \right] \right\}
@@ -668,7 +716,7 @@ Equations with numbers can be created using the `equation` environment. The equa
 
 // Example
 
-From the following equations, eliminate _s_ and find latexmath:[x(t), y(t)].
+From the following equations, eliminate _s_ and find $x(t), y(t)$.
 // Equation 1
 [source,math]
 ----
@@ -693,7 +741,7 @@ x^2 + y^2 = 1 \tag{3}\label{tag_x2_y2_1}
 \end{equation}
 ----
 
-From latexmath:[\eqref{tag_t_xy}] and latexmath:[\eqref{tag_s_xy}], eliminate _x_ and rearrange the equation as follows.
+From $\eqref{tag_t_xy}$ and $\eqref{tag_s_xy}$, eliminate _x_ and rearrange the equation as follows.
 
 [source,math]
 ----
