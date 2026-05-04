@@ -1,4 +1,6 @@
 = AsciiDoc examples
+toc:[]
+
 ifdef::env-github[]
 // GitHub Flavored AsciiDoc (GFA) specific content
 // Alternative to `:icons: font` on GitHub.
