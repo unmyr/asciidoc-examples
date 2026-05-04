@@ -31,6 +31,11 @@ Example of actions to generate document.
 
 == GitHub Flavored AsciiDoc
 
+Referring to the link:
+
+* link:https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74[GitHub Flavored AsciiDoc (GFA) Gist^]
+* link:https://github.github.com/gfm/[GitHub Flavored Markdown (GFM)^]
+
 === Functional differences
 GitHub Flavored AsciiDoc (GFA) is a dialect of AsciiDoc that is tailored for rendering on GitHub, and it has some functional differences.
 
@@ -57,6 +62,22 @@ ifndef::env-github{startsb}{endsb}
 // End of AsciiDoc-specific content
 endif::{startsb}{endsb}
 ----
+
+=== Escape characters
+In GFA, the backslash (`\`) is used as an escape character. To include a literal backslash in your content, you need to escape it with another backslash. For example, to include a single backslash, you would write `\\`.
+
+* dollar sign: Price is `\$100`
+* backslash: `\\`
+* curly braces: `\{` and `\}`
+
+=== Admonition blocks
+Admonition blocks are used to highlight important information, tips, warnings, etc. They can be created using the following syntax:
+
+NOTE: This is a note.
+TIP: This is a tip.
+IMPORTANT: This is important.
+CAUTION: This is a caution.
+WARNING: This is a warning.
 
 === Math equations examples
 
