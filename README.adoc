@@ -11,7 +11,7 @@ ifdef::env-github[]
 endif::[]
 ifndef::env-github[]
 // Content for AsciiDoc (not GFA)
-\:icons: font
+:icons: font
 // End of AsciiDoc-specific content
 endif::[]
 
@@ -49,16 +49,16 @@ GitHub Flavored AsciiDoc (GFA) is a dialect of AsciiDoc that is tailored for ren
 ifdef::env-github{startsb}{endsb}
 // GitHub Flavored AsciiDoc (GFA) specific content
 // Alternative to `:icons: font` on GitHub.
-\:tip-caption: :bulb:
-\:note-caption: :information_source:
-\:important-caption: :heavy_exclamation_mark:
-\:caution-caption: :fire:
-\:warning-caption: :warning:
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
 // End of GFA-specific content
 endif::{startsb}{endsb}
 ifndef::env-github{startsb}{endsb}
 // Content for AsciiDoc (not GFA)
-\:icons: font
+:icons: font
 // End of AsciiDoc-specific content
 endif::{startsb}{endsb}
 ----
