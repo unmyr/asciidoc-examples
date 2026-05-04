@@ -96,8 +96,8 @@ h| Rendered
 | $x^2$
 
 | The total cost is latexmath:{startsb}100\${endsb}
-| The total cost is &dollar;100&dollar;
-| The total cost is $100\\$$
+| The total cost is `$100\text{\$}$`
+| The total cost is $100\text{\$}$
 
 |
 {startsb}stem,latexmath{endsb} +
