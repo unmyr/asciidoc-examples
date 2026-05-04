@@ -92,12 +92,12 @@ h| GFA syntax
 h| Rendered
 
 | latexmath:{startsb}x^2{endsb}
-| &dollar;x^2&dollar;
+| \$x^2$
 | $x^2$
 
 | The total cost is latexmath:{startsb}100\${endsb}
 | The total cost is &dollar;100&dollar;
-| The total cost is $100\$$
+| The total cost is $100\\$$
 
 |
 {startsb}stem,latexmath{endsb} +
