@@ -130,10 +130,6 @@ h| Rendered
 | `$x^2$`
 | $x^2$
 
-| The total cost is latexmath:{startsb}100\${endsb}
-| The total cost is `$100\text{\$}$`
-| The total cost is $100\text{\$}$
-
 |
 {startsb}stem,latexmath{endsb} +
 {plus}{plus}{plus}{plus} +
@@ -149,6 +145,10 @@ y=x^2 +
 ----
 y=x^2
 ----
+
+| The total cost is latexmath:{startsb}100\${endsb}
+| The total cost is `$100\text{\$}$`
+| The total cost is $100\text{\$}$
 |===
 
 ==== Math equation with sidebar
