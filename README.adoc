@@ -92,7 +92,7 @@ h| GFA syntax
 h| Rendered
 
 | latexmath:{startsb}x^2{endsb}
-| \$x^2$
+| `$x^2$`
 | $x^2$
 
 | The total cost is latexmath:{startsb}100\${endsb}
