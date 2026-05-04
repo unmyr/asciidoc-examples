@@ -70,9 +70,9 @@ In GFA, the backslash (`\`) is used as an escape character. To include a literal
 |===
 h| Character h| GFA syntax h| Rendered
 
-| Dollar sign ($) | `\$` | \$
+| Dollar sign ($) | `$` | $
 | 100 dollars     | `100$` and `$100` | 100$ and $100
-| Shell variable   | `\$FOO=bar` | \$FOO=bar
+| Shell variable   | `$FOO=bar` | $FOO=bar
 | Backslash (\) | `\\` | \
 | Curly braces (`{` and `}`) | `\{` and `\}` | \{ and \}
 |===
