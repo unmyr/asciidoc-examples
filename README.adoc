@@ -73,10 +73,27 @@ In GFA, the backslash (`\`) is used as an escape character. To include a literal
 === Admonition blocks
 Admonition blocks are used to highlight important information, tips, warnings, etc. They can be created using the following syntax:
 
+[source,asciidoc]
+----
 NOTE: This is a note.
+
 TIP: This is a tip.
+
 IMPORTANT: This is important.
+
 CAUTION: This is a caution.
+
+WARNING: This is a warning.
+----
+
+NOTE: This is a note.
+
+TIP: This is a tip.
+
+IMPORTANT: This is important.
+
+CAUTION: This is a caution.
+
 WARNING: This is a warning.
 
 === Math equations examples
