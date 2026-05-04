@@ -173,3 +173,24 @@ The sigmoid function $\sigma(x) = \frac{1}{1 + e^{-x}}$ is commonly used in neur
 \sigma'(x) &= \sigma(x)\left(1 - \sigma(x)\right)
 \end{aligned}
 ----
+
+==== Example: Failing to render math equations in GFA
+In GFA, some examples may not render correctly.
+
+[source,math]
+.Dollar sign in text
+----
+n! =
+\begin{cases}
+  1       & \text{if $(n = 0)$} \\
+  n(n-1)! & \text{if $(n < 1)$}
+\end{cases}
+----
+
+[source,math]
+.Equation environment
+----
+\begin{equation}
+t(x,y) = \frac{x}{1-y} \tag{1}\label{tag_t_xy}
+\end{equation}
+----
