@@ -422,7 +422,7 @@ Rendered::
 .Factorial
 [cols="1a,1a" {table_options}]
 |===
-h| The AsciiMath code
+h| The LaTeX code
 h| Rendered
 
 |
@@ -448,7 +448,7 @@ n! =
 .Collatz conjecture
 [cols="1a,1a" {table_options}]
 |===
-h| The AsciiMath code
+h| The LaTeX code
 h| Rendered
 
 |
