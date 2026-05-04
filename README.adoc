@@ -44,7 +44,8 @@ Referring to the link:
 GitHub Flavored AsciiDoc (GFA) is a dialect of AsciiDoc that is tailored for rendering on GitHub, and it has some functional differences.
 
 * The `include::{startsb}{endsb}` directive is not supported.
-* Math blocks within tables are not supported in GFA.
+* In GFA, the `equation` environment within a math environment may not render correctly.
+* GFA does not support the `:icons: font` attribute, so you need to use alternative syntax for admonition captions.
 
 === Example of writing GFA-specific content
 
@@ -117,7 +118,7 @@ include::GFA_math.adoc[]
 
 The correspondence between GFA syntax and AsciiDoc syntax is as follows.
 
-[cols="1,1,1"]
+[cols="1,1,1a"]
 |===
 h| AsciiDoc syntax
 h| GFA syntax

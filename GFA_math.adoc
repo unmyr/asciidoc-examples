@@ -182,7 +182,9 @@ Rendered::
 ----
 \gets\ \to\ \leftarrow\ \rightarrow\ \uparrow\ \Uparrow\ \downarrow\ \Downarrow\ \updownarrow\ \Updownarrow
 ----
+
 Rendered::
++
 [source,math]
 ----
 \gets\ \to\ \leftarrow\ \rightarrow\ \uparrow\ \Uparrow\ \downarrow\ \Downarrow\ \updownarrow\ \Updownarrow
@@ -398,7 +400,9 @@ Rendered::
 ----
 \left(\frac{x^2}{y^3}\right)
 ----
+
 Rendered::
++
 [source,math]
 ----
 \left(\frac{x^2}{y^3}\right)
@@ -634,7 +638,9 @@ f(x) = \sqrt{1+x} \quad (x \ge  -1)
 ----
 f(x) \sim x^2 \quad (x\to\infty)
 ----
+
 Rendered::
++
 [source,math]
 ----
 f(x) \sim x^2 \quad (x\to\infty)
@@ -645,7 +651,9 @@ f(x) \sim x^2 \quad (x\to\infty)
 ----
 f(x) = \sqrt{1+x}, \quad x \ge -1
 ----
+
 Rendered::
++
 [source,math]
 ----
 f(x) = \sqrt{1+x}, \quad x \ge -1
