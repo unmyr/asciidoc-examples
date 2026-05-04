@@ -19,6 +19,8 @@ ifndef::env-github[]
 // End of AsciiDoc-specific content
 endif::[]
 
+:stem: latexmath
+
 == GitHub Actions
 Example of actions to generate document.
 

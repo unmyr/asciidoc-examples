@@ -683,7 +683,7 @@ ifeval::["{stem-target}" != "asciidoctor-mathematical"]
 .*The LaTeX code*
 [source,latex]
 ----
-S = \left\{x \;\middle|\; x \in \left[0, \frac{1}{2} \right] \right\}
+S = \left\{x \mid x \in \left[0, \frac{1}{2} \right] \right\}
 ----
 
 Rendered(display mode)::
