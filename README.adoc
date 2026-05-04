@@ -109,6 +109,10 @@ WARNING: This is a warning.
 
 AsciiDoc and GitHub Flavored AsciiDoc (GFA) are not compatible for writing mathematical formulas.
 
+Demo:
+
+include::GFA_math.adoc[]
+
 The correspondence between GFA syntax and AsciiDoc syntax is as follows.
 
 [cols="1,1,1"]
