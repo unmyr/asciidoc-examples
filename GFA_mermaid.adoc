@@ -1,4 +1,6 @@
-== Mermaid Examples
+== Mermaid Preview Examples
+
+We can preview Mermaid diagrams on GitHub not only in Markdown (GFM) but also in GitHub Flavored AsciiDoc (GFA).
 
 [source,mermaid]
 ----
