@@ -188,59 +188,53 @@ Rendered::
 .*The LaTeX code*
 [source,latex]
 ----
-\Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow
-\mapsto\ \hookleftarrow
+\Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow\ \mapsto\ \hookleftarrow
 ----
 
 Rendered::
 +
 [stem,latexmath]
 ++++
-\Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow
-\mapsto\ \hookleftarrow
+\Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow\ \mapsto\ \hookleftarrow
 ++++
 
 .*The LaTeX code*
 [source,latex]
 ----
-\leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow \Longleftarrow\ \longrightarrow
+\leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow\ \Longleftarrow\ \longrightarrow
 ----
 
 Rendered::
 +
 [stem,latexmath]
 ++++
-\leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow \Longleftarrow\ \longrightarrow
+\leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow\ \Longleftarrow\ \longrightarrow
 ++++
 
 .*The LaTeX code*
 [source,latex]
 ----
-\Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto
-\hookrightarrow\ \rightharpoonup
+\Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto\ \hookrightarrow\ \rightharpoonup
 ----
 
 Rendered::
 +
 [stem,latexmath]
 ++++
-\Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto
-\hookrightarrow\ \rightharpoonup
+\Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto\ \hookrightarrow\ \rightharpoonup
 ++++
 
 .*The LaTeX code*
 [source,latex]
 ----
-\rightharpoondown\ \leadsto\ \nearrow
-\searrow\ \swarrow\ \nwarrow
+\rightharpoondown\ \leadsto\ \nearrow\ \searrow\ \swarrow\ \nwarrow
 ----
 
 Rendered::
 +
 [stem,latexmath]
 ++++
-\rightharpoondown\ \leadsto\ \nearrow
-\searrow\ \swarrow\ \nwarrow
+\rightharpoondown\ \leadsto\ \nearrow\ \searrow\ \swarrow\ \nwarrow
 ++++
 
 === Symbols
