@@ -1,1 +1,2 @@
 <<index.adoc#,Index>> {vbar}
+<<arrows.adoc#,Arrows>> +
