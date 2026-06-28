@@ -708,8 +708,20 @@ Equations with numbers can be created using the `equation` environment. The equa
 // Example
 
 From the following equations, eliminate _s_ and find latexmath:[x(t), y(t)].
+
 // Equation 1
+.*The LaTeX code: Equation1*
+[source,latex]
+----
+\begin{equation}
+t(x,y) = \frac{x}{1-y} \tag{1}\label{tag_t_xy}
+\end{equation}
+----
+
+Rendered::
++
 [stem,latexmath]
+.Equation 1
 ++++
 \begin{equation}
 t(x,y) = \frac{x}{1-y} \tag{1}\label{tag_t_xy}
@@ -717,7 +729,18 @@ t(x,y) = \frac{x}{1-y} \tag{1}\label{tag_t_xy}
 ++++
 
 // Equation 2
+.*The LaTeX code: Equation2*
+[source,latex]
+----
+\begin{equation}
+s(x,y) = \frac{x}{1+y} \tag{2}\label{tag_s_xy}
+\end{equation}
+----
+
+Rendered::
++
 [stem,latexmath]
+.Equation 2
 ++++
 \begin{equation}
 s(x,y) = \frac{x}{1+y} \tag{2}\label{tag_s_xy}
@@ -725,15 +748,46 @@ s(x,y) = \frac{x}{1+y} \tag{2}\label{tag_s_xy}
 ++++
 
 // Equation 3
+.*The LaTeX code: Equation3*
+[source,latex]
+----
+\begin{equation}
+x^2 + y^2 = 1 \tag{3}\label{tag_x2_y2_1}
+\end{equation}
+----
+
+Rendered::
++
 [stem,latexmath]
+.Equation 3
 ++++
 \begin{equation}
 x^2 + y^2 = 1 \tag{3}\label{tag_x2_y2_1}
 \end{equation}
 ++++
 
+.*Asciidoc code:*
+[source,asciidoc]
+----
+From latexmath:[\eqref{tag_t_xy}] and latexmath:[\eqref{tag_s_xy}], eliminate _x_ and rearrange the equation as follows.
+----
+Rendered::
 From latexmath:[\eqref{tag_t_xy}] and latexmath:[\eqref{tag_s_xy}], eliminate _x_ and rearrange the equation as follows.
 
+.*The LaTeX code*
+[source,latex]
+----
+\begin{aligned}
+t(1 - y) = x,\quad& s(1 + y)=x \\
+t(1 - y) &= s(1 + y) \\
+t - ty &= s + sy \\
+(s + t)y &= t - s \\
+y &= \frac{t - s}{t + s} \\
+\end{aligned}
+----
+
+Rendered::
++
 [stem,latexmath]
 ++++
 \begin{aligned}
