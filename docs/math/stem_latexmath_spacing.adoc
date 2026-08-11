@@ -1,0 +1,93 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+endif::[]
+
+ifdef::env-github[]
+// GitHub Flavored AsciiDoc (GFA) specific content
+// Alternative to `:icons: font` on GitHub.
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+// End of GFA-specific content
+endif::[]
+ifndef::env-github[]
+// Content for AsciiDoc (not GFA)
+:icons: font
+// End of AsciiDoc-specific content
+endif::[]
+
+include::header.adoc[]
+
+:stem: latexmath
+
+== Latex Notation Examples: Spacing
+:stem-target: MathJax
+
+.horizontal space
+[cols="2a,1a" {table_options}]
+|===
+h| *{stem-target}* h| Rendered
+|
+[source,latex]
+----
+a \! b
+----
+| latexmath:[a \! b]
+
+|
+[source,latex]
+----
+a \ b
+----
+| latexmath:[a \ b]
+
+|
+[source,latex]
+----
+a \quad b
+----
+| latexmath:[a \quad b]
+
+|
+[source,latex]
+----
+a \hspace{ 10pt } b
+----
+| latexmath:[a \hspace{ 10pt } b]
+
+|
+[source,latex]
+----
+a \qquad b
+----
+| latexmath:[a \qquad b]
+|===
+
+.Vertical space
+[cols="2a,1a" {table_options}]
+|===
+| *{stem-target}* h| Rendered
+
+|
+[source,latex]
+----
+a \\ b
+----
+| latexmath:[a \\ b]
+
+|
+[source,latex]
+----
+a \\[5pt] b
+----
+|
+ifeval::["{stem-target}" != "asciidoctor-mathematical"]
+latexmath:[a \\[5pt\] b]
+endif::[]
+ifeval::["{stem-target}" == "asciidoctor-mathematical"]
+n/a
+endif::[]
+|===

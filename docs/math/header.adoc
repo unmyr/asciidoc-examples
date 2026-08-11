@@ -1,2 +1,3 @@
 <<index.adoc#,Index>> {vbar}
-<<arrows.adoc#,Arrows>> +
+<<arrows.adoc#,Arrows>> {vbar}
+<<stem_latexmath_spacing.adoc#,Spacing>> +
