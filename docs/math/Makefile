@@ -10,6 +10,7 @@ include $(DOC_ROOT)/asciidoc.mk
 
 HTML_LIST=\
 $(DIST_SUBDIR)/arrows.html \
+$(DIST_SUBDIR)/stem_latexmath_differential_geometry.html \
 $(DIST_SUBDIR)/stem_latexmath_spacing.html \
 $(DIST_SUBDIR)/index.html
 

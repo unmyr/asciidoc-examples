@@ -1,0 +1,56 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+endif::[]
+
+ifdef::env-github[]
+// GitHub Flavored AsciiDoc (GFA) specific content
+// Alternative to `:icons: font` on GitHub.
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+// End of GFA-specific content
+endif::[]
+ifndef::env-github[]
+// Content for AsciiDoc (not GFA)
+:icons: font
+// End of AsciiDoc-specific content
+endif::[]
+
+include::header.adoc[]
+
+:stem: latexmath
+
+== Latex Notation Examples: Differential geometry
+
+AsciiDoc example of a differential geometry formula using LaTeX notation:
+
+Lie bracket of vector fields X and Y applied to a function f:
+
+[source,latex]
+.Latex code
+----
+\lbrack X,Y \rbrack(f) := X(Yf) - Y(Xf)
+----
+
+[stem,latexmath]
+.Rendered
+++++
+\lbrack X,Y \rbrack(f) := X(Yf) - Y(Xf)
+++++
+
+1-form ω applied to vector fields X1 and X2:
+
+[source,latex]
+.Latex code
+----
+d\omega(X_1,X_2) = X_1(\omega(X_2)) - X_2(\omega(X_1)) - \omega(\lbrack X_1,X_2 \rbrack)
+----
+
+[stem,latexmath]
+.Rendered
+++++
+d\omega(X_1,X_2) = X_1(\omega(X_2)) - X_2(\omega(X_1)) - \omega(\lbrack X_1,X_2 \rbrack)
+++++

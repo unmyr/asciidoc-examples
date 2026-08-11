@@ -1,3 +1,4 @@
 <<index.adoc#,Index>> {vbar}
 <<arrows.adoc#,Arrows>> {vbar}
-<<stem_latexmath_spacing.adoc#,Spacing>> +
+<<stem_latexmath_spacing.adoc#,Spacing>> {vbar}
+<<stem_latexmath_differential_geometry.adoc#,微分幾何>> +
