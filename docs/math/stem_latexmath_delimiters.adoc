@@ -1,0 +1,281 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+endif::[]
+
+ifdef::env-github[]
+// GitHub Flavored AsciiDoc (GFA) specific content
+// Alternative to `:icons: font` on GitHub.
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+// End of GFA-specific content
+endif::[]
+ifndef::env-github[]
+// Content for AsciiDoc (not GFA)
+:icons: font
+// End of AsciiDoc-specific content
+endif::[]
+
+include::header.adoc[]
+
+:stem: latexmath
+
+== Latex Notation Examples: Delimiters
+:stem-target: MathJax
+
+=== Various delimiters
+
+[cols="2a,1a" {table_options}]
+.Round brackets
+|===
+h| *{stem-target}* h| Rendered
+
+|
+[source,latex]
+.Auto-sizing delimiters
+----
+\left(x^{x}\right)
+\left(x^{x^{x}}\right)
+\left(\frac{1}{2}\right)
+\left(\frac{1}{x^2}\right)
+\left(\sum_{k}^{N} \left(\frac{1}{k^2}\right) a^i\right)
+----
+
+|
+[stem,latexmath]
+++++
+\left(x^{x}\right)
+\left(x^{x^{x}}\right)
+\left(\frac{1}{2}\right)
+\left(\frac{1}{x^2}\right)
+\left(\sum_{k}^{N} \left(\frac{1}{k^2}\right) a^i\right)
+++++
+
+|
+[source,latex]
+.Manually sized delimiters
+----
+(x^{x})
+\bigl( x^{x^{x}} \bigr)
+\Bigl( \frac{1}{2} \Bigr)
+\biggl( \frac{1}{x^2} \biggr)
+\Biggl( \sum_{k}^{N} \left(\frac{1}{k^2}\right) a^i \Biggr)
+----
+
+|
+[stem,latexmath]
+++++
+(x^{x})
+\bigl( x^{x^{x}} \bigr)
+\Bigl( \frac{1}{2} \Bigr)
+\biggl( \frac{1}{x^2} \biggr)
+\Biggl( \sum_{k}^{N} \left(\frac{1}{k^2}\right) a^i \Biggr)
+++++
+|===
+
+[cols="1a,1a" {table_options}]
+.Curly braces
+|===
+h| *{stem-target}* h| Rendered
+
+|
+[source,latex]
+----
+\{a\}
+\bigl\{ a \bigr\}
+\Bigl\{ a \Bigr\}
+\biggl\{ a \biggr\}
+\Biggl\{ a \Biggr\}
+----
+
+|
+[stem,latexmath]
+++++
+\{a\}
+\bigl\{ a \bigr\}
+\Bigl\{ a \Bigr\}
+\biggl\{ a \biggr\}
+\Biggl\{ a \Biggr\}
+++++
+|===
+
+[cols="1a,1a" {table_options}]
+.Angle brackets
+|===
+h| *{stem-target}* h| Rendered
+
+|
+[source,latex]
+----
+\langle a \rangle
+\bigl\langle a \bigr\rangle
+\Bigl\langle a \Bigr\rangle
+\biggl\langle a \biggr\rangle
+\Biggl\langle a \Biggr\rangle
+----
+
+|
+[stem,latexmath]
+++++
+\langle a \rangle
+\bigl\langle a \bigr\rangle
+\Bigl\langle a \Bigr\rangle
+\biggl\langle a \biggr\rangle
+\Biggl\langle a \Biggr\rangle
+++++
+|===
+
+
+[cols="1a,1a" {table_options}]
+.Square brackets
+|===
+h| *{stem-target}* h| Rendered
+
+|
+[source,latex]
+----
+\lbrack X_i, X_j \rbrack
+\bigl\lbrack X_i, X_j \bigr\rbrack
+\Bigl\lbrack X_i, X_j \Bigr\rbrack
+\biggl\lbrack X_i, X_j \biggr\rbrack
+\Biggl\lbrack X_i, X_j \Biggr\rbrack
+----
+
+|
+[stem,latexmath]
+++++
+\lbrack X_i, X_j \rbrack
+\bigl\lbrack X_i, X_j \bigr\rbrack
+\Bigl\lbrack X_i, X_j \Bigr\rbrack
+\biggl\lbrack X_i, X_j \biggr\rbrack
+\Biggl\lbrack X_i, X_j \Biggr\rbrack
+++++
+|===
+
+[cols="1a,1a" {table_options}]
+.Floor and ceiling brackets
+|===
+h| *{stem-target}* h| Rendered
+
+|
+[source,latex]
+----
+\lfloor a \rfloor
+\lceil a \rceil
+\bigl\lfloor a \bigr\rfloor
+\bigl\lceil a \bigr\rceil
+\Bigl\lfloor a \Bigr\rfloor
+\Bigl\lceil a \Bigr\rceil
+----
+
+|
+[stem,latexmath]
+++++
+\lfloor a \rfloor
+\lceil a \rceil
+\bigl\lfloor a \bigr\rfloor
+\bigl\lceil a \bigr\rceil
+\Bigl\lfloor a \Bigr\rfloor
+\Bigl\lceil a \Bigr\rceil
+++++
+|===
+
+[cols="1a,1a" {table_options}]
+.Vertical bars
+|===
+h| *{stem-target}* h| Rendered
+
+|
+[source,latex]
+----
+\left\lvert a \right\rvert
+\bigl\lvert a \bigr\rvert
+\Bigl\lvert a \Bigr\rvert
+\biggl\lvert a \biggr\rvert
+\Biggl\lvert a \Biggr\rvert
+----
+
+|
+[stem,latexmath]
+++++
+\left\lvert a \right\rvert
+\bigl\lvert a \bigr\rvert
+\Bigl\lvert a \Bigr\rvert
+\biggl\lvert a \biggr\rvert
+\Biggl\lvert a \Biggr\rvert
+++++
+|===
+
+=== Statistical delimiters
+
+[source,latex]
+.The LaTeX code
+----
+{n \choose k}
+----
+
+[stem,latexmath]
+.Rendered
+++++
+{n \choose k}
+++++
+
+=== Set notation delimiters
+[source,latex]
+.The LaTeX code
+----
+\left\{ x \; \middle| \; x \in \mathbb{R} : x \in \left\lbrack 0, \frac{1}{2}\right\rbrack \right\}
+----
+
+[stem,latexmath]
+.Rendered
+++++
+\left\{ x \; \middle| \; x \in \mathbb{R} : x \in \left\lbrack 0, \frac{1}{2}\right\rbrack \right\}
+++++
+
+===  Aligned delimiters
+
+The following example shows how to use aligned delimiters in LaTeX notation. The `aligned` environment allows for the alignment of multiple lines of equations, and the `\Biggl` and `\Biggr` commands are used to adjust the size of the delimiters to fit the content.
+
+==== No line break
+
+[source,latex]
+.The LaTeX code
+----
+\begin{aligned}
+& f \left(\sum_{k} \left(a_{k} + b_{k+1} + c_{k+1}\right) \right)
+\end{aligned}
+----
+
+[stem,latexmath]
+.Rendered
+++++
+\begin{aligned}
+& f \left(\sum_{k} \left(a_{k} + b_{k+1} + c_{k+1}\right) \right)
+\end{aligned}
+++++
+
+
+==== With line break
+
+[source,latex]
+.The LaTeX code
+----
+\begin{aligned}
+& f \Biggl(\sum_{k} (a_{k} + b_{k+1} \\
+&\quad  + c_{k+1}) \Biggr)
+\end{aligned}
+----
+
+[stem,latexmath]
+.Rendered
+++++
+\begin{aligned}
+& f \Biggl(\sum_{k} (a_{k} + b_{k+1} \\
+&\quad  + c_{k+1}) \Biggr)
+\end{aligned}
+++++
+
