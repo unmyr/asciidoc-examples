@@ -38,20 +38,20 @@ h| *{stem-target}* h| Rendered
 .Auto-sizing delimiters
 ----
 \left(x^{x}\right)
-\left(x^{x^{x}}\right)
+\left(\sqrt{x}\right)
+\left(\widehat{X_i}\right)
 \left(\frac{1}{2}\right)
-\left(\frac{1}{x^2}\right)
-\left(\sum_{k}^{N} \left(\frac{1}{k^2}\right) a^i\right)
+\left(\sum_{k=0}^{\infty} \frac{x^{k}}{k!}\right)
 ----
 
 |
 [stem,latexmath]
 ++++
 \left(x^{x}\right)
-\left(x^{x^{x}}\right)
+\left(\sqrt{x}\right)
+\left(\widehat{X_i}\right)
 \left(\frac{1}{2}\right)
-\left(\frac{1}{x^2}\right)
-\left(\sum_{k}^{N} \left(\frac{1}{k^2}\right) a^i\right)
+\left(\sum_{k=0}^{\infty} \frac{x^{k}}{k!}\right)
 ++++
 
 |
@@ -59,20 +59,133 @@ h| *{stem-target}* h| Rendered
 .Manually sized delimiters
 ----
 (x^{x})
-\bigl( x^{x^{x}} \bigr)
-\Bigl( \frac{1}{2} \Bigr)
-\biggl( \frac{1}{x^2} \biggr)
-\Biggl( \sum_{k}^{N} \left(\frac{1}{k^2}\right) a^i \Biggr)
+\bigl( \sqrt{x} \bigr)
+\Bigl( \widehat{X_i} \Bigr)
+\biggl( \frac{1}{2} \biggr)
+\Biggl( \sum_{k=0}^{\infty} \frac{x^{k}}{k!} \Biggr)
 ----
 
 |
 [stem,latexmath]
 ++++
 (x^{x})
-\bigl( x^{x^{x}} \bigr)
-\Bigl( \frac{1}{2} \Bigr)
-\biggl( \frac{1}{x^2} \biggr)
-\Biggl( \sum_{k}^{N} \left(\frac{1}{k^2}\right) a^i \Biggr)
+\bigl( \sqrt{x} \bigr)
+\Bigl( \widehat{X_i} \Bigr)
+\biggl( \frac{1}{2} \biggr)
+\Biggl( \sum_{k=0}^{\infty} \frac{x^{k}}{k!} \Biggr)
+++++
+
+|
+[source,latex]
+.Comparing auto-sized and default-sized delimiters
+----
+\left(x^{x}\right)\left(\hat{x}\right)
+(x^{x})
+----
+
+|
+[stem,latexmath]
+++++
+\left(x^{x}\right)\left(\hat{x}\right)
+(x^{x})(\hat{x})
+++++
+
+|
+[source,latex]
+.Auto-sized delimiters with `\left` and `\right` and manually sized delimiters with `\bigl` and `\bigr`
+----
+\left(\sqrt{2}\right) \left(x^{x^{x}}\right) \left(\partial_{\mu}\omega_{\nu_{1}}\right)
+\bigl(\sqrt{2}\bigr) \bigl(x^{x^{x}}\bigr) \bigl(\partial_{\mu}\omega_{\nu_{1}}\bigr)
+----
+
+|
+[stem,latexmath]
+++++
+\left(\sqrt{2}\right) \left(x^{x^{x}}\right) \left(\partial_{\mu}\omega_{\nu_{1}}\right)
+\bigl(\sqrt{2}\bigr) \bigl(x^{x^{x}}\bigr) \bigl(\partial_{\mu}\omega_{\nu_{1}}\bigr)
+++++
+
+|
+[source,latex]
+.Auto-sized delimiters with `\left` and `\right` and manually sized delimiters with `\Bigl` and `\Bigr`
+----
+\left(\sum\right) \Bigl(\widehat{X_i}\Bigr)
+\Bigl(\sum\Bigr) \left(\widehat{X_i}\right)
+----
+
+|
+[stem,latexmath]
+++++
+\left(\sum\right) \Bigl(\widehat{X_i}\Bigr)
+\Bigl(\sum\Bigr) \left(\widehat{X_i}\right)
+++++
+
+|
+[source,latex]
+.Auto-sized delimiters with `\left` and `\right` and manually sized delimiters with `\biggl` and `\biggr`
+----
+\left(\frac{1}{2}\right) \left(\frac{x^2}{y^3}\right) \left(\int f(x) dx\right)
+\biggl(\frac{1}{2}\biggr) \biggl(\frac{x^2}{y^3}\biggr) \biggl(\int f(x) dx\biggr)
+----
+
+|
+[stem,latexmath]
+++++
+\left(\frac{1}{2}\right) \left(\frac{x^2}{y^3}\right) \left(\int f(x) dx\right)
+\biggl(\frac{1}{2}\biggr) \biggl(\frac{x^2}{y^3}\biggr) \biggl(\int f(x) dx\biggr)
+++++
+
+|
+[source,latex]
+.Auto-sized delimiters with `\left` and `\right` and manually sized delimiters with `\Biggl` and `\Biggr`
+----
+\left(\sum_{k}^{N} a_{k}\right)
+\Biggl(\sum_{k}^{N} a_{k}\Biggr)
+----
+
+|
+[stem,latexmath]
+++++
+\left(\sum_{k}^{N} a_{k}\right)
+\Biggl(\sum_{k}^{N} a_{k}\Biggr)
+++++
+
+|
+[source,latex]
+.Auto-sizing delimiters for fractions and wedge products
+----
+\begin{aligned}
+& d\omega(X_1,X_2) \\
+&= \left(\frac{1}{1!}\left(\partial_{\mu}\omega_{\nu_{1}}\right) \, dx^{\mu} \wedge dx^{\nu_{1}}\right) \\
+\end{aligned}
+----
+
+|
+[stem,latexmath]
+++++
+\begin{aligned}
+& d\omega(X_1,X_2) \\
+&= \left(\frac{1}{1!}\left(\partial_{\mu}\omega_{\nu_{1}}\right) \, dx^{\mu} \wedge dx^{\nu_{1}}\right) \\
+\end{aligned}
+++++
+
+|
+[source,latex]
+.Manually sized delimiters for fractions and wedge products
+----
+\begin{aligned}
+& d\omega(X_1,X_2) \\
+&= \biggl(\frac{1}{1!}\bigl(\partial_{\mu}\omega_{\nu_{1}}\bigr) \, dx^{\mu} \wedge dx^{\nu_{1}}\biggr)
+\end{aligned}
+----
+
+|
+[stem,latexmath]
+++++
+\begin{aligned}
+& d\omega(X_1,X_2) \\
+&= \biggl(\frac{1}{1!}\bigl(\partial_{\mu}\omega_{\nu_{1}}\bigr) \, dx^{\mu} \wedge dx^{\nu_{1}}\biggr)
+\end{aligned}
 ++++
 |===
 
