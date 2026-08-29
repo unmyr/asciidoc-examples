@@ -9,7 +9,7 @@ DST_IMAGES_DIR=$(DIST_SUBDIR)/$(IMAGES_DIR)
 include $(DOC_ROOT)/asciidoc.mk
 
 HTML_LIST=\
-$(DIST_SUBDIR)/arrows.html \
+$(DIST_SUBDIR)/stem_latexmath_arrows.html \
 $(DIST_SUBDIR)/stem_latexmath_delimiters.html \
 $(DIST_SUBDIR)/stem_latexmath_demo.html \
 $(DIST_SUBDIR)/stem_latexmath_differential_geometry.html \
