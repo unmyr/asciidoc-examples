@@ -403,29 +403,31 @@ g の字形は大きく異なる。
 
 === Superscripts and subscripts
 
-.Superscripts
-[cols="^.^5a,4a,4a,18a,8a" {table_options}]
+.Superscript with LaTeX math mode
+[cols=">1a,2a,1a,1a,2a" {table_options}]
 |===
-| Rendered   | hex         | decimal    | Character name                   | Notes
+2+<h| Type                                                 2+h| Rendered                       h|
+<h| HTML Entity                              h| Tex Alt      h| HTML      h| LaTeX             h| Names
 
-|  `&#8304;` | `\&#x2070;` | `\&#8304;` | Superscript Zero                 |
-|   `&#185;` | `\&#x00B9;` |  `\&#185;` | Superscript One                  |
-|   `&#178;` | `\&#x00B2;` |  `\&#178;` | Superscript Two                  |
-|   `&#179;` | `\&#x00B3;` |  `\&#179;` | Superscript Three                |
-|  `&#8305;` | `\&#x2071;` | `\&#8305;` | Superscript Latin Small Letter I |
-|  `&#8308;` | `\&#x2074;` | `\&#8308;` | Superscript Four                 |
-|  `&#8309;` | `\&#x2075;` | `\&#8309;` | Superscript Five                 |
-|  `&#8310;` | `\&#x2076;` | `\&#8310;` | Superscript Six                  |
-|  `&#8311;` | `\&#x2077;` | `\&#8311;` | Superscript Seven                |
-|  `&#8312;` | `\&#x2078;` | `\&#8312;` | Superscript Eight                |
-|  `&#8313;` | `\&#x2079;` | `\&#8313;` | Superscript Nine                 |
-|  `&#8314;` | `\&#x207A;` | `\&#8314;` | Superscript Plus Sign            |
-|  `&#8315;` | `\&#x207B;` | `\&#8315;` | Superscript Minus                |
-|  `&#8316;` | `\&#x207C;` | `\&#8316;` | Superscript Equals Sign          |
-|  `&#8317;` | `\&#x207D;` | `\&#8317;` | Superscript Left Parenthesis     |
-|  `&#8318;` | `\&#x207E;` | `\&#8318;` | Superscript Right Parenthesis    |
-|  `&#8319;` | `\&#x207F;` | `\&#8319;` | Superscript Latin Small Letter N |
+|  `\&#x2070;`{bl} `\&#8304;` | `\unicode{8304}` | _x_&#8304; | latexmath:[x\unicode{8304}] | Superscript Zero
+|  `\&#x00B9;`{bl} `\&#185;` | `\unicode{185}` | _x_&#185; | latexmath:[x\unicode{185}] | Superscript One
+|  `\&#x00B2;`{bl} `\&#178;` | `\unicode{178}` | _x_&#178; | latexmath:[x\unicode{178}] | Superscript Two
+|  `\&#x00B3;`{bl} `\&#179;` | `\unicode{179}` | _x_&#179; | latexmath:[x\unicode{179}] | Superscript Three
+|  `\&#x2074;`{bl} `\&#8308;` | `\unicode{8308}` | _x_&#8308; | latexmath:[x\unicode{8308}] | Superscript Four
+|  `\&#x2075;`{bl} `\&#8309;` | `\unicode{8309}` | _x_&#8309; | latexmath:[x\unicode{8309}] | Superscript Five
+|  `\&#x2076;`{bl} `\&#8310;` | `\unicode{8310}` | _x_&#8310; | latexmath:[x\unicode{8310}] | Superscript Six
+|  `\&#x2077;`{bl} `\&#8311;` | `\unicode{8311}` | _x_&#8311; | latexmath:[x\unicode{8311}] | Superscript Seven
+|  `\&#x2078;`{bl} `\&#8312;` | `\unicode{8312}` | _x_&#8312; | latexmath:[x\unicode{8312}] | Superscript Eight
+|  `\&#x2079;`{bl} `\&#8313;` | `\unicode{8313}` | _x_&#8313; | latexmath:[x\unicode{8313}] | Superscript Nine
+|  `\&#x207A;`{bl} `\&#8314;` | `\unicode{8314}` | _x_&#8314; | latexmath:[x\unicode{8314}] | Superscript Plus Sign
+|  `\&#x207B;`{bl} `\&#8315;` | `\unicode{8315}` | _x_&#8315; | latexmath:[x\unicode{8315}] | Superscript Minus
+|  `\&#x207C;`{bl} `\&#8316;` | `\unicode{8316}` | _x_&#8316; | latexmath:[x\unicode{8316}] | Superscript Equals Sign
+|  `\&#x207D;`{bl} `\&#8317;` | `\unicode{8317}` | _x_&#8317; | latexmath:[x\unicode{8317}] | Superscript Left Parenthesis
+|  `\&#x207E;`{bl} `\&#8318;` | `\unicode{8318}` | _x_&#8318; | latexmath:[x\unicode{8318}] | Superscript Right Parenthesis
+|  `\&#x2071;`{bl} `\&#8305;` | `\unicode{8305}` | _x_&#8305; | latexmath:[x\unicode{8305}] | Superscript Latin Small Letter I
+|  `\&#x207F;`{bl} `\&#8319;` | `\unicode{8319}` | _x_&#8319; | latexmath:[x\unicode{8319}] | Superscript Latin Small Letter N
 |===
+
 
 .Subscripts
 [cols="^.^5a,4a,4a,18a,8a" {table_options}]
