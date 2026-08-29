@@ -26,6 +26,9 @@ include::header.adoc[]
 == Latex Notation Examples
 
 * <<stem_latexmath_demo.adoc#,Demo>>
+* Fonts
+** <<stem_latexmath_font_chars.adoc#,Characters>>
+** <<stem_latexmath_font_symbols.adoc#,Symbols>>
 * <<stem_latexmath_arrows.adoc#,Arrows>>
 * <<stem_latexmath_spacing.adoc#,Spacing>>
 * <<stem_latexmath_delimiters.adoc#,Delimiters>>

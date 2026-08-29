@@ -23,6 +23,9 @@ $(DIST_DIR)/math_font_chars.html \
 $(DIST_DIR)/math_font_symbols.html \
 $(DIST_DIR)/syntax_highlighting.html \
 $(DIST_DIR)/unicode_font_arrows.html \
+$(DIST_DIR)/unicode_font_fraktur_symbols.html \
+$(DIST_DIR)/unicode_font_greek_letters.html \
+$(DIST_DIR)/unicode_font_rsfs.html \
 $(DIST_DIR)/index.html
 
 SUB_TARGETS=\

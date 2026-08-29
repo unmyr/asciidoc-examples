@@ -13,6 +13,8 @@ $(DIST_SUBDIR)/stem_latexmath_arrows.html \
 $(DIST_SUBDIR)/stem_latexmath_delimiters.html \
 $(DIST_SUBDIR)/stem_latexmath_demo.html \
 $(DIST_SUBDIR)/stem_latexmath_differential_geometry.html \
+$(DIST_SUBDIR)/stem_latexmath_font_chars.html \
+$(DIST_SUBDIR)/stem_latexmath_font_symbols.html \
 $(DIST_SUBDIR)/stem_latexmath_spacing.html \
 $(DIST_SUBDIR)/index.html
 

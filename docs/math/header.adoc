@@ -1,6 +1,7 @@
 <<index.adoc#,Index>> {vbar}
 <<stem_latexmath_demo.adoc#,Demo>> {vbar}
 <<stem_latexmath_arrows.adoc#,Arrows>> {vbar}
+Fonts (<<stem_latexmath_font_chars.adoc#,Characters>>, <<stem_latexmath_font_symbols.adoc#,Symbols>>) {vbar}
 <<stem_latexmath_spacing.adoc#,Spacing>> {vbar}
 <<stem_latexmath_delimiters.adoc#,Delimiters>> {vbar}
 <<stem_latexmath_differential_geometry.adoc#,微分幾何>> +
