@@ -34,3 +34,94 @@ An example of a map from Cartesian coordinates (x, y) in R^2^ to polar coordinat
 ----
 
 Rendered:: latexmath:[(x, y) \longmapsto (r, \theta)]
+
+=== Frequently used arrows
+
+.The LaTeX code
+[source,latex]
+----
+\mu \leftrightarrow \nu
+\mu \longleftightarrow \nu
+----
+
+Rendered:: latexmath:[\mu \leftrightarrow \nu]
+
+[cols="2,3a,3a" {table_options}]
+|===
+| Name | Tex notation with preview | Long tex notation with preview
+
+| Left arrow
+|
+[source,latex]
+----
+\mu \leftarrow \nu
+----
+
+Rendered:: latexmath:[\mu \leftarrow \nu]
+
+|
+[source,latex]
+----
+\mu \longleftarrow \nu
+----
+
+Rendered:: latexmath:[\mu \longleftarrow \nu]
+
+
+| Right arrow
+|
+[source,latex]
+----
+\mu \rightarrow \nu
+----
+
+Rendered:: latexmath:[\mu \rightarrow \nu]
+|
+[source,latex]
+----
+\mu \longrightarrow \nu
+----
+
+Rendered:: latexmath:[\mu \longrightarrow \nu]
+
+| Left-right arrow
+|
+[source,latex]
+----
+\mu \leftrightarrow \nu
+----
+
+Rendered:: latexmath:[\mu \leftrightarrow \nu]
+|
+[source,latex]
+----
+\mu \longleftrightarrow \nu
+----
+
+Rendered:: latexmath:[\mu \longleftrightarrow \nu]
+
+|===
+
+=== Simple arrows
+
+.Simple arrows
+[cols="^.^5a,4a,4a,8a,8a" {table_options}]
+|===
+| Rendered   | hex         | decimal     | Character name        | Tex alt
+
+|  `&#8592;` | `\&#x2190;` |  `\&#8592;` | LEFTWARDS ARROW       | `\leftarrow` or `\gets` +
+asciidoc alt: `&lt;-`
+|  `&#8593;` | `\&#x2191;` |  `\&#8593;` | UPWARDS ARROW         | `\uparrow`
+|  `&#8594;` | `\&#x2192;` |  `\&#8594;` | RIGHTWARDS ARROW      | `\to` or `\rightarrow` +
+asciidoc alt: `-&gt;`
+|  `&#8595;` | `\&#x2193;` |  `\&#8595;` | DOWNWARDS ARROW       | `\downarrow`
+|  `&#8596;` | `\&#x2194;` |  `\&#8596;` | LEFT RIGHT ARROW      | `\leftrightarrow`
+|  `&#8597;` | `\&#x2195;` |  `\&#8597;` | UP DOWN ARROW         | `\updownarrow`
+|  `&#8598;` | `\&#x2196;` |  `\&#8598;` | NORTH WEST ARROW      | `\nwarrow`
+|  `&#8599;` | `\&#x2197;` |  `\&#8599;` | NORTH EAST ARROW      | `\nearrow`
+|  `&#8600;` | `\&#x2198;` |  `\&#8600;` | SOUTH EAST ARROW      | `\searrow`
+|  `&#8601;` | `\&#x2199;` |  `\&#8601;` | SOUTH WEST ARROW      | `\swarrow`
+| `&#10229;` | `\&#x27F5;` | `\&#10229;` | LONG LEFTWARDS ARROW  | `\longleftarrow`
+| `&#10230;` | `\&#x27F6;` | `\&#10230;` | LONG RIGHTWARDS ARROW | `\longrightarrow`
+| `&#10231;` | `\&#x27F7;` | `\&#10231;` | LONG LEFT RIGHT ARROW | `\longleftrightarrow`
+|===
