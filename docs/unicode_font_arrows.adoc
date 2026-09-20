@@ -1,5 +1,9 @@
+ifndef::leveloffset[]
 :toc: right
 :toclevels: 3
+
+include::header.adoc[]
+endif::[]
 
 ifeval::["{backend}" == "pdf"]
 :table_options: options="header, unbreakable"
@@ -8,7 +12,7 @@ ifeval::["{backend}" != "pdf"]
 :table_options: options="header, autowidth, unbreakable"
 endif::[]
 
-==== Arrows
+== Arrows
 
 .AsciiDoc textual symbol replacements
 [cols="8d,10d,10d,12d,18d" {table_options}]

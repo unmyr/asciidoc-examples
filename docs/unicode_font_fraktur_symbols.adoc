@@ -1,3 +1,10 @@
+ifndef::leveloffset[]
+:toc: right
+:toclevels: 3
+
+include::header.adoc[]
+endif::[]
+
 ifeval::["{backend}" == "pdf"]
 :table_options_nh: options="unbreakable"
 endif::[]

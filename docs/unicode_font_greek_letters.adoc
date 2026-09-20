@@ -1,4 +1,6 @@
 ifndef::leveloffset[]
+include::header.adoc[]
+
 :stem: latexmath
 endif::[]
 

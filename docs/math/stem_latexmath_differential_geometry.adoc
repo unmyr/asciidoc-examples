@@ -1,6 +1,8 @@
 ifndef::leveloffset[]
 :toc: left
 :toclevels: 3
+
+include::header.adoc[]
 endif::[]
 
 ifdef::env-github[]
@@ -18,8 +20,6 @@ ifndef::env-github[]
 :icons: font
 // End of AsciiDoc-specific content
 endif::[]
-
-include::header.adoc[]
 
 :stem: latexmath
 

@@ -1,5 +1,9 @@
+ifndef::leveloffset[]
 :toc: right
 :toclevels: 3
+
+include::header.adoc[]
+endif::[]
 
 :bl: pass:p[ +]
 
