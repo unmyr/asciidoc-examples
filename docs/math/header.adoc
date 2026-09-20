@@ -1,6 +1,6 @@
-<<index.adoc#,Index>> {vbar}
+<<../index.adoc#,Top>> › <<index.adoc#,Index>> {vbar}
 <<stem_latexmath_demo.adoc#,Demo>> {vbar}
-<<stem_latexmath_arrows.adoc#,Arrows>> {vbar}
+<<stem_latexmath_arrows.adoc#,Arrows>>(<<../unicode_font_arrows.adoc#,Unicode>>) {vbar}
 Fonts (<<stem_latexmath_font_chars.adoc#,Characters>>, <<stem_latexmath_font_symbols.adoc#,Symbols>>) {vbar}
 <<stem_latexmath_spacing.adoc#,Spacing>> {vbar}
 <<stem_latexmath_delimiters.adoc#,Delimiters>> {vbar}
