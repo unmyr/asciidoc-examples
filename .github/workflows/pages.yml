@@ -7,7 +7,6 @@ on:
 permissions:
   contents: read
   pages: write
-  id-token: write
 
 concurrency:
   group: "pages"
@@ -42,6 +41,10 @@ jobs:
   # Deploy to GitHub Pages
   deploy:
     needs: build
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -49,4 +52,4 @@ jobs:
     steps:
       - name: Deploy site to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
