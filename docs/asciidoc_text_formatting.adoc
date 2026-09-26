@@ -1,0 +1,222 @@
+ifndef::leveloffset[]
+:toc: left
+:toclevels: 3
+:experimental:
+:stem: latexmath
+
+include::attrs.adoc[]
+include::header.adoc[]
+
+endif::[]
+
+== Text Formatting
+
+=== 上付き文字、下付き文字、underline、overline
+
+[cols="8h,20a,8a,10d" {table_options}]
+|===
+|              | Type         | See  | Notes
+
+| italic          | pass:[_hello world_]   | _hello world_ |
+| bold            | pass:[*hello world*]   | *hello world* |
+
+| bold
+| pass:[This +*literal*+ will appear as *literal*.]
+footnote:[To exclude a phrase from substitutions, enclose it in plus signs (+).]
+| This +*literal*+ will appear as *literal*.
+|
+
+| italic and bold | pass:[*_hello world_*] | *_hello world_* |
+| code            | pass:[`hello world`]   | `hello world` |
+| code and bold   | pass:[`*hello world*`] | `*hello world*` |
+| code and italic and bold | pass:[`*_hello world_*`] | `*_hello world_*` |
+| super script    | pass:[x^2^]     | x^2^  |
+| subscript       | pass:[H~2~O]    | H~2~O |
+
+| line-through |
+....
+[line-through]#word#
+....
+| [line-through]#word# |
+
+| underline    |
+....
+This is [underline]#a pen#.
+....
+| This is a [underline]#pen#. |
+
+| overline    |
+....
+[overline]#A#√[overline]#2#
+....
+| [overline]#A#√[overline]#2# | pdf not working
+
+| big{bl} small |
+....
+[big]##a big apple## and [small]##a small cherry##
+....
+| [big]##a big apple## and [small]##a small cherry## | pdf not working
+
+| aqua    |
+....
+This is [fuchsia]#a pen#.
+....
+| This is a [fuchsia]#pen#. | pdf not working
+|===
+
+=== experimental
+
+ifeval::["{backend}" == "pdf"]
+Doesn't work with asciidoctor-pdf
+endif::[]
+ifeval::["{backend}" != "pdf"]
+.experimental
+[cols="3h,16a,14a,4d" {table_options}]
+|===
+|              | Type         | See  | Notes
+
+| kbd |
+....
+:experimental:
+
+kbd:[Ctrl+Shift+N]
+....
+| kbd:[Ctrl+Shift+N] | pdf not working
+
+| menu |
+....
+:experimental:
+
+ファイルを保存するにはmenu:File[Save]を選択します。 +
+拡大率をデフォルトに戻すにはmenu:View[Zoom > Reset]を選択します。
+....
+| ファイルを保存するにはmenu:File[Save]を選択します。 +
+拡大率をデフォルトに戻すにはmenu:View[Zoom > Reset]を選択します。
+| pdf not working
+
+| button |
+....
+:experimental:
+
+btn:[OK]
+....
+| btn:[OK] | pdf not working
+|===
+endif::[]
+
+.References
+* https://docs.asciidoctor.org/asciidoc/latest/macros/ui-macros/[Button and Menu UI Macros | Asciidoctor Docs^]
+
+<<<
+
+[#passthrough]
+=== passthrough
+:strong_word: pass:[<strong>hello world</strong>]
+
+[cols="3a,1a" {table_options}]
+|===
+| tag | Rendered
+
+|
+[source,html]
+----
+<a href="#passthrough">hello world</a>
+----
+| pass:[<a href="#passthrough">hello world</a>]
+
+|
+[source,html,subs="attributes,specialchars"]
+----
+{strong_word}
+----
+| {strong_word}
+
+|
+[source,html]
+----
+<em>hello world</em>
+----
+| pass:[<em>hello world</em>]
+
+|
+[source,html]
+----
+<code>hello world</code>
+----
+| pass:[<code>hello world</code>]
+
+|
+[source,html]
+----
+<del>hello world</del>
+----
+| pass:[<del>hello world</del>]
+
+|
+[source,html]
+----
+A<sup>2</sup>
+----
+| pass:[A<sup>2</sup>]
+
+|
+[source,html]
+----
+A<sub>2</sub>
+----
+| pass:[A<sub>2</sub>]
+
+|
+[source,html]
+----
+<span style="color: #20df20">word</span>
+----
+| pass:[<span style="color: #20df20">word</span>]
+
+|
+[source,html]
+----
+<font size="1.25em">word</font>
+----
+| pass:[<font size="1.25em">word</font>]
+
+|
+[source,html]
+----
+<span class="underline">word</span>
+----
+| pass:[<span class="underline">word</span>]
+
+|
+[source,html]
+----
+<span class="line-through">word</span>
+----
+| pass:[<span class="line-through">word</span>]
+
+|
+[source,html]
+----
+<span style="font-style: italic; font-weight: bold">hello world</span>
+----
+| pass:[<span style="font-style: italic; font-weight: bold">hello world</span>]
+
+|
+[source,html]
+----
+<span style="font-style: italic; font-family: 'Courier New', 'Courier'">a b c d e f g x y z</span>
+----
+| pass:[<span style="font-style: italic; font-family: 'Courier New', 'Courier'">a b c d e f g x y z</span>]
+
+|
+[source,html,subs="attributes,specialchars"]
+----
+{upper_F}
+----
+| {upper_F}
+|===
+
+
+
+
+// pass:[<ruby><rb>hello world</rb><rp>（</rp><rt>こんにちは世界</rt><rp>）</rp></ruby>]

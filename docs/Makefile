@@ -17,6 +17,7 @@ $(DIST_DIR)/asciidoc_icons.html \
 $(DIST_DIR)/asciidoc_images.html \
 $(DIST_DIR)/asciidoc_listing.html \
 $(DIST_DIR)/asciidoc_tables.html \
+$(DIST_DIR)/asciidoc_text_formatting.html \
 $(DIST_DIR)/diagram-graphviz.html \
 $(DIST_DIR)/install_asciidoctor.html \
 $(DIST_DIR)/math_font_chars.html \
