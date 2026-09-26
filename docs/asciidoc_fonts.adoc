@@ -17,6 +17,87 @@ ifeval::["{backend}" == "html5"]
 * <<unicode_font_arrows.adoc#,Arrows>>
 endif::[]
 
+=== Font rendering comparison
+
+:alphabets: a b c d e f g h i j k l m n o p q r s t u v w x y z {bl} 0 1 2 3 4 5 6 7 8 9
+:numbers: 0 1 2 3 4 5 6 7 8 9
+
+LaTeX::
+latexmath:[a\ b\ c\ d\ e\ f\ g\ h\ i\ j\ k\ l\ m\ n\ o\ p\ q\ r\ s\ t\ u\ v\ w\ x\ y\ z] +
+latexmath:[0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9]
+
+[cols="1h,3a" {table_options}]
+|===
+| Font    | Rendered
+
+| LaTeX
+| latexmath:[a\ b\ c\ d\ e\ f\ g\ h\ i\ j\ k\ l\ m\ n\ o\ p\ q\ r\ s\ t\ u\ v\ w\ x\ y\ z] +
+latexmath:[0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9]
+
+| default
+| _a_ _b_ _c_ _d_ _e_ _f_ _g_ _h_ _i_ _j_ _k_ _l_ _m_ _n_
+  _o_ _p_ _q_ _r_ _s_ _t_ _u_ _v_ _w_ _x_ _y_ _z_ +
+  {numbers}
+
+| custom attributes
+| {a} {b} {c} {d} {e} {f} {g} {h} {i} {j} {k} {l} {m} {n}
+  {o} {p} {q} {r} {s} {t} {u} {v} {w} {x} {y} {z} +
+  {numbers}
+
+| Arial
+| pass:a[<span style="font-family: 'Arial'; font-style: italic; font-size: 110%;">{alphabets}</span>] +
+  pass:a[<span style="font-family: 'Arial'; font-size: 110%;">{numbers}</span>]
+
+| Times New Roman
+| pass:a[<span style="font-family: 'Times New Roman'; font-style: italic; font-size: 110%;">{alphabets}</span>] +
+  pass:a[<span style="font-family: 'Times New Roman'; font-size: 110%;">{numbers}</span>]
+
+| Times
+| pass:a[<span style="font-family: 'Times'; font-style: italic; font-size: 110%;">{alphabets}</span>] +
+  pass:a[<span style="font-family: 'Times'; font-size: 110%;">{numbers}</span>]
+
+| Courier New
+| pass:a[<span style="font-family: 'Courier New'; font-style: italic; font-size: 110%;">{alphabets}</span>] +
+  pass:a[<span style="font-family: 'Courier New'; font-size: 110%;">{numbers}</span>]
+
+| Verdana
+| pass:a[<span style="font-family: 'Verdana'; font-style: italic; font-size: 110%;">{alphabets}</span>] +
+  pass:a[<span style="font-family: 'Verdana'; font-size: 110%;">{numbers}</span>]
+
+| Garamond
+| pass:a[<span style="font-family: 'Garamond'; font-style: italic; font-size: 110%;">{alphabets}</span>] +
+  pass:a[<span style="font-family: 'Garamond'; font-size: 110%;">{numbers}</span>]
+
+| Bookman
+| pass:a[<span style="font-family: 'Bookman'; font-style: italic; font-size: 110%;">{alphabets}</span>] +
+  pass:a[<span style="font-family: 'Bookman'; font-size: 110%;">{numbers}</span>]
+
+| Comic Sans MS
+| pass:a[<span style="font-family: 'Comic Sans MS'; font-style: italic; font-size: 110%;">{alphabets}</span>] +
+  pass:a[<span style="font-family: 'Comic Sans MS'; font-size: 110%;">{numbers}</span>]
+
+| Trebuchet MS
+| pass:a[<span style="font-family: 'Trebuchet MS'; font-style: italic; font-size: 110%;">{alphabets}</span>] +
+  pass:a[<span style="font-family: 'Trebuchet MS'; font-size: 110%;">{numbers}</span>]
+
+| Georgia
+| pass:a[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">{alphabets}</span>] +
+  pass:a[<span style="font-family: 'Georgia'; font-size: 110%;">{numbers}</span>]
+
+| Palatino
+| pass:a[<span style="font-family: 'Palatino'; font-style: italic; font-size: 110%;">{alphabets}</span>] +
+  pass:a[<span style="font-family: 'Palatino'; font-size: 110%;">{numbers}</span>]
+
+| Arial Black
+| pass:a[<span style="font-family: 'Arial Black'; font-style: italic; font-size: 110%;">{alphabets}</span>] +
+  pass:a[<span style="font-family: 'Arial Black'; font-size: 110%;">{numbers}</span>]
+
+| Impact
+| pass:a[<span style="font-family: 'Impact'; font-style: italic; font-size: 110%;">{alphabets}</span>] +
+  pass:a[<span style="font-family: 'Impact'; font-size: 110%;">{numbers}</span>]
+
+|===
+
 === AsciiDoc Basic
 
 A -> B, C <- D, E => F and <= replacements
