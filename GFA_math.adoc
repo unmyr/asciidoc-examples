@@ -708,7 +708,7 @@ From the following equations, eliminate _s_ and find $x(t), y(t)$.
 [source,math]
 ----
 \begin{equation}
-t(x,y) = \frac{x}{1-y} \tag{1}\label{tag_t_xy}
+t(x,y) = \frac{x}{1-y} \tag{1}\label{eqn_1_t_xy}
 \end{equation}
 ----
 
@@ -716,7 +716,7 @@ t(x,y) = \frac{x}{1-y} \tag{1}\label{tag_t_xy}
 [source,math]
 ----
 \begin{equation}
-s(x,y) = \frac{x}{1+y} \tag{2}\label{tag_s_xy}
+s(x,y) = \frac{x}{1+y} \tag{2}\label{eqn_2_s_xy}
 \end{equation}
 ----
 
@@ -724,11 +724,11 @@ s(x,y) = \frac{x}{1+y} \tag{2}\label{tag_s_xy}
 [source,math]
 ----
 \begin{equation}
-x^2 + y^2 = 1 \tag{3}\label{tag_x2_y2_1}
+x^2 + y^2 = 1 \tag{3}\label{eqn_3_x2_y2_1}
 \end{equation}
 ----
 
-From $\eqref{tag_t_xy}$ and $\eqref{tag_s_xy}$, eliminate _x_ and rearrange the equation as follows.
+From $\eqref{eqn_1_t_xy}$ and $\eqref{eqn_2_s_xy}$, eliminate _x_ and rearrange the equation as follows.
 
 [source,math]
 ----
