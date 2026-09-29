@@ -423,6 +423,8 @@ Rendered::
 
 === Case definitions
 
+In GFA, `\text{if \((n = 0)\)}` is OK, but `\text{if $(n = 0)$}` does not render.
+
 .Factorial
 [cols="1a,1a" {table_options}]
 |===
