@@ -1,8 +1,15 @@
+ifdef::env-github[]
+:MERMAID: source, mermaid
+endif::[]
+ifndef::env-github[]
+:MERMAID: mermaid
+endif::[]
+
 == Mermaid Preview Examples
 
 We can preview Mermaid diagrams on GitHub not only in Markdown (GFM) but also in GitHub Flavored AsciiDoc (GFA).
 
-[source,mermaid]
+[{MERMAID}]
 ----
 flowchart LR
   Sleep[Sleep] --> Wake{Awake?}
