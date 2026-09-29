@@ -435,7 +435,7 @@ h| Rendered
 n! =
 \begin{cases}
   1       & \text{if $(n = 0)$} \\
-  n(n-1)! & \text{if $(n < 1)$}
+  n(n-1)! & \text{if $(n \lt 1)$}
 \end{cases}
 ----
 |
@@ -444,7 +444,7 @@ n! =
 n! =
 \begin{cases}
   1       & \text{if $(n = 0)$} \\
-  n(n-1)! & \text{if $(n < 1)$}
+  n(n-1)! & \text{if $(n \lt 1)$}
 \end{cases}
 ----
 
