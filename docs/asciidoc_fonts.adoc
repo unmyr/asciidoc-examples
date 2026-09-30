@@ -8,6 +8,32 @@ include::header.adoc[]
 endif::[]
 
 :bl: pass:p[ +]
+:a: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">a</span>]
+:b: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">b</span>]
+:c: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">c</span>]
+:d: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">d</span>]
+:e: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">e</span>]
+:f: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">f</span>]
+:g: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">g</span>]
+:h: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">h</span>]
+:i: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">i</span>]
+:j: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">j</span>]
+:k: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">k</span>]
+:l: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">l</span>]
+:m: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">m</span>]
+:n: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">n</span>]
+:o: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">o</span>]
+:p: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">p</span>]
+:q: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">q</span>]
+:r: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">r</span>]
+:s: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">s</span>]
+:t: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">t</span>]
+:u: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">u</span>]
+:v: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">v</span>]
+:w: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">w</span>]
+:x: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">x</span>]
+:y: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">y</span>]
+:z: pass:[<span style="font-family: 'Georgia'; font-style: italic; font-size: 110%;">z</span>]
 
 == Font
 
@@ -22,7 +48,22 @@ endif::[]
 :alphabets: a b c d e f g h i j k l m n o p q r s t u v w x y z {bl} 0 1 2 3 4 5 6 7 8 9
 :numbers: 0 1 2 3 4 5 6 7 8 9
 
-LaTeX::
+==== Alphabets and numbers
+
+AsciiDoc::
+[stem,asciidoc]
+----
+latexmath:[a\ b\ c\ d\ e\ f\ g\ h\ i\ j\ k\ l\ m\ n\ o\ p\ q\ r\ s\ t\ u\ v\ w\ x\ y\ z] +
+latexmath:[0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9]
+----
+AsciiDoc(GFA)::
+[stem,asciidoc]
+----
+$a\ b\ c\ d\ e\ f\ g\ h\ i\ j\ k\ l\ m\ n\ o\ p\ q\ r\ s\ t\ u\ v\ w\ x\ y\ z$ +
+$0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9$
+----
+
+Rendered::
 ifndef::env-github[]
 latexmath:[a\ b\ c\ d\ e\ f\ g\ h\ i\ j\ k\ l\ m\ n\ o\ p\ q\ r\ s\ t\ u\ v\ w\ x\ y\ z] +
 latexmath:[0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9]
@@ -35,10 +76,6 @@ endif::[]
 [cols="1h,3a" {table_options}]
 |===
 | Font    | Rendered
-
-| LaTeX
-| latexmath:[a\ b\ c\ d\ e\ f\ g\ h\ i\ j\ k\ l\ m\ n\ o\ p\ q\ r\ s\ t\ u\ v\ w\ x\ y\ z] +
-latexmath:[0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9]
 
 | default
 | _a_ _b_ _c_ _d_ _e_ _f_ _g_ _h_ _i_ _j_ _k_ _l_ _m_ _n_
