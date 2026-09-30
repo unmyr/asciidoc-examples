@@ -43,7 +43,7 @@ ifeval::["{backend}" == "html5"]
 * <<unicode_font_arrows.adoc#,Arrows>>
 endif::[]
 
-=== Font rendering comparison
+=== Font rendering using the pass macro
 
 :alphabets: a b c d e f g h i j k l m n o p q r s t u v w x y z {bl} 0 1 2 3 4 5 6 7 8 9
 :numbers: 0 1 2 3 4 5 6 7 8 9
@@ -52,7 +52,7 @@ endif::[]
 |===
 | Font    | Rendered
 
-| default
+| Without the pass macro (italics)
 | _a_ _b_ _c_ _d_ _e_ _f_ _g_ _h_ _i_ _j_ _k_ _l_ _m_ _n_
   _o_ _p_ _q_ _r_ _s_ _t_ _u_ _v_ _w_ _x_ _y_ _z_ +
   {numbers}
