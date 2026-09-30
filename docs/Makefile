@@ -20,7 +20,6 @@ $(DIST_DIR)/asciidoc_tables.html \
 $(DIST_DIR)/asciidoc_text_formatting.html \
 $(DIST_DIR)/diagram-graphviz.html \
 $(DIST_DIR)/install_asciidoctor.html \
-$(DIST_DIR)/math_font_symbols.html \
 $(DIST_DIR)/syntax_highlighting.html \
 $(DIST_DIR)/unicode_font_arrows.html \
 $(DIST_DIR)/unicode_font_fraktur_symbols.html \
