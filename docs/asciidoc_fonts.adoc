@@ -38,7 +38,7 @@ endif::[]
 == Font
 
 ifeval::["{backend}" == "html5"]
-* <<math_font_chars.adoc#,Mathematical fonts>>
+* <<math/stem_latexmath_font_chars.adoc#,Mathematical fonts>>
 * <<math_font_symbols.adoc#,Mathematical symbols>>
 * <<unicode_font_arrows.adoc#,Arrows>>
 endif::[]
@@ -47,31 +47,6 @@ endif::[]
 
 :alphabets: a b c d e f g h i j k l m n o p q r s t u v w x y z {bl} 0 1 2 3 4 5 6 7 8 9
 :numbers: 0 1 2 3 4 5 6 7 8 9
-
-==== Alphabets and numbers
-
-AsciiDoc::
-[stem,asciidoc]
-----
-latexmath:[a\ b\ c\ d\ e\ f\ g\ h\ i\ j\ k\ l\ m\ n\ o\ p\ q\ r\ s\ t\ u\ v\ w\ x\ y\ z] +
-latexmath:[0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9]
-----
-AsciiDoc(GFA)::
-[stem,asciidoc]
-----
-$a\ b\ c\ d\ e\ f\ g\ h\ i\ j\ k\ l\ m\ n\ o\ p\ q\ r\ s\ t\ u\ v\ w\ x\ y\ z$ +
-$0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9$
-----
-
-Rendered::
-ifndef::env-github[]
-latexmath:[a\ b\ c\ d\ e\ f\ g\ h\ i\ j\ k\ l\ m\ n\ o\ p\ q\ r\ s\ t\ u\ v\ w\ x\ y\ z] +
-latexmath:[0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9]
-endif::[]
-ifdef::env-github[]
-$a\ b\ c\ d\ e\ f\ g\ h\ i\ j\ k\ l\ m\ n\ o\ p\ q\ r\ s\ t\ u\ v\ w\ x\ y\ z$ +
-$0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9$
-endif::[]
 
 [cols="1h,3a" {table_options}]
 |===
@@ -235,10 +210,10 @@ h| HTML Entity                 h| HTML     h| Notes
 
 ifeval::["{backend}" == "pdf"]
 // === Mathematical fonts
-include::math_font_chars.adoc[leveloffset=+1]
+include::math/stem_latexmath_font_chars.adoc[leveloffset=+1]
 
 // === Mathematical symbols
-include::math_font_symbols.adoc[leveloffset=+1]
+include::math/stem_latexmath_font_symbols.adoc[leveloffset=+1]
 
 // === Arrows
 include::unicode_font_arrows.adoc[leveloffset=+1]
