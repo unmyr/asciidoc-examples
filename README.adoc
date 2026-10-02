@@ -21,6 +21,21 @@ endif::[]
 
 :stem: latexmath
 
+== Local build setup
+
+Add the following setting to your VS Code user `settings.json`.
+
+[source,json]
+----
+{
+  "docs.outputBaseDir": "C:\\path\\to\\docs"
+}
+----
+
+Then run the build task in VS Code.
+
+The build output will be written to `<docs.outputBaseDir>\<repository-name>`.
+
 == GitHub Actions
 Example of actions to generate document.
 

@@ -1,0 +1,70 @@
+= Build Setup for Windows with wslc
+
+This project uses `wslc` to run the document build inside a Linux container from Windows.
+
+== Prerequisites
+
+Make sure the following tools are available on your Windows environment.
+
+* WSL
+* `wslc`
+* Visual Studio Code
+
+To verify that `wslc` is available, run this command in PowerShell.
+
+[source,powershell]
+----
+wslc --help
+----
+
+If the command is not found, update WSL and restart Visual Studio Code.
+
+== Configure your local output directory
+
+This project expects a local VS Code user setting named `docs.outputBaseDir`.
+
+Open your VS Code user `settings.json` and add the following entry.
+
+[source,json]
+----
+{
+  "docs.outputBaseDir": "C:\\path\\to\\docs"
+}
+----
+
+Choose a directory on your own machine.
+Do not use a repository path for this setting.
+
+== How the output path is resolved
+
+The build task uses your `docs.outputBaseDir` setting and appends the repository name to it.
+
+For example, if your setting is:
+
+[source,json]
+----
+{
+  "docs.outputBaseDir": "C:\\path\\to\\docs"
+}
+----
+
+and the repository name is `my-notes`, the output directory becomes:
+
+[source,text]
+----
+C:\path\to\docs\my-notes
+----
+
+== Run the build task
+
+Open this repository in Visual Studio Code.
+
+Then run the build task from the command palette or the terminal task runner.
+
+The task calls the repository build script, which invokes `wslc` and runs the document build inside a Linux container.
+
+== Notes
+
+If `wslc` works in PowerShell but not in Visual Studio Code, restart Visual Studio Code and try again.
+
+This setting is intentionally stored in your user settings so that machine specific paths are not committed to the repository.
