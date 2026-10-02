@@ -3,20 +3,22 @@
     "tasks": [
         {
             "label": "build-docs",
-            "type": "shell",
-            "command": "powershell",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "args": [
-                "-ExecutionPolicy",
-                "Bypass",
-                "-File",
-                ".\\build.ps1",
-                "-OutputDir",
-                "${config:docs.outputBaseDir}\\asciidoc-examples"
-            ],
+            "windows": {
+                "type": "shell",
+                "command": "powershell",
+                "args": [
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-File",
+                    ".\\build.ps1",
+                    "-OutputDir",
+                    "${config:docs.outputBaseDir}\\asciidoc-examples"
+                ]
+            },
             "problemMatcher": []
         }
     ]
